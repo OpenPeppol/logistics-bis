@@ -11,6 +11,9 @@ openPeppol AISBL <http://www.peppol.org/>
 
 :leveloffset: +1
 
+include::v1.3-hotfix.adoc[]
+
+
 include::v1.3.adoc[]
 
 include::v1.2.adoc[]

@@ -255,9 +255,9 @@
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Reference type="CODE_LIST">eas</Reference>
-               <Value type="EXAMPLE">0212</Value>
+               <Value type="EXAMPLE">0216</Value>
             </Attribute>
-            <Value type="EXAMPLE">0108023-3</Value>
+            <Value type="EXAMPLE">003701080233</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>

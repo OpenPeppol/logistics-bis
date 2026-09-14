@@ -177,7 +177,7 @@
 		<?Name Carrier party ?>
 		<?Description The carrier party responsible for this Waybill. ?>
 		<?Cardinality 1..1?>
-		<cbc:EndpointID schemeID="0212">0108023-3
+		<cbc:EndpointID schemeID="0216">003701080233
 			<?Description An identifier for the end point of the routing service for the carrier party (e.g., EAN Location Number, GLN). ?>
 			<?Name Endpoint ID ?>			
 			<?Cardinality 1..1?>

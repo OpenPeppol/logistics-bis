@@ -37,7 +37,7 @@
 	<!-- end::consignor-party[] -->
 	<!-- tag::carrier-party[] -->
 	<cac:CarrierParty>
-		<cbc:EndpointID schemeID="0212">0108023-3</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0216">003701080233</cbc:EndpointID>
 		<cac:PartyName>
 			<cbc:Name>Finnair Oyj</cbc:Name>
 		</cac:PartyName>

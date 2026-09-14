@@ -1134,7 +1134,7 @@
                <Data ss:Type="String">An identifier for the end point of the routing service for the carrier party (e.g., EAN Location Number, GLN).</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0108023-3</Data>
+               <Data ss:Type="String">003701080233</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cbc:EndpointID</Data>
@@ -1160,7 +1160,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0212</Data>
+               <Data ss:Type="String">0216</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cbc:EndpointID/schemeID</Data>
