@@ -1,0 +1,20 @@
+= Version 1.3 -Hotfix
+[horizontal]
+Release date::	Sept 2026
+				* Date of member review:	2026-03-17
+				* Date of publication:		2026-09-15
+				* Mandatory to use from:	2026-09-15
+
+[NOTE]
+====
+This is a hotfix on the 1.3 release. The previous release did not include the latest updates from https://docs.peppol.eu/poacc/upgrade-3/release-notes/[Peppol Post Award Community Release Notes,window=_blank] regarding sections "Changes to code lists and validation artefacts" and "EN16931 schematrons updated". 
+====
+
+== Updated Transactions
+* Waybill (T125)
+** Updated snippets and examples to remove usage of code 0212 (Finnish Organization Identifier) from codelist whih has been deprecated. In the snippets and examples it is replaced with 0216 (OVTcode)
+
+
+== Updated Codelists
+* Codelist EAS is updated and has code 0212 removed.
+
