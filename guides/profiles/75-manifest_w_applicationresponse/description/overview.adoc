@@ -1,0 +1,8 @@
+[[overview-1]]
+= Overview
+
+The Manifest consists of document identification, one or more parties, an optional shipment, crew and/or passengers, document references, an optional document distribution list and an optional signature.
+
+The Sending Logistics Operator issues the Manifest to describe what is being carried by a means of transport. It optionally references the shipment(s) already described in detail elsewhere (for example in a Waybill), rather than repeating all consignment, packaging and goods item detail.
+
+The Application Response consists of document identification, a Sender and a Receiver party, and one or more Document Responses. Each Document Response carries the accepted/not accepted decision and a reference back to the Manifest it responds to.

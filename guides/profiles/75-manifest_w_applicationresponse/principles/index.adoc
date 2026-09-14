@@ -1,0 +1,29 @@
+[[principles-and-prerequisites]]
+= Principles and prerequisites
+
+This chapter describes the principles and assumptions that underlie the use of the Manifest and the Manifest Application Response.
+
+A Manifest is a document listing the contents, cargo, crew and passengers of a means of transport, such as an airplane, a ship, a truck or a wagon. It is typically issued by the party operating the means of transport and sent to an authority, terminal, or another logistics party who needs an overview of what is being carried before, during or after a journey.
+
+The Application Response is used by the receiving party to confirm, in a structured and machine-readable way, whether the Manifest has been accepted or not accepted (rejected). This gives the sender certainty that the Manifest has been received, checked and either approved for further processing or flagged for correction.
+
+[[manifest-in-general]]
+== Business process in scope
+
+The processes covered by this profile are:
+
+* The *Manifest* is issued by the party who operates or arranges the means of transport (the Sending Logistics Operator), and sent to a receiving party - typically an Authority (such as customs, port or terminal control) but the pattern also applies when the Manifest is sent to another commercial party, e.g. a terminal operator or a carrier further down the transport chain.
+* The *Manifest Application Response* is issued by the receiving party to inform the sender whether the Manifest is *accepted* or *not accepted*.
+
+The main activities supported by these messages are:
+
+* Reporting the cargo (shipment), crew and/or passengers carried by a means of transport.
+* Confirming receipt and the outcome of any checks performed on the Manifest, so that the sender knows whether the transport can proceed as declared or whether corrective action is required.
+
+:leveloffset: +1
+
+include::parties.adoc[]
+
+include::otherconcepts.adoc[]
+
+:leveloffset: -1

@@ -5,7 +5,7 @@
 	<?Property key="sch:identifier" T125-basic?>
 	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:waybill:1<?Rule PEPPOL-T125-R001?>
 	</cbc:CustomizationID>
-	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:waybill_only:1
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:waybill:1
 		<?Description Identifies the BII profile or business process context in which the transaction appears.?>
 		<?Rule PEPPOL-T125-R002?>
 	</cbc:ProfileID>
@@ -15,6 +15,16 @@
 		<?Description The ID assigned by the carrier party ?>
 		<?Cardinality 0..1?>	
 	</cbc:CarrierAssignedID>
+	<cbc:VersionID>1		
+		<?Name Version ?>
+		<?Description The version of this waybill. Used for maintaining updated ?>
+		<?Cardinality 0..1?>	
+	</cbc:VersionID>
+	<cbc:StatusCode>Planned		
+		<?Name StatusCode ?>
+		<?Description The Status code for this waybill. Used (Planning, Executing or Delivered) ?>
+		<?Cardinality 0..1?>	
+	</cbc:StatusCode>
 	<cbc:IssueDate>2005-06-25<?Description The date when this version of the Waybill is issued. Format = "YYYY-MM-DD". ?>
 	</cbc:IssueDate>
 	<cbc:IssueTime>09:00:00+02:00<?Description The time when this version of the Waybill is issued. Format = "hh:mm:ss". ?>
@@ -31,17 +41,320 @@
 		<?Description An identifier (in the form of a reference number) of the Shipping Order or Forwarding Instruction associated with this shipment. ?>
 		<?Cardinality 0..1?>
 	</cbc:ShippingOrderID>
-	<cac:ConsignorParty>
-		<?Name Consignor Party ?>
-		<?Description The party sending the goods in the Waybill, often the issuer of the Waybill. ?>
+	<cac:SenderParty>
+		<?Name Sender Party ?>
+		<?Description The party issuing the Waybill. ?>
 		<?Cardinality 1..1?>
 		<cbc:EndpointID schemeID="0198">DK13246149
 			<?Name Endpoint ID ?>
-			<?Description An identifier for the end point of the routing service for the Consignor party (e.g., EAN Location Number, GLN). ?>			
+			<?Description An identifier for the end point of the routing service for the Sender party (e.g., EAN Location Number, GLN). ?>			
 			<?Cardinality 1..1?>
 			<?schemeID-usage Mandatory?>
 			<?schemeID-CodeList eas?>
 		</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<?Name Sender identification ?>
+			<?Description An identifier for the Sender party. ?>
+			<?Cardinality 0..1?>
+			<cbc:ID schemeID="0088">7300010000001 	
+				<?Name ID ?>
+				<?Description The ID used for identification.?>			
+				<?schemeID-CodeList ICD?>
+				<?schemeID-usage Optional?>
+				<?Cardinality 1..1?>
+				<?Rule PEPPOL-T125-R031?>
+			</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<?Name Party name ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Novo Nordisk Pharmatech A/S
+				<?Name Sender party name?>
+				<?Description The name of the Sender party.?>
+				<?Rule PEPPOL-T125-R031?>
+			</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<?Name Postal address ?>
+			<?Description The postal address of the Sender party.?>
+			<?Cardinality 0..1?>
+			<cbc:StreetName>Københavnsvej 216
+					<?Name Address line 1 ?>
+					<?Description The main address line in a postal address usually the street name and number. ?>
+					<?Cardinality 0..1?>	
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName> Purchasing 
+					<?Name Address line 2?>
+					<?Cardinality 0..1?>
+					<?Description An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.?>						
+				</cbc:AdditionalStreetName>
+			<cbc:CityName>Køge
+					<?Name City ?>
+					<?Description The common name of the city where the postal address is. The name is written in full rather than as a code. ?>
+					<?Cardinality 0..1?>	
+				</cbc:CityName>
+			<cbc:PostalZone>4600
+					<?Name Post code ?>
+					<?Description The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. ?>
+					<?Cardinality 0..1?>	
+				</cbc:PostalZone>
+			<cbc:CountrySubentity>Heremouthshire
+					<?Name Country subdivision ?>
+					<?Description For specifying a region, county, state, province etc. within a country by using text. ?>
+					<?Cardinality 0..1?>	
+				</cbc:CountrySubentity>
+			<cac:AddressLine>
+				<?Name Address line ?>
+				<?Cardinality 0..1?>
+				<cbc:Line>Gate 34
+						<?Name Address line 3 ?>
+						<?Description An additional address line in an address that can be used to give further details supplementing the main line. ?>
+						<?Cardinality 1..1?>	
+					</cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<?Name Country ?>
+				<?Description The country of the address ?>
+				<?Cardinality 1..1?>
+				<cbc:IdentificationCode>DK
+						<?Name Country code ?>
+						<?Cardinality 1..1?>
+						<?CodeList ISO3166?>
+						<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. ?>
+					</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<?Name Party legal entity ?>
+			<?Cardinality 1..1?>
+			<cbc:RegistrationName>Novo Nordisk Pharmatech A/S
+					<?Name Sender party name ?>
+					<?Description The name of the Sender party.?>
+					<?Cardinality 1..1?>
+				</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0198">13246149
+					<?Name Sender parties legal registration name ?>
+					<?Description The official name of the party as registered with the relevant fiscal authority. ?>
+					<?Cardinality 0..1?>
+					<?schemeID-Name Scheme identifier ?>
+					<?schemeID-Description The identification scheme identifier of the Sender legal registration identifier ?>
+					<?schemeID-Usage optional?>
+					<?schemeID-CodeList ICD?>
+				</cbc:CompanyID>
+			<cac:RegistrationAddress>
+				<?Name Legal address ?>
+				<?Cardinality 0..1?>
+				<cbc:CityName>Køge
+						<?Name City name ?>
+						<?Description The name of the city. ?>
+						<?Cardinality 0..1?>
+					</cbc:CityName>
+				<cac:Country>
+					<?Name Country ?>
+					<?Description The residens country for the Sender party. ?>
+					<?Cardinality 1..1?>
+					<cbc:IdentificationCode>DK
+							<?Name Country code ?>
+							<?Cardinality 0..1?>
+							<?CodeList ISO3166?>
+							<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. ?>
+						</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:RegistrationAddress>
+		</cac:PartyLegalEntity>
+		<cac:Contact>
+			<?Name Contact ?>
+			<?Description The contact of the Sender party. ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Mr Sender
+						<?Name Contact name ?>
+						<?Description The contact name. ?>
+						<?Cardinality 0..1?>
+					</cbc:Name>
+			<cbc:Telephone>0158 1233714
+						<?Name Contact telephone number ?>
+						<?Description The phone number of the contact. ?>
+						<?Cardinality 0..1?>
+					</cbc:Telephone>
+			<cbc:ElectronicMail>sender@Sender-company.co.uk
+						<?Name Contact email address ?>
+						<?Description The electronic mail of the contact. ?>
+						<?Cardinality 0..1?>
+				</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:SenderParty>
+	<cac:ReceiverParty>
+		<?Name Receiver party ?>
+		<?Description The Receiver of this Waybill. ?>
+		<?Cardinality 1..1?>
+		<cbc:EndpointID schemeID="0212">0108023-3
+			<?Description An identifier for the end point of the routing service for the Receiver party (e.g., EAN Location Number, GLN). ?>
+			<?Name Endpoint ID ?>			
+			<?Cardinality 1..1?>
+			<?schemeID-usage Mandatory?>
+			<?schemeID-CodeList eas?>
+		</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<?Name Receiver party identification ?>
+			<?Description An identifier for the Receiver party. ?>
+			<?Cardinality 0..1?>
+			<cbc:ID schemeID="0088">7300010000001 				
+				<?schemeID-CodeList ICD?>
+				<?schemeID-usage Optional?>
+				<?Cardinality 1..1?>
+				<?Rule PEPPOL-T125-R032?>
+			</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<?Name Party name ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Finnair Oyj
+				<?Name Receiver party name?>
+				<?Description The name of the Receiver party. ?>
+				<?Rule PEPPOL-T125-R032?>
+			</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<?Name Postal address ?>
+			<?Description The postal address of the Receiver.?>
+			<?Cardinality 0..1?>
+			<cbc:StreetName>Tietotie 9
+						<?Name Address line 1 ?>
+						<?Description The main address line in a postal address usually the street name and number. ?>
+						<?Cardinality 0..1?>
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName> Purchasing 
+					<?Name Address line 2?>
+					<?Cardinality 0..1?>
+					<?Description An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.?>						
+				</cbc:AdditionalStreetName>
+			<cbc:CityName>Vantaa
+						<?Name City ?>
+						<?Description The common name of the city where the postal address is. The name is written in full rather than as a code. ?>
+						<?Cardinality 0..1?>
+					</cbc:CityName>
+			<cbc:PostalZone>4600
+						<?Name Post code ?>
+						<?Description The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. ?>
+						<?Cardinality 0..1?>
+					</cbc:PostalZone>
+			<cbc:CountrySubentity>Heremouthshire
+					<?Name Country subdivision ?>
+					<?Description For specifying a region, county, state, province etc. within a country by using text. ?>
+					<?Cardinality 0..1?>	
+				</cbc:CountrySubentity>
+			<cac:AddressLine>
+				<?Name Address line ?>
+				<?Cardinality 0..1?>
+				<cbc:Line>Gate 34
+						<?Name Address line 3 ?>
+						<?Description An additional address line in an address that can be used to give further details supplementing the main line. ?>
+						<?Cardinality 1..1?>	
+					</cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<?Name Country ?>
+				<cbc:IdentificationCode>FI
+							<?Name Country code ?>
+							<?Cardinality 1..1?>
+							<?CodeList ISO3166?>
+							<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. ?>
+						</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<?Name Party legal entity ?>
+			<?Cardinality 0..1?>
+			<cbc:RegistrationName>Leman
+						<?Name The registration name of the Receiver party ?>
+						<?Description The registration name of the Receiver party.?>
+						<?Cardinality 1..1?>
+			</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0212">0108023-3
+						<?Name Receiver parties legal registration name ?>
+						<?Description The official name of the party as registered with the relevant fiscal authority. ?>
+						<?Cardinality 0..1?>
+					<?schemeID-Name Scheme identifier ?>
+					<?schemeID-Description The identification scheme identifier of the Receiver legal registration identifier ?>
+					<?schemeID-Usage optional?>
+					<?schemeID-CodeList ICD?>
+					</cbc:CompanyID>
+			<cac:RegistrationAddress>
+				<?Name Legal address ?>
+				<?Cardinality 0..1?>
+				<cbc:CityName>Vantaa
+						<?Name City name ?>
+						<?Description The name of the city. ?>
+						<?Cardinality 0..1?>
+					</cbc:CityName>
+				<cac:Country>
+					<?Name Country ?>
+					<?Description The residens country for the Receiver party. ?>
+					<?Cardinality 1..1?>
+					<cbc:IdentificationCode>FI
+						<?Name Country code ?>
+						<?Cardinality 1..1?>
+						<?CodeList ISO3166?>
+						<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. ?>
+					</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:RegistrationAddress>
+		</cac:PartyLegalEntity>
+		<cac:Contact>
+			<?Name Contact?>
+			<?Description The contact of the Receiver party.?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Mrs Bouquet
+				<?Name Contact name?>
+				<?Description The contact name.?>
+				<?Cardinality 0..1?>
+			</cbc:Name>
+			<cbc:Telephone>0158 1233714
+				<?Name Contact email telephone?>
+				<?Description The phone number of the contact.?>
+				<?Cardinality 0..1?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>bouquet@fpconsortial.co.uk
+				<?Name Contact email address?>
+				<?Description The electronic mail of the contact.?>
+				<?Cardinality 0..1?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
+		<cac:Person>
+			<?Name Person?>
+			<?Description The driver or master person for the carrier party.?>
+			<?Cardinality 0..1?>
+			<cbc:FirstName>Hans
+			<?Name FirstName?>
+			<?Description The first name for the person.?>
+			<?Cardinality 0..1?>
+			</cbc:FirstName>
+			<cbc:FamilyName>Nielsen
+			<?Name FamilyName?>
+			<?Description The family name for the person.?>
+			<?Cardinality 0..1?>
+			</cbc:FamilyName>
+			<cac:IdentityDocumentReference>
+				<?Name Identity Document Reference?>
+				<?Description Reference to an identity of the driver or master person.?>
+				<?Cardinality 1..1?>
+				<cbc:ID>45642323
+					<?Name ID?>
+					<?Description The ID of identity the person for instance a driver license number.?>
+					<?Cardinality 1..1?>
+				</cbc:ID>
+				<cbc:DocumentType>ID06
+					<?Name Document Type?>
+					<?Description The type of identity for instance a driver license.?>
+					<?Cardinality 1..1?>
+				</cbc:DocumentType>
+			</cac:IdentityDocumentReference>
+		</cac:Person>
+	</cac:ReceiverParty>
+	<cac:ConsignorParty>
+		<?Name Consignor Party ?>
+		<?Description The party sending the goods in the Waybill, often the issuer of the Waybill. ?>
+		<?Cardinality 0..1?>		
 		<cac:PartyIdentification>
 			<?Name Consignor identification ?>
 			<?Description An identifier for the consignor party. ?>
@@ -293,7 +606,7 @@
 		<cac:Contact>
 			<?Name Contact?>
 			<?Description The contact of the Carrier party.?>
-			<?Cardinality 0..1?>
+			<?Cardinality 0..n?>
 			<cbc:Name>Mrs Bouquet
 				<?Name Contact name?>
 				<?Description The contact name.?>
@@ -310,10 +623,20 @@
 				<?Cardinality 0..1?>
 			</cbc:ElectronicMail>
 		</cac:Contact>
-		<cac:Person>
+		<cac:Person>			
 			<?Name Person?>
 			<?Description The driver or master person for the carrier party.?>
 			<?Cardinality 0..1?>
+			<cbc:FirstName>Peter
+				<?Name FirstName?>
+				<?Description The first name of driver or master person for the carrier party.?>
+				<?Cardinality 0..1?>			
+			</cbc:FirstName>
+			<cbc:FamilyName>Poulsen
+				<?Name FirstName?>
+				<?Description The family name of driver or master person for the carrier party.?>
+				<?Cardinality 0..1?>	
+			</cbc:FamilyName>
 			<cac:IdentityDocumentReference>
 				<?Name Identity Document Reference?>
 				<?Description Reference to an identity of the driver or master person.?>
@@ -542,6 +865,139 @@
 				<?Rule PEPPOL-T125-R003?>
 				<?Rule PEPPOL-T125-R004?>
 			</cbc:TotalTransportHandlingUnitQuantity>
+			<cac:ConsolidatedShipment>
+				<?Name Consolidated Shipment?>
+				<?Description A shipm,ent consolidated on the consignment. Used to specify the goods items on the consignment when the reference between goods items and the transport handling units are unknown. ?>
+				<?Cardinality 0..1?>	
+				<cac:GoodsItem>
+					<?Name Goods item ?>
+					<?Description A Goods item contained in the consignment.?>
+					<?Cardinality 0..n?>
+					<cbc:Description>Torsk sl u/h fersk fulliset 20kg iso 2-4 kg
+						<?Name Description ?>
+						<?Description A textual descript this goods item. ?>
+						<?Cardinality 0..1?>
+					</cbc:Description>
+					<cbc:HazardousRiskIndicator>false
+						<?Name Hazardous risk indicator ?>
+						<?Description An indication that the transported goods item is subject to an international regulation concerning the carriage of dangerous goods (true) or not (false). ?>
+						<?Cardinality 0..1?>
+					</cbc:HazardousRiskIndicator>
+					<cac:Item>
+						<?Name Item ?>
+						<?Description Description of the product beeing transported. Used for a structurel description of an item. Mandatory if the goods item is a Hazardous items.?>
+						<?Cardinality 0..1?>
+						<cbc:Name>Torsk
+						<?Name Name?>
+						<?Description The name of the Item. ?>
+						<?Cardinality 0..1?>
+					</cbc:Name>
+						<cac:CommodityClassification>
+							<?Name Commodity classification?>
+							<?Description To classify when an item number is not sufficient.?>
+							<?Cardinality 0..n?>
+							<cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">
+							KO2012140200 <?Name Item classification code?>
+							<?listID-CodeList UNCL7143?>
+							<?listID-usage Mandatory?>
+							<?listID-Description The identification scheme identifier of the Item classification identifier.?>
+							<?listVersionID-usage Optional?>
+							<?name-usage Optional?>
+							<?Cardinality 1..1?>
+						</cbc:ItemClassificationCode>
+						</cac:CommodityClassification>
+						<cac:HazardousItem>
+							<?Name Hazardous item information?>
+							<?Description Contains information on the Hazardous item. ?>
+							<?Cardinality 0..n?>
+							<cbc:ID>123
+								<?Name Identifier?>
+								<?Description An identifier for this hazardous item. ?>
+								<?Cardinality 0..1?>
+							</cbc:ID>
+							<cbc:AdditionalInformation>Information about the hazardous item
+								<?Name Additional Information?>
+								<?Description Text providing further information about the hazardous substance. ?>
+								<?Cardinality 0..1?>
+							</cbc:AdditionalInformation>
+							<cbc:UNDGCode>ADR 
+								<?CodeList UNCL8273?>
+								<?Name Hazardous item UNDG code?>
+								<?Description The identifier assigned to transportable hazardous goods by the United Nations, expressed as a code. ?>
+								<?Cardinality 0..1?>
+							</cbc:UNDGCode>
+							<cbc:TechnicalName>Corrosive liquid, n.o.s., 8, UN 1760, II (contains Octanoyl chloride)
+								<?Name Technical Name?>
+								<?Description The full technical name of a specific hazardous substance contained in this goods item. ?>
+								<?Cardinality 0..1?>
+							</cbc:TechnicalName>
+							<cbc:CategoryName>Acute toxicity
+								<?Name Category Name?>
+								<?Description The name of the category of hazard that applies to the Item. ?>
+								<?Cardinality 0..1?>
+							</cbc:CategoryName>
+							<cbc:HazardousCategoryCode>123
+								<?Name Hazardous Category Code?>
+								<?Description A code signifying a kind of hazard for a material. ?>
+								<?Cardinality 0..1?>
+							</cbc:HazardousCategoryCode>
+							<cbc:HazardClassID>Code
+								<?Name Haszardous hazard class Identifier?>
+								<?Description dentifies a hazard class applicable to dangerous goods as defined by the relevant regulation authority, such as the IMDG Class Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for the road/rail environment. ?>
+								<?Cardinality 0..1?>
+							</cbc:HazardClassID>
+							<cbc:NetWeightMeasure unitCode="KGM">123
+								<?Name Net Weight Measure ?>
+								<?Description Net weight of the Hazardous item. ?>
+								<?Cardinality 0..1?>
+								<?unitCode-CodeList UNECERec20?>
+								<?unitCode-Name Measure unit of measure?>
+								<?unitCode-Description The unit of measure that applies to the Net Weight.?>
+								<?unitCode-usage Mandatory?>
+							</cbc:NetWeightMeasure>
+							<cbc:NetVolumeMeasure unitCode="MTQ">12.3
+								<?Name Net Volume Measure ?>
+								<?Description Net volume of the Hazardous item. ?>
+								<?Cardinality 0..1?>
+								<?unitCode-CodeList UNECERec20?>
+								<?unitCode-Name Measure unit of measure?>
+								<?unitCode-Description The unit of measure that applies to the Net Volume.?>
+								<?unitCode-usage Mandatory?>
+							</cbc:NetVolumeMeasure>
+							<cac:HazardousGoodsTransit>
+								<?Name Hazardous Goods Transit ?>
+								<?Description Information related to the transit of this kind of hazardous goods. ?>
+								<?Cardinality 0..n?>
+								<cbc:PackingCriteriaCode>123
+									<?Name Packing Criteria Code ?>
+									<?Description A code signifying the packaging requirement for transportation of the hazardous goods as assigned by IATA, IMDB, ADR, RID etc. ?>
+									<?Cardinality 1..1?>
+								</cbc:PackingCriteriaCode>
+							</cac:HazardousGoodsTransit>
+							<cac:EmergencyTemperature>
+								<?Name Emergency Temperature ?>
+								<?Description The threshold temperature at which emergency procedures apply in the handling of temperature-controlled goods. ?>
+								<?Cardinality 0..1?>
+								<cbc:AttributeID>ABC
+									<?Name Attribute ID ?>
+									<?Description An identifier for this temperature measurement. ?>
+									<?Cardinality 1..1?>
+								</cbc:AttributeID>
+								<cbc:Measure unitCode="CEL">78
+									<?Name Measure ?>
+									<?Description The value of this temperature measurement. ?>
+									<?Cardinality 1..1?>
+									<?unitCode-CodeList UNECERec20?>
+									<?unitCode-Name Measure unit of measure?>
+									<?unitCode-Description The unit of measure that applies to the Emergency Temperature.?>
+									<?unitCode-usage Mandatory?>
+								</cbc:Measure>
+							</cac:EmergencyTemperature>
+						</cac:HazardousItem>
+					</cac:Item>
+				</cac:GoodsItem>
+						
+			</cac:ConsolidatedShipment>
 			<cac:ConsigneeParty>
 				<?Name Delivery party ?>
 				<?Description The party responsible for receiving the goods in the Waybill. ?>
@@ -713,6 +1169,78 @@
 					<?Rule PEPPOL-T125-R010?>
 				</cbc:Note>
 			</cac:PaymentTerms>
+			
+			<cac:MainCarriageShipmentStage>
+				<?Name Main Carriage Shipment Stage ?>
+				<?Description The first non-road transport or the main road transport for this consignment. ?>
+				<?Cardinality 0..1?>
+				<cbc:TransportModeCode>4
+				<?Name Transport mode code?>
+				<?Description A code signifying the method of transport used for this shipment stage. ?>
+				<?Cardinality 1..1?>
+				<?CodeList UNECERec19?>
+				</cbc:TransportModeCode>			
+				<cbc:TransportMeansTypeCode>Airliner
+				<?Name Transport Means type code?>
+				<?Description A code signifying transport means used in this shipment stage. For air transport use "Airliner", "CargoAircraft" or "Truck". ?>
+				<?Cardinality 0..n?>
+				<?CodeList TransportMeansTypeCode?>					
+				</cbc:TransportMeansTypeCode>
+				
+				<cac:CarrierParty>
+				<?Name Carrier Party?>
+				<?Description The party responsible for this shipment stage. ?>
+				<?Cardinality 0..1?>
+					<cac:PartyIdentification>
+						<?Name Freight Forwarder party identification ?>
+						<?Description An identifier for the carrier party. ?>
+						<?Cardinality 1..1?>
+						<cbc:ID schemeID="IATA">188
+							<?Description An identifier for the carrier party expressed in a known registration. ?>									
+							<?schemeID-usage Optional?>
+							<?Cardinality 1..1?>							
+						</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PartyName>
+						<?Name Party name ?>
+						<?Cardinality 0..1?>
+						<cbc:Name>Finnair Oyj
+							<?Name Freight forwarder party name?>
+							<?Description The name of the carrier party. ?>							
+						</cbc:Name>
+					</cac:PartyName>
+				</cac:CarrierParty>			
+				<cac:TransportMeans>
+				<?Name Transport means ?>
+				<?Description The means of transport used in this shipment stage.?>
+				<?Cardinality 0..1?>
+					<cbc:JourneyID>SK1589
+					<?Name Journey ID ?>
+					<?Description The Journey ID, eg. flight number used for this shipment stage?>
+					<?Cardinality 0..1?>
+					</cbc:JourneyID> 
+				</cac:TransportMeans>
+				<cac:LoadingPortLocation>
+				<?Name Loading Port Location?>
+				<?Description The location of loading for a shipment stage. ?>
+				<?Cardinality 0..1?>				
+					<cbc:ID>CPH
+					<?Name Loading Port Location ID?>
+					<?Description The Id of the location where the loading happens, for instance a Loco dode for the port or an airport code for an airport. ?>
+					<?Cardinality 1..1?>	
+					</cbc:ID> 
+				</cac:LoadingPortLocation>
+				<cac:UnloadingPortLocation>
+				<?Name Loading Port Location?>
+				<?Description The location of loading for a shipment stage. ?>
+				<?Cardinality 0..1?>				
+					<cbc:ID>HEL
+					<?Name Unloading Port Location ID?>
+					<?Description The Id of the location where the unloading happens, for instance a Loco dode for the port or an airport code for an airport. ?>
+					<?Cardinality 1..1?>	
+					</cbc:ID> 
+				</cac:UnloadingPortLocation>
+			</cac:MainCarriageShipmentStage>			
 			<cac:TransportHandlingUnit>
 				<?Name Transport handling unit ?>
 				<?Description Used to specify the outer most packages, the units that the transporters deals with. ?>
@@ -740,7 +1268,7 @@
 				</cbc:HandlingCode>
 				<cbc:HandlingInstructions>To be set vertical
 					<?Name Handling instructions ?>
-					<?Description The handling for this transporthandling unit expressed as a text ?>
+					<?Description The handling for this transporthandling unit expressed as a text. ?>
 					<?Cardinality 0..1?>
 				</cbc:HandlingInstructions>
 				<cbc:HazardousRiskIndicator>false
@@ -769,26 +1297,36 @@
 						<?Cardinality 0..1?>
 					</cbc:TransportEquipmentTypeCode>
 					<cbc:SizeTypeCode>10
-						<?Name Size type code ?>
+						<?Name Size type code. ?>
 						<?Description A code signifying the size and type of this piece of piece of transport equipment. When the piece of transport equipment is a shipping container, it is recommended to use ContainerSizeTypeCode for validation. ?>
 						<?CodeList TRED8155?>
 						<?Cardinality 0..1?>
 					</cbc:SizeTypeCode>
 					<cbc:RefrigerationOnIndicator>true
-						<?Name Indicator refrigeration transport equipment ?>
+						<?Name Indicator refrigeration transport equipment. ?>
 						<?Description An indicator that this piece of transport equipments refrigeration is on (true) or off (false). ?>
 						<?Cardinality 0..1?>
 					</cbc:RefrigerationOnIndicator>
 					<cbc:Description>A 20 foot refrigerated container that is not actively controlling temperature of the product.
-						<?Name Description transport equipment ?>
+						<?Name Description of the transport equipment. ?>
 						<?Description A textual description of the transport equipment. ?>
 						<?Cardinality 0..1?>
 					</cbc:Description>
 					<cbc:PowerIndicator>true
-						<?Name Power indicator transport equipment ?>
+						<?Name Power indicator transport equipment. ?>
 						<?Description An indicator that this piece of transport equipment can supply power (true) or not (false). ?>
 						<?Cardinality 0..1?>
 					</cbc:PowerIndicator>
+					<cac:TransportEquipmentSeal>
+						<?Name Transport equipment seal.?>
+						<?Description A seal securing the door of a piece of transport equipment.?>
+						<?Cardinality 0..1?>
+						<cbc:ID>
+							<?Name ID.?>
+							<?Description The seal number.?>
+							<?Cardinality 1..1?>
+						</cbc:ID>
+					</cac:TransportEquipmentSeal>
 				</cac:TransportEquipment>
 				<cac:MeasurementDimension>
 					<?Name Measurement dimension ?>
@@ -970,6 +1508,43 @@
 					</cac:Item>
 				</cac:GoodsItem>
 			</cac:TransportHandlingUnit>
+			<cac:DocumentReference>
+				<?Name Additional document reference?>
+				<?Description Reference to documents relevant for this consignment. Can be  ?>
+				<?Cardinality 0..n?>
+				<cbc:ID> 7648779 <?Name Identity of the reference?>
+					<?Description The reference number of added document?>
+				</cbc:ID>
+				<cbc:DocumentTypeCode> 380 <?Name Document type code?>
+					<?Description The type of reference. Must me part of UNCL1001?>
+					<?Cardinality 0..1?>
+					<?CodeList UNCL1001?>
+				</cbc:DocumentTypeCode>
+				<cbc:DocumentType>MRN
+					<?Name Document type?>
+					<?Description The type of reference that cannot be specified by a code?>
+					<?Cardinality 0..1?>
+				</cbc:DocumentType>
+				<cac:Attachment>
+					<?Name Attachment?>
+					<?Cardinality 0..1?>
+					<?Description Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.?>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">
+						aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== <?Name Embedded binary object?>
+						<?Cardinality 0..1?>
+						<?mimeCode-CodeList MimeCode?>
+						<?Description The referenced document can here be inserted as a binary object.?>
+					</cbc:EmbeddedDocumentBinaryObject>
+					<cac:ExternalReference>
+						<?Name External reference?>
+						<?Description A reference to an attached document that is external to the document(s) being exchanged.?>
+						<?Cardinality 0..1?>
+						<cbc:URI> www.beast.se <?Name Address to internet resource?>
+							<?Description The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.?>
+						</cbc:URI>
+					</cac:ExternalReference>
+				</cac:Attachment>
+			</cac:DocumentReference>
 		</cac:Consignment>
 		<cac:ShipmentStage>
 			<?Name Shipment stage ?>
@@ -982,6 +1557,12 @@
 				<?CodeList UNECERec19?>
 				<?Rule PEPPOL-T125-R050?>
 			</cbc:TransportModeCode>
+			<cbc:TransportMeansTypeCode>31
+				<?Name Transport Means type code?>
+				<?Description A code signifying transport means used in this shipment stage. ?>
+				<?Cardinality 0..1?>
+				<?CodeList TransportMeansTypeCode?>					
+			</cbc:TransportMeansTypeCode>
 			<cac:TransportMeans>
 				<?Name Transport means ?>
 				<?Description The means of transport used in this shipment stage.?>

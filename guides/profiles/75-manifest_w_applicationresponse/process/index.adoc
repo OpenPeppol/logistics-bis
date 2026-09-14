@@ -1,0 +1,38 @@
+[[process-and-typical-scenarios]]
+= Processes and use cases
+
+[[legend-for-bpmn-diagrams]]
+== Legend for BPMN diagrams
+
+The diagrams are expressed in the BPMN notation.
+The diagram below serves as an explanation for the diagrams used in the process descriptions.
+
+image::images/legend.svg[image,width=500,height=500]
+
+[[process-overview]]
+== Process overview
+
+The diagram below gives an overview of the main processes in this profile.
+
+image::images/overview.svg[image,width=500,height=500]
+
+See {examples-zip} for a sample file for Manifest.
+
+The following section describes the choreography of the business process.
+
+:leveloffset: +1
+
+include::manifest_scenario.adoc[]
+
+:leveloffset: -1
+
+[[response-codes]]
+== Use of the Application Response
+
+The Application Response used in this profile follows the same pattern as other Peppol profiles built on the generic UBL Application Response (for example the Peppol Message Level Response). Each `cac:DocumentResponse` shall contain:
+
+* A `cac:Response/cbc:ResponseCode` stating the outcome of the response.
+* A `cac:Response/cbc:Description` with a human-readable explanation, in particular when the Manifest is not accepted.
+* A `cac:DocumentReference` pointing back to the `cbc:ID` of the Manifest the response concerns.
+
+IMPORTANT: The exact code list and code values to use in `cbc:ResponseCode` (e.g. accepted vs. not accepted, and any intermediate states such as "accepted with remarks") should be confirmed against the Peppol Response Code list published alongside the other Application-Response-based Peppol profiles, so that this profile stays consistent with existing implementations. The examples in this guide use illustrative values (`AP` for accepted, `RE` for rejected) pending that confirmation.

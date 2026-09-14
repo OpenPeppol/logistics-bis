@@ -1,0 +1,24 @@
+[[description-of-selected-parts-of-the-manifest]]
+= Description of selected parts of the Manifest and the Application Response.
+
+:leveloffset: +1
+
+include::overview.adoc[]
+
+include::parties.adoc[]
+
+include::identification.adoc[]
+
+include::shipment.adoc[]
+
+include::crewAndPassenger.adoc[]
+
+include::documentReference.adoc[]
+
+include::documentDistribution.adoc[]
+
+include::signature.adoc[]
+
+include::applicationResponse.adoc[]
+
+:leveloffset: -1

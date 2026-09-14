@@ -1,0 +1,10 @@
+[[document-reference]]
+= Document reference
+
+A reference to another document relevant for this Manifest, for example the Waybill or Bill of Lading that already describes the consignment, transport handling units and goods items of the shipment(s) listed in the Manifest.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=document-reference]
+----

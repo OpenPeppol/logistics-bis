@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest xmlns="urn:oasis:names:specification:ubl:schema:xsd:Manifest-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:manifest:1</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1</cbc:ProfileID>
+	<!-- tag::document-id[] -->
+	<cbc:ID>MAN-2026-000451</cbc:ID>
+	<!-- end::document-id[] -->
+	<cbc:IssueDate>2026-09-09</cbc:IssueDate>
+	<cbc:IssueTime>08:15:00+02:00</cbc:IssueTime>
+	<!-- tag::manifest-type[] -->
+	<cbc:ManifestTypeCode>ROA</cbc:ManifestTypeCode>
+	<cbc:ManifestType>Road cargo manifest</cbc:ManifestType>
+	<!-- end::manifest-type[] -->
+	<!-- tag::sending-logistics-operator-party[] -->
+	<cac:SendingLogisticsOperatorParty>
+		<cbc:EndpointID schemeID="0184">DK16356706</cbc:EndpointID>
+		<cac:PartyName>
+			<cbc:Name>Nordic Road Carriers A/S</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>Havnegade 12</cbc:StreetName>
+			<cbc:CityName>Aarhus</cbc:CityName>
+			<cbc:PostalZone>8000</cbc:PostalZone>
+			<cac:Country>
+				<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Nordic Road Carriers A/S</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0184">DK16356706</cbc:CompanyID>
+		</cac:PartyLegalEntity>
+		<cac:Contact>
+			<cbc:Name>Dispatch office</cbc:Name>
+			<cbc:Telephone>+45 70 12 34 56</cbc:Telephone>
+			<cbc:ElectronicMail>dispatch@nordicroad.example</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:SendingLogisticsOperatorParty>
+	<!-- end::sending-logistics-operator-party[] -->
+	<!-- tag::authority-party[] -->
+	<cac:AuthorityParty>
+		<cbc:EndpointID schemeID="0184">DK55133018</cbc:EndpointID>
+		<cac:PartyName>
+			<cbc:Name>Port of Aarhus Terminal Control</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:CityName>Aarhus</cbc:CityName>
+			<cac:Country>
+				<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+	</cac:AuthorityParty>
+	<!-- end::authority-party[] -->
+	<!-- tag::consignor-party[] -->
+	<cac:ConsignorParty>
+		<cbc:EndpointID schemeID="0184">DK87654321</cbc:EndpointID>
+		<cac:PartyName>
+			<cbc:Name>Semantic ApS</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:CityName>Copenhagen</cbc:CityName>
+			<cac:Country>
+				<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+	</cac:ConsignorParty>
+	<!-- end::consignor-party[] -->
+	<!-- tag::consignee-party[] -->
+	<cac:ConsigneeParty>
+		<cbc:EndpointID schemeID="0192">NO987654321</cbc:EndpointID>
+		<cac:PartyName>
+			<cbc:Name>Fjord Logistics AS</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:CityName>Oslo</cbc:CityName>
+			<cac:Country>
+				<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+	</cac:ConsigneeParty>
+	<!-- end::consignee-party[] -->
+	<!-- tag::crew-person[] -->
+	<cac:CrewPerson>
+		<cbc:FirstName>Anders</cbc:FirstName>
+		<cbc:FamilyName>Holm</cbc:FamilyName>
+		<cbc:JobTitle>Driver</cbc:JobTitle>
+	</cac:CrewPerson>
+	<!-- end::crew-person[] -->
+	<!-- tag::passenger-person[] -->
+	<!--
+	Passengers are only relevant for manifests covering passenger transport
+	(e.g. ferry or air manifests). Omitted in this road cargo example.
+	<cac:PassengerPerson>
+		<cbc:FirstName>Jane</cbc:FirstName>
+		<cbc:FamilyName>Doe</cbc:FamilyName>
+	</cac:PassengerPerson>
+	-->
+	<!-- end::passenger-person[] -->
+	<!-- tag::shipment[] -->
+	<cac:Shipment>
+		<cbc:ID schemeID="GSIN">1234567890123456789012</cbc:ID>
+		<cbc:GrossWeightMeasure unitCode="KGM">2400</cbc:GrossWeightMeasure>
+		<cbc:GrossVolumeMeasure unitCode="MTQ">18</cbc:GrossVolumeMeasure>
+		<cbc:TotalGoodsItemQuantity>2</cbc:TotalGoodsItemQuantity>
+		<cbc:TotalTransportHandlingUnitQuantity>2</cbc:TotalTransportHandlingUnitQuantity>
+	</cac:Shipment>
+	<!-- end::shipment[] -->
+	<!-- tag::document-reference[] -->
+	<cac:DocumentReference>
+		<cbc:ID>WB-2026-000451</cbc:ID>
+		<cbc:DocumentTypeCode>270</cbc:DocumentTypeCode>
+		<cbc:DocumentType>Waybill</cbc:DocumentType>
+	</cac:DocumentReference>
+	<!-- end::document-reference[] -->
+	<!-- tag::document-distribution[] -->
+	<cac:DocumentDistribution>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0184">DK55133018</cbc:EndpointID>
+			<cac:PartyName>
+				<cbc:Name>Port of Aarhus Terminal Control</cbc:Name>
+			</cac:PartyName>
+		</cac:Party>
+	</cac:DocumentDistribution>
+	<!-- end::document-distribution[] -->
+	<!-- tag::signature[] -->
+	<cac:Signature>
+		<cbc:ID>SIG-000451</cbc:ID>
+		<cac:SignatoryParty>
+			<cac:PartyName>
+				<cbc:Name>Nordic Road Carriers A/S</cbc:Name>
+			</cac:PartyName>
+		</cac:SignatoryParty>
+	</cac:Signature>
+	<!-- end::signature[] -->
+</Manifest>

@@ -1,0 +1,22 @@
+[[scenario-1-manifest]]
+= Scenario: Exchange of Manifest and Application Response
+
+The following diagram shows the choreography of the business process: the Sending Logistics Operator sends a Manifest to the receiving party, who checks it and returns an Application Response.
+
+image::images/manifest_process.svg[image,width=945,height=480]
+
+. The Sending Logistics Operator prepares a *Manifest* covering the cargo, crew and/or passengers of a journey, optionally referencing the Waybill(s) or other transport documents for the shipment(s) involved.
+. The Sending Logistics Operator sends the Manifest to the receiving party (an Authority, or another logistics party such as a terminal operator or downstream carrier).
+. The receiving party checks the Manifest.
+. The receiving party returns an *Application Response*:
+.. If the Manifest is complete and correct, the response indicates that the Manifest is *accepted*.
+.. If the Manifest is incomplete, incorrect, or cannot be processed, the response indicates that the Manifest is *not accepted*, together with a description of the reason.
+. If the Manifest is not accepted, the Sending Logistics Operator corrects and resends a new Manifest, repeating the process until an Application Response accepting the Manifest is received.
+
+Parties involved:
+
+*Sending Logistics Operator:* The party preparing and sending the Manifest, and receiving the Application Response.
+
+*Receiving party (e.g. Authority):* The party receiving the Manifest, checking it, and returning the Application Response indicating whether it is accepted or not accepted.
+
+NOTE: Unlike the Waybill profile, this profile does not assume a Freight Forwarder in the middle of the exchange - the Manifest is exchanged directly between the party responsible for the means of transport and the party that needs to know its contents. The same pattern can, however, be repeated at each leg of a multi-leg journey (e.g. operator to terminal, then terminal to customs).

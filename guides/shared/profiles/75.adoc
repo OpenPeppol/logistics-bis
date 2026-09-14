@@ -4,12 +4,28 @@
 
 In the table below you will find the values to be used as the specification identifier and the business process type for this profile.
 
+<<<<<<< HEAD
+[cols="2s,5a,5a", options="header"]
+=======
 [cols="3s,6a,3a", options="header"]
+>>>>>>> 2026-Q4-dev
 |===
 | Type
 | Element `cbc:CustomizationID`
 | Element `cbc:ProfileID`
 
+<<<<<<< HEAD
+| Manifest (Trdm129)
+| urn:fdc:peppol.eu:logistics:trns:manifest:1
+.2+.^| urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1
+
+| Manifest Application Response (Trdm130)
+| urn:fdc:peppol.eu:logistics:trns:manifest_response:1
+
+|===
+
+NOTE: The `Trdm` numbers and the URN values above follow the numbering pattern used by the existing logistics profiles (Trdm120-Trdm128) but have not yet been assigned or registered by OpenPeppol. Before this profile is published they must be confirmed with the OpenPeppol Logistics working group / secretariat.
+=======
 | Transport Execution Plan Request (Trdm123)
 | urn:fdc:peppol.eu:logistics:trns:transport_execution_plan_request:1
 .5+.^| urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1
@@ -27,3 +43,4 @@ In the table below you will find the values to be used as the specification iden
 | urn:fdc:peppol.eu:logistics:trns:application_response:1
 
 |===
+>>>>>>> 2026-Q4-dev

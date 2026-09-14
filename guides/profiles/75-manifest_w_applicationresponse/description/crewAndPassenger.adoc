@@ -1,0 +1,10 @@
+[[crew-and-passenger]]
+= Crew and passenger
+
+A Manifest can list the crew (`cac:CrewPerson`) operating the means of transport, and - where relevant, such as for ferry or air manifests - the passengers (`cac:PassengerPerson`) being carried. Both are repeatable, and both are optional: a cargo-only manifest (e.g. a road freight manifest) will typically include crew but no passengers.
+
+Example of a crew member:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=crew-person]
+----

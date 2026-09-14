@@ -1,0 +1,10 @@
+[[namespaces]]
+= Namespaces
+
+The Manifest data model is bound to {ubl23} of the document type UBL Manifest. The target namespace for the UBL Manifest is:
+
+*urn:oasis:names:specification:ubl:schema:xsd:Manifest-2*
+
+The Application Response data model is bound to {ubl23} of the document type UBL Application Response. The target namespace for the UBL Application Response is:
+
+*urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2*

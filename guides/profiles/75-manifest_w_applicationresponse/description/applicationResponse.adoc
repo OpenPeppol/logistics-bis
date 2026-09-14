@@ -1,0 +1,21 @@
+[[document-response]]
+= Document response
+
+`cac:DocumentResponse` carries the actual decision made by the receiving party about a Manifest. It contains:
+
+* `cac:Response` - the decision itself: a `cbc:ResponseCode` (see xref:response-codes[Use of the Application Response]) and an optional `cbc:Description` explaining the decision, which is particularly important when the Manifest is *not accepted*.
+* `cac:DocumentReference` - a reference to the Manifest being responded to, using the same `cbc:ID` value as the Manifest's own document identifier.
+
+An Application Response can, in principle, contain more than one `cac:DocumentResponse` (for example when responding to several Manifests in one message), but in this profile it is expected to contain exactly one, matching the one-to-one relationship between a Manifest and its response.
+
+Example of an accepted Manifest:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-2.xml[tags=document-response-accepted]
+----
+
+Example of a not accepted (rejected) Manifest:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-2.xml[tags=document-response-rejected]
+----

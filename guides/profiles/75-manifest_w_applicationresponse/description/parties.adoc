@@ -1,0 +1,71 @@
+[[parties]]
+= Parties
+
+The following parties/roles may be specified in the Manifest and its Application Response.
+The same actor may play more than one role depending on the handling routine.
+
+[[sending-logistics-operator-party]]
+== Sending Logistics Operator (SendingLogisticsOperatorParty)
+
+The party who issues the Manifest. This party is normally the Logistics Operator responsible for the means of transport. This is a mandatory party in the Manifest.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=sending-logistics-operator-party]
+----
+
+[[authority-party]]
+== Authority (AuthorityParty)
+
+The Authority or regulator who receives the Manifest, for example customs or port state control. Only used when the Manifest is sent to a public authority; when it is sent to another commercial party this party is omitted.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=authority-party]
+----
+
+[[consignor-party-manifest]]
+== Consignor (ConsignorParty)
+
+Consignor is the party responsible for sending the goods described in the shipment covered by this Manifest.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=consignor-party]
+----
+
+[[consignee-party-manifest]]
+== Consignee (ConsigneeParty)
+
+Consignee is the party receiving the goods described in the shipment covered by this Manifest.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=consignee-party]
+----
+
+[[sender-party]]
+== Sender (SenderParty)
+
+Used in the Application Response. The party sending the response - normally the party that received the Manifest.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-2.xml[tags=sender-party]
+----
+
+[[receiver-party]]
+== Receiver (ReceiverParty)
+
+Used in the Application Response. The party receiving the response - normally the Sending Logistics Operator of the Manifest.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-2.xml[tags=receiver-party]
+----

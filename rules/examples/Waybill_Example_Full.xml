@@ -3,15 +3,98 @@
              xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
              xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
    <cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:waybill:1</cbc:CustomizationID>
-   <cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:waybill_only:1</cbc:ProfileID>
+   <cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:waybill:1</cbc:ProfileID>
    <cbc:ID>KHN23-44044-1</cbc:ID>
    <cbc:CarrierAssignedID>123456789987654321</cbc:CarrierAssignedID>
+   <cbc:VersionID>1</cbc:VersionID>
+   <cbc:StatusCode>Planned</cbc:StatusCode>
    <cbc:IssueDate>2005-06-25</cbc:IssueDate>
    <cbc:IssueTime>09:00:00+02:00</cbc:IssueTime>
    <cbc:Name>Air Waybill</cbc:Name>
    <cbc:ShippingOrderID>KHN23-44044</cbc:ShippingOrderID>
-   <cac:ConsignorParty>
+   <cac:SenderParty>
       <cbc:EndpointID schemeID="0198">DK13246149</cbc:EndpointID>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0088">7300010000001</cbc:ID>    
+      </cac:PartyIdentification>
+      <cac:PartyName>
+         <cbc:Name>Novo Nordisk Pharmatech A/S</cbc:Name>    
+      </cac:PartyName>
+      <cac:PostalAddress>
+         <cbc:StreetName>Københavnsvej 216</cbc:StreetName>
+         <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
+         <cbc:CityName>Køge</cbc:CityName>
+         <cbc:PostalZone>4600</cbc:PostalZone>
+         <cbc:CountrySubentity>Heremouthshire</cbc:CountrySubentity>
+         <cac:AddressLine>
+            <cbc:Line>Gate 34</cbc:Line>      
+         </cac:AddressLine>
+         <cac:Country>
+            <cbc:IdentificationCode>DK</cbc:IdentificationCode>      
+         </cac:Country>    
+      </cac:PostalAddress>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Novo Nordisk Pharmatech A/S</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0198">13246149</cbc:CompanyID>
+         <cac:RegistrationAddress>
+            <cbc:CityName>Køge</cbc:CityName>
+            <cac:Country>
+               <cbc:IdentificationCode>DK</cbc:IdentificationCode>        
+            </cac:Country>      
+         </cac:RegistrationAddress>    
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+         <cbc:Name>Mr Sender</cbc:Name>
+         <cbc:Telephone>0158 1233714</cbc:Telephone>
+         <cbc:ElectronicMail>sender@Sender-company.co.uk</cbc:ElectronicMail>    
+      </cac:Contact>  
+   </cac:SenderParty>
+   <cac:ReceiverParty>
+      <cbc:EndpointID schemeID="0212">0108023-3</cbc:EndpointID>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0088">7300010000001</cbc:ID>    
+      </cac:PartyIdentification>
+      <cac:PartyName>
+         <cbc:Name>Finnair Oyj</cbc:Name>    
+      </cac:PartyName>
+      <cac:PostalAddress>
+         <cbc:StreetName>Tietotie 9</cbc:StreetName>
+         <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
+         <cbc:CityName>Vantaa</cbc:CityName>
+         <cbc:PostalZone>4600</cbc:PostalZone>
+         <cbc:CountrySubentity>Heremouthshire</cbc:CountrySubentity>
+         <cac:AddressLine>
+            <cbc:Line>Gate 34</cbc:Line>      
+         </cac:AddressLine>
+         <cac:Country>
+            <cbc:IdentificationCode>FI</cbc:IdentificationCode>      
+         </cac:Country>    
+      </cac:PostalAddress>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Leman</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0212">0108023-3</cbc:CompanyID>
+         <cac:RegistrationAddress>
+            <cbc:CityName>Vantaa</cbc:CityName>
+            <cac:Country>
+               <cbc:IdentificationCode>FI</cbc:IdentificationCode>        
+            </cac:Country>      
+         </cac:RegistrationAddress>    
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+         <cbc:Name>Mrs Bouquet</cbc:Name>
+         <cbc:Telephone>0158 1233714</cbc:Telephone>
+         <cbc:ElectronicMail>bouquet@fpconsortial.co.uk</cbc:ElectronicMail>    
+      </cac:Contact>
+      <cac:Person>
+         <cbc:FirstName>Hans</cbc:FirstName>
+         <cbc:FamilyName>Nielsen</cbc:FamilyName>
+         <cac:IdentityDocumentReference>
+            <cbc:ID>45642323</cbc:ID>
+            <cbc:DocumentType>ID06</cbc:DocumentType>      
+         </cac:IdentityDocumentReference>    
+      </cac:Person>  
+   </cac:ReceiverParty>
+   <cac:ConsignorParty>
       <cac:PartyIdentification>
          <cbc:ID schemeID="0088">7300010000001</cbc:ID>    
       </cac:PartyIdentification>
@@ -84,6 +167,8 @@
          <cbc:ElectronicMail>bouquet@fpconsortial.co.uk</cbc:ElectronicMail>    
       </cac:Contact>
       <cac:Person>
+         <cbc:FirstName>Peter</cbc:FirstName>
+         <cbc:FamilyName>Poulsen</cbc:FamilyName>
          <cac:IdentityDocumentReference>
             <cbc:ID>45642323</cbc:ID>
             <cbc:DocumentType>ID06</cbc:DocumentType>      
@@ -138,6 +223,36 @@
          <cbc:LoadingLengthMeasure unitCode="MTR">0.4</cbc:LoadingLengthMeasure>
          <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
          <cbc:TotalTransportHandlingUnitQuantity unitCode="EA">1</cbc:TotalTransportHandlingUnitQuantity>
+         <cac:ConsolidatedShipment>
+            <cac:GoodsItem>
+               <cbc:Description>Torsk sl u/h fersk fulliset 20kg iso 2-4 kg</cbc:Description>
+               <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
+               <cac:Item>
+                  <cbc:Name>Torsk</cbc:Name>
+                  <cac:CommodityClassification>
+                     <cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">KO2012140200</cbc:ItemClassificationCode>            
+                  </cac:CommodityClassification>
+                  <cac:HazardousItem>
+                     <cbc:ID>123</cbc:ID>
+                     <cbc:AdditionalInformation>Information about the hazardous item</cbc:AdditionalInformation>
+                     <cbc:UNDGCode>ADR</cbc:UNDGCode>
+                     <cbc:TechnicalName>Corrosive liquid, n.o.s., 8, UN 1760, II (contains Octanoyl chloride)</cbc:TechnicalName>
+                     <cbc:CategoryName>Acute toxicity</cbc:CategoryName>
+                     <cbc:HazardousCategoryCode>123</cbc:HazardousCategoryCode>
+                     <cbc:HazardClassID>Code</cbc:HazardClassID>
+                     <cbc:NetWeightMeasure unitCode="KGM">123</cbc:NetWeightMeasure>
+                     <cbc:NetVolumeMeasure unitCode="MTQ">12.3</cbc:NetVolumeMeasure>
+                     <cac:HazardousGoodsTransit>
+                        <cbc:PackingCriteriaCode>123</cbc:PackingCriteriaCode>              
+                     </cac:HazardousGoodsTransit>
+                     <cac:EmergencyTemperature>
+                        <cbc:AttributeID>ABC</cbc:AttributeID>
+                        <cbc:Measure unitCode="CEL">78</cbc:Measure>              
+                     </cac:EmergencyTemperature>            
+                  </cac:HazardousItem>          
+               </cac:Item>        
+            </cac:GoodsItem>      
+         </cac:ConsolidatedShipment>
          <cac:ConsigneeParty>
             <cac:PartyIdentification>
                <cbc:ID schemeID="0088">7300010000001</cbc:ID>        
@@ -184,6 +299,27 @@
             <cbc:ID>DAP</cbc:ID>
             <cbc:Note>To be paid on invoice</cbc:Note>      
          </cac:PaymentTerms>
+         <cac:MainCarriageShipmentStage>
+            <cbc:TransportModeCode>4</cbc:TransportModeCode>
+            <cbc:TransportMeansTypeCode>Airliner</cbc:TransportMeansTypeCode>
+            <cac:CarrierParty>
+               <cac:PartyIdentification>
+                  <cbc:ID schemeID="IATA">188</cbc:ID>          
+               </cac:PartyIdentification>
+               <cac:PartyName>
+                  <cbc:Name>Finnair Oyj</cbc:Name>          
+               </cac:PartyName>        
+            </cac:CarrierParty>
+            <cac:TransportMeans>
+               <cbc:JourneyID>SK1589</cbc:JourneyID>        
+            </cac:TransportMeans>
+            <cac:LoadingPortLocation>
+               <cbc:ID>CPH</cbc:ID>        
+            </cac:LoadingPortLocation>
+            <cac:UnloadingPortLocation>
+               <cbc:ID>HEL</cbc:ID>        
+            </cac:UnloadingPortLocation>      
+         </cac:MainCarriageShipmentStage>
          <cac:TransportHandlingUnit>
             <cbc:ID schemeID="SSCC">173500538500000061</cbc:ID>
             <cbc:TransportHandlingUnitTypeCode>AG</cbc:TransportHandlingUnitTypeCode>
@@ -197,7 +333,10 @@
                <cbc:SizeTypeCode>10</cbc:SizeTypeCode>
                <cbc:RefrigerationOnIndicator>true</cbc:RefrigerationOnIndicator>
                <cbc:Description>A 20 foot refrigerated container that is not actively controlling temperature of the product.</cbc:Description>
-               <cbc:PowerIndicator>true</cbc:PowerIndicator>        
+               <cbc:PowerIndicator>true</cbc:PowerIndicator>
+               <cac:TransportEquipmentSeal>
+                  <cbc:ID/>          
+               </cac:TransportEquipmentSeal>        
             </cac:TransportEquipment>
             <cac:MeasurementDimension>
                <cbc:AttributeID>LN</cbc:AttributeID>
@@ -239,10 +378,22 @@
                   </cac:HazardousItem>          
                </cac:Item>        
             </cac:GoodsItem>      
-         </cac:TransportHandlingUnit>    
+         </cac:TransportHandlingUnit>
+         <cac:DocumentReference>
+            <cbc:ID>7648779</cbc:ID>
+            <cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
+            <cbc:DocumentType>MRN</cbc:DocumentType>
+            <cac:Attachment>
+               <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+               <cac:ExternalReference>
+                  <cbc:URI>www.beast.se</cbc:URI>          
+               </cac:ExternalReference>        
+            </cac:Attachment>      
+         </cac:DocumentReference>    
       </cac:Consignment>
       <cac:ShipmentStage>
          <cbc:TransportModeCode>3</cbc:TransportModeCode>
+         <cbc:TransportMeansTypeCode>31</cbc:TransportMeansTypeCode>
          <cac:TransportMeans>
             <cac:AirTransport>
                <cbc:AircraftID>JA8088</cbc:AircraftID>        
