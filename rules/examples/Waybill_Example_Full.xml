@@ -12,7 +12,7 @@
    <cbc:IssueTime>09:00:00+02:00</cbc:IssueTime>
    <cbc:Name>Air Waybill</cbc:Name>
    <cbc:ShippingOrderID>KHN23-44044</cbc:ShippingOrderID>
-   <cac:ConsignorParty>
+   <cac:SenderParty>
       <cbc:EndpointID schemeID="0198">DK13246149</cbc:EndpointID>
       <cac:PartyIdentification>
          <cbc:ID schemeID="0088">7300010000001</cbc:ID>    
@@ -35,7 +35,7 @@
       </cac:PostalAddress>
       <cac:PartyLegalEntity>
          <cbc:RegistrationName>Novo Nordisk Pharmatech A/S</cbc:RegistrationName>
-         <cbc:CompanyID schemeID="0198">DK13246149</cbc:CompanyID>
+         <cbc:CompanyID schemeID="0198">13246149</cbc:CompanyID>
          <cac:RegistrationAddress>
             <cbc:CityName>Køge</cbc:CityName>
             <cac:Country>
@@ -48,9 +48,9 @@
          <cbc:Telephone>0158 1233714</cbc:Telephone>
          <cbc:ElectronicMail>sender@Sender-company.co.uk</cbc:ElectronicMail>    
       </cac:Contact>  
-   </cac:ConsignorParty>
-   <cac:CarrierParty>
-      <cbc:EndpointID schemeID="0216">003701080233</cbc:EndpointID>
+   </cac:SenderParty>
+   <cac:ReceiverParty>
+      <cbc:EndpointID schemeID="0212">0108023-3</cbc:EndpointID>
       <cac:PartyIdentification>
          <cbc:ID schemeID="0088">7300010000001</cbc:ID>    
       </cac:PartyIdentification>
@@ -116,7 +116,7 @@
       </cac:PostalAddress>
       <cac:PartyLegalEntity>
          <cbc:RegistrationName>Novo Nordisk Pharmatech A/S</cbc:RegistrationName>
-         <cbc:CompanyID schemeID="0198">13246149</cbc:CompanyID>
+         <cbc:CompanyID schemeID="0198">DK13246149</cbc:CompanyID>
          <cac:RegistrationAddress>
             <cbc:CityName>Køge</cbc:CityName>
             <cac:Country>
@@ -131,6 +131,7 @@
       </cac:Contact>  
    </cac:ConsignorParty>
    <cac:CarrierParty>
+      <cbc:EndpointID schemeID="0216">003701080233</cbc:EndpointID>
       <cac:PartyIdentification>
          <cbc:ID schemeID="0088">7300010000001</cbc:ID>    
       </cac:PartyIdentification>

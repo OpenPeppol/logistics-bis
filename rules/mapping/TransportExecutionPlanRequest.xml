@@ -3436,32 +3436,6 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">•  •  •  @schemeID</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String"/>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Used to indicate that the ID is in the GINC (Global Identification Number for Consignment) format. This number identifies a consignment, which is a logical grouping of goods (one or more logistics units) transferred to a freight forwarder to be transported for a specific journey. The consignment number must be allocated by a freight forwarder (or a carrier acting as a freight forwarder) or a consignor, but only if prior agreement of the freight forwarder is given.</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">GINC</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">/ubl:TransportExecutionPlanRequest/cac:Consignment/cbc:ID/schemeID</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">3</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">12600</Data>
-            </Cell>
-         </Row>
-         <Row>
-            <Cell>
                <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>

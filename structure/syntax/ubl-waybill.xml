@@ -94,7 +94,7 @@
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Endpoint ID </Name>
-            <Description>An identifier for the end point of the routing service for the Consignor party (e.g., EAN Location Number, GLN). </Description>
+            <Description>An identifier for the end point of the routing service for the Sender party (e.g., EAN Location Number, GLN). </Description>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Reference type="CODE_LIST">eas</Reference>
@@ -998,7 +998,7 @@
             <Reference type="BUSINESS_TERM">tir16-039</Reference>
             <Value type="EXAMPLE">hank at arriving</Value>
          </Element>
-         <Element cardinality="1..n">
+         <Element cardinality="1..1">
             <Term>cac:Consignment</Term>
             <Name>Consignment information </Name>
             <Description>An identifiable collection of goods items sent from one party (the Despatch Party) to another party (the Consignee) via one or more modes of transport.</Description>
@@ -1083,6 +1083,172 @@
                   <Value type="EXAMPLE">EA</Value>
                </Attribute>
                <Value type="EXAMPLE">1</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:ConsolidatedShipment</Term>
+               <Name>Consolidated Shipment</Name>
+               <Description>A shipm,ent consolidated on the consignment. Used to specify the goods items on the consignment when the reference between goods items and the transport handling units are unknown. </Description>
+               <Element cardinality="0..n">
+                  <Term>cac:GoodsItem</Term>
+                  <Name>Goods item </Name>
+                  <Description>A Goods item contained in the consignment.</Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:Description</Term>
+                     <Name>Description </Name>
+                     <Description>A textual descript this goods item. </Description>
+                     <Value type="EXAMPLE">Torsk sl u/h fersk fulliset 20kg iso 2-4 kg</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:HazardousRiskIndicator</Term>
+                     <Name>Hazardous risk indicator </Name>
+                     <Description>An indication that the transported goods item is subject to an international regulation concerning the carriage of dangerous goods (true) or not (false). </Description>
+                     <Value type="EXAMPLE">false</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cac:Item</Term>
+                     <Name>Item </Name>
+                     <Description>Description of the product beeing transported. Used for a structurel description of an item. Mandatory if the goods item is a Hazardous items.</Description>
+                     <Element cardinality="0..1">
+                        <Term>cbc:Name</Term>
+                        <Name>Name</Name>
+                        <Description>The name of the Item. </Description>
+                        <Value type="EXAMPLE">Torsk</Value>
+                     </Element>
+                     <Element cardinality="0..n">
+                        <Term>cac:CommodityClassification</Term>
+                        <Name>Commodity classification</Name>
+                        <Description>To classify when an item number is not sufficient.</Description>
+                        <Element cardinality="1..1">
+                           <Term>cbc:ItemClassificationCode</Term>
+                           <Name>Item classification code</Name>
+                           <Attribute usage="Mandatory">
+                              <Term>listID</Term>
+                              <Description>The identification scheme identifier of the Item classification identifier.</Description>
+                              <Reference type="CODE_LIST">UNCL7143</Reference>
+                              <Value type="EXAMPLE">ZZZ</Value>
+                           </Attribute>
+                           <Attribute usage="Optional">
+                              <Term>listVersionID</Term>
+                              <Value type="EXAMPLE">3.0.2</Value>
+                           </Attribute>
+                           <Attribute usage="Optional">
+                              <Term>name</Term>
+                              <Value type="EXAMPLE">SBMI</Value>
+                           </Attribute>
+                           <Value type="EXAMPLE">KO2012140200</Value>
+                        </Element>
+                     </Element>
+                     <Element cardinality="0..n">
+                        <Term>cac:HazardousItem</Term>
+                        <Name>Hazardous item information</Name>
+                        <Description>Contains information on the Hazardous item. </Description>
+                        <Element cardinality="0..1">
+                           <Term>cbc:ID</Term>
+                           <Name>Identifier</Name>
+                           <Description>An identifier for this hazardous item. </Description>
+                           <Value type="EXAMPLE">123</Value>
+                        </Element>
+                        <Element cardinality="0..1">
+                           <Term>cbc:AdditionalInformation</Term>
+                           <Name>Additional Information</Name>
+                           <Description>Text providing further information about the hazardous substance. </Description>
+                           <Value type="EXAMPLE">Information about the hazardous item</Value>
+                        </Element>
+                        <Element cardinality="0..1">
+                           <Term>cbc:UNDGCode</Term>
+                           <Name>Hazardous item UNDG code</Name>
+                           <Description>The identifier assigned to transportable hazardous goods by the United Nations, expressed as a code. </Description>
+                           <Reference type="CODE_LIST">UNCL8273</Reference>
+                           <Value type="EXAMPLE">ADR</Value>
+                        </Element>
+                        <Element cardinality="0..1">
+                           <Term>cbc:TechnicalName</Term>
+                           <Name>Technical Name</Name>
+                           <Description>The full technical name of a specific hazardous substance contained in this goods item. </Description>
+                           <Value type="EXAMPLE">Corrosive liquid, n.o.s., 8, UN 1760, II (contains Octanoyl chloride)</Value>
+                        </Element>
+                        <Element cardinality="0..1">
+                           <Term>cbc:CategoryName</Term>
+                           <Name>Category Name</Name>
+                           <Description>The name of the category of hazard that applies to the Item. </Description>
+                           <Value type="EXAMPLE">Acute toxicity</Value>
+                        </Element>
+                        <Element cardinality="0..1">
+                           <Term>cbc:HazardousCategoryCode</Term>
+                           <Name>Hazardous Category Code</Name>
+                           <Description>A code signifying a kind of hazard for a material. </Description>
+                           <Value type="EXAMPLE">123</Value>
+                        </Element>
+                        <Element cardinality="0..1">
+                           <Term>cbc:HazardClassID</Term>
+                           <Name>Haszardous hazard class Identifier</Name>
+                           <Description>dentifies a hazard class applicable to dangerous goods as defined by the relevant regulation authority, such as the IMDG Class Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for the road/rail environment. </Description>
+                           <Value type="EXAMPLE">Code</Value>
+                        </Element>
+                        <Element cardinality="0..1">
+                           <Term>cbc:NetWeightMeasure</Term>
+                           <Name>Net Weight Measure </Name>
+                           <Description>Net weight of the Hazardous item. </Description>
+                           <Attribute usage="Mandatory">
+                              <Term>unitCode</Term>
+                              <Name>Measure unit of measure</Name>
+                              <Description>The unit of measure that applies to the Net Weight.</Description>
+                              <Reference type="CODE_LIST">UNECERec20</Reference>
+                              <Value type="EXAMPLE">KGM</Value>
+                           </Attribute>
+                           <Value type="EXAMPLE">123</Value>
+                        </Element>
+                        <Element cardinality="0..1">
+                           <Term>cbc:NetVolumeMeasure</Term>
+                           <Name>Net Volume Measure </Name>
+                           <Description>Net volume of the Hazardous item. </Description>
+                           <Attribute usage="Mandatory">
+                              <Term>unitCode</Term>
+                              <Name>Measure unit of measure</Name>
+                              <Description>The unit of measure that applies to the Net Volume.</Description>
+                              <Reference type="CODE_LIST">UNECERec20</Reference>
+                              <Value type="EXAMPLE">MTQ</Value>
+                           </Attribute>
+                           <Value type="EXAMPLE">12.3</Value>
+                        </Element>
+                        <Element cardinality="0..n">
+                           <Term>cac:HazardousGoodsTransit</Term>
+                           <Name>Hazardous Goods Transit </Name>
+                           <Description>Information related to the transit of this kind of hazardous goods. </Description>
+                           <Element cardinality="1..1">
+                              <Term>cbc:PackingCriteriaCode</Term>
+                              <Name>Packing Criteria Code </Name>
+                              <Description>A code signifying the packaging requirement for transportation of the hazardous goods as assigned by IATA, IMDB, ADR, RID etc. </Description>
+                              <Value type="EXAMPLE">123</Value>
+                           </Element>
+                        </Element>
+                        <Element cardinality="0..1">
+                           <Term>cac:EmergencyTemperature</Term>
+                           <Name>Emergency Temperature </Name>
+                           <Description>The threshold temperature at which emergency procedures apply in the handling of temperature-controlled goods. </Description>
+                           <Element cardinality="1..1">
+                              <Term>cbc:AttributeID</Term>
+                              <Name>Attribute ID </Name>
+                              <Description>An identifier for this temperature measurement. </Description>
+                              <Value type="EXAMPLE">ABC</Value>
+                           </Element>
+                           <Element cardinality="1..1">
+                              <Term>cbc:Measure</Term>
+                              <Name>Measure </Name>
+                              <Description>The value of this temperature measurement. </Description>
+                              <Attribute usage="Mandatory">
+                                 <Term>unitCode</Term>
+                                 <Name>Measure unit of measure</Name>
+                                 <Description>The unit of measure that applies to the Emergency Temperature.</Description>
+                                 <Reference type="CODE_LIST">UNECERec20</Reference>
+                                 <Value type="EXAMPLE">CEL</Value>
+                              </Attribute>
+                              <Value type="EXAMPLE">78</Value>
+                           </Element>
+                        </Element>
+                     </Element>
+                  </Element>
+               </Element>
             </Element>
             <Element cardinality="1..1">
                <Term>cac:ConsigneeParty</Term>
