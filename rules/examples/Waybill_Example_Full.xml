@@ -48,7 +48,7 @@
       </cac:Contact>  
    </cac:ConsignorParty>
    <cac:CarrierParty>
-      <cbc:EndpointID schemeID="0212">0108023-3</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0216">003701080233</cbc:EndpointID>
       <cac:PartyIdentification>
          <cbc:ID schemeID="0088">7300010000001</cbc:ID>    
       </cac:PartyIdentification>
