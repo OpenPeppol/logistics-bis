@@ -28,6 +28,7 @@
 				transaction appears.</Description>
          <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-001</Reference>
+         <Reference type="RULE">PEPPOL-T122-R002</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:weight_statement:1</Value>
       </Element>
 

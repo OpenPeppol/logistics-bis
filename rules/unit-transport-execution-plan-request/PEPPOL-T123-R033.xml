@@ -67,6 +67,9 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 
 			<cac:PayeeParty>
+				<cac:PartyLegalEntity>
+					<cbc:RegistrationName>Consortial</cbc:RegistrationName>
+				</cac:PartyLegalEntity>
 			</cac:PayeeParty>
 		</ubl:TransportExecutionPlanRequest>
 	</test>

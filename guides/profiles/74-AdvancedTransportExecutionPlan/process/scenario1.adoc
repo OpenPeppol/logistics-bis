@@ -1,0 +1,29 @@
+[[simple-process-two-parties-involved]]
+= Scenario 1 - Simple process – two parties involved with Standing Order.
+
+The following diagram shows a process where the Consignor has a standing order with a Transport Service provider for the movement of the goods, this standing order would include means of transport, transit times, pricing etc.
+
+image::images/scenario1.png[image,width=945,height=1064]
+
+The Carrier handles the physical delivery/transportation of the despatched shipment. 
+Used if a third party is handling the physical transport.
+
+*Consignee*
+
+The consignee is the person or organisation to which the products will be shipped and who is taking possession. The role is carried out by the customer or on behalf of the customer.
+
+*Despatch Party*
+
+The Despatch Party is the person or organisation who provides (despatch) the goods or services. The role is carried out by the supplier or on behalf of the supplier. (Despatch Party is sometimes known as the Consignor).
+
+*Buyer*
+
+The buyer is the legal person or organisation who buys or purchases the goods or services. The role is carried out by the customer or on behalf of the customer.
+
+*Seller*
+
+The seller is the legal person or organisation who sells goods to the customer. The role is carried out by the supplier or on behalf of the supplier.
+
+*Originating party*
+
+The party who will eventually receive and consume the goods and on whose behalf the buyer makes the purchase.

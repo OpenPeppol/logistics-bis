@@ -4,14 +4,14 @@
 :version: 1.0.0
 :ord_version: 1.0.0
 //PEPPOL
-:peppol: https://peppol.eu/?rel=undefined[PEPPOL]
-:common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[PEPPOL BIS common text and introduction]
-:openpeppol: https://peppol.eu/about-openpeppol/?rel=tab41[OpenPEPPOL]
-:policy8: https://peppol.eu/downloads/the-peppol-edelivery-network-specifications/[PEPPOL Policy for identifiers, policy 8]
+:peppol: https://peppol.org/?rel=undefined[PEPPOL]
+:common: https://peppol.org/learn-more/peppol-interoperability-framework/[PEPPOL BIS common text and introduction]
+:openpeppol: https://peppol.org/about/[OpenPEPPOL]
+:policy8: https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/What+is+eDelivery[PEPPOL Policy for identifiers, policy 8]
 :migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPEPPOL Migration Policy]
-:peppol-transport: https://peppol.eu/downloads/the-peppol-edelivery-network-specifications/[PEPPOL eDelivery Network Specifications]
-:peppol-billing: http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0]
-:main-site: link:/logistics[Main documentation site]
+:peppol-transport: https://peppol.org/downloads/the-peppol-edelivery-network-specifications/[PEPPOL eDelivery Network Specifications]
+:peppol-billing: http://docs.peppol.org/poacc/billing/3.0/[PEPPOL BIS Billing 3.0]
+:main-site: link:../../[Main documentation site]
 
 //CEN
 :CEN: https://www.cen.eu/Pages/default.aspx[CEN]
@@ -24,6 +24,7 @@
 //UBL
 :ubl: http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL 2.1]
 :ubl23: http://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3]
+:ubl24: http://docs.oasis-open.org/ubl/UBL-2.4.html[UBL 2.4]
 :ubl-catalogue: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Catalogue-2.1.xsd[UBL Catalogue 2.1]
 :ubl-order: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Order-2.1.xsd[UBL Order 2.1]
 :ubl-order-response: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-OrderResponse-2.1.xsd[UBL Order Response 2.1]
@@ -62,13 +63,13 @@
 //examples
 :order-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/rules/use-case-examples/order[Use case example files]
 :order-response-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/rules/use-case-examples/order-response[Use case example files]
-:imr-UC: https://docs.peppol.eu/poacc/upgrade-3/files/PEPPOLBIS-Examples.zip[Use case example files]
+:imr-UC: https://docs.peppol.org/poacc/upgrade-3/files/PEPPOLBIS-Examples.zip[Use case example files]
 :examples-zip: link:../../files/Examples.zip[Examples files Appendix A]
 
 //internal
-:link-codelist: link:/codelist/[Code list section]
-:codelist-ICD: link:/codelist/ICD/[ICD codes]
-:codelist-EAS: link:/codelist/eas/[EAS codes]
-:vat-codes: link:/codelist/UNCL5305/[Code list UNCL5305]
-:mime-codes: link:/codelist/MimeCode/[Mime codes]
-:codelist-ItemPropertyNameCode: link:/codelist/ItemPropertyNameCode/[Item Property Name Code list]
+:link-codelist: link:../..//codelist/[Code list section]
+:codelist-ICD: link:../..//codelist/ICD/[ICD codes]
+:codelist-EAS: link:../..//codelist/eas/[EAS codes]
+:vat-codes: link:../..//codelist/UNCL5305/[Code list UNCL5305]
+:mime-codes: link:../..//codelist/MimeCode/[Mime codes]
+:codelist-ItemPropertyNameCode: link:../../codelist/IPNC/[Item Property Name Code list]

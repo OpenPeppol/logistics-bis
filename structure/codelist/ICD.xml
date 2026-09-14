@@ -31,10 +31,8 @@
 	<Code>
 		<Id>0007</Id>
 		<Name>Organisationsnummer</Name>
-		<Description>
-			Notes on Use of Code: The third digit in the organisation number is never lower than 2 in order to
-			avoid it being confused with personal numbers. Issuing agency: The National Tax Board, SWEDEN.
-		</Description>
+		<Description>Notes on Use of Code: The third digit in the organisation number is never lower than 2 in order to
+            avoid it being confused with personal numbers. Issuing agency: The National Tax Board, SWEDEN.</Description>
 	</Code>
 	<Code>
 		<Id>0008</Id>
@@ -53,10 +51,8 @@
 	</Code>
 	<Code>
 		<Id>0011</Id>
-		<Name>
-			International Code Designator for the Identification of OSI-based, Amateur Radio
-			Organizations, Network Objects and Application Services.
-		</Name>
+		<Name>International Code Designator for the Identification of OSI-based, Amateur Radio
+            Organizations, Network Objects and Application Services.</Name>
 		<Description>Notes on Use of Code: Specific object and attribute naming conventions are currently being defined. Issuing agency: The Radio Amateur Telecommunications Society, USA.</Description>
 	</Code>
 	<Code>
@@ -147,10 +143,8 @@
 	<Code>
 		<Id>0029</Id>
 		<Name>The All-Union Classifier of Enterprises and Organisations</Name>
-		<Description>
-			Issuing agency: General Computing Centre of the State, Committee of the
-			USSR on Statistics, U S S R.
-		</Description>
+		<Description>Issuing agency: General Computing Centre of the State, Committee of the
+            USSR on Statistics, U S S R.</Description>
 	</Code>
 	<Code>
 		<Id>0030</Id>
@@ -220,10 +214,8 @@
 	<Code>
 		<Id>0043</Id>
 		<Name>HydroNETT</Name>
-		<Description>
-			Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing as depicted in ISO 8348/AD2. Issuing agency: Norsk Hydro a.s.,
-			Norway.
-		</Description>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing as depicted in ISO 8348/AD2. Issuing agency: Norsk Hydro a.s.,
+            Norway.</Description>
 	</Code>
 	<Code>
 		<Id>0044</Id>
@@ -417,19 +409,15 @@
 	</Code>
 	<Code>
 		<Id>0082</Id>
-		<Name>
-			Norwegian Telecommunications Authority's, NTA'S, EDI, identifier scheme (EDIRA
-			compliant)
-		</Name>
+		<Name>Norwegian Telecommunications Authority's, NTA'S, EDI, identifier scheme (EDIRA
+            compliant)</Name>
 		<Description>Notes on Use of Code: For use in EDIFACT messages in accordance with current national recommendation on identification of EDI objects. (EDIRA compliant). Issuing agency: Norwegian Telecommunications Authority, NORWAY.</Description>
 	</Code>
 	<Code>
 		<Id>0083</Id>
 		<Name>Advanced Telecommunications Modules Limited, Corporate Network</Name>
-		<Description>
-			Notes on Use of Code: The ICD code will also form part of the Initial Domain Part of the OSI network
-			addressing as specified in Addendum 2 to ISO 8348. Issuing agency: ATM Ltd, ENGLAND.
-		</Description>
+		<Description>Notes on Use of Code: The ICD code will also form part of the Initial Domain Part of the OSI network
+            addressing as specified in Addendum 2 to ISO 8348. Issuing agency: ATM Ltd, ENGLAND.</Description>
 	</Code>
 	<Code>
 		<Id>0084</Id>
@@ -488,7 +476,7 @@
 	</Code>
 	<Code>
 		<Id>0096</Id>
-		<Name>DANISH CHAMBER OF COMMERCE Scheme (EDIRA compliant)</Name>
+		<Name>The Danish Business Authority - P-number (DK:P)</Name>
 		<Description>Issuing agency: Danish Chamber of Commerce, Denmark.</Description>
 	</Code>
 	<Code>
@@ -514,10 +502,8 @@
 	<Code>
 		<Id>0101</Id>
 		<Name>South African Code Allocation</Name>
-		<Description>
-			Issuing agency: Thawte Consulting, 33 Protea Way, Durbanville 7550, South
-			Africa
-		</Description>
+		<Description>Issuing agency: Thawte Consulting, 33 Protea Way, Durbanville 7550, South
+            Africa</Description>
 	</Code>
 	<Code>
 		<Id>0102</Id>
@@ -537,10 +523,8 @@
 	<Code>
 		<Id>0106</Id>
 		<Name>Vereniging van Kamers van Koophandel en Fabrieken in Nederland (Association of Chambers of Commerce and Industry in the Netherlands), Scheme (EDIRA compliant)</Name>
-		<Description>
-			Issuing agency: Vereniging van Kamers van Koophandel en Fabrieken in Nederland
-			Watermolenlaan, The Netherlands.
-		</Description>
+		<Description>Issuing agency: Vereniging van Kamers van Koophandel en Fabrieken in Nederland
+            Watermolenlaan, The Netherlands.</Description>
 	</Code>
 	<Code>
 		<Id>0107</Id>
@@ -735,11 +719,9 @@
 	<Code>
 		<Id>0145</Id>
 		<Name>DGCP (Direction Générale de la Comptabilité Publique)administrative accounting identification scheme</Name>
-		<Description>
-			de assigned by the French public accounting office. Issuing agency: DGCP
-			(Direction Générale de la Comptabilité Publique), 139 Rue de Bercy, 75572 Paris Cedex
-			12, France
-		</Description>
+		<Description>de assigned by the French public accounting office. Issuing agency: DGCP
+            (Direction Générale de la Comptabilité Publique), 139 Rue de Bercy, 75572 Paris Cedex
+            12, France</Description>
 	</Code>
 	<Code>
 		<Id>0146</Id>
@@ -803,7 +785,7 @@
 	</Code>
 	<Code>
 		<Id>0158</Id>
-		<Name>Identification number of economic subject (ICO) Act on State Statistics of 29 November 2001, § 27</Name>
+		<Name>Identification number of economic subject (ICO) Act on State Statistics of 29 November 2'001, § 27</Name>
 		<Description>The unique identification of economic subjects (legal persons and natural persons-entrepreneurs) used for registration The identification number ICO is used in Slovakia in almost all administrative acts (tax system, banking system, statistics, etc.) Issuing agency: Slovak Statistical Office, Slovak             Republic.</Description>
 	</Code>
 	<Code>
@@ -934,13 +916,11 @@
 	<Code>
 		<Id>0186</Id>
 		<Name>TrustPoint Object Identifiers</Name>
-		<Description>
-			Intended Purpose/App. Area: To uniquely identify objects and mechanisms globally throughout communications
-			networks using TrustPoint security products and services Issuing agency: TrustPoint
-			Innovation Technologies, Attn: Sherry Shannon-Vanstone, 816 Hideaway Circle East, Unit
-			244 Marco Island, FL 34145 USA http://www.trustpointinnovation.com Tel: +1 905 302 6929
-			Email: sviconsulting@aol.com
-		</Description>
+		<Description>Intended Purpose/App. Area: To uniquely identify objects and mechanisms globally throughout communications
+            networks using TrustPoint security products and services Issuing agency: TrustPoint
+            Innovation Technologies, Attn: Sherry Shannon-Vanstone, 816 Hideaway Circle East, Unit
+            244 Marco Island, FL 34145 USA http://www.trustpointinnovation.com Tel: +1 905 302 6929
+            Email: sviconsulting@aol.com</Description>
 	</Code>
 	<Code>
 		<Id>0187</Id>
@@ -965,9 +945,7 @@
 	<Code>
 		<Id>0191</Id>
 		<Name>Company Code (Estonia)</Name>
-		<Description>
-			Intended Purpose/App. Area: Company code is major and only unique identifier of all institutions and organisations in Estonia. This code is widely used for various purposes, including electronic commerce. Usage of company code is required in communication between institutions and also in communication between private and public organisations. For use in EDI or other B2B (B2C) exchanges to identify private and public organisations. Issuing agency: Centre of Registers and Information Systems of the Ministry of Justice in Estonia.
-		</Description>
+		<Description>Intended Purpose/App. Area: Company code is major and only unique identifier of all institutions and organisations in Estonia. This code is widely used for various purposes, including electronic commerce. Usage of company code is required in communication between institutions and also in communication between private and public organisations. For use in EDI or other B2B (B2C) exchanges to identify private and public organisations. Issuing agency: Centre of Registers and Information Systems of the Ministry of Justice in Estonia.</Description>
 	</Code>
 	<Code>
 		<Id>0192</Id>
@@ -977,24 +955,18 @@
 	<Code>
 		<Id>0193</Id>
 		<Name>UBL.BE Party Identifier</Name>
-		<Description>
-			Intended Purpose/App. Area: Identification and addressing of different parties involved in invoicing. Issuing agency: UBL.BE in Belgium.
-		</Description>
+		<Description>Intended Purpose/App. Area: Identification and addressing of different parties involved in invoicing. Issuing agency: UBL.BE in Belgium.</Description>
 	</Code>
 	<Code>
 		<Id>0194</Id>
 		<Name>KOIOS Open Technical Dictionary</Name>
-		<Description>
-			Intended Purpose/App. Area: The KOIOS OTD is a collection of terminology defined by and obtained from consensus bodies such as ISO, IEC, and other groups that have a consensus process for developing terminology. The KOIOS OTD contains terms, definitions, and images of concepts used to describe individuals, organizations, locations, goods and services. The KOIOS OTD conforms to ISO 22745 (all parts) and is designed to enable the exchange of characteristic data in all stages of the life-cycle of an item, and to ensure that the resulting specifications conform to ISO 8000-110. Issuing agency: KOIOS Master Data Limited in UK.
-		</Description>
+		<Description>Intended Purpose/App. Area: The KOIOS OTD is a collection of terminology defined by and obtained from consensus bodies such as ISO, IEC, and other groups that have a consensus process for developing terminology. The KOIOS OTD contains terms, definitions, and images of concepts used to describe individuals, organizations, locations, goods and services. The KOIOS OTD conforms to ISO 22745 (all parts) and is designed to enable the exchange of characteristic data in all stages of the life-cycle of an item, and to ensure that the resulting specifications conform to ISO 8000-110. Issuing agency: KOIOS Master Data Limited in UK.</Description>
 	</Code>
 	<Code>
 		<Id>0195</Id>
 		<Name>Singapore Nationwide E-lnvoice Framework</Name>
-		<Description>
-			Intended Purpose/App. Area: For use in electronic messages in accordance to the Singapore
-			nationwide e-invoice framework on Identification of organization. Issuing agency: Infocomm Media Development Authority in Singapore.
-		</Description>
+		<Description>Intended Purpose/App. Area: For use in electronic messages in accordance to the Singapore
+            nationwide e-invoice framework on Identification of organization. Issuing agency: Infocomm Media Development Authority in Singapore.</Description>
 	</Code>
 	<Code>
 		<Id>0196</Id>
@@ -1009,9 +981,7 @@
 	<Code>
 		<Id>0198</Id>
 		<Name>ERSTORG</Name>
-		<Description>
-			Intended Purpose/App. Area: To be used for identifying Danish companies based on VAT numbers included juridical. Issuing agency: The Danish Business Authority in Denmark.
-		</Description>
+		<Description>Intended Purpose/App. Area: To be used for identifying Danish companies based on VAT numbers included juridical. Issuing agency: The Danish Business Authority in Denmark.</Description>
 	</Code>
 	<Code>
 		<Id>0199</Id>
@@ -1061,10 +1031,8 @@
 	<Code>
 		<Id>0208</Id>
 		<Name>Numero d'entreprise / ondernemingsnummer / Unternehmensnummer</Name>
-		<Description>
-			Intended Purpose/App. Area: Identification number attributed by the BCE/KBO/ZDU (the Belgian register) to identify entities and establishment units operating in Belgium. Issuing agency: Banque-Carrefour des Entreprises (BCE) / Kruispuntbank van Ondernemingen (KBO) / Zentrale Datenbank der Unternehmen (ZOU) Service public fédéral Economie, P.M.E.in Belgium.
-			Classes moyennes et Energie
-		</Description>
+		<Description>Intended Purpose/App. Area: Identification number attributed by the BCE/KBO/ZDU (the Belgian register) to identify entities and establishment units operating in Belgium. Issuing agency: Banque-Carrefour des Entreprises (BCE) / Kruispuntbank van Ondernemingen (KBO) / Zentrale Datenbank der Unternehmen (ZOU) Service public fédéral Economie, P.M.E.in Belgium.
+Classes moyennes et Energie</Description>
 	</Code>
 	<Code>
 		<Id>0209</Id>
@@ -1091,48 +1059,169 @@
 		<Name>Finnish Organization Value Add Tax Identifier</Name>
 		<Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: State Treasury of Finland / Valtiokonttor.</Description>
 	</Code>
-
 	<Code>
 		<Id>0214</Id>
 		<Name>Tradeplace TradePI Standard</Name>
 		<Description>Intended Purpose/App. Area: Tradeplace is an independent company, set up as a joint venture of several Home Appliance- and Consumer Electronics manufacturers. Tradeplace has launched their TradePI (Product Information) initiative for home appliances, consumer electronics, DIY and affiliated industries that are connected to Tradeplace. The initiative introduces an enhanced standard structure for product information. The TradePI Standard helps retailers to take full advantage of electronic communication and data processing, as the Internet and ICT are fundamentally changing how products and services are offered, bought, and sold. Issuing agency: Tradeplace B.V., The Netherlands.</Description>
 	</Code>
-
 	<Code>
 		<Id>0215</Id>
 		<Name>Net service ID</Name>
 		<Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: Tieto Finland Oy, FINLAND.</Description>
 	</Code>
-
 	<Code>
 		<Id>0216</Id>
 		<Name>OVTcode</Name>
 		<Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: TIEKE- Tietoyhteiskunnan kehittamiskeskus, FINLAND.</Description>
 	</Code>
-
 	<Code>
-        <Id>0217</Id>
-        <Name>The Netherlands Chamber of Commerce and Industry establishment number</Name>
-        <Description>Intended Purpose/App. Area: Electronic invoicing. Issuing agency: Nederlands Normalisatie Instituut (NEN)</Description>
-    </Code>
+		<Id>0217</Id>
+		<Name>The Netherlands Chamber of Commerce and Industry establishment number</Name>
+		<Description>Intended Purpose/App. Area: Electronic invoicing. Issuing agency: Nederlands Normalisatie Instituut (NEN)</Description>
+	</Code>
 	<Code>
-        <Id>0218</Id>
-        <Name>Unified registration number (Latvia)</Name>
-        <Description>Intended Purpose/App. Area: Each legal entity registered with the Register of Enterprises of the Republic of Latvia is assigned a unique unified registration number. This unique unified registration number is used to identify legal subjects for every purpose where it might be necessary, including for the use of the tax authority. Issuing agency: The Register of Enterprises of the Republic of Latvia.</Description>
-    </Code>
+		<Id>0218</Id>
+		<Name>Unified registration number (Latvia)</Name>
+		<Description>Intended Purpose/App. Area: Each legal entity registered with the Register of Enterprises of the Republic of Latvia is assigned a unique unified registration number. This unique unified registration number is used to identify legal subjects for every purpose where it might be necessary, including for the use of the tax authority. Issuing agency: The Register of Enterprises of the Republic of Latvia.</Description>
+	</Code>
 	<Code>
-        <Id>0219</Id>
-        <Name>Taxpayer registration code (Latvia)</Name>
-        <Description>Intended Purpose/App. Area: For use in Electronic data interchange (EDI) to identify private and public organizations. Issuing agency: State Revenue Service of the Republic of Latvia.</Description>
-    </Code>
+		<Id>0219</Id>
+		<Name>Taxpayer registration code (Latvia)</Name>
+		<Description>Intended Purpose/App. Area: For use in Electronic data interchange (EDI) to identify private and public organizations. Issuing agency: State Revenue Service of the Republic of Latvia.</Description>
+	</Code>
 	<Code>
-        <Id>0220</Id>
-        <Name>The Register of Natural Persons (Latvia)</Name>
-        <Description>Intended Purpose/App. Area: The Register combines the functionality of the current information system of the Population Register and Civil Register. The Register is a uniform state registration and recording system of information and natural persons that provides identification of natural persons, data processing and accumulation, and includes and updates information about civil entries. The data included in the Register is used for statistical surveys, tax forecasting and calculation, organizing of elections and other processes of national importance. When entering information regarding a person in the Register, the Office of Citizenship and Migration Affairs of the Republic of Latvia shall assign an automatically generated individual personal identity number thereto. Issuing agency: Office of Citizenship and Migration Affairs of the Republic of Latvia.</Description>
-    </Code>
+		<Id>0220</Id>
+		<Name>The Register of Natural Persons (Latvia)</Name>
+		<Description>Intended Purpose/App. Area: The Register combines the functionality of the current information system of the Population Register and Civil Register. The Register is a uniform state registration and recording system of information and natural persons that provides identification of natural persons, data processing and accumulation, and includes and updates information about civil entries. The data included in the Register is used for statistical surveys, tax forecasting and calculation, organizing of elections and other processes of national importance. When entering information regarding a person in the Register, the Office of Citizenship and Migration Affairs of the Republic of Latvia shall assign an automatically generated individual personal identity number thereto. Issuing agency: Office of Citizenship and Migration Affairs of the Republic of Latvia.</Description>
+	</Code>
 	<Code>
-        <Id>9955</Id>
-        <Name>Swedish Organization Value Add Tax Identifier (Sweden)</Name>
-		<Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: Swedish Tax Agency / Skatteverket.</Description>
+		<Id>0221</Id>
+		<Name>The registered number of the qualified invoice issuer</Name>
+		<Description>Intended Purpose/App. Area: The registered number of the qualified invoice issuer is used on the invoice-based method for Japanese consumption tax, which will be implemented on 1 October 2023. Issuing agency: National Tax Agency Japan</Description>
+	</Code>
+	<Code>
+		<Id>0222</Id>
+		<Name>Metadata Registry Support</Name>
+		<Description>Intended Purpose/App. Area: Database of metadata supporting description of object-data-information-etc. Issuing agency: Farance Inc.</Description>
+	</Code>
+	<Code>
+		<Id>0223</Id>
+		<Name>EU based company</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers for organizations based in EU. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
+	<Code>
+		<Id>0224</Id>
+		<Name>FTCTC CODE ROUTAGE</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers used in electronic invoices for routing among accredited platforms for the French Continuous Transactional Control reform on e-invoicing. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
+	<Code>
+		<Id>0225</Id>
+		<Name>FRCTC ELECTRONIC ADDRESS</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers used as electronic addresses in the context of the French Continuous Transactional Control reform on e-invoicing. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
+	<Code>
+		<Id>0226</Id>
+		<Name>FRCTC Particulier</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers for French citizen sending invoices to the French Public Sector. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
+	<Code>
+		<Id>0227</Id>
+		<Name>NON - EU based company</Name>
+		<Description>Intended Purpose/App. Area: NON - EU based company. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
+	<Code>
+		<Id>0228</Id>
+		<Name>Répertoire des Entreprises et des Etablissements (RIDET)</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers for organizations at national level in Nouvelle Caledonie (French). Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
+	<Code>
+		<Id>0229</Id>
+		<Name>T.A.H.I.T.I (traitement automatique hiérarchisé des institutions de Tahiti et des îles)</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers for organizations at national level in TAHITI (French). Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
+	<Code>
+		<Id>0230</Id>
+		<Name>National e-Invoicing Framework</Name>
+		<Description>Intended Purpose/App. Area: Identifier for  organizations. Issuing agency: Malaysia Digital Economy Corporation Sdn Bhd (MDEC)</Description>
+	</Code>
+	<Code>
+		<Id>0231</Id>
+		<Name>Single taxable company (France)</Name>
+		<Description>'Intended Purpose/App. Area: Provide identifiers to companies in a single taxable company regime. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)'</Description>
+	</Code>
+	<Code>
+		<Id>0232</Id>
+		<Name>NOBB product number</Name>
+		<Description>Intended Purpose/App. Area:  . Issuing agency:  '</Description>
+	</Code>
+	<Code>
+		<Id>0233</Id>
+		<Name>Elnummer</Name>
+		<Description>Elnummer</Description>
+	</Code>
+	<Code>
+		<Id>0234</Id>
+		<Name>Toimitusosoite ID</Name>
+		<Description>'Intended Purpose/App. Area: Identification scheme is used to identify delivery locations of the Finnish government accounting units. Issuing agency: Toimitusosoite ID'</Description>
+	</Code>
+	<Code>
+		<Id>0235</Id>
+		<Name>UAE Tax Identification Number (TIN)</Name>
+		<Description>'Intended Purpose/App. Area: A unique number issued to a range of persons required to be identified for tax purposes. Issuing agency: UAE Federal Tax Authority'</Description>
+	</Code>
+	<Code>
+		<Id>0236</Id>
+		<Name>ToimipaikkalD</Name>
+		<Description>ToimipaikkalD</Description>
+	</Code>
+	<Code>
+		<Id>0237</Id>
+		<Name>CPR (Danish person civil registration number)</Name>
+		<Description>'Intended Purpose/App. Area:  . Issuing agency:  '</Description>
+	</Code>
+	<Code>
+		<Id>0238</Id>
+		<Name>Plateforme.s agréée.s à la facturation électronique (PPF/PDP)</Name>
+		<Description>'Intended Purpose/App. Area: To provide identifiers for E-invoicing Public Platform and Partner Dematerialisation Platform. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)'</Description>
+	</Code>
+	<Code>
+		<Id>0239</Id>
+		<Name>EAEU</Name>
+	</Code>
+	<Code>
+		<Id>0240</Id>
+		<Name>Register of legal persons (in French : Répertoire des personnes morales)</Name>
+	</Code>
+	<Code>
+		<Id>0241</Id>
+		<Name>Hitachi Rail</Name>
+	</Code>
+	<Code>
+		<Id>0242</Id>
+		<Name>OpenPeppol Service Provider Identification Scheme (SPIS)</Name>
+	</Code>
+	<Code>
+		<Id>0243</Id>
+		<Name>Business Partner Number (Catena-X)</Name>
+	</Code>
+	<Code>
+		<Id>0244</Id>
+		<Name>Tax Identification (Tax ID), Nigeria</Name>
+	</Code>
+	<Code>
+		<Id>0245</Id>
+		<Name>Tax identification number (DIČ, Slovakia)</Name>
+	</Code>
+	<Code>
+		<Id>0246</Id>
+		<Name>German Electronic Business Address</Name>
+	</Code>
+	<Code>
+		<Id>0247</Id>
+		<Name>Name unknown</Name>
+	</Code>
+	<Code>
+		<Id>0248</Id>
+		<Name>Oman Value Added Tax Identification Number (VATIN)</Name>
 	</Code>
 </CodeList>

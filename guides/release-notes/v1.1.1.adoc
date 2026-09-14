@@ -1,0 +1,68 @@
+= Version 1.1.1
+[horizontal]
+Release date:: 2025-09-01
+
+[NOTE]
+====
+This is a separate release of the Peppol Logistics standard to introduce a new profile Advanced Transport Execution Plan.
+====
+
+== New BIS documents
+* PEPPOL BIS Advanced Transport Execution Plan 1.0
+
+== Updated BIS documents
+* No BIS documents are updated in this release
+
+== New Transactions
+* Application Response 1.0 (T129)
+
+== Updated Transactions
+* Peppol Transport Execution Plan Request 1.2 (T123)
+** Now based on UBL release 2.4
+* Peppol Transport Execution Plan 1.2 (T124)
+** Now based on UBL release 2.4
+* Peppol Transportation Status Request 1.2 (T126)
+* Peppol Transportation Status 1.2 (T127)
+
+== New Codelists
+* No new code lists 
+
+== Updated Rules
+* Rule PEPPOL-T123-R002 changed to allow ProfileID = 'urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1'). Korresponding unit-test also updated.
+* Rule PEPPOL-T123-R021 changed to be active only for MainTransportationService/TransportServiceCode "4", "22", "23" and "24".
+* Rule PEPPOL-T124-R002 changed to allow ProfileID = 'urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1'). Korresponding unit-test also updated.
+* Rule PEPPOL-T126-R002 changed to allow ProfileID = 'urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1'). Korresponding unit-test also updated.
+* Rule PEPPOL-T127-R002 changed to allow ProfileID = 'urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1'). Korresponding unit-test also updated.
+
+== New Rules
+* Rule PEPPOL-T124-R040 to R042 added to ensure that the groups Consignment/PlannedPickupTransportEvent, Consignment/PlannedDeliveryTransportEvent and 
+Consignment/MainCarriageShipmentStage stays mandatory for MainTransportationService/TransportServiceCode "4", "22", "23" and "24". 
+
+== Request For Change (RFC) that are included/solved in Release 1.1.1
+* LLC-23 + LLC-24	New profile Advanced Transport Execution Plan and new transaction Application Response, Changes to exsiting transactions Transport Execution Plan Request, Transport Execution Plan, Transportation Status Request and Transportation Status.
+
+== Changes that are a part of Release 1.1.1
+* Changes to Transport Execution Plan Request and Transport Execution Plan: Change cardinality of Consignment from 1..1 to 1..n
+* New elements that are added to both Transport Execution Plan Request and Transport Execution Plan:
+** ProfileExecutionID
+** Note 
+** CustomsDeclaration with ID, FunctionCode, ValidityPeriod with StartDate, CustomsParty and AdditionalDocumentReference (including ID, DocumentType and DocumentTypeCode) to Consignment
+** CarrierParty with PartyIdentification to Consignment
+** OfficeOfEntryLocation to Consignment
+** DocumentReference with ID and DocumentTypeCode to Consignment 
+** TransportEvent with Location and Period to Consignment with Location as optional.
+** ShipmentDocumentReference with ID and DocumentTypeCode to Consignment/TransportHandlingUnit
+** SequenceNumberID to Consignment/TransportHandlingUnit/GoodsItem 
+* New elements to be added only to Transport Execution Plan Request:
+** TransportMeans with RegistrationNationalityID, RoadTransport/LicensePlateID, AirTransport/AircraftID, RailTransport/TrainID, MaritimeTransport/VesselID to Consignment/MainCarriageShipmentStage
+** DeclaredCustomsValueAmount to Consignment
+* Elements that are added both to Transportation Status and Transportation Status Request
+** ProfileExecutionID
+* New elements that are added only to Transportation Status Request
+** Description
+** DocumentReference with ID, DocumentTypeCode, DocumentType and Attachment
+* Changed cardinality from 1..1 to 0..1 for the following groups.
+** TransportExecutionPlan/Consignment/PlannedPickupTransportEvent
+** TransportExecutionPlan/Consignment/PlannedDeliveryTransportEvent
+** TransportExecutionPlan/Consignment/MainCarriageShipmentStage
+

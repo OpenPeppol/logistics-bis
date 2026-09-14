@@ -1,0 +1,46 @@
+[[use-case-5-two-parties-4]]
+== Use case 5 – Two Parties Involved: Consignor and Carrier with a Standing order in place. 
+
+[cols="2,6",options="header",]
+|====
+|Use Case Number | 5
+|*Use Case Name* a|
+
+Two parties involved Consignor and Carrier preparing and issuing a Transport Execution Plan.
+
+|*Use Case Description* a|
+
+The Consignor provides detailed instructions to the Carrier for the transport of a regular consignment.
+
+|*Parties involved* a|
+
+Consignor +
+Carrier
+
+|*Assumptions* a|
+
+The Consignor has a consignment to be transported and knows the type of means of transport required and has agreed terms with the Carrier for its transportation. 
+
+The Consignor knows and has agreed prices with the Carrier for the transportation.
+
+The consignment has been or will be loaded into one or more specific pieces of transport equipment. 
+
+The Carrier has space available on a specific means of transport. The Consignor and the Carrier have a relationship. The Consignor has ordered transportation from the Carrier.
+
+|*The flow* a|
+
+. The Consignor has received an Order from a Consignee.
+. The Consignor sends a Transport Execution Request Plan to the Carrier.
+. The Carrier accepts the Transport Execution Plan by sending an Application Response.
+. The Consignor packs the goods ready for collection by the Carrier.
+. In case there are questions about the transport, the Consignor or the Carrier sends a Transportation Status Request with the question.
+. The opponent (Carrier or Consignor) sends back a Transportation Status.
+. The Carrier sends a Transport Execution Plan with further details, such as truck number and the driver information.
+. The Carrier collects the Shipment and transports it to the Consignee.
+
+
+|*Remarks* a|
+
+The Consignor provides the detailed instructions and the Consignor issues a Transport Execution Plan for the transport of a consignment. This is a case where the 
+
+|====

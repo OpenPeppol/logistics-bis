@@ -59,7 +59,7 @@
 			</cac:Contact>
 		</cac:Party>
 	</cac:DespatchSupplierParty>
-	
+
 	<cac:DeliveryCustomerParty>
 		<!-- Mandatory, the party that recieves the goods or service -->
 		<cac:Party>
@@ -85,7 +85,7 @@
 			</cac:Contact>
 		</cac:Party>
 	</cac:DeliveryCustomerParty>
-	
+
 	<cac:BuyerCustomerParty>
 		<!-- BEAst recommends sending BuyerCustomerParty even if it is optional since it is easier for the receiver. -->
 		<cac:Party>
@@ -105,7 +105,7 @@
 			</cac:PartyLegalEntity>
 		</cac:Party>
 	</cac:BuyerCustomerParty>
-	
+
 	<cac:SellerSupplierParty>
 		<!-- It is recommended sending SellerSupplierParty even if it is optional since it is easier for the receiver. -->
 		<cac:Party>
@@ -125,8 +125,8 @@
 			</cac:PartyLegalEntity>
 		</cac:Party>
 	</cac:SellerSupplierParty>
-	
-	
+
+
 	<cac:Shipment>
 		<cbc:ID schemeID="GSIN">73500538500000019</cbc:ID>
 		<!-- Mandatory Shipment number (fraktsedelsnummer) is mapped to this field -->
@@ -137,8 +137,8 @@
 			</cac:EstimatedDeliveryPeriod>
 		</cac:Delivery>
 	</cac:Shipment>
-	
-	
+
+
 	<cac:DespatchLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:DeliveredQuantity unitCode="EA">84</cbc:DeliveredQuantity>
@@ -188,6 +188,21 @@
 			</cac:AdditionalItemProperty>
 			<!-- Human readable data -->
 			<cac:AdditionalItemProperty>
+				<cbc:Name>Program Operator</cbc:Name>
+				<cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+				<cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Number</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+				<cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Product Name</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+				<cbc:Value>HÅLDÄCK</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD HR URL</cbc:Name>
 				<cbc:NameCode listID="IPNC">EPDHRURL</cbc:NameCode>
 				<cbc:Value>https://portal.environdec.com/api/api/v1/EPDLibrary/Files/07e17ba1-cf00-48e5-9cf1-d8bd90a468f8/Data</cbc:Value>
@@ -205,6 +220,18 @@
 				<cbc:Value>6000000192</cbc:Value>
 			</cac:AdditionalItemProperty>
 			
+			<!-- European Union Deforestation Regulation -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EUDRReferenceNumber</cbc:Name>
+				<!-- 14-character reference number from TRACES -->
+				<cbc:Value>25SEAMDIS29386</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EUDRVerificationNumber</cbc:Name>
+				<!-- 8-character verification number from TRACES -->
+				<cbc:Value>RNV5IPXH</cbc:Value>
+			</cac:AdditionalItemProperty>
+
 			<cac:Certificate>
 				<cbc:ID>SE-N8639</cbc:ID>
 				<cbc:CertificateTypeCode>KD56C/30min</cbc:CertificateTypeCode>
@@ -216,7 +243,7 @@
 					</cac:PartyName>
 				</cac:IssuerParty>
 			</cac:Certificate>
-			
+
 			<cac:Certificate>
 				<cbc:ID>SE-N8639</cbc:ID>
 				<cbc:CertificateTypeCode>ISPM15</cbc:CertificateTypeCode>
@@ -227,7 +254,7 @@
 					</cac:PartyName>
 				</cac:IssuerParty>
 			</cac:Certificate>
-			
+
 			<cac:Certificate>
 				<cbc:ID>2018-SKM-PEFC-211</cbc:ID>
 				<cbc:CertificateTypeCode>PEFC</cbc:CertificateTypeCode>
@@ -239,7 +266,7 @@
 					</cac:PartyName>
 				</cac:IssuerParty>
 			</cac:Certificate>
-			
+
 			<cac:Dimension>
 				<cbc:AttributeID>AAF</cbc:AttributeID>
 				<cbc:Measure unitCode="KGM">14.4096</cbc:Measure>

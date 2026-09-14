@@ -18,6 +18,18 @@
 
 	<test>
 		<assert id="2">
+			<success>PEPPOL-T126-R002</success>
+		</assert>
+		<ubl:TransportationStatusRequest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportationStatusRequest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:transportation_status_request:1</cbc:CustomizationID>
+			<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1</cbc:ProfileID>
+		</ubl:TransportationStatusRequest>
+	</test>
+
+	<test>
+		<assert id="3">
 			<error>PEPPOL-T126-R002</error>
 		</assert>
 		<ubl:TransportationStatusRequest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportationStatusRequest-2"
@@ -27,4 +39,5 @@
 			<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:transportation_status_error:1</cbc:ProfileID>
 		</ubl:TransportationStatusRequest>
 	</test>
+
 </testSet>

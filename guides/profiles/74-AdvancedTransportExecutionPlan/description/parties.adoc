@@ -1,0 +1,122 @@
+[[parties]]
+= Parties and roles
+
+The following parties/roles may be specified in the message.
+The same actor may play more than one role depending on the handling routine. The table below shows how the parties are used in the different transactions:
+[cols="1,1,1,1,1,1", options="header"]
+|===
+| Party
+| Transport Execution Plan Request
+| Transport Execution Plan
+| Application Response
+| Transportation Status Request
+| Transportation Status
+
+| Sender Party
+|  | x | x  | x | x 
+
+| Receiver Party
+|   | x | x | x | x
+
+| Transport User Party
+| x | x |  |  | 
+
+| Service Provider Party
+| x | x |  |  | 
+
+| Consignor Party
+| x | x |   |   |  
+
+| Consignee Party
+|  x | x |   |   |  
+
+| Payee Party
+|  x |   |  |   |  
+
+| BillToParty
+|   | x |  |   |  
+|===
+
+[[Sender-party]]
+== Sender (SenderParty)
+The sender is the sender of the document. This is often the same as Transport User for the Transport Execution Plan Request and the Transport Service Provider for the Transport Execution Plan. 
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=sender-party]
+----
+[[Receiver-party]]
+== Receiver (ReceiverParty)
+The Receiver is the sender of the document. This is often the Transport Service Provider but can also be a party who receives it on behalf of the Transport Service Provider. 
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=receiver-party]
+----
+
+[[transport-user-party]]
+== Transport User (TransportUserParty)
+
+The Transport User is the user of the transport service, often the Consignor when it comes to movement services. For other services like requesting a customs declaration it can also be the carrier.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=transport-user-party]
+----
+
+[[transport-service-provider-party]]
+== Transport Service Provider (TransportServiceProviderParty)
+
+The Transport Service Provider is the party providing the transport services, often a freight forwarder party.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=transport-service-provider-party]
+----
+
+[[consignor-party]]
+== Consignor (ConsignorParty)
+
+Consignor, also known as the shipper, is the sender of the goods. The Consignor is often the buyer of the freight services. If the Consignor is the same for all consignments in the Waybill, the consignor can be described on the document level instead of in each consignment.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=consignor-party]
+----
+
+[[consignee-party]]
+== Consignee (ConsigneeParty)
+
+Consignee is known as the DeliveryCustomerParty in the Despatch and receive advice. The Consignee is the person or organisation to which the products will be shipped and who is taking possession. The role is carried out by the customer or on behalf of the customer. The Consignee is a mandatory party in the consignment element and can be the Transportation Buyer.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=consignee-party]
+----
+
+[[payee-party]]
+== Payee (PayeeParty)
+
+Used in the Transport Execution Plan Request to identify the party paying for the transport. 
+NB! This is the same as BillToParty in the Transport Execution Plan, and PayeeParty will be replaced in the next UBL-version.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-2.xml[tags=payee-party]
+----
+
+[[billto-party]]
+== Bill To (BillToParty)
+
+Used in the Transport Execution Plan to identify the party paying for the transport.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir2}/snippet-1.xml[tags=billto-party]
+----

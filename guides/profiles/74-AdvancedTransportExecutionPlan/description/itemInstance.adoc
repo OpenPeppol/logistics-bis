@@ -1,0 +1,10 @@
+[[item-instance]]
+= Item instance
+
+The Item instance describes the physical properties for an item, that can differ from item to item. The item instance is often not known before the time of delivery.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=measurement-dimension]
+----

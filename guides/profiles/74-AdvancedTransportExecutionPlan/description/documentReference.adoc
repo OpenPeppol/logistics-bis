@@ -1,0 +1,10 @@
+[[document-reference]]
+= Document reference
+
+A reference to other documents relevant for this Transport Execution Plan. 
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=document-reference]
+----

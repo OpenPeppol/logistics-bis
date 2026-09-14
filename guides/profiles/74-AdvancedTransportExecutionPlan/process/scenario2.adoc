@@ -1,0 +1,6 @@
+[[more-advanced-process-use-of-despatch-party-and-request-for-quotation]]
+= Scenario 2 - More advanced process – use of despatch party and request for quotation
+
+The following diagram shows a process where the Consignor has no standing order in place with the Carrier and wants the receive a quotation for the required movement of the consignment.
+
+image::images/scenario2.png[image,width=945,height=850]

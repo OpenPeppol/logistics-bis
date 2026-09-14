@@ -1,0 +1,10 @@
+[[hazardous-item]]
+= Hazardous item
+
+The hazardous items describe the properties for an item connected to the dangerous goods.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=hazardous-item]
+----

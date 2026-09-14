@@ -5,6 +5,8 @@
 
 include::documentstatuscode.adoc[]
 
+include::despatchadvicetypecode.adoc[]
+
 include::parties.adoc[]
 
 include::locations.adoc[]
@@ -43,5 +45,7 @@ include::itemproperties.adoc[]
 include::serialnumber.adoc[]
 
 include::batchnumber.adoc[]
+
+include::producttrace.adoc[]
 
 :leveloffset: -1

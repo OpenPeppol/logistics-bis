@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ubl:TransportExecutionPlan xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+<TransportExecutionPlan xmlns="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:transport_execution_plan:1</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1</cbc:ProfileID>
 	<cbc:ID>691278571829041271246</cbc:ID>
@@ -10,7 +10,7 @@
 	<cbc:TransportServiceProviderRemarks>Some remarks</cbc:TransportServiceProviderRemarks>
 	
 	<cac:SenderParty>
-		<cbc:EndpointID schemeID="0198">85955619</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0198">DK85955619</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">7300010000001</cbc:ID>
 		</cac:PartyIdentification>
@@ -403,4 +403,4 @@
 			</cac:GoodsItem>
 		</cac:TransportHandlingUnit>
 	</cac:Consignment>
-</ubl:TransportExecutionPlan>
+</TransportExecutionPlan>

@@ -1,0 +1,10 @@
+[[pickup]]
+= Pickup
+
+In case a goods item needs to be picked up separately, the pickup component can be used.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=pickup]
+----

@@ -3,23 +3,43 @@
 
 == Orginal
 Document status code 9 indicates the original Despatch Advice and is used to notify the receiver that updates may follow.
-This code is used to indicate that the current Despatch Advice is the first and original version of the document, and that additional updates may be sent in the future if necessary. The use of status code 9 ensures that the receiver is aware of the original Despatch Advice and any subsequent updates.
-If the Despatch Advice is rejected by the network or the receiver, indicating that the receiver did not receive it, the next transmission of the Despatch Advice should still be considered as the first one, and the code 9 should still be used.
+This code is used to indicate that the current Despatch Advice is the first and original version of the document, and that additional 
+updates may be sent in the future if necessary. The use of status code 9 ensures that the receiver is aware of the original 
+Despatch Advice and any subsequent updates.
+If the Despatch Advice is rejected by the network or the receiver, indicating that the receiver did not receive it, the next 
+transmission of the Despatch Advice should still be considered as the first one, and the code 9 should still be used.
 
 == Replace
 The document status code 5 indicates "replace" and is used to replace a previously sent Despatch Advice that was received by the receiver.
-It allows for multiple iterations of the Despatch Advice to be sent in case not all necessary information was available at the time of the first transmission. For example, the Consignee may require the Despatch Advice to document the delivery of goods or services, but all information may not be readily available. 
-It is also in some situations possible to first send the Advanced Despatch Advice before shipping as an alert, and then again after shipping when all information is known. The replacements must include all information, not just the changes, and should include the Issue time so that the receiver can identify the most recent version.
-The updates should not be sent after a Receipt Advice (confirming that the goods and/or services has been received by the buyer) has been received by the supplier or when the goods or services have been invoiced.
-If, however, updates on parts that are not relevant for the invoicing need to be updated (like environmental information). the Despatch Advice can be sent after.
+It allows for multiple iterations of the Despatch Advice to be sent in case not all necessary information was available at the time of 
+the first transmission. For example, the Consignee may require the Despatch Advice to document the delivery of goods or services, but 
+all information may not be readily available. 
+It is also in some situations possible to first send the Advanced Despatch Advice before shipping as an alert, and then again after 
+shipping when all information is known. The replacements must include all information, not just the changes, and should include the 
+Issue time so that the receiver can identify the most recent version.
+The updates should not be sent after a Receipt Advice (confirming that the goods and/or services has been received by the buyer) has 
+been received by the supplier or when the goods or services have been invoiced.
+If, however, updates on parts that are not relevant for the invoicing need to be updated (like environmental information). the
+Despatch Advice can be sent after. Use code "55" (see below) if that is the case.
 
 == Cancellation
-Document status code 1 indicates "ignore and delete" and is used to notify the receiver to disregard and remove the Despatch Advice from their system. This code is used when the Despatch Advice was sent in error and the intended recipient of the message was not intended to receive it.
+Document status code 1 indicates "ignore and delete" and is used to notify the receiver to disregard and remove the Despatch Advice from 
+their system. This code is used when the Despatch Advice was sent in error and the intended recipient of the message was not intended 
+to receive it.
 The use of status code 1 ensures that the receiver does not process or store any incorrect or unintended information.
 
 == Final transmission
 Document status code 22 indicates "final" and is used to notify the receiver that no further updates to the Despatch Advice will be sent.
-This code indicates that the current Despatch Advice is the final version and that no additional changes or updates will be made. The use of status code 22 ensures that the receiver can process the Despatch Advice with confidence that it represents the final state of the document.
+This code indicates that the current Despatch Advice is the final version and that no additional changes or updates will be made. 
+The use of status code 22 ensures that the receiver can process the Despatch Advice with confidence that it represents the final 
+state of the document.
+
+== Notification only
+Document status code 55 indicates "notification only" and is used to notify the receiver that changes are sent after invoicing 
+and the changes have no impact on the invoice.
+
+Example of parts not relevant for invoicing are the elements OriginalDespatchTransportationService, all elements in Dimension and all   
+elements in AdditionalItemProperty except for elements with NameCode = Price.
 
 .Example:
 [source, xml, indent=0]

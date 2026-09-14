@@ -29,6 +29,14 @@ include::{snippet-dir}/snippet-30-1.xml[tags=shipment]
 == Vehicle ID
 
 In some uses of the Despath Advice, there is a need to report the licence plate number or machine number, i.e. the vehicle ID.
+If you need to specify more than one license plate number, use a hashtag (#) between the license plate id:s. Place the License plate id of the truck 
+before the one of the trailer. 
+For foreign license plate numbers, set the countrycode in front of the license plate id, with a dash between. See example. If no countrycode is provided, 
+a domestic license plate is assumed. 
+If a license plate is unknown, use "UNKNOWN" as the license plate id. If a license plate is not relevant, use "NA" as the license plate id.
+
+It is also an option to include additional information about the vehicle's maximum load capacity. Please see how this is done in the example below. 
+The code ABT means "Payload weight maximum."
 
 Example:
 

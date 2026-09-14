@@ -9,7 +9,10 @@
 	<cbc:IssueDate>2021-09-10</cbc:IssueDate>
 	<cbc:IssueTime>12:00:00+01:00</cbc:IssueTime>
 	<cbc:DocumentStatusCode>5</cbc:DocumentStatusCode>
-	<!-- end::documentstatuscode[] -->	
+	<!-- end::documentstatuscode[] -->
+	<!-- tag::despatchadvicetypecode[] -->
+	<cbc:DespatchAdviceTypeCode>2</cbc:DespatchAdviceTypeCode>
+	<!-- end::despatchadvicetypecode[] -->
 	<cbc:Note>Free text note relating to the Despatch Advice</cbc:Note>
 
 	<!-- tag::ref-order[] -->
@@ -178,8 +181,12 @@
 			<cbc:TransportModeCode>3</cbc:TransportModeCode>
 			<cac:TransportMeans>
 				<cac:RoadTransport>
-					<cbc:LicensePlateID>SE-ABC123;SE-DEF456</cbc:LicensePlateID>
+					<cbc:LicensePlateID>SE-ABC123#SE-DEF456</cbc:LicensePlateID>
 				</cac:RoadTransport>
+				<cac:MeasurementDimension>
+					<cbc:AttributeID>ABT</cbc:AttributeID>
+					<cbc:Measure unitCode="KGM">16000</cbc:Measure>
+				</cac:MeasurementDimension>
 			</cac:TransportMeans>
 		</cac:ShipmentStage>
 		<!-- end::vehicleid[] -->
@@ -665,8 +672,15 @@
 				<cbc:NameCode listID="IPNC">Rental</cbc:NameCode>
 				<cbc:Value>Purchase</cbc:Value>
 			</cac:AdditionalItemProperty>
+
+			<!-- The Waste Declaration Number. -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Waste Declaration Number</cbc:Name>
+				<cbc:NameCode listID="SE:Waste">WasteDeclarationNumber</cbc:NameCode>
+				<cbc:Value>1234567890</cbc:Value>
+			</cac:AdditionalItemProperty>
 			<!-- end::itemproperty[] -->
-			
+
 			<!-- tag::lotid[] -->
 			<cac:ItemInstance>
 				<cac:LotIdentification>
@@ -675,6 +689,15 @@
 				</cac:LotIdentification>
 			</cac:ItemInstance>
 			<!-- end::lotid[] -->
+			
+			<!-- tag::prodtraceid[] -->
+			<cac:ItemInstance>
+				<cbc:ProductTraceID schemeID="UDI">(01)47964367965424(11)173434(17)226565(10)A379B3(21)1237</cbc:ProductTraceID>
+			</cac:ItemInstance>
+			<cac:ItemInstance>
+				<cbc:ProductTraceID>2025-01-22342345</cbc:ProductTraceID>
+			</cac:ItemInstance>
+			<!-- end::prodtraceid[] -->
 
 		</cac:Item>
 

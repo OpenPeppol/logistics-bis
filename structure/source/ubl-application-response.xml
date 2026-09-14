@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+					 xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+					 xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<?DocumentTerm ApplicationResponse?>
+	<?Property key="sch:prefix" PEPPOL-T129?>
+	<?Property key="sch:identifier" T129-basic?>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:application_response:1</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1</cbc:ProfileID>
+
+	<cbc:ProfileExecutionID>XZ-4532
+		<?Name Profile Execution ID?>
+		<?Description Identifies an instance of executing a profile, to associate all transactions in a collaboration.?>
+		<?Cardinality 0..1?>
+	</cbc:ProfileExecutionID>
+	<cbc:ID>DN12345
+		<?Name Document ID?>
+		<?Description Identifies this Application Response.?>
+		<?Cardinality 1..1?>
+	</cbc:ID>
+	<cbc:IssueDate>2021-08-15
+		<?Name Issue Date?>
+		<?Description The date when the Application Response was issued. Format = "YYYY-MM-DD". ?>
+		<?Cardinality 1..1?>
+	</cbc:IssueDate>
+	<cbc:IssueTime>12:00:00
+		<?Name Issue Time?>
+		<?Description The time when the Application Response was issued. Format = "hh:mm:ss". ?>
+		<?Cardinality 1..1?>
+	</cbc:IssueTime>
+
+	<cac:SenderParty>
+		<?Name Sender party ?>
+		<?Description The party sending the Application Response. ?>
+		<?Cardinality 1..1?>
+		<cbc:EndpointID schemeID="0198">DK41955619
+			<?Name Sender party electronic address ?>
+			<?Description The endpoint for the sender party. ?>
+			<?Cardinality 1..1?>
+			<?schemeID-Name Scheme identifier?>
+			<?schemeID-Description Scheme identifier for electronic address?>
+			<?schemeID-usage Mandatory?>
+			<?schemeID-CodeList eas?>
+		</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<?Name Sender party identification ?>
+			<?Description An identifier for the sender party as known to the receiver party. ?>
+			<?Cardinality 0..1?>
+			<cbc:ID schemeID="0088">7300010000001
+				<?Name ID ?>
+				<?Description An identifier for the sender party as known to the receiver party. ?>
+				<?Cardinality 1..1?>
+				<?schemeID-CodeList ICD?>
+				<?schemeID-usage Optional?>
+			</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<?Name Party name ?>
+			<?Description The name of the sender party. ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Leman
+				<?Name Sender party name?>
+				<?Description The name of the sender party. ?>
+				<?Cardinality 1..1?>
+			</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<?Name Postal address ?>
+			<?Description The postal address for the sender party. ?>
+			<?Cardinality 0..1?>
+			<cbc:StreetName>Ventrupvej 6
+				<?Name Address line 1 ?>
+				<?Description The main address line in a postal address usually the street name and number. ?>
+				<?Cardinality 0..1?>
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName>Greve Landsby
+				<?Name Address line 2 ?>
+				<?Description An additional address line in a postal address that can be used to give further details supplementing the main line. 
+					Common use are secondary house number in a complex or in a building. ?>
+				<?Cardinality 0..1?>
+			</cbc:AdditionalStreetName>
+			<cbc:CityName>Greve
+				<?Name City ?>
+				<?Description The common name of the city where the postal address is. The name is written in full rather than as a code. ?>
+				<?Cardinality 0..1?>
+			</cbc:CityName>
+			<cbc:PostalZone>2670
+				<?Name Post code ?>
+				<?Description The identifier for an addressable group of properties according to the relevant national postal service, such as a 
+					ZIP code or Post Code. ?>
+				<?Cardinality 0..1?>
+			</cbc:PostalZone>
+			<cbc:CountrySubentity>Region Sjælland
+				<?Name Country sub entity ?>
+				<?Description For specifying a region, county, state, province etc. within a country by using text. ?>
+				<?Cardinality 0..1?>
+			</cbc:CountrySubentity>
+			<cac:AddressLine>
+				<?Name Address line 3 ?>
+				<?Description An additional address line in an address that can be used to give further details supplementing the main line. ?>
+				<?Cardinality 0..1?>
+				<cbc:Line>Bygning 5
+					<?Name Address line 3 ?>
+					<?Description An additional address line in an address that can be used to give further details supplementing the main line. ?>
+					<?Cardinality 1..1?>
+				</cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<?Name Country ?>
+				<?Description Country of the sender party. ?>
+				<cbc:IdentificationCode>DK
+					<?Name Country code ?>
+					<?Cardinality 1..1?>
+					<?CodeList ISO3166?>
+					<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+						Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+						according to the alpha-2 representation. ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyTaxScheme>
+			<?Name Party tax scheme ?>
+			<?Description The tax information about the sender party. ?>
+			<?Cardinality 0..1?>
+			<cbc:CompanyID>GB325456788
+				<?Name Company ID ?>
+				<?Description The Sender Party Value Added Tax identifer. ?>
+				<?Cardinality 1..1?>
+			</cbc:CompanyID>
+			<cac:TaxScheme>
+				<?Name Tax scheme ?>
+				<?Cardinality 1..1?>
+				<cbc:ID>VAT
+					<?Name Tax scheme identifier ?>
+					<?Description Tax scheme identifier. E.g. "VAT" or "GST". ?>
+					<?Cardinality 1..1?>
+				</cbc:ID>
+			</cac:TaxScheme>
+		</cac:PartyTaxScheme>
+		<cac:PartyLegalEntity>
+			<?Name Party legal entity ?>
+			<?Description The official identity, name and address of the Sender Party. ?>
+			<cbc:RegistrationName>Consortial
+				<?Name Sender party name?>
+				<?Description The name of the sender party. ?>
+				<?Cardinality 1..1?>
+			</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0089">SC234567
+				<?Name Sender parties legal registration name ?>
+				<?Description The official name of the party as registered with the relevant fiscal authority. ?>
+				<?Cardinality 0..1?>
+				<?schemeID-Name Scheme identifier ?>
+				<?schemeID-Description The identification scheme identifier of the sender partys legal registration identifier ?>
+				<?schemeID-Usage optional?>
+				<?schemeID-CodeList ICD?>
+			</cbc:CompanyID>
+			<cac:RegistrationAddress>
+				<?Name Legal address ?>
+				<?Description The official address of the party as registered with the relevant fiscal authority. ?>
+				<?Cardinality 0..1?>
+				<cbc:CityName>Farthing
+					<?Name City name ?>
+					<?Description The name of the city. ?>
+					<?Cardinality 0..1?>
+				</cbc:CityName>
+				<cac:Country>
+					<?Name Country ?>
+					<?Description The residens country for the sender party. ?>
+					<?Cardinality 1..1?>
+					<cbc:IdentificationCode>GB
+						<?Name Country code ?>
+						<?Cardinality 1..1?>
+						<?CodeList ISO3166?>
+						<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. ?>
+					</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:RegistrationAddress>
+		</cac:PartyLegalEntity>
+		<cac:Contact>
+			<?Name Contact ?>
+			<?Description The contact of the sender party. ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Mr Sender
+				<?Name Contact name ?>
+				<?Description The contact name. ?>
+				<?Cardinality 0..1?>
+			</cbc:Name>
+			<cbc:Telephone>0158 1233714
+				<?Name Contact telephone number ?>
+				<?Description The phone number of the contact. ?>
+				<?Cardinality 0..1?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>sender@consignor-company.co.uk
+				<?Name Contact email address ?>
+				<?Description The electronic mail of the contact. ?>
+				<?Cardinality 0..1?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:SenderParty>
+
+	<cac:ReceiverParty>
+		<?Name Receiver Party ?>
+		<?Description The party receiving the Application Response. ?>
+		<?Cardinality 1..1?>
+		<cbc:EndpointID schemeID="0198">DK10154596
+			<?Name Receiver party electronic address ?>
+			<?Description The endpoint id for the receiver party. ?>
+			<?Cardinality 1..1?>
+			<?schemeID-Name Scheme identifier?>
+			<?schemeID-Description Scheme identifier for electronic address?>
+			<?schemeID-usage Mandatory?>
+			<?schemeID-CodeList eas?>
+		</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<?Name Receiver party identification ?>
+			<?Description An identifier for the receiver party. ?>
+			<?Cardinality 0..1?>
+			<cbc:ID schemeID="0088">7300010000001
+				<?Name ID?>
+				<?Description An identifier for the receiver party as known to the sender party. ?>
+				<?Cardinality 1..1?>
+				<?schemeID-CodeList ICD?>
+				<?schemeID-usage Optional?>
+			</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<?Name Party name ?>
+			<?Description The name of the receiver party. ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>DHL Express
+				<?Name Receiver party name ?>
+				<?Description The name of the receiver party. ?>
+				<?Cardinality 1..1?>
+			</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<?Name Postal address ?>
+			<?Description The postal address for the receiver party. ?>
+			<?Cardinality 0..1?>
+			<cbc:StreetName>Jydekrogen 14
+				<?Name Address line 1 ?>
+				<?Description The main address line in a postal address usually the street name and number. ?>
+				<?Cardinality 0..1?>
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName>Indkørsel 5
+				<?Name Address line 2 ?>
+				<?Description An additional address line in a postal address that can be used to give further details supplementing the main line. 
+					Common use are secondary house number in a complex or in a building. ?>
+				<?Cardinality 0..1?>
+			</cbc:AdditionalStreetName>
+			<cbc:CityName>Vallensbæk Landsby
+				<?Name City ?>
+				<?Description The common name of the city where the postal address is. The name is written in full rather than as a code. ?>
+				<?Cardinality 0..1?>
+			</cbc:CityName>
+			<cbc:PostalZone>2625
+				<?Name Post code ?>
+				<?Description The identifier for an addressable group of properties according to the relevant national postal service, such as a 
+					ZIP code or Post Code. ?>
+				<?Cardinality 0..1?>
+			</cbc:PostalZone>
+			<cbc:CountrySubentity>Region Hovedstaden
+				<?Name Country sub entity ?>
+				<?Description For specifying a region, county, state, province etc. within a country by using text. ?>
+				<?Cardinality 0..1?>
+			</cbc:CountrySubentity>
+			<cac:AddressLine>
+				<?Name Address line 3 ?>
+				<?Description An additional address line in an address that can be used to give further details supplementing the main line. ?>
+				<?Cardinality 0..1?>
+				<cbc:Line>Bygning 5
+					<?Cardinality 1..1?>
+				</cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<?Name Country ?>
+				<?Description Country of the receiver party. ?>
+				<?Cardinality 1..1?>
+				<cbc:IdentificationCode>DK
+					<?Name Country code ?>
+					<?Cardinality 1..1?>
+					<?CodeList ISO3166?>
+					<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+						Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+						according to the alpha-2 representation. ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyTaxScheme>
+			<?Name Party tax scheme ?>
+			<?Description The tax information about the receiver party. ?>
+			<?Cardinality 0..1?>
+			<cbc:CompanyID>GB325456788
+				<?Name Company ID ?>
+				<?Description The Receiver Party Value Added Tax identifer. ?>
+				<?Cardinality 1..1?>
+			</cbc:CompanyID>
+			<cac:TaxScheme>
+				<?Name Tax scheme ?>
+				<?Cardinality 1..1?>
+				<cbc:ID>VAT
+					<?Name Tax scheme identifier ?>
+					<?Description Tax scheme identifier. E.g. "VAT" or "GST". ?>
+					<?Cardinality 1..1?>
+				</cbc:ID>
+			</cac:TaxScheme>
+		</cac:PartyTaxScheme>
+		<cac:PartyLegalEntity>
+			<?Name Party Legal Entity ?>
+			<?Description The party legal entity for the receiver party.?>
+			<?Cardinality 1..1?>
+			<cbc:RegistrationName>Consortial
+				<?Name Receiver party name?>
+				<?Description The name of the receiver party. ?>
+				<?Cardinality 1..1?>
+			</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0089">SC234567
+				<?Name Receiver parties legal registration name ?>
+				<?Description The official name of the party as registered with the relevant fiscal authority. ?>
+				<?Cardinality 0..1?>
+				<?schemeID-Name Scheme identifier ?>
+				<?schemeID-Description The identification scheme identifier of the receiver parties legal registration identifier ?>
+				<?schemeID-Usage optional?>
+				<?schemeID-CodeList ICD?>
+			</cbc:CompanyID>
+			<cac:RegistrationAddress>
+				<?Name Legal address ?>
+				<?Description The official address of the party as registered with the relevant fiscal authority. ?>
+				<?Cardinality 0..1?>
+				<cbc:CityName>Farthing
+					<?Name City name ?>
+					<?Description The name of the city. ?>
+					<?Cardinality 0..1?>
+				</cbc:CityName>
+				<cac:Country>
+					<?Name Country ?>
+					<?Description The residens country for the receiver party. ?>
+					<?Cardinality 1..1?>
+					<cbc:IdentificationCode>GB
+						<?Name Country code ?>
+						<?Cardinality 1..1?>
+						<?CodeList ISO3166?>
+						<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+							Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+							according to the alpha-2 representation. ?>
+					</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:RegistrationAddress>
+		</cac:PartyLegalEntity>
+		<cac:Contact>
+			<?Name Contact ?>
+			<?Description The contact of the receiver party. ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Mrs Receiver
+				<?Name Contact name ?>
+				<?Description The contact name. ?>
+				<?Cardinality 0..1?>
+			</cbc:Name>
+			<cbc:Telephone>0158 1233714
+				<?Name Contact telephone number ?>
+				<?Description The phone number of the contact. ?>
+				<?Cardinality 0..1?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>msreceiver@tplogistics.co.uk
+				<?Name Contact email address ?>
+				<?Description The electronic mail of the contact. ?>
+				<?Cardinality 0..1?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:ReceiverParty>
+
+	<cac:DocumentResponse>
+		<?Name Document Response ?>
+		<?Description A response to a document. ?>
+		<?Cardinality 1..n?>
+		<cac:Response>
+			<?Name Response ?>
+			<?Description A response to the document as a whole. ?>
+			<?Cardinality 1..1?>
+			<cbc:ResponseCode>RE
+				<?Name Response Code ?>
+				<?Description A code signifying the type of response. ?>
+				<?Cardinality 1..1?>
+				<?CodeList UNCL4343_T128?>
+			</cbc:ResponseCode>
+			<cbc:Description>Rejected due to incorrect price.
+				<?Name Description ?>
+				<?Description 	Text describing this response. ?>
+				<?Cardinality 0..n?>
+			</cbc:Description>
+		</cac:Response>
+		
+		<cac:DocumentReference>
+			<?Name Document Reference ?>
+			<?Description A reference to the document responded to. ?>
+			<?Cardinality 1..1 ?>
+			<cbc:ID>DN12345
+				<?Name Document ID ?>
+				<?Description The identity of the document responded to. ?>
+				<?Cardinality 1..1 ?>
+			</cbc:ID>
+			<cbc:IssueDate>2016-08-15
+				<?Name Issue Date ?>
+				<?Description The Date the document was issued on. ?>
+				<?Cardinality 0..1 ?>
+			</cbc:IssueDate>
+			<cbc:IssueTime>12:00:00
+				<?Name Issue Time ?>
+				<?Description The Time the document was issued on. ?>
+				<?Cardinality 0..1 ?>
+			</cbc:IssueTime>
+			<cbc:DocumentTypeCode>351
+				<?Name Document type code?>
+				<?Description The type of document. Must me part of UNCL1001. At least one of Document Type Code and Document Type must be used. ?>
+				<?Cardinality 0..1?>
+				<?CodeList UNCL1001?>
+			</cbc:DocumentTypeCode>
+			<cbc:DocumentType>ASN
+				<?Name Document type?>
+				<?Description The type of document that cannot be specified by a code. At least one of Document Type Code and Document Type must 
+								be used. ?>
+				<?Cardinality 0..1?>
+			</cbc:DocumentType>
+		</cac:DocumentReference>
+	</cac:DocumentResponse>
+</ApplicationResponse>

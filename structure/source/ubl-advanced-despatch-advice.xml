@@ -17,7 +17,13 @@
 	<?Property key="sch:prefix" PEPPOL-T120?>
 	<?Property key="sch:identifier" T120-basic?>
 	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1<?Rule PEPPOL-T120-R011?></cbc:CustomizationID>
-	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1<?Description Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Advanced Despatch Advice. One profile is used when the receiver of the Despatch Advice is expected to return a response message, the other is used when no response message is used. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1" and "urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_receipt_advice:1"?></cbc:ProfileID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1
+		<?Description Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the 
+		Advanced Despatch Advice. One profile is used when the receiver of the Despatch Advice is expected to return a response message, the other is used 
+		when no response message is used. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1" 
+		and "urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_receipt_advice:1"?>
+		<?Rule PEPPOL-T120-R002?>
+	</cbc:ProfileID>
 	
 	<cbc:ID>5658999</cbc:ID>
 	<cbc:IssueDate>2021-09-10<?Description The date when the Advanced Despatch Advice is issued. Format = "YYYY-MM-DD".
@@ -111,7 +117,7 @@
 				<?Description The name of the Despatch Supplier Party.?>
 				<?Cardinality 0..1?>
 				<cbc:Name> Sender inc. 
-					<?Name Name of the fuel supplier?>
+					<?Name Name of the Despatch supplier?>
 					<?Description The Despatch Supplier.?>
 					<?Cardinality 1..1?>
 					<?Rule PEPPOL-T120-R109?>
@@ -221,11 +227,11 @@
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<?Name Party name?>
-				<?Description The name of the Delivery Customer Party.?>
+				<?Description The name of the Delivery Receiver Party.?>
 				<?Cardinality 0..1?>
-				<cbc:Name> Sender inc. 
-					<?Name Name of the fuel supplier?>
-					<?Description The Despatch Supplier.?>
+				<cbc:Name> Receiver inc. 
+					<?Name Name of the Delivery Receiver Party?>
+					<?Description The Delivery Receiver.?>
 					<?Cardinality 1..1?>
 					<?Rule PEPPOL-T120-R108?>
 				</cbc:Name>
@@ -247,11 +253,11 @@
 			</cac:PostalAddress>
 			<cac:PartyTaxScheme>
 				<?Name Party tax scheme?>
-				<?Description The tax information about the Delivery Party.?>
+				<?Description The tax information about the Delivery Receiver Party.?>
 				<?Cardinality 0..1?>
 				<cbc:CompanyID> GB523859989 
 					<?Name Company ID?>
-					<?Description The Delivery Party Value Added Tax identifer.?>
+					<?Description The Delivery Receiver Party Value Added Tax identifer.?>
 					<?Cardinality 1..1?>
 				</cbc:CompanyID>
 				<cac:TaxScheme>
@@ -269,7 +275,7 @@
 				<cbc:RegistrationName> Sender inc. 
 					<?Cardinality 1..1?>
 					<?Name Consignee party's Legal name. ?>
-					<?Description The Legal Name of the Receiving party. ?>
+					<?Description The Legal Name of the Delivery Receiving party. ?>
 				</cbc:RegistrationName>
 				<cbc:CompanyID schemeID="0089"> GB523859989 
 					<?Name Delivery customers parties legal registration ID. ?>
@@ -301,7 +307,7 @@
 
 			<cac:Contact>
 				<?Name Contact person name?>
-				<?Description The contact of the Delivery customer party.?>
+				<?Description The contact of the Delivery Receiver party.?>
 				<?Cardinality 0..1?>
 				<cbc:Name> Mrs Bouquet 
 					<?Name Contact name?>
@@ -1725,7 +1731,7 @@
 				<?Description Reference to the sellers orderline number.?>
 			</cbc:SalesOrderLineID>
 			<cac:OrderReference>
-				<cbc:ID>AEG012345<?Rule PEPPOL-T120-R002?></cbc:ID>
+				<cbc:ID>AEG012345</cbc:ID>
 				<cbc:SalesOrderID> 5678985 <?Name Sales order number?>
 					<?Cardinality 0..1?>
 					<?Description Reference to the sellers order number.?>
@@ -2016,6 +2022,11 @@
 			
 			<cac:ItemInstance>
 				<?Description Adding information on individual instances of the item.?>
+				<cbc:ProductTraceID schemeID="UDI">(01)47964367965424(11)173434(17)226565(10)A379B3(21)1237
+					<?Description An identifier used for tracing this item instance, such as the EPC number used in RFID.?>
+					<?schemeID-usage Optional?>
+					<?schemeID-CodeList ProductTraceIDschemeIDCode?>
+				</cbc:ProductTraceID>
 				<cbc:ManufactureDate>2021-01-01
 					<?Description The manufacturing date of all items listed in this despatch line.?>
 				</cbc:ManufactureDate>
@@ -2032,6 +2043,43 @@
 					<?Name Item serial number. ?>
 					<?Description Serial number for item listed in the despatch line..?>
 				</cbc:SerialID>
+				<cac:AdditionalItemProperty>
+				<cbc:ID schemeDataURI="https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2022/" schemeID="ISO22057" schemeVersionID="2022">	77e416eb-a363-4258-a04e-171d843a6460 
+				<?Name Item instance identifier ?>	
+				<?Description ID of the property if assigned by an Agency?>
+					<?Cardinality 0..1?>
+					<?schemeDataURI-Name Scheme Data URI?>
+					<?schemeDataURI-usage Optional?>
+					<?schemeID-Name Scheme identifier?>
+					<?schemeID-usage Optional?>
+					<?schemeVersionID-Name Scheme version identifier?>
+					<?schemeVersionID-usage Optional?>
+				</cbc:ID>
+				<cbc:Name>Rigidity</cbc:Name>
+				<cbc:NameCode listID="IPNC"> EPDNumber 
+					<?Name Item instance name code ?>
+					<?Description The name code of the item instance property.?>
+					<?Cardinality 0..1?>
+					<?listID-usage Mandatory?>
+					<?listID-Name Name code list id.?>
+					<?listID-Description An identifier for the code list used for the Name code, this is bilaterally agreed?>
+				</cbc:NameCode>
+				<cbc:Value>NEPD-1717-700-SE
+					<?Name Item instance property value ?>
+					<?Description The value of the item instance property.?>
+				</cbc:Value>
+				<cbc:ValueQuantity unitCode="EA">15.00
+					<?unitCode-CodeList UNECERec20?>
+					<?Name Item instance value quantity ?>
+					<?Description The value quantity of the item instance property.?>
+					<?Cardinality 0..1?>
+				</cbc:ValueQuantity>
+				<cbc:ValueQualifier>descr
+					<?Name Item instance value qualifier ?>
+					<?Description The value qualifier of the item instance property.?>
+					<?Cardinality 0..1?>
+				</cbc:ValueQualifier>
+			</cac:AdditionalItemProperty>
 				<cac:LotIdentification>
 					<cbc:LotNumberID>546378239
 						<?Description The batch number that applies to all items in the despatch line.?>

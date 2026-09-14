@@ -1,0 +1,42 @@
+[[use-case-3]]
+== Use case 3 – Consignor requests a transport from a Freight Forwarder
+
+[cols="2,6",options="header",]
+|====
+|Use Case Number | 3
+|*Use Case Name* a|
+
+Consignor requests a transport from a Freight Forwarder.
+
+|*Use Case Description* a|
+
+Consignor in the role of Transport User provides instructions to the Freight Forwarder in the role of Transport Service Provider for the transport of a consignment.  
+
+|*Parties involved* a|
+
+Consignor +
+Freight Forwarder +
+Carrier
+
+|*Assumptions* a|
+
+The Consignor has a consignment to be transported and has agreed terms with the Freight Forwarder for its transportation. 
+
+The Freight Forwarder chooses a Carrier that has space available on a specific means of transport.
+
+The consignment has been or will be loaded into one or more specific pieces of transport equipment. 
+
+|*The flow* a|
+
+. The Consignor as Transport User sends a Transport Execution Plan Request to the Freight Forwarder as Transport Service Provider.
+. The Freight Forwarder replies with an Apllication Repsonse as an acceptance.
+. The Freight Forwarder sends an informal message with the terms and conditions for the messages as a Transportation Status Request.
+. The Consignor replies back with an informal message by describing the answer in a Transportation Status.
+. The Freight Forwarder issues a Transport Execution Plan to the Consignor confirming terms and conditions for the transport.
+. The Freight Forwarder sendes the Transport Execution Plan to the Carrier that will be responsible for the transport.
+. The Consignor packs the goods ready for collection by the Carrier.
+. The Carrier collects the Shipment and transports it to the Consignee.
+
+|*XML example file* a|
+See {examples-zip} for sample files illustrating Use Case 3.
+|====

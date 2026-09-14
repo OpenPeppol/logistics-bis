@@ -1638,6 +1638,7 @@
       <Ref card="0..n">cac:TransportHandlingUnit</Ref>
       <Ref card="0..1">cac:FirstArrivalPortLocation</Ref>
       <Ref card="0..1">cac:LastExitPortLocation</Ref>
+      <Ref card="0..1"> cac:OfficeOfEntryLocation</Ref>
    </Element>
    <Element name="ConsignorParty">
       <Ref card="0..1">cbc:MarkCareIndicator</Ref>
@@ -2321,7 +2322,32 @@
    </Element>
    <Element name="CustomsDeclaration">
       <Ref card="1..1">cbc:ID</Ref>
+      <Ref card="0..1">cbc:FunctionCode</Ref>
       <Ref card="0..1">cac:IssuerParty</Ref>
+      <Ref card="0..1">cac:CustomsParty</Ref>
+   </Element>
+   <Element name="CustomsParty">
+      <Ref card="0..1">cbc:MarkCareIndicator</Ref>
+      <Ref card="0..1">cbc:MarkAttentionIndicator</Ref>
+      <Ref card="0..1">cbc:WebsiteURI</Ref>
+      <Ref card="0..1">cbc:LogoReferenceID</Ref>
+      <Ref card="0..1">cbc:EndpointID</Ref>
+      <Ref card="0..1">cbc:IndustryClassificationCode</Ref>
+      <Ref card="0..n">cac:PartyIdentification</Ref>
+      <Ref card="0..n">cac:PartyName</Ref>
+      <Ref card="0..1">cac:Language</Ref>
+      <Ref card="0..1">cac:PostalAddress</Ref>
+      <Ref card="0..1">cac:PhysicalLocation</Ref>
+      <Ref card="0..n">cac:PartyTaxScheme</Ref>
+      <Ref card="0..n">cac:PartyLegalEntity</Ref>
+      <Ref card="0..1">cac:Contact</Ref>
+      <Ref card="0..n">cac:Person</Ref>
+      <Ref card="0..1">cac:AgentParty</Ref>
+      <Ref card="0..n">cac:ServiceProviderParty</Ref>
+      <Ref card="0..n">cac:PowerOfAttorney</Ref>
+      <Ref card="0..1">cac:FinancialAccount</Ref>
+      <Ref card="0..n">cac:AdditionalWebSite</Ref>
+      <Ref card="0..n">cac:SocialMediaProfile</Ref>
    </Element>
    <Element name="DebitNoteDocumentReference">
       <Ref card="1..1">cbc:ID</Ref>
@@ -5247,6 +5273,20 @@
       <Ref card="0..1">cac:Package</Ref>
       <Ref card="0..n">cac:AllowanceCharge</Ref>
       <Ref card="0..1">cac:DependentPriceReference</Ref>
+   </Element>
+   <Element name="OfficeOfEntryLocation">
+      <Ref card="0..1">cbc:ID</Ref>
+      <Ref card="0..n">cbc:Description</Ref>
+      <Ref card="0..n">cbc:Conditions</Ref>
+      <Ref card="0..1">cbc:CountrySubentity</Ref>
+      <Ref card="0..1">cbc:CountrySubentityCode</Ref>
+      <Ref card="0..1">cbc:LocationTypeCode</Ref>
+      <Ref card="0..1">cbc:InformationURI</Ref>
+      <Ref card="0..1">cbc:Name</Ref>
+      <Ref card="0..n">cac:ValidityPeriod</Ref>
+      <Ref card="0..1">cac:Address</Ref>
+      <Ref card="0..n">cac:SubsidiaryLocation</Ref>
+      <Ref card="0..n">cac:LocationCoordinate</Ref>
    </Element>
    <Element name="OnAccountPayment">
       <Ref card="1..1">cbc:EstimatedConsumedQuantity</Ref>

@@ -885,6 +885,9 @@
    <Element name="FullyPaidSharesIndicator">
       <DataType>udt:IndicatorType</DataType>
    </Element>
+   <Element name="FunctionCode">
+      <DataType>udt:CodeType</DataType>
+   </Element>
    <Element name="FundingProgram">
       <DataType>udt:TextType</DataType>
    </Element>

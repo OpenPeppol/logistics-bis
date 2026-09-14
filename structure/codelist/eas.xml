@@ -3,7 +3,6 @@
 	<Title>Electronic Address Scheme (EAS)</Title>
 	<Identifier>eas</Identifier>
 	<Agency>CEF</Agency>
-
 	<Code>
 		<Id>0002</Id>
 		<Name>System Information et Repertoire des Entreprise et des Etablissements: SIRENE</Name>
@@ -17,20 +16,16 @@
 		<Name>SIRET-CODE</Name>
 	</Code>
 	<Code>
-		<Id>0037</Id>
-		<Name>LY-tunnus</Name>
-	</Code>
-	<Code>
 		<Id>0060</Id>
 		<Name>Data Universal Numbering System (D-U-N-S Number)</Name>
 	</Code>
 	<Code>
 		<Id>0088</Id>
-		<Name>EAN Location Code</Name>
+		<Name>Global Location Number</Name>
 	</Code>
 	<Code>
 		<Id>0096</Id>
-		<Name>DANISH CHAMBER OF COMMERCE Scheme (EDIRA compliant)</Name>
+		<Name>The Danish Business Authority - P-number (DK:P)</Name>
 	</Code>
 	<Code>
 		<Id>0097</Id>
@@ -38,10 +33,8 @@
 	</Code>
 	<Code>
 		<Id>0106</Id>
-		<Name>
-			"Vereniging van Kamers van Koophandel en Fabrieken in Nederland (Association of
-			Chambers of Commerce and Industry in the Netherlands), Scheme (EDIRA compliant)"
-		</Name>
+		<Name>"Vereniging van Kamers van Koophandel en Fabrieken in Nederland (Association of
+            Chambers of Commerce and Industry in the Netherlands), Scheme (EDIRA compliant)"</Name>
 	</Code>
 	<Code>
 		<Id>0130</Id>
@@ -56,27 +49,21 @@
 		<Name>SECETI Object Identifiers</Name>
 	</Code>
 	<Code>
-		<Id>0147</Id>
-		<Name>Standard Company Code</Name>
-	</Code>
-	<Code>
 		<Id>0151</Id>
 		<Name>Australian Business Number (ABN) Scheme</Name>
 	</Code>
 	<Code>
-		<Id>0170</Id>
-		<Name>Teikoku Company Code</Name>
-	</Code>
+        <Id>0158</Id>
+        <Name>Identification number of economic subject (ICO) Act on State Statistics of 29 November 2001, § 27</Name>
+    </Code>
 	<Code>
 		<Id>0183</Id>
-		<Name>
-			Numéro d'identification suisse des enterprises (IDE), Swiss Unique Business
-			Identification Number (UIDB)
-		</Name>
+		<Name>Numéro d'identification suisse des enterprises (IDE), Swiss Unique Business
+            Identification Number (UIDB)</Name>
 	</Code>
 	<Code>
 		<Id>0184</Id>
-		<Name>DIGSTORG</Name>
+		<Name>The Danish Business Authority - CVR-number (DK:CVR)</Name>
 	</Code>
 	<Code>
 		<Id>0188</Id>
@@ -84,31 +71,27 @@
 	</Code>
 	<Code>
 		<Id>0190</Id>
-		<Name>Dutch Originator's Identification Number</Name>
+		<Name>Organisatie-identificatienummer (OIN)</Name>
 	</Code>
 	<Code>
 		<Id>0191</Id>
-		<Name>Centre of Registers and Information Systems of the Ministry of Justice</Name>
+		<Name>Company code</Name>
 	</Code>
 	<Code>
 		<Id>0192</Id>
-		<Name>Enhetsregisteret ved Bronnoysundregisterne </Name>
-	</Code>
-	<Code>
-		<Id>0193</Id>
-		<Name>UBL.BE party identifier</Name>
+		<Name>Organisasjonsnummer</Name>
 	</Code>
 	<Code>
 		<Id>0195</Id>
-		<Name>Singapore UEN identifier</Name>
+		<Name>Singapore Nationwide E-Invoice Framework</Name>
 	</Code>
 	<Code>
 		<Id>0196</Id>
-		<Name>Kennitala - Iceland legal id for individuals and legal entities</Name>
+		<Name>Icelandic identifier</Name>
 	</Code>
 	<Code>
 		<Id>0198</Id>
-		<Name>ERSTORG</Name>
+		<Name>The Danish Business Authority - SE-number (DK:SE)</Name>
 	</Code>
 	<Code>
 		<Id>0199</Id>
@@ -123,12 +106,8 @@
 		<Name>Codice Univoco Unità Organizzativa iPA</Name>
 	</Code>
 	<Code>
-		<Id>0202</Id>
-		<Name>Indirizzo di Posta Elettronica Certificata</Name>
-	</Code>
-	<Code>
 		<Id>0204</Id>
-		<Name>Leitweg-ID</Name>
+		<Name>Peppol-Leitweg-ID</Name>
 	</Code>
 	<Code>
 		<Id>0208</Id>
@@ -147,32 +126,52 @@
 		<Name>PARTITA IVA</Name>
 	</Code>
 	<Code>
-		<Id>0212</Id>
-		<Name>Finnish Organization Identifier</Name>
-	</Code>
-	<Code>
-		<Id>0213</Id>
-		<Name>Finnish Organization Value Add Tax Identifier</Name>
-	</Code>
-	<Code>
-		<Id>0215</Id>
-		<Name>Net service ID</Name>
-	</Code>
-	<Code>
 		<Id>0216</Id>
 		<Name>OVTcode</Name>
 	</Code>
 	<Code>
-		<Id>9901</Id>
-		<Name>Danish Ministry of the Interior and Health</Name>
+		<Id>0218</Id>
+		<Name>Unified registration number (Latvia)</Name>
 	</Code>
 	<Code>
-		<Id>9906</Id>
-		<Name>Ufficio responsabile gestione partite IVA</Name>
+		<Id>0221</Id>
+		<Name>The registered number of the qualified invoice issuer (Japan)</Name>
 	</Code>
 	<Code>
-		<Id>9907</Id>
-		<Name>TAX Authority</Name>
+		<Id>0225</Id>
+		<Name>FRCTC ELECTRONIC ADDRESS</Name>
+	</Code>
+	<Code>
+		<Id>0230</Id>
+		<Name>National e-Invoicing Framework (Malaysia)</Name>
+	</Code>
+	<Code>
+		<Id>0235</Id>
+		<Name>UAE Tax Identification Number (TIN)</Name>
+	</Code>
+	<Code>
+		<Id>0240</Id>
+		<Name>Register of legal persons (in French : Répertoire des personnes morales)</Name>
+	</Code>
+	<Code>
+		<Id>0242</Id>
+		<Name>OpenPeppol Service Provider Identification Scheme</Name>
+	</Code>
+	<Code>
+		<Id>0244</Id>
+		<Name>Tax Identification (Tax ID)</Name>
+	</Code>
+	<Code>
+		<Id>0245</Id>
+		<Name>Tax identification number (DIČ)</Name>
+	</Code>
+	<Code>
+		<Id>0246</Id>
+		<Name>German Electronic Business Address</Name>
+	</Code>
+	<Code>
+		<Id>0248</Id>
+		<Name>Oman Value Added Tax Identification Number (VATIN)</Name>
 	</Code>
 	<Code>
 		<Id>9910</Id>
@@ -196,11 +195,11 @@
 	</Code>
 	<Code>
 		<Id>9919</Id>
-		<Name>Kennziffer des Unternehmensregisters </Name>
+		<Name>Kennziffer des Unternehmensregisters</Name>
 	</Code>
 	<Code>
 		<Id>9920</Id>
-		<Name>Agencia Española de Administración Tributaria </Name>
+		<Name>Agencia Española de Administración Tributaria</Name>
 	</Code>
 	<Code>
 		<Id>9922</Id>
@@ -331,12 +330,11 @@
 		<Name>Holy See (Vatican City State) VAT number</Name>
 	</Code>
 	<Code>
-		<Id>9955</Id>
-		<Name>Swedish VAT number</Name>
-	</Code>
-	<Code>
 		<Id>9957</Id>
 		<Name>French VAT number</Name>
 	</Code>
-
+	<Code>
+		<Id>9959</Id>
+		<Name>US Employer ID Number</Name>
+	</Code>
 </CodeList>

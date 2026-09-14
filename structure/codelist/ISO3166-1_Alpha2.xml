@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>Country codes (ISO 3166-1:Alpha2)</Title>
+    <Title>ISO 3166-1:Alpha2 Country codes</Title>
     <Identifier>ISO3166</Identifier>
     <Version>2013</Version>
     <Agency>ISO</Agency>
+
+    <Code>
+        <Id>1A</Id>
+        <Name>Kosovo</Name>
+    </Code>
 
     <Code>
         <Id>AD</Id>
@@ -132,7 +137,7 @@
     </Code>
     <Code>
         <Id>BS</Id>
-        <Name>Bahamas</Name>
+        <Name>Bahamas (The)</Name>
     </Code>
     <Code>
         <Id>BT</Id>
@@ -982,6 +987,10 @@
         <Id>WS</Id>
         <Name>Samoa</Name>
     </Code>
+	<Code>
+        <Id>XI</Id>
+        <Name>United Kingdom (Northern Ireland)</Name>
+    </Code>
     <Code>
         <Id>YE</Id>
         <Name>Yemen</Name>
@@ -1001,15 +1010,6 @@
     <Code>
         <Id>ZW</Id>
         <Name>Zimbabwe</Name>
-    </Code>
-	
-	<Code>
-        <Id>1A</Id>
-        <Name>Kosovo</Name>
-    </Code>
-	<Code>
-        <Id>XI</Id>
-        <Name>United Kingdom (Northern Ireland)</Name>
     </Code>
 
 </CodeList>

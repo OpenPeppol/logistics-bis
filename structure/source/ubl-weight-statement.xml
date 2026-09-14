@@ -6,7 +6,7 @@
 	<?Property key="sch:prefix" PEPPOL-T122?>
 	<?Property key="sch:identifier" T122-basic?>
 	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:weight_statement:1<?Rule PEPPOL-T122-R001?></cbc:CustomizationID>
-	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:weight_statement:1</cbc:ProfileID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:weight_statement:1<?Rule PEPPOL-T122-R002?></cbc:ProfileID>
 
 	<cbc:ID>GOA294107
 		<?Name Document identifier?>

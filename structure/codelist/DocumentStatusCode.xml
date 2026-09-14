@@ -20,5 +20,9 @@
 	<Code>
 		<Id>22</Id>
 		<Name>Final transmission</Name>
-	</Code>	
+	</Code>
+	<Code>
+		<Id>55</Id>
+		<Name>Notification Only</Name>
+	</Code>
 </CodeList>

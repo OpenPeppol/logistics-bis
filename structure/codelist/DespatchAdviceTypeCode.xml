@@ -27,4 +27,103 @@
 		<Name>Return of Goods</Name>
 		<Description>Despatch note containing goods that is to be returned to the Supplier. </Description>
 	</Code>
+	
+	<Code>
+		<Id>101</Id>
+		<Name>Advice of despatch of goods, usecase 1.</Name>
+		<Description>Advice about a depatch and a delivery that is about to take place for usecase 1.</Description>
+	</Code>
+	<Code>
+		<Id>102</Id>
+		<Name>Advice of despatch of goods, usecase 2.</Name>
+		<Description>Advice about a depatch and a delivery that is about to take place for usecase 2.</Description>
+	</Code>
+	<Code>
+		<Id>112</Id>
+		<Name>Advice of despatch of goods, usecase 12.</Name>
+		<Description>Advice about a depatch and a delivery that is about to take place for usecase 12.</Description>
+	</Code>
+
+	<Code>
+		<Id>203</Id>
+		<Name>Delivery note for usecase 3.</Name>
+		<Description>Note about a delivery of goods or services that has taken place for usecase 3.</Description>
+	</Code>
+	<Code>
+		<Id>204</Id>
+		<Name>Delivery note for usecase 4.</Name>
+		<Description>Note about a delivery of goods or services that has taken place for usecase 4.</Description>
+	</Code>
+	<Code>
+		<Id>205</Id>
+		<Name>Delivery note for usecase 5.</Name>
+		<Description>Note about a delivery of goods or services that has taken place for usecase 5.</Description>
+	</Code>
+	<Code>
+		<Id>206</Id>
+		<Name>Delivery note for usecase 6.</Name>
+		<Description>Note about a delivery of goods or services that has taken place for usecase 6.</Description>
+	</Code>
+	<Code>
+		<Id>207</Id>
+		<Name>Delivery note for usecase 7.</Name>
+		<Description>Note about a delivery of goods or services that has taken place for usecase 7.</Description>
+	</Code>
+	<Code>
+		<Id>208</Id>
+		<Name>Delivery note for usecase 8.</Name>
+		<Description>Note about a delivery of goods or services that has taken place for usecase 8.</Description>
+	</Code>
+	<Code>
+		<Id>209</Id>
+		<Name>Delivery note for usecase 9.</Name>
+		<Description>Note about a delivery of goods or services that has taken place for usecase 9.</Description>
+	</Code>
+	<Code>
+		<Id>210</Id>
+		<Name>Delivery note for usecase 10.</Name>
+		<Description>Note about a delivery of goods or services that has taken place for usecase 10.</Description>
+	</Code>
+	<Code>
+		<Id>211</Id>
+		<Name>Delivery note for usecase 11.</Name>
+		<Description>Note about a delivery of goods or services that has taken place for usecase 11.</Description>
+	</Code>
+
+	<Code>
+		<Id>303</Id>
+		<Name>Work statement for usecase 3.</Name>
+		<Description>Statement about some work or service that has taken place according to a contract or order for usecase 3.</Description>
+	</Code>
+	<Code>
+		<Id>304</Id>
+		<Name>Work statement for usecase 4.</Name>
+		<Description>Statement about some work or service that has taken place according to a contract or order for usecase 4.</Description>
+	</Code>
+	<Code>
+		<Id>305</Id>
+		<Name>Work statement for usecase 5.</Name>
+		<Description>Statement about some work or service that has taken place according to a contract or order for usecase 5.</Description>
+	</Code>
+	<Code>
+		<Id>308</Id>
+		<Name>Work statement for usecase 8.</Name>
+		<Description>Statement about some work or service that has taken place according to a contract or order for usecase 8.</Description>
+	</Code>
+	<Code>
+		<Id>309</Id>
+		<Name>Work statement for usecase 9.</Name>
+		<Description>Statement about some work or service that has taken place according to a contract or order for usecase 9.</Description>
+	</Code>
+	<Code>
+		<Id>310</Id>
+		<Name>Work statement for usecase 10.</Name>
+		<Description>Statement about some work or service that has taken place according to a contract or order for usecase 10.</Description>
+	</Code>
+	<Code>
+		<Id>311</Id>
+		<Name>Work statement for usecase 11.</Name>
+		<Description>Statement about some work or service that has taken place according to a contract or order for usecase 11.</Description>
+	</Code>
+
 </CodeList>

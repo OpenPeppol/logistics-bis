@@ -1,0 +1,15 @@
+[[simple-process-two-parties-involved]]
+= Initial Transport Execution Plan Request from Transport User
+
+The following diagram shows a process where the Transport User sends a Transport Execution Plan Request and a Transport Service Provider either
+
+* Accepts the Transport Execution Plan Request and responds with an approved Transport Execution Plan
+* Rejects the Transport Execution Plan Request and responds with a Transport Execution Plan with status code cancellation
+
+image::images/initial.png[image,width=945,height=1064]
+
+Parties involved:
+
+*Transport User:* The party requesting the transport services and sending the Transport Execution Plan Request.
+
+*Transport Service Provider:* The party providing the transport services and responding with a Transport Execution Plan.

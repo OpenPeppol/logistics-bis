@@ -16,6 +16,9 @@
 				- Added Dimension with weight example
 				- Added comments on how to handle Item content with full previous cataloge.
 				- Added a Resource id to give example with both Boverket and Trafikverkets Resource ID
+					
+				2025-11-28
+				- Addede missing information in the EPD Human Readable information section
 		
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -185,13 +188,27 @@
 				<cbc:NameCode listID="IPNC">EPDDataSetID</cbc:NameCode>
 				<cbc:Value>165f8554-00cd-43ad-aeb7-ba769854554a</cbc:Value>
 			</cac:AdditionalItemProperty>
-			<!-- Machine readable data -->
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD Dataset URL</cbc:Name>
 				<cbc:NameCode listID="IPNC">EPDDataSetURL</cbc:NameCode>
 				<cbc:Value>https://epdnorway.lca-data.com/datasetdetail/process.xhtml?uuid=165f8554-00cd-43ad-aeb7-ba769854554a&amp;version=00.01.000&amp;stock=PUBLIC</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<!-- Human readable data -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Program Operator</cbc:Name>
+				<cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+				<cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Number</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+				<cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Product Name</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+				<cbc:Value>HÅLDÄCK</cbc:Value>
+			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD HR URL</cbc:Name>
 				<cbc:NameCode listID="IPNC">EPDHRURL</cbc:NameCode>

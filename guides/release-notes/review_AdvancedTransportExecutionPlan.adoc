@@ -1,0 +1,50 @@
+= Review Transport Notification
+[horizontal]
+Release date:: 2025-09-30
+
+[NOTE]
+====
+This is not a full release following the normal cycles. In this "in-between" release we add a new BIS, a new transaction and amend four other transactions.
+====
+
+== New BIS documents
+* The BIS document Advanced Transport Execution Plan is added.
+
+== Updated BIS documents
+* No BIS document is updated.
+
+== New Transactions
+* The transaction Application Response (T129) is added.
+
+== Updated Transactions
+* Peppol Transport Execution Plan Request 1.2 (T123)
+* Peppol Transport Execution Plan 1.2 (T124)
+* Peppol Transportation Status Request 1.2 (T126)
+* Peppol Transportation Status 1.2 (T127)
+
+== New Codelists
+* No codelists are added.
+
+== Updated Codelists
+* No codelists are changed.
+
+== New Rules
+* No rules are added in this release.
+
+== Updated Rules
+* No rules are changed in this release.
+
+== Request For Change (RFC) that are included/solved in in this in-between release.
+* LLC-23		RFC Changes to Peppol Logistics documents
+* LLC-24		New Peppol profile Transport Notification based on existing profiles Transport Execution Plan with Request and Transportation Status 
+				with Request.
+== Changes that are a part of this in-between release (Please also see LLC-23 and LLC-24):
+* New BIS - Advanced Transport Execution Plan - is added.
+* Usecase examples are added accordingly.
+* New transaction - Application Response (T129) - added. It is only used in the new BIS.
+* Transaction Transport Execution Plan Request (T123) has been updated to release 1.2. New groups and elements are added. For details - see LLC-23.
+* Transaction Transport Execution Plan (T124) has been updated to release 1.2. New groups and elements are added. For details - see LLC-23.
+* Transaction Transportation Status Request (T126) has been updated to release 1.2. New groups and elements are added. For details - see LLC-23.
+* Transaction Transportation Status (T127) has been updated to release 1.2. New elements are added. For details - see LLC-23.
+
+

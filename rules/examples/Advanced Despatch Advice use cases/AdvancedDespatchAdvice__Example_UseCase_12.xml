@@ -351,6 +351,10 @@
 			<cac:ItemInstance>
 				<cbc:ManufactureDate>2023-06-15</cbc:ManufactureDate>
 				<cbc:SerialID>TTG1021</cbc:SerialID>
+				<cac:AdditionalItemProperty>
+					<cbc:Name>MAC</cbc:Name>
+					<cbc:Value>35-209900-176148-1</cbc:Value>
+				</cac:AdditionalItemProperty>
 				<cac:LotIdentification>
 					<cbc:LotNumberID>TTG</cbc:LotNumberID>
 				</cac:LotIdentification>

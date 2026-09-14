@@ -1,0 +1,20 @@
+[[transport-event]]
+= Transport event
+
+The transport event supports an event-oriented document exchange. It represents a time and a location where the event took or is supposed to take place. The context (name) of the event indicates why it is applied. The transport events used in the Transport Execution Plan are:
+
+* Requested Pickup Transport Event
+* Actual Pickup Transport Event
+* Requested Delivery Transport Event
+* Actual Delivery Transport Event
+* Estimated Departure Transport Event
+* Estimated Arrival Transport Event
+* Transport Event (general)
+
+The difference in requested and actual is that the requested event comes from the Transport user and the actual event comes from the Transport service provider. 
+
+An example of a transport event is shown below:
+[source, xml, indent=0]
+----
+include::{snippet-dir2}/snippet-1.xml[tags=planned-pickup-transport-event]
+----

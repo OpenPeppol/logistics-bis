@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ubl:ReceiptAdvice xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:ReceiptAdvice-2"
+<ReceiptAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:ReceiptAdvice-2"
                    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
                    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
    <cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:receipt_advice:1</cbc:CustomizationID>
@@ -222,4 +222,4 @@
 		</cac:DespatchLineReference>
 	</cac:ReceiptLine>
 
-</ubl:ReceiptAdvice>
+</ReceiptAdvice>

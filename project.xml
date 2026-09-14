@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
-    <Name>Peppol Logistics - November 2024</Name>
+    <Name>Peppol Logistics - Release 1.3 </Name>
 
 	<!-- Introduction -->
 
@@ -11,7 +11,7 @@
 
     <!-- BIS documents -->
     <Documentation path="">BIS DOCUMENTS</Documentation>
-    <Documentation path="profiles/66-advanceddespatchadvice/">- Advanced Despatch Advice Only 1.3</Documentation>
+    <Documentation path="profiles/66-advanceddespatchadvice/">- Advanced Despatch Advice Only 1.5</Documentation>
 	<Documentation path="profiles/67-advanceddespatchadvice_w_receiptadvice/">- Advanced Despatch Advice with Receipt Advice 1.1</Documentation>
     <Documentation path="profiles/68-weightstatement/">- Weight Statement 1.3</Documentation>
     <Documentation path="profiles/69-transportexecutionplan_w_request/">- Transport Execution Plan with Request 1.1</Documentation>
@@ -19,51 +19,65 @@
     <Documentation path="profiles/71-waybill/">- Waybill 1.1</Documentation>
     <Documentation path="profiles/72-transportationstatus_w_request/">- Transportation Status with Request 1.1</Documentation>
     <Documentation path="profiles/73-transportationstatus/">- Transportation Status Only 1.1</Documentation>
-    <Documentation path="profiles/74-manifest_w_applicationresponse/">- Manifest with Application Response 0.1 (DRAFT)</Documentation>
+    <Documentation path="profiles/74-AdvancedTransportExecutionPlan/">- Advanced Transport Execution Plan 1.0</Documentation>
+    <Documentation path="profiles/75-manifest_w_applicationresponse/">- Manifest with Application Response 0.1 (DRAFT)</Documentation>
 	
     <!-- Syntax -->
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-advanced-despatch-advice.xml</Path>
         <Title>Advanced Despatch Advice 1.3 (T120)</Title>
+</Resource>
+
+
+	<!-- Syntax -->
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-advanced-despatch-advice.xml</Path>
+        <Title>Peppol Advanced Despatch Advice 1.4 (T120)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-weight-statement.xml</Path>
-        <Title>Weight Statement 1.3 (T122)</Title>
+        <Title>Peppol Weight Statement 1.3 (T122)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-transport-execution-plan-request.xml</Path>
-        <Title>Transport Execution Plan Request 1.1 (T123)</Title>
+        <Title>Peppol Transport Execution Plan Request 1.2 (T123)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-transport-execution-plan.xml</Path>
-        <Title>Transport Execution Plan 1.1 (T124)</Title>
+        <Title>Peppol Transport Execution Plan 1.2 (T124)</Title>
     </Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-waybill.xml</Path>
-		<Title>Waybill 1.1 (T125)</Title>
+		<Title>Peppol Waybill 1.1 (T125)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-transportation-status-request.xml</Path>
-		<Title>Transportation Status Request 1.1 (T126)</Title>
+		<Title>Peppol Transportation Status Request 1.2 (T126)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-transportation-status.xml</Path>
-		<Title>Transportation Status 1.1 (T127)</Title>
+		<Title>Peppol Transportation Status 1.2 (T127)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-receipt-advice.xml</Path>
-		<Title>Receipt Advice 1.1 (T128)</Title>
+		<Title>Peppol Receipt Advice 1.1 (T128)</Title>
 	</Resource>
-  
-    <!-- Rules -->
+	<Resource>
+		<Type>Structure-1</Type>
+		<Path>structure/syntax/ubl-application-response.xml</Path>
+		<Title>Peppol Logistics Application Response 1.0 (T129)</Title>
+	</Resource>
+
+	<!-- Rules -->
     <Resource>
         <Identifier>common</Identifier>
         <Type>native:Schematron</Type>
@@ -74,52 +88,58 @@
         <Identifier>T120</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T120.sch</Path>
-        <Title>Business rules for Advanced Despatch Advice transaction 1.3</Title>
+        <Title>Business rules for Peppol Advanced Despatch Advice transaction 1.3</Title>
     </Resource>
     <Resource>
         <Identifier>T122</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T122.sch</Path>
-        <Title>Business rules for Weight Statement transaction 1.3</Title>
+        <Title>Business rules for Peppol Weight Statement transaction 1.3</Title>
     </Resource>
     <Resource>
         <Identifier>T123</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T123.sch</Path>
-        <Title>Business rules for Transport Execution Plan Request transaction 1.1</Title>
+        <Title>Business rules for Peppol Transport Execution Plan Request transaction 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T124</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T124.sch</Path>
-        <Title>Business rules for Transport Execution Plan transaction 1.1</Title>
+        <Title>Business rules for Peppol Transport Execution Plan transaction 1.2</Title>
     </Resource>
 	<Resource>
 		<Identifier>T125</Identifier>
 		<Type>native:Schematron</Type>
 		<Path>rules/sch/parts/PEPPOL-M-T125.sch</Path>
-		<Title>Business rules for Waybill transaction 1.1</Title>
+		<Title>Business rules for Peppol Waybill transaction 1.1</Title>
 	</Resource>
 	<Resource>
 		<Identifier>T126</Identifier>
 		<Type>native:Schematron</Type>
 		<Path>rules/sch/parts/PEPPOL-M-T126.sch</Path>
-		<Title>Business rules for Transportation Status Request transaction 1.1</Title>
+		<Title>Business rules for Peppol Transportation Status Request transaction 1.2</Title>
 	</Resource>
 	<Resource>
 		<Identifier>T127</Identifier>
 		<Type>native:Schematron</Type>
 		<Path>rules/sch/parts/PEPPOL-M-T127.sch</Path>
-		<Title>Business rules for Transportation Status transaction 1.1</Title>
+		<Title>Business rules for Peppol Transportation Status transaction 1.2</Title>
 	</Resource>
 	<Resource>
 		<Identifier>T128</Identifier>
 		<Type>native:Schematron</Type>
 		<Path>rules/sch/parts/PEPPOL-M-T128.sch</Path>
-		<Title>Business rules for Receipt Advice transaction 1.1</Title>
+		<Title>Business rules for Peppol Receipt Advice transaction 1.1</Title>
+	</Resource>
+	<Resource>
+		<Identifier>T129</Identifier>
+		<Type>native:Schematron</Type>
+		<Path>rules/sch/parts/PEPPOL-M-T129.sch</Path>
+		<Title>Business rules for Peppol Logistics Application Response transaction 1.0</Title>
 	</Resource>
 
-    <!-- Code lists -->
+	<!-- Code lists -->
 
     <Resource>
         <Type>CodeList-1</Type>
@@ -269,7 +289,10 @@
 		<Type>CodeList-1</Type>
 		<Path>structure/codelist/TransportHandlingUnitIDType.xml</Path>
 	</Resource>
-
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/ProductTraceIDschemeID.xml</Path>
+	</Resource>
 	<!-- Files -->
     <Resource>
         <Type>native:File</Type>
@@ -341,7 +364,7 @@
 		<Type>Namespace-1</Type>
 		<Path>structure/namespace/ubl-receipt-advice.xml</Path>
 	</Resource>
-    <Resource>
+	<Resource>
         <Type>Namespace-1</Type>
         <Path>structure/namespace/ubl-invoice.xml</Path>
     </Resource>

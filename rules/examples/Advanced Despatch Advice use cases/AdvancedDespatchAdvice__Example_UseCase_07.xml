@@ -182,22 +182,22 @@
 
 				<cac:EnvironmentalEmission>
 					<cbc:EnvironmentalEmissionTypeCode listID="UN785" name="Carbon Dioxide">CO2</cbc:EnvironmentalEmissionTypeCode>
-					<cbc:ValueMeasure unitCode="KGM">2.8</cbc:ValueMeasure>
+					<cbc:ValueMeasure unitCode="GL">2650</cbc:ValueMeasure>
 				</cac:EnvironmentalEmission>
 
 				<cac:EnvironmentalEmission>
 					<cbc:EnvironmentalEmissionTypeCode listID="UN785" name="Hydrocarbon">HC</cbc:EnvironmentalEmissionTypeCode>
-					<cbc:ValueMeasure unitCode="KGM">0.6</cbc:ValueMeasure>
+					<cbc:ValueMeasure unitCode="GL">0.015</cbc:ValueMeasure>
 				</cac:EnvironmentalEmission>
 
 				<cac:EnvironmentalEmission>
 					<cbc:EnvironmentalEmissionTypeCode listID="UN785" name="Nitric Oxide">NOX</cbc:EnvironmentalEmissionTypeCode>
-					<cbc:ValueMeasure unitCode="KGM">6</cbc:ValueMeasure>
+					<cbc:ValueMeasure unitCode="GL">0.750</cbc:ValueMeasure>
 				</cac:EnvironmentalEmission>
 
 				<cac:EnvironmentalEmission>
 					<cbc:EnvironmentalEmissionTypeCode listID="UN785" name="Particular Matter">PM</cbc:EnvironmentalEmissionTypeCode>
-					<cbc:ValueMeasure unitCode="GRM">0.07</cbc:ValueMeasure>
+					<cbc:ValueMeasure unitCode="GL">0.005</cbc:ValueMeasure>
 				</cac:EnvironmentalEmission>
 
 			</cac:OriginalDespatchTransportationService>

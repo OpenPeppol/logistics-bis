@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+   <Term>ApplicationResponse</Term>
+   <Property key="sch:prefix">PEPPOL-T129</Property>
+   <Property key="sch:identifier">T129-basic</Property>
+   <Namespace prefix="">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
+   <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+   <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+   <Document>
+      <Term>ApplicationResponse</Term>
+	
+	
+	
+	     <Element>
+         <Term>cbc:CustomizationID</Term>
+         <Name>Specification identification</Name>
+         <Description>Identifies the specification of content and rules that apply to the
+				transaction.</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-002</Reference>
+         <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:application_response:1</Value>
+      </Element>
+	     <Element>
+         <Term>cbc:ProfileID</Term>
+         <Name>Business process type identifier</Name>
+         <Description>Identifies the BII profile or business process context in which the
+				transaction appears.</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-001</Reference>
+         <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1</Value>
+      </Element>
+
+	     <Element cardinality="0..1">
+         <Term>cbc:ProfileExecutionID</Term>
+         <Name>Profile Execution ID</Name>
+         <Description>Identifies an instance of executing a profile, to associate all transactions in a collaboration.</Description>
+         <Value type="EXAMPLE">XZ-4532</Value>
+      </Element>
+	     <Element cardinality="1..1">
+         <Term>cbc:ID</Term>
+         <Name>Document ID</Name>
+         <Description>Identifies this Application Response.</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-003</Reference>
+         <Value type="EXAMPLE">DN12345</Value>
+      </Element>
+	     <Element cardinality="1..1">
+         <Term>cbc:IssueDate</Term>
+         <Name>Issue Date</Name>
+         <Description>The date when the Application Response was issued. Format = "YYYY-MM-DD". </Description>
+         <DataType>Date</DataType>
+         <Reference type="BUSINESS_TERM">tir16-004</Reference>
+         <Value type="EXAMPLE">2021-08-15</Value>
+      </Element>
+	     <Element cardinality="1..1">
+         <Term>cbc:IssueTime</Term>
+         <Name>Issue Time</Name>
+         <Description>The time when the Application Response was issued. Format = "hh:mm:ss". </Description>
+         <DataType>Time</DataType>
+         <Reference type="BUSINESS_TERM">tir16-005</Reference>
+         <Value type="EXAMPLE">12:00:00</Value>
+      </Element>
+
+	     <Element cardinality="1..1">
+         <Term>cac:SenderParty</Term>
+         <Name>Sender party </Name>
+         <Description>The party sending the Application Response. </Description>
+         <Element cardinality="1..1">
+            <Term>cbc:EndpointID</Term>
+            <Name>Sender party electronic address </Name>
+            <Description>The endpoint for the sender party. </Description>
+            <Attribute usage="Mandatory">
+               <Term>schemeID</Term>
+               <Name>Scheme identifier</Name>
+               <Description>Scheme identifier for electronic address</Description>
+               <Reference type="CODE_LIST">eas</Reference>
+               <Value type="EXAMPLE">0198</Value>
+            </Attribute>
+            <Value type="EXAMPLE">DK41955619</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyIdentification</Term>
+            <Name>Sender party identification </Name>
+            <Description>An identifier for the sender party as known to the receiver party. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:ID</Term>
+               <Name>ID </Name>
+               <Description>An identifier for the sender party as known to the receiver party. </Description>
+               <Attribute usage="Optional">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0088</Value>
+               </Attribute>
+               <Value type="EXAMPLE">7300010000001</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyName</Term>
+            <Name>Party name </Name>
+            <Description>The name of the sender party. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:Name</Term>
+               <Name>Sender party name</Name>
+               <Description>The name of the sender party. </Description>
+               <Value type="EXAMPLE">Leman</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PostalAddress</Term>
+            <Name>Postal address </Name>
+            <Description>The postal address for the sender party. </Description>
+            <Element cardinality="0..1">
+               <Term>cbc:StreetName</Term>
+               <Name>Address line 1 </Name>
+               <Description>The main address line in a postal address usually the street name and number. </Description>
+               <Value type="EXAMPLE">Ventrupvej 6</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:AdditionalStreetName</Term>
+               <Name>Address line 2 </Name>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. 
+					Common use are secondary house number in a complex or in a building. </Description>
+               <Value type="EXAMPLE">Greve Landsby</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CityName</Term>
+               <Name>City </Name>
+               <Description>The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+               <Value type="EXAMPLE">Greve</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:PostalZone</Term>
+               <Name>Post code </Name>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a 
+					ZIP code or Post Code. </Description>
+               <Value type="EXAMPLE">2670</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CountrySubentity</Term>
+               <Name>Country sub entity </Name>
+               <Description>For specifying a region, county, state, province etc. within a country by using text. </Description>
+               <Value type="EXAMPLE">Region Sjælland</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:AddressLine</Term>
+               <Name>Address line 3 </Name>
+               <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:Line</Term>
+                  <Name>Address line 3 </Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+                  <Value type="EXAMPLE">Bygning 5</Value>
+               </Element>
+            </Element>
+            <Element>
+               <Term>cac:Country</Term>
+               <Name>Country </Name>
+               <Description>Country of the sender party. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:IdentificationCode</Term>
+                  <Name>Country code </Name>
+                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+						Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+						according to the alpha-2 representation. </Description>
+                  <Reference type="CODE_LIST">ISO3166</Reference>
+                  <Value type="EXAMPLE">DK</Value>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyTaxScheme</Term>
+            <Name>Party tax scheme </Name>
+            <Description>The tax information about the sender party. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:CompanyID</Term>
+               <Name>Company ID </Name>
+               <Description>The Sender Party Value Added Tax identifer. </Description>
+               <Value type="EXAMPLE">GB325456788</Value>
+            </Element>
+            <Element cardinality="1..1">
+               <Term>cac:TaxScheme</Term>
+               <Name>Tax scheme </Name>
+               <Element cardinality="1..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Tax scheme identifier </Name>
+                  <Description>Tax scheme identifier. E.g. "VAT" or "GST". </Description>
+                  <Value type="EXAMPLE">VAT</Value>
+               </Element>
+            </Element>
+         </Element>
+         <Element>
+            <Term>cac:PartyLegalEntity</Term>
+            <Name>Party legal entity </Name>
+            <Description>The official identity, name and address of the Sender Party. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:RegistrationName</Term>
+               <Name>Sender party name</Name>
+               <Description>The name of the sender party. </Description>
+               <Value type="EXAMPLE">Consortial</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CompanyID</Term>
+               <Name>Sender parties legal registration name </Name>
+               <Description>The official name of the party as registered with the relevant fiscal authority. </Description>
+               <Attribute>
+                  <Term>schemeID</Term>
+                  <Name>Scheme identifier </Name>
+                  <Description>The identification scheme identifier of the sender partys legal registration identifier </Description>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0089</Value>
+               </Attribute>
+               <Value type="EXAMPLE">SC234567</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:RegistrationAddress</Term>
+               <Name>Legal address </Name>
+               <Description>The official address of the party as registered with the relevant fiscal authority. </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:CityName</Term>
+                  <Name>City name </Name>
+                  <Description>The name of the city. </Description>
+                  <Value type="EXAMPLE">Farthing</Value>
+               </Element>
+               <Element cardinality="1..1">
+                  <Term>cac:Country</Term>
+                  <Name>Country </Name>
+                  <Description>The residens country for the sender party. </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code </Name>
+                     <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
+                     <Value type="EXAMPLE">GB</Value>
+                  </Element>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:Contact</Term>
+            <Name>Contact </Name>
+            <Description>The contact of the sender party. </Description>
+            <Element cardinality="0..1">
+               <Term>cbc:Name</Term>
+               <Name>Contact name </Name>
+               <Description>The contact name. </Description>
+               <Value type="EXAMPLE">Mr Sender</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Telephone</Term>
+               <Name>Contact telephone number </Name>
+               <Description>The phone number of the contact. </Description>
+               <Value type="EXAMPLE">0158 1233714</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:ElectronicMail</Term>
+               <Name>Contact email address </Name>
+               <Description>The electronic mail of the contact. </Description>
+               <Value type="EXAMPLE">sender@consignor-company.co.uk</Value>
+            </Element>
+         </Element>
+      </Element>
+
+	     <Element cardinality="1..1">
+         <Term>cac:ReceiverParty</Term>
+         <Name>Receiver Party </Name>
+         <Description>The party receiving the Application Response. </Description>
+         <Element cardinality="1..1">
+            <Term>cbc:EndpointID</Term>
+            <Name>Receiver party electronic address </Name>
+            <Description>The endpoint id for the receiver party. </Description>
+            <Attribute usage="Mandatory">
+               <Term>schemeID</Term>
+               <Name>Scheme identifier</Name>
+               <Description>Scheme identifier for electronic address</Description>
+               <Reference type="CODE_LIST">eas</Reference>
+               <Value type="EXAMPLE">0198</Value>
+            </Attribute>
+            <Value type="EXAMPLE">DK10154596</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyIdentification</Term>
+            <Name>Receiver party identification </Name>
+            <Description>An identifier for the receiver party. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:ID</Term>
+               <Name>ID</Name>
+               <Description>An identifier for the receiver party as known to the sender party. </Description>
+               <Attribute usage="Optional">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0088</Value>
+               </Attribute>
+               <Value type="EXAMPLE">7300010000001</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyName</Term>
+            <Name>Party name </Name>
+            <Description>The name of the receiver party. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:Name</Term>
+               <Name>Receiver party name </Name>
+               <Description>The name of the receiver party. </Description>
+               <Value type="EXAMPLE">DHL Express</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PostalAddress</Term>
+            <Name>Postal address </Name>
+            <Description>The postal address for the receiver party. </Description>
+            <Element cardinality="0..1">
+               <Term>cbc:StreetName</Term>
+               <Name>Address line 1 </Name>
+               <Description>The main address line in a postal address usually the street name and number. </Description>
+               <Value type="EXAMPLE">Jydekrogen 14</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:AdditionalStreetName</Term>
+               <Name>Address line 2 </Name>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. 
+					Common use are secondary house number in a complex or in a building. </Description>
+               <Value type="EXAMPLE">Indkørsel 5</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CityName</Term>
+               <Name>City </Name>
+               <Description>The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+               <Value type="EXAMPLE">Vallensbæk Landsby</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:PostalZone</Term>
+               <Name>Post code </Name>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a 
+					ZIP code or Post Code. </Description>
+               <Value type="EXAMPLE">2625</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CountrySubentity</Term>
+               <Name>Country sub entity </Name>
+               <Description>For specifying a region, county, state, province etc. within a country by using text. </Description>
+               <Value type="EXAMPLE">Region Hovedstaden</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:AddressLine</Term>
+               <Name>Address line 3 </Name>
+               <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:Line</Term>
+                  <Value type="EXAMPLE">Bygning 5</Value>
+               </Element>
+            </Element>
+            <Element cardinality="1..1">
+               <Term>cac:Country</Term>
+               <Name>Country </Name>
+               <Description>Country of the receiver party. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:IdentificationCode</Term>
+                  <Name>Country code </Name>
+                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+						Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+						according to the alpha-2 representation. </Description>
+                  <Reference type="CODE_LIST">ISO3166</Reference>
+                  <Value type="EXAMPLE">DK</Value>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyTaxScheme</Term>
+            <Name>Party tax scheme </Name>
+            <Description>The tax information about the receiver party. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:CompanyID</Term>
+               <Name>Company ID </Name>
+               <Description>The Receiver Party Value Added Tax identifer. </Description>
+               <Value type="EXAMPLE">GB325456788</Value>
+            </Element>
+            <Element cardinality="1..1">
+               <Term>cac:TaxScheme</Term>
+               <Name>Tax scheme </Name>
+               <Element cardinality="1..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Tax scheme identifier </Name>
+                  <Description>Tax scheme identifier. E.g. "VAT" or "GST". </Description>
+                  <Value type="EXAMPLE">VAT</Value>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="1..1">
+            <Term>cac:PartyLegalEntity</Term>
+            <Name>Party Legal Entity </Name>
+            <Description>The party legal entity for the receiver party.</Description>
+            <Element cardinality="1..1">
+               <Term>cbc:RegistrationName</Term>
+               <Name>Receiver party name</Name>
+               <Description>The name of the receiver party. </Description>
+               <Value type="EXAMPLE">Consortial</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CompanyID</Term>
+               <Name>Receiver parties legal registration name </Name>
+               <Description>The official name of the party as registered with the relevant fiscal authority. </Description>
+               <Attribute>
+                  <Term>schemeID</Term>
+                  <Name>Scheme identifier </Name>
+                  <Description>The identification scheme identifier of the receiver parties legal registration identifier </Description>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0089</Value>
+               </Attribute>
+               <Value type="EXAMPLE">SC234567</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:RegistrationAddress</Term>
+               <Name>Legal address </Name>
+               <Description>The official address of the party as registered with the relevant fiscal authority. </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:CityName</Term>
+                  <Name>City name </Name>
+                  <Description>The name of the city. </Description>
+                  <Value type="EXAMPLE">Farthing</Value>
+               </Element>
+               <Element cardinality="1..1">
+                  <Term>cac:Country</Term>
+                  <Name>Country </Name>
+                  <Description>The residens country for the receiver party. </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code </Name>
+                     <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+							Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+							according to the alpha-2 representation. </Description>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
+                     <Value type="EXAMPLE">GB</Value>
+                  </Element>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:Contact</Term>
+            <Name>Contact </Name>
+            <Description>The contact of the receiver party. </Description>
+            <Element cardinality="0..1">
+               <Term>cbc:Name</Term>
+               <Name>Contact name </Name>
+               <Description>The contact name. </Description>
+               <Value type="EXAMPLE">Mrs Receiver</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Telephone</Term>
+               <Name>Contact telephone number </Name>
+               <Description>The phone number of the contact. </Description>
+               <Value type="EXAMPLE">0158 1233714</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:ElectronicMail</Term>
+               <Name>Contact email address </Name>
+               <Description>The electronic mail of the contact. </Description>
+               <Value type="EXAMPLE">msreceiver@tplogistics.co.uk</Value>
+            </Element>
+         </Element>
+      </Element>
+
+	     <Element cardinality="1..n">
+         <Term>cac:DocumentResponse</Term>
+         <Name>Document Response </Name>
+         <Description>A response to a document. </Description>
+         <Element cardinality="1..1">
+            <Term>cac:Response</Term>
+            <Name>Response </Name>
+            <Description>A response to the document as a whole. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:ResponseCode</Term>
+               <Name>Response Code </Name>
+               <Description>A code signifying the type of response. </Description>
+               <Reference type="CODE_LIST">UNCL4343_T128</Reference>
+               <Value type="EXAMPLE">RE</Value>
+            </Element>
+            <Element cardinality="0..n">
+               <Term>cbc:Description</Term>
+               <Name>Description </Name>
+               <Description>Text describing this response. </Description>
+               <Value type="EXAMPLE">Rejected due to incorrect price.</Value>
+            </Element>
+         </Element>
+         <Element cardinality="1..1 ">
+            <Term>cac:DocumentReference</Term>
+            <Name>Document Reference </Name>
+            <Description>A reference to the document responded to. </Description>
+            <Element cardinality="1..1 ">
+               <Term>cbc:ID</Term>
+               <Name>Document ID </Name>
+               <Description>The identity of the document responded to. </Description>
+               <Value type="EXAMPLE">DN12345</Value>
+            </Element>
+            <Element cardinality="0..1 ">
+               <Term>cbc:IssueDate</Term>
+               <Name>Issue Date </Name>
+               <Description>The Date the document was issued on. </Description>
+               <Value type="EXAMPLE">2016-08-15</Value>
+            </Element>
+            <Element cardinality="0..1 ">
+               <Term>cbc:IssueTime</Term>
+               <Name>Issue Time </Name>
+               <Description>The Time the document was issued on. </Description>
+               <Value type="EXAMPLE">12:00:00</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:DocumentTypeCode</Term>
+               <Name>Document type code</Name>
+               <Description>The type of document. Must me part of UNCL1001. At least one of Document Type Code and Document Type must be used. </Description>
+               <Reference type="CODE_LIST">UNCL1001</Reference>
+               <Value type="EXAMPLE">351</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:DocumentType</Term>
+               <Name>Document type</Name>
+               <Description>The type of document that cannot be specified by a code. At least one of Document Type Code and Document Type must 
+								be used. </Description>
+               <Value type="EXAMPLE">ASN</Value>
+            </Element>
+         </Element>
+      </Element>
+   </Document>
+</Structure>

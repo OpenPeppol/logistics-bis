@@ -8,8 +8,8 @@
 	</rule>
 	<rule context="cbc:ProfileID">
 		<assert id="PEPPOL-T124-R002"
-		  test="some $p in tokenize('urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1 urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_only:1', '\s') satisfies $p = normalize-space(.)"
-		  flag="fatal">ProfileID SHALL have the value 'urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1' or 'urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_only:1'.</assert>
+		  test="some $p in tokenize('urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1 urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_only:1 urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1', '\s') satisfies $p = normalize-space(.)"
+	 	  flag="fatal">ProfileID SHALL have the value 'urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1' or 'urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_only:1' or 'urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1'.</assert>
 	</rule>
 	<rule context="cac:Consignment">
 		<assert id="PEPPOL-T124-R003" test="not(cbc:TotalTransportHandlingUnitQuantity) or number(cbc:TotalTransportHandlingUnitQuantity) &gt;= 0" flag="warning">[PEPPOL-T124-R003]Total transport handling unit quantity SHALL not be negative</assert>
@@ -59,6 +59,15 @@
 	</rule>
 	<rule context="ubl:TransportExecutionPlan">
 		<assert id="PEPPOL-T124-R035" test="not(cac:BillToParty) or cac:BillToParty/cac:PartyName or cac:BillToParty/cac:PartyIdentification" flag="fatal"> [PEPPOL-T124-R035] Party must include either a party name or a party identification.</assert>
+		<assert id="PEPPOL-T124-R040" test="not(cac:MainTransportationService/cbc:TransportServiceCode = ('4', '22', '23', '24')) 
+				or (cac:Consignment/cac:PlannedPickupTransportEvent)"
+				flag="fatal">[PEPPOL-T124-R040] cac:Consignment/cac:PlannedPickupTransportEvent must be present when cac:MainTransportationService = "4", "22", "23" or "24".</assert>
+		<assert id="PEPPOL-T124-R041" test="not(cac:MainTransportationService/cbc:TransportServiceCode = ('4', '22', '23', '24')) 
+				or (cac:Consignment/cac:PlannedDeliveryTransportEvent)"
+				flag="fatal">[PEPPOL-T124-R041] cac:Consignment/cac:PlannedDeliveryTransportEvent must be present when cac:MainTransportationService = "4", "22", "23" or "24".</assert>
+		<assert id="PEPPOL-T124-R042" test="not(cac:MainTransportationService/cbc:TransportServiceCode = ('4', '22', '23', '24')) 
+				or (cac:Consignment/cac:MainCarriageShipmentStage)"
+				flag="fatal">[PEPPOL-T124-R042] cac:Consignment/cac:MainCarriageShipmentStage must be present when cac:MainTransportationService = "4", "22", "23" or "24".</assert>
 	</rule>
 	<rule context="ubl:TransportExecutionPlan/cac:Consignment/cac:ConsigneeParty">
 		<assert id="PEPPOL-T124-R036" test="cac:PartyName or cac:PartyIdentification" flag="fatal"> [PEPPOL-T124-R036] Party must include either a party name or a party identification.</assert>

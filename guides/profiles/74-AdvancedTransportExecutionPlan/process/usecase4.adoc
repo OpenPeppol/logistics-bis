@@ -1,0 +1,46 @@
+[[use-case-4-two-parties-2]]
+== Use case 4 – Carrier request a customs declarations at border crossing from the Freight Forwarder
+
+[cols="2,6",options="header",]
+|====
+|Use Case Number | 4
+|*Use Case Name* a|
+
+Two parties involved Carrier acting as the Transport User and Freight Forwarder acting as the Transport Service Provider.
+
+|*Use Case Description* a|
+
+The Carrier provides detailed instructions to the Freigt Forwarder about the goods he is carrying for the customs declarations.
+
+|*Parties involved* a|
+
+Carrier +
+Freight Forwarder
+
+|*Assumptions* a|
+
+The Carrier is working on a contract with the Freight Forwarder about carrying goods.
+
+The Carrier controls what goods there will be picked up in witch truck.
+
+The Consignor has a consignment to be transported and knows the type of means of transport required and has agreed terms with the Carrier for its transportation. 
+
+The consignment has been or will be loaded into one or more specific pieces of transport equipment. 
+
+The Consignment will be picked up from different addresses.
+
+The Carrier has space available on a specific means of transport. The Consignor and the Carrier have a business relationship. The Consignor has ordered transportation from the Carrier.
+
+|*The flow* a|
+
+. The Carrier has picked up goods and approaching the border.
+. The Carrier sends a Transport Execution Plan Request with information about the goods he is carrying and the estimated time of border crossing to the Freight Forwarder.
+. The Freight Forwarder sends an Application Response back to the Carrier to accept or reject the task of making a Customs Declaration.
+. Later in case there is doubt about how to make the declaration or there are informal information needed to exchange, the Carrier or the Freight Forwarder issues a Transportation Status request
+. The opponent (Freight Forwarder or Carrier) issues the answer back as a Transportation Status.
+. The Freight Forwarder issues a Transport Execution Plan to acknowledge that the Customs Declaration.
+
+|*Remarks* a|
+
+It is assumed the that represent for the Carrier, often the driver and the Freight Forwarder is in direct electronic connection e.g. through a mobile phone during the communication. The goods is considered being uder transport for the use case.
+|====

@@ -11,6 +11,9 @@
 		<ubl:TransportExecutionPlanRequest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2"
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:MainTransportationService>
+				<cbc:TransportServiceCode>4</cbc:TransportServiceCode>
+			</cac:MainTransportationService>
 			<cac:Consignment>
 				<cac:RequestedPickupTransportEvent>
 					<cbc:IdentificationID>21412312412</cbc:IdentificationID>
@@ -29,6 +32,9 @@
 		<ubl:TransportExecutionPlanRequest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2"
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:MainTransportationService>
+				<cbc:TransportServiceCode>4</cbc:TransportServiceCode>
+			</cac:MainTransportationService>
 			<cac:Consignment>
 				<cac:RequestedPickupTransportEvent>
 					<cbc:IdentificationID>21412312412</cbc:IdentificationID>
@@ -44,6 +50,9 @@
 		<ubl:TransportExecutionPlanRequest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2"
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:MainTransportationService>
+				<cbc:TransportServiceCode>4</cbc:TransportServiceCode>
+			</cac:MainTransportationService>
 			<cac:Consignment>
 				<cac:RequestedDeliveryTransportEvent>
 					<cbc:IdentificationID>625435485674654132</cbc:IdentificationID>
@@ -51,14 +60,35 @@
 			</cac:Consignment>
 		</ubl:TransportExecutionPlanRequest>
 	</test>
-	
+
 	<test>
 		<assert id="4">
+			<success>PEPPOL-T123-R021</success>
+		</assert>
+		<ubl:TransportExecutionPlanRequest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:MainTransportationService>
+				<cbc:TransportServiceCode>1</cbc:TransportServiceCode>
+			</cac:MainTransportationService>
+			<cac:Consignment>
+
+			</cac:Consignment>
+
+		</ubl:TransportExecutionPlanRequest>
+	</test>
+
+	<test>
+		
+		<assert id="5">
 			<error>PEPPOL-T123-R021</error>
 		</assert>
 		<ubl:TransportExecutionPlanRequest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2"
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:MainTransportationService>
+				<cbc:TransportServiceCode>4</cbc:TransportServiceCode>
+			</cac:MainTransportationService>
 			<cac:Consignment>
 
 			</cac:Consignment>

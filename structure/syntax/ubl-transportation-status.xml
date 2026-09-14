@@ -30,6 +30,13 @@
          <Reference type="RULE">PEPPOL-T127-R002</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</Value>
       </Element>
+	     <Element cardinality="0..1">
+         <Term>cbc:ProfileExecutionID</Term>
+         <Name>Profile Execution ID</Name>
+         <Description>Identifies an instance of executing a profile, to associate all transactions in a collaboration.</Description>
+         <Value type="EXAMPLE">XZ-4532</Value>
+      </Element>
+
 	     <Element>
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
@@ -40,11 +47,10 @@
          <Reference type="BUSINESS_TERM">tir16-003</Reference>
          <Value type="EXAMPLE">TS_1</Value>
       </Element>
-	     <Element>
+	     <Element cardinality="1..1">
          <Term>cbc:IssueDate</Term>
          <Name>Issue Date</Name>
-         <Description>The date when the Transportation Status was issued. Format = "YYYY-MM-DD". ?
-		&lt;?Cardinality 1..1</Description>
+         <Description>The date when the Transportation Status was issued. Format = "YYYY-MM-DD". </Description>
          <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">tir16-004</Reference>
          <Value type="EXAMPLE">2023-06-06</Value>
@@ -67,7 +73,8 @@
 	     <Element cardinality="1..1">
          <Term>cbc:ShippingOrderID</Term>
          <Name>Shipping Order ID </Name>
-         <Description>An identifier (in the form of a reference number) of the shipping order or forwarding instruction associated with this shipment. </Description>
+         <Description>An identifier (in the form of a reference number) of the shipping order or forwarding instruction associated with this 
+			shipment. </Description>
          <Value type="EXAMPLE">KHN23-44044</Value>
       </Element>
 	     <Element cardinality="1..1">
@@ -93,8 +100,8 @@
 	     <Element cardinality="0..1">
          <Term>cac:Consignment</Term>
          <Name>Consignment information </Name>
-         <Description>An identifiable collection of goods items sent from one party (the Despatch Party) to another party (the Consignee) via one or more 
-			modes of transport.</Description>
+         <Description>An identifiable collection of goods items sent from one party (the Despatch Party) to another party (the Consignee) via 
+			one or more modes of transport.</Description>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
             <Name>Consignment identifier </Name>
@@ -121,7 +128,7 @@
                <Description>Specifies the status condition of the related object.  </Description>
                <Attribute usage="Mandatory">
                   <Term>listID</Term>
-                  <Value type="EXAMPLE">zzz</Value>
+                  <Value type="EXAMPLE">ZZZ</Value>
                </Attribute>
                <Value type="EXAMPLE">4</Value>
             </Element>
@@ -177,7 +184,7 @@
                   <Description>Specifies the status condition of the related object.  </Description>
                   <Attribute usage="Mandatory">
                      <Term>listID</Term>
-                     <Value type="EXAMPLE">zzz</Value>
+                     <Value type="EXAMPLE">ZZZ</Value>
                   </Attribute>
                   <Value type="EXAMPLE">4</Value>
                </Element>
@@ -193,7 +200,7 @@
                   <Description>The reason of the status expressed as a code. </Description>
                   <Attribute usage="Mandatory">
                      <Term>listID</Term>
-                     <Value type="EXAMPLE">zzz</Value>
+                     <Value type="EXAMPLE">ZZZ</Value>
                   </Attribute>
                   <Value type="EXAMPLE">80</Value>
                </Element>
@@ -251,7 +258,8 @@
                      <Element cardinality="0..1">
                         <Term>cbc:AdditionalStreetName</Term>
                         <Name>Address line 2</Name>
-                        <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
+                        <Description>An additional address line in a postal address that can be used to give further details supplementing the 
+							main line. Common use are secondary house number in a complex or in a building.</Description>
                         <Value type="EXAMPLE">Purchasing</Value>
                      </Element>
                      <Element cardinality="0..1">
@@ -263,7 +271,8 @@
                      <Element cardinality="0..1">
                         <Term>cbc:PostalZone</Term>
                         <Name>Post code </Name>
-                        <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+                        <Description>The identifier for an addressable group of properties according to the relevant national postal service, 
+							such as a ZIP code or Post Code. </Description>
                         <Value type="EXAMPLE">00260</Value>
                      </Element>
                      <Element cardinality="0..1">
@@ -278,7 +287,8 @@
                         <Element cardinality="1..1">
                            <Term>cbc:Line</Term>
                            <Name>Address line 3 </Name>
-                           <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+                           <Description>An additional address line in an address that can be used to give further details supplementing the 
+								main line. </Description>
                            <Value type="EXAMPLE">Gate 34</Value>
                         </Element>
                      </Element>
@@ -289,7 +299,9 @@
                         <Element cardinality="1.1">
                            <Term>cbc:IdentificationCode</Term>
                            <Name>Country code </Name>
-                           <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                           <Description>A code that identifies the country. The lists of valid countries are registered with the 
+								ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". 
+								Codes must be according to the alpha-2 representation. </Description>
                            <Reference type="CODE_LIST">ISO3166</Reference>
                            <Value type="EXAMPLE">FI</Value>
                         </Element>
@@ -305,7 +317,7 @@
                         <Description>The ID for a person. The type of ID can be specified in a schemeID. </Description>
                         <Attribute usage="Optional">
                            <Term>schemeID</Term>
-                           <Value type="EXAMPLE">zzz</Value>
+                           <Value type="EXAMPLE">ZZZ</Value>
                         </Attribute>
                         <Value type="EXAMPLE">45976</Value>
                      </Element>
@@ -394,8 +406,8 @@
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Identifier transport handling unit </Name>
-               <Description>The Transport Handling Unit is identified with a Serial Shipping Container Code (SSCC). The GS1 identification key used to 
-					identify logistics units. The key comprises an extension digit, GS1 Company Prefix, serial reference and check digit. </Description>
+               <Description>The Transport Handling Unit is identified with a Serial Shipping Container Code (SSCC). The GS1 identification key 
+					used to identify logistics units. The key comprises an extension digit, GS1 Company Prefix, serial reference and check digit. </Description>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Reference type="CODE_LIST">TransportHandlingUnitIDType</Reference>
@@ -413,7 +425,7 @@
                   <Description>Specifies the status condition of the related object.  </Description>
                   <Attribute usage="Mandatory">
                      <Term>listID</Term>
-                     <Value type="EXAMPLE">zzz</Value>
+                     <Value type="EXAMPLE">ZZZ</Value>
                   </Attribute>
                   <Value type="EXAMPLE">4</Value>
                </Element>
@@ -472,7 +484,7 @@
                <Description>Specifies the status condition of the related object.  </Description>
                <Attribute usage="Mandatory">
                   <Term>listID</Term>
-                  <Value type="EXAMPLE">zzz</Value>
+                  <Value type="EXAMPLE">ZZZ</Value>
                </Attribute>
                <Value type="EXAMPLE">4</Value>
             </Element>
@@ -488,7 +500,7 @@
                <Description>The reason of the status expressed as a code. </Description>
                <Attribute usage="Mandatory">
                   <Term>listID</Term>
-                  <Value type="EXAMPLE">zzz</Value>
+                  <Value type="EXAMPLE">ZZZ</Value>
                </Attribute>
                <Value type="EXAMPLE">80</Value>
             </Element>
@@ -546,7 +558,8 @@
                   <Element cardinality="0..1">
                      <Term>cbc:AdditionalStreetName</Term>
                      <Name>Address line 2</Name>
-                     <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
+                     <Description>An additional address line in a postal address that can be used to give further details supplementing the 
+							main line. Common use are secondary house number in a complex or in a building.</Description>
                      <Value type="EXAMPLE">Purchasing</Value>
                   </Element>
                   <Element cardinality="0..1">
@@ -558,7 +571,8 @@
                   <Element cardinality="0..1">
                      <Term>cbc:PostalZone</Term>
                      <Name>Post code </Name>
-                     <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+                     <Description>The identifier for an addressable group of properties according to the relevant national postal service, 
+							such as a ZIP code or Post Code. </Description>
                      <Value type="EXAMPLE">00260</Value>
                   </Element>
                   <Element cardinality="0..1">
@@ -573,7 +587,8 @@
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
                         <Name>Address line 3 </Name>
-                        <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+                        <Description>An additional address line in an address that can be used to give further details supplementing the 
+								main line. </Description>
                         <Value type="EXAMPLE">Gate 34</Value>
                      </Element>
                   </Element>
@@ -584,7 +599,9 @@
                      <Element cardinality="1.1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code </Name>
-                        <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                        <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+								Maintenance agency, "Codes for the representation of names of countries and their subdivisions". 
+								Codes must be according to the alpha-2 representation. </Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">FI</Value>
                      </Element>
@@ -600,7 +617,7 @@
                      <Description>The ID for a person. The type of ID can be specified in a schemeID. </Description>
                      <Attribute usage="Optional">
                         <Term>schemeID</Term>
-                        <Value type="EXAMPLE">zzz</Value>
+                        <Value type="EXAMPLE">ZZZ</Value>
                      </Attribute>
                      <Value type="EXAMPLE">45976</Value>
                   </Element>
@@ -709,7 +726,8 @@
          <Element cardinality="0..1">
             <Term>cac:Attachment</Term>
             <Name>Attachment</Name>
-            <Description>Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Description>
+            <Description>Group to describe an attached document. An attachment can refer to an external document or be included with the 
+				document being exchanged.</Description>
             <Element cardinality="0..1">
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                <Name>Embedded binary object</Name>
@@ -786,7 +804,8 @@
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
                   <Name>Address line 2</Name>
-                  <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
+                  <Description>An additional address line in a postal address that can be used to give further details supplementing the 
+						main line. Common use are secondary house number in a complex or in a building.</Description>
                   <Value type="EXAMPLE">Purchasing</Value>
                </Element>
                <Element cardinality="0..1">
@@ -798,7 +817,8 @@
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
                   <Name>Post code </Name>
-                  <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+                  <Description>The identifier for an addressable group of properties according to the relevant national postal service, 
+						such as a ZIP code or Post Code. </Description>
                   <Value type="EXAMPLE">00260</Value>
                </Element>
                <Element cardinality="0..1">
@@ -824,7 +844,9 @@
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+							Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+							according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">FI</Value>
                   </Element>
@@ -840,7 +862,7 @@
                   <Description>The ID for a person. The type of ID can be specified in a schemeID. </Description>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
-                     <Value type="EXAMPLE">zzz</Value>
+                     <Value type="EXAMPLE">ZZZ</Value>
                   </Attribute>
                   <Value type="EXAMPLE">45976</Value>
                </Element>
@@ -912,7 +934,7 @@
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0198</Value>
             </Attribute>
-            <Value type="EXAMPLE">41955619</Value>
+            <Value type="EXAMPLE">DK41955619</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -954,7 +976,8 @@
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2 </Name>
-               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. 
+					Common use are secondary house number in a complex or in a building. </Description>
                <Value type="EXAMPLE">Greve Landsby</Value>
             </Element>
             <Element cardinality="0..1">
@@ -966,7 +989,8 @@
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
-               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a 
+					ZIP code or Post Code. </Description>
                <Value type="EXAMPLE">2670</Value>
             </Element>
             <Element cardinality="0..1">
@@ -990,7 +1014,9 @@
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
-                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+						Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+						according to the alpha-2 representation. </Description>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">DK</Value>
                </Element>
@@ -1102,7 +1128,7 @@
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0198</Value>
             </Attribute>
-            <Value type="EXAMPLE">10154596</Value>
+            <Value type="EXAMPLE">DK10154596</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -1144,7 +1170,8 @@
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2 </Name>
-               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. 
+					Common use are secondary house number in a complex or in a building. </Description>
                <Value type="EXAMPLE">Indkørsel 5</Value>
             </Element>
             <Element cardinality="0..1">
@@ -1156,7 +1183,8 @@
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
-               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a 
+					ZIP code or Post Code. </Description>
                <Value type="EXAMPLE">2625</Value>
             </Element>
             <Element cardinality="0..1">
@@ -1180,7 +1208,9 @@
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
-                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+						Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+						according to the alpha-2 representation. </Description>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">DK</Value>
                </Element>
@@ -1246,7 +1276,9 @@
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+							Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+							according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>

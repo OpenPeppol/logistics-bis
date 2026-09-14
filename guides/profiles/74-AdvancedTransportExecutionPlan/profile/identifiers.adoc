@@ -1,0 +1,17 @@
+[[namespaces]]
+= Namespaces
+
+The Transport Execution Plan Request data model is bound to {ubl24} of the document type {ubl-transport-execution-plan-request}. The target namespace for the UBL2.4 TransportExecutionPlanRequest is:
+*urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2*
+
+The Transport Execution Plan data model is bound to {ubl24} of the document type {ubl-transport-execution-plan}. The target namespace for the UBL2.4 TransportExecutionPlan is:
+*urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2*
+
+The Transportation Status Request data model is bound to {ubl23} of the document type {ubl-transportation-status-request}. The target namespace for the UBL2.3 TransportationStatusRequest is:
+*urn:oasis:names:specification:ubl:schema:xsd:TransportationStatusRequest-2*
+
+The Transportation Status data model is bound to {ubl23} of the document type {ubl-transportation-status}. The target namespace for the UBL2.3 TransportationStatus is:
+*urn:oasis:names:specification:ubl:schema:xsd:TransportationStatus-2*
+
+The Application Response data model is bound to {ubl21} of the document type {ubl-application-response}. The target namespace for the UBL2.1 ApplicationResponse is:
+*urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2*

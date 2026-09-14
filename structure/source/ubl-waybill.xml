@@ -45,7 +45,7 @@
 		<?Name Sender Party ?>
 		<?Description The party issuing the Waybill. ?>
 		<?Cardinality 1..1?>
-		<cbc:EndpointID schemeID="0198">13246149
+		<cbc:EndpointID schemeID="0198">DK13246149
 			<?Name Endpoint ID ?>
 			<?Description An identifier for the end point of the routing service for the Sender party (e.g., EAN Location Number, GLN). ?>			
 			<?Cardinality 1..1?>
@@ -435,7 +435,7 @@
 					<?Description The name of the consignor party.?>
 					<?Cardinality 1..1?>
 				</cbc:RegistrationName>
-			<cbc:CompanyID schemeID="0198">13246149
+			<cbc:CompanyID schemeID="0198">DK13246149
 					<?Name Consignor parties legal registration name ?>
 					<?Description The official name of the party as registered with the relevant fiscal authority. ?>
 					<?Cardinality 0..1?>
@@ -490,7 +490,13 @@
 		<?Name Carrier party ?>
 		<?Description The carrier party responsible for this Waybill. ?>
 		<?Cardinality 1..1?>
-		
+		<cbc:EndpointID schemeID="0216">003701080233
+			<?Description An identifier for the end point of the routing service for the carrier party (e.g., EAN Location Number, GLN). ?>
+			<?Name Endpoint ID ?>			
+			<?Cardinality 1..1?>
+			<?schemeID-usage Mandatory?>
+			<?schemeID-CodeList eas?>
+		</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<?Name Carrier party identification ?>
 			<?Description An identifier for the Carrier party. ?>
@@ -780,12 +786,15 @@
 			</cbc:ElectronicMail>
 		</cac:Contact>
 	</cac:FreightForwarderParty>
+	
 	<cac:Shipment>
 		<?Name Shipping Order ID ?>
-		<?Description A contractual arrangement whereby an identifiable collection of goods items is to be transported from one party (usually a Supplier)	to another party (usually a Customer).?>
+		<?Description A contractual arrangement whereby an identifiable collection of goods items is to be transported from one party (usually a Supplier) 
+			to another party (usually a Customer).?>
 		<?Cardinality 1..1?>
 		<cbc:ID schemeID="GSIN">73500538500000019
-			<?Description Identifies a shipment. Freight forwarders reference number. If this ID is in the GSIN format, it should be indicated in the attribute @schemeID.?>
+			<?Description Identifies a shipment. Freight forwarders reference number. If this ID is in the GSIN format, it should be indicated in the 
+				attribute @schemeID.?>
 			<?schemeID-usage optional?>
 			<?schemeID-CodeList ShipmentIDType?>
 			<?schemeID-Description Used to indicate that the ID is in the GSIN format. The Global Shipment Identification Number (GSIN) is a number that 
@@ -796,14 +805,22 @@
 			<?Description Free-form text pertinent to this shipment, conveying information that is not contained explicitly in other structures.?>
 			<?Cardinality 0..1?>
 		</cbc:Information>
+		
 		<cac:Consignment>
 			<?Name Consignment information ?>
-			<?Description An identifiable collection of goods items sent from one party (the Despatch Party) to another party (the Consignee) via one or more modes of transport.?>			
-			<?Cardinality 1..n?>
-			<cbc:ID>12535157654567654
+			<?Description An identifiable collection of goods items sent from one party (the Despatch Party) to another party (the Consignee) via one or more modes of transport.?>
+			<?Cardinality 1..1?>
+			<cbc:ID schemeID="GINC">735005233GS1TRANSPORT000001
 				<?Name Consignment identifier ?>
 				<?Description If this ID is in the GINC format, it should be indicated in the attribute @schemeID.?>
 				<?Cardinality 1..1?>
+				<?schemeID-usage optional?>
+				<?schemeID-CodeList ConsignmentIDType?>
+				<?schemeID-Description Used to indicate that the ID is in the GINC (Global Identification Number for Consignment) format. This number 
+					identifies a consignment, which is a logical grouping of goods (one or more logistics units) transferred to a freight forwarder to be 
+					transported for a specific journey. The consignment number must be allocated by a freight forwarder (or a carrier acting as a freight 
+					forwarder) or a consignor, but only if prior agreement of the freight forwarder is given. ?>
+
 			</cbc:ID>
 			<cbc:ConsigneeAssignedID>1234
 				<?Name Consignee Consignment identifier ?>				
@@ -1230,7 +1247,8 @@
 				<?Cardinality 0..n?>
 				<cbc:ID schemeID="SSCC">173500538500000061
 					<?Name Identifier transport handling unit ?>
-					<?Description The Transport Handling Unit is identified with a Serial Shipping Container Code (SSCC). The GS1 identification key used to identify logistics units. The key comprises an extension digit, GS1 Company Prefix, serial reference and check digit. ?>
+					<?Description The Transport Handling Unit is identified with a Serial Shipping Container Code (SSCC). The GS1 identification key used 
+						to identify logistics units. The key comprises an extension digit, GS1 Company Prefix, serial reference and check digit. ?>
 					<?Cardinality 1..1?>
 					<?schemeID-usage Optional?>
 					<?schemeID-CodeList TransportHandlingUnitIDType?>

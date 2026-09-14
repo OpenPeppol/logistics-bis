@@ -237,8 +237,14 @@
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Treatment Code</cbc:Name>
 				<cbc:NameCode listID="IPNC">TreatmentCode</cbc:NameCode>
-				<cbc:Value>1234567890</cbc:Value>
+				<cbc:Value>R11#A</cbc:Value>
 			</cac:AdditionalItemProperty>
+			
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Waste Declaration Number</cbc:Name>
+				<cbc:NameCode listID="SE:Waste">WasteDeclarationNumber</cbc:NameCode>  
+				<cbc:Value>1234567890</cbc:Value>
+				</cac:AdditionalItemProperty>
 			
 		</cac:Item>
 	</cac:DespatchLine>

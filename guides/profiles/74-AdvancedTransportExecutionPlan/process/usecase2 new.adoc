@@ -1,0 +1,43 @@
+[[use-case-2]]
+== Use case 2 – Consignee requests a transport from a Carrier
+
+[cols="2,6",options="header",]
+|====
+|Use Case Number | 2
+|*Use Case Name* a|
+
+Consignee requests a transport from a Carrier.
+
+|*Use Case Description* a|
+
+Consignee in the role of Transport User provides instructions to the Carrier in the role of Transport Service Provider for the transport of a consignment.  
+
+|*Parties involved* a|
+Sender +
+Receiver +
+Consignee +
+Carrier +
+Consignor
+
+|*Assumptions* a|
+
+The Consignee has a consignment to be received and has agreed terms with a Carrier for its transportation. 
+
+The Carrier has space available on a specific means of transport.
+
+The consignment has been or will be loaded into one or more specific pieces of transport equipment. 
+
+|*The flow* a|
+
+. The Consignee as Transport User sends a Transport Execution Plan Request to the Carrier as Transport Service Provider.
+. The Carrier replies with an Application Response to accept the request to the consignee.
+. The Carrier sends an informal message with the terms and conditions for the messages as a Transportation Status Request to the Consignee.
+. The Consignee replies back with an informal message by describing the answer in a Transportation Status.
+. The Carrier issues the Transport Execution Plan to the Consignee.
+. The Consignee forwards the Transport Execution Plan to the Consignor.
+. The Consignor packs the goods ready for collection by the Carrier.
+. The Carrier collects the Shipment from the Consignor and transports it to the Consignee.
+
+|*XML example file* a|
+See {examples-zip} for sample files illustrating Use Case 2.
+|====

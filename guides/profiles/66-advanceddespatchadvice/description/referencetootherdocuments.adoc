@@ -4,6 +4,10 @@
 Both at header and line levels of the Despatch Advice it is possible to refer to, or attach, other documents to the Despatch Advice.
 As a minimum the Document ID and Document Type must be provided. Optionally the document itself, or the URL to the document, can be added.
 
+The two different types of Weight Statements (DocumentTypeCode "14" and "15") should be used like this:" "Use "14" when you as the supplier has 
+sold the material (See use-case 7.)." "Use "15" when you as the supplier has not sold the material but is only referring to the Weight Statement 
+(See use-case 6 and 10.)
+
 .Example, Header level:
 [source, xml, indent=0]
 ----

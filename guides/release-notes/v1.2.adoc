@@ -1,0 +1,49 @@
+= Version 1.2
+[horizontal]
+Release date::	November 2025
+				* Date of member review:	2025-10-27
+				* Date of publication:		2025-12-08
+				* Mandatory to use from:	2026-03-16
+
+[NOTE]
+====
+This is the second release update of the Peppol Logistics standard. This time only minor changes are included.
+====
+
+== New BIS documents 
+* No BIS documents are added in this release.
+
+== Updated BIS documents
+* PEPPOL BIS Advanced Despatch Advice Only 1.4
+** In section "6.9 Reference to Other Documents" example values have been added to clarify the use of the Document Type Code.
+** In section "6.5 Shipment" three parts are changed. The first change is to clarify that a dummy value must be "NA". 
+The second change is an explanation how to express multiple license-plate numbers and license-plate numbers on foreign trucks.
+The last change is a change of the delimiter character. Before this change a semicolon (;) was used. With this change a hashtag (#), the
+standard Peppol delimiter character, is used instead.
+** In section "Environmental Emission" a calculation guide for the emission is added.
+
+== New Transactions
+* No transactions are added in this release.
+
+== Updated Transactions
+* No transactions are amended in this release.
+
+== New Codelists
+* No new codelists are added in this release.
+
+== Updated Rules
+* No LoC rules are changed in this version.
+* Common rules are updated to PoAC version.
+
+== New Rules
+* No LoC rules are added in this release.
+
+== Changes Use-case Example files.
+* Technical change - "ubl:" removed as Root element prefix in all Use-case example files that required this change. Example: "<ubl:ReceiptAdvice xmlns:ubl=..." changed to "<ReceiptAdvice xmlns=..."
+* Example files for Use-case 4, Use-case 5, Use-case 7, Use-case 9, Use-case 10 and Use-case 11 are modified in the EnvironmentalEmission part 
+to conform with the changes in the BIS Advanced Despatch Advice Only 1.4.
+
+== Request For Change (RFC) that are included/solved in Release 1.2
+* LLC-22 Request to add more text in the BIS for Advanced Despatch Advice.
+* LLC-26 Alignment of Environmental Emission Type Codes
+

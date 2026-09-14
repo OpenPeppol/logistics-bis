@@ -1,0 +1,34 @@
+[[description-of-selected-parts-of-the-transport-execution-plan]]
+= Description of selected parts of the Transport Execution Plan Request and Transport Execution Plan.
+
+:leveloffset: +1
+
+include::overview.adoc[]
+
+include::parties.adoc[]
+
+include::identification.adoc[]
+
+include::consignment.adoc[]
+
+include::transportEvent.adoc[]
+
+include::shipmentStage.adoc[]
+
+include::transportHandlingUnit.adoc[]
+
+include::goodsItem.adoc[]
+
+//include::transportEquipment.adoc[]
+
+//include::measurementDimension.adoc[]
+
+//include::itemInstance.adoc[]
+
+//include::hazardousItem.adoc[]
+
+//include::pickup.adoc[]
+
+//include::documentReference.adoc[]
+
+:leveloffset: -1

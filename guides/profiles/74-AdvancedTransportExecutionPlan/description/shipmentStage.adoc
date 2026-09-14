@@ -1,0 +1,15 @@
+[[shipment-stage]]
+= Shipment stage
+
+The shipment stage describes a stage of a shipment. This can be from door to door, from door to terminal or form terminal to door. A shipment stage has at least one transport mode and one carrier Party. If the carriers are the same for all shipment stages, it can be defined in the consignment. In a consignment there can be many shipment stages, that is:
+
+* Main carriage. The shipment stage that is the primary leg for the shipment often used for carrying the goods from on country to another or from one harbour (or airport) or another. For trucks and rails, it can be fixed long distance routes. 
+* Pre carriage. The transport from the first pickup to a terminal or port. There can be many pre carriages per consignment
+* On carriage. The transport from the arrival port or terminal of the main carriage on the way to the final destination. 
+The shipment stage serves to list the route for the shipment. There can be transport event defined at departure or at arrival. 
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=main-shipment-stage]
+----

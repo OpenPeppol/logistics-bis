@@ -1,0 +1,63 @@
+[[parties-and-roles]]
+= Parties and roles
+
+The table below gives the definitions of the parties and roles involved in the Transport Execution Plan with Request process.
+
+[cols="2,8",options="header",]
+|====
+|Business partners |Definition
+|*Customer* a|
+
+The customer is the legal person or organization who is in demand of a product or service.
+Examples of customer roles: buyer, consignee, debtor, contracting authority.
+
+|*Supplier* a|
+
+The supplier is the legal person or organization who provides a product or service.
+
+Examples of supplier roles: seller, consignor, despatch party, economic operator. 
+
+|====
+
+[cols="2,11",options="header",]
+|====
+|Role/actor |Definition
+
+|*Sender* (cac:SenderParty) a|
+The party issuing the document.This can be the supplier or the customer or a party on behalf of them.
+
+|*Receiver* (cac:ReceiverParty) a|
+The party receiving the document. This can be the supplier or the customer or a party on behalf of them.
+
+|*Transport User (cac:TransportUserParty)* a|
+
+The party requesting the transport services referenced in the Transport Execution Plan Request and the sender of the Transport Execution Plan.
+
+|*Transport Service Provider (cac:TransportServiceProviderParty)* a|
+
+The party providing the transport services referenced in the Transport Execution Plan Request. The receiver of the Transport Execution Plan.
+
+|*Consignor (cac:ConsignorParty)* a|
+
+Consignor is the seller of the goods and is often referred to as the seller or shipper. The role is carried out by the supplier or on behalf of the supplier.
+
+|*Consignee (cac:ConsigneeParty)* a|
+
+Consignee is the person or organisation to which the products will be shipped and who is taking possession. The role is carried out by the customer or on behalf of the customer.
+
+|*Payee (cac:PayeeParty)* a|
+
+The party that will pay for the transport service(s) referred to in the Transport Execution Plan.
+This role is used in the Transport Execution Plan Request. 
+NB! This is the same as BillToParty in the Transport Execution Plan, and PayeeParty will be replaced in the next UBL-version.
+
+|*Bill to (cac:BillToParty)* a|
+
+The party that will pay for the transport service(s) referred to in the Transport Execution Plan.
+This role is used in the Transport Execution Plan.
+
+|====
+
+The diagram below shows the roles in the Transport Execution with Request process.
+
+image::images/roles.png[image,width=649,height=260]

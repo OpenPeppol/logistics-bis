@@ -1,0 +1,10 @@
+[[transport-equipment]]
+= Transport equipment
+
+The transport equipment describes the equipment related to the transport handling unit.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=transport-equipment]
+----

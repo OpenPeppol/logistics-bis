@@ -1,0 +1,27 @@
+[[change]]
+= Change of Transport Execution Plan Request or Transport Execution Plan
+
+== Change of Transport Execution Plan Request from Transport User
+
+The following diagram shows a process where the Transport User changes an existing Transport Execution Plan Request.
+
+image::images/change_transport_user.png[image,width=600,height=500]
+
+Parties involved:
+
+*Transport User:* The party sending a change to a Transport Execution Plan Request.
+
+*Transport Service Provider:* The party receiving a change to a Transport Execution Plan Request and responding with an approval or rejection.
+
+== Change of Transport Execution Plan from Transport Service Provider
+
+The following diagram shows a process where the Transport Service Provider changes an existing Transport Execution Plan.
+The change must have been agreed with the Transport User before the change is sent.
+
+image::images/change_service_provider.png[image,width=600,height=500]
+
+Parties involved:
+
+*Transport User:* The party receiving a change to a Transport Execution Plan.
+
+*Transport Service Provider:* The party sending a change to a Transport Execution Plan.

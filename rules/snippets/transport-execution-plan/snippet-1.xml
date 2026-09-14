@@ -13,7 +13,7 @@
 	<cbc:DocumentStatusCode>9</cbc:DocumentStatusCode>
 	<!-- tag::sender-party[] -->
 	<cac:SenderParty>
-		<cbc:EndpointID schemeID="0198">13246149</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0198">DK13246149</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeAgencyName="GS1" schemeName="GLN">4058673827641</cbc:ID>
 		</cac:PartyIdentification>
@@ -39,7 +39,7 @@
 	<!-- end::sender-party[] -->
 	<!-- tag::receiver-party[] -->
 	<cac:ReceiverParty>
-		<cbc:EndpointID schemeID="0198">13246149</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0198">DK13246149</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeAgencyName="GS1" schemeName="GLN">4058673827000</cbc:ID>
 		</cac:PartyIdentification>
@@ -299,7 +299,7 @@
 			</cac:PostalAddress>
 			<cac:PartyLegalEntity>
 				<cbc:RegistrationName>Novo Nordisk Pharmatech A/S</cbc:RegistrationName>
-				<cbc:CompanyID schemeID="0198">13246149</cbc:CompanyID>
+				<cbc:CompanyID schemeID="0198">DK13246149</cbc:CompanyID>
 				<cac:RegistrationAddress>
 					<cbc:CityName>Køge</cbc:CityName>
 					<cac:Country>

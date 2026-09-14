@@ -1,0 +1,11 @@
+[[consignment]]
+= Consignment
+
+A consignment is the transportation of an identifiable collection of goods items from one party (the consignor) to another (the consignee) via one or more 
+modes of transport. There are often conflicts between the terms "Shipment" and "Consignment", but in this model the Shipment is focused on the contract and 
+the movement of the goods (what is being shipped), while the Consignment is focused on the service of moving the goods (how it will be done). The consignment 
+can consist of a number of transport handling units, the shipment stages relate to how they are transported and the events during the transport. 
+If the ID is a GS1 GINC (Global Identification Number for Consignment), it should be indicated by the attribute @schemeID. If it is not,
+the attribute can be omitted. This number identifies a consignment, which is a logical grouping of goods (one or more logistics units) transferred to a 
+freight forwarder to be transported for a specific journey. The consignment number must be allocated by a freight forwarder (or a carrier acting as a freight 
+forwarder) or a consignor, but only if prior agreement of the freight forwarder is given.

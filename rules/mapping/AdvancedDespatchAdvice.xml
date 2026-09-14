@@ -842,7 +842,7 @@
                <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Name of the fuel supplier</Data>
+               <Data ss:Type="String">Name of the Despatch supplier</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">The Despatch Supplier.</Data>
@@ -1729,7 +1729,7 @@
                <Data ss:Type="String">Party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the Delivery Customer Party.</Data>
+               <Data ss:Type="String">The name of the Delivery Receiver Party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1752,13 +1752,13 @@
                <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Name of the fuel supplier</Data>
+               <Data ss:Type="String">Name of the Delivery Receiver Party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Despatch Supplier.</Data>
+               <Data ss:Type="String">The Delivery Receiver.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sender inc.</Data>
+               <Data ss:Type="String">Receiver inc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DeliveryCustomerParty/cac:Party/cac:PartyName/cbc:Name</Data>
@@ -2041,7 +2041,7 @@
                <Data ss:Type="String">Party tax scheme</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The tax information about the Delivery Party.</Data>
+               <Data ss:Type="String">The tax information about the Delivery Receiver Party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2067,7 +2067,7 @@
                <Data ss:Type="String">Company ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Delivery Party Value Added Tax identifer.</Data>
+               <Data ss:Type="String">The Delivery Receiver Party Value Added Tax identifer.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB523859989</Data>
@@ -2171,7 +2171,7 @@
                <Data ss:Type="String">Consignee party's Legal name. </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Legal Name of the Receiving party.</Data>
+               <Data ss:Type="String">The Legal Name of the Delivery Receiving party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Sender inc.</Data>
@@ -2353,7 +2353,7 @@
                <Data ss:Type="String">Contact person name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact of the Delivery customer party.</Data>
+               <Data ss:Type="String">The contact of the Delivery Receiver party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -13555,6 +13555,58 @@
                <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:ProductTraceID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Product traceable identifier.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An identifier used for tracing this item instance, such as the EPC number used in RFID.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">(01)47964367965424(11)173434(17)226565(10)A379B3(21)1237</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cbc:ProductTraceID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">51800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier for the ProductTraceID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">UDI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cbc:ProductTraceID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">51900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
                <Data ss:Type="String">•  •  •  •  cbc:ManufactureDate</Data>
             </Cell>
             <Cell>
@@ -13573,7 +13625,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">51800</Data>
+               <Data ss:Type="Number">52000</Data>
             </Cell>
          </Row>
          <Row>
@@ -13599,7 +13651,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">51900</Data>
+               <Data ss:Type="Number">52100</Data>
             </Cell>
          </Row>
          <Row>
@@ -13625,7 +13677,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">52000</Data>
+               <Data ss:Type="Number">52200</Data>
             </Cell>
          </Row>
          <Row>
@@ -13651,7 +13703,319 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">52100</Data>
+               <Data ss:Type="Number">52300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..n</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cac:AdditionalItemProperty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Additional item instance property information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A group of business terms providing information about properties of the item instance.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cac:AdditionalItemProperty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">52400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Item instance identifier </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ID of the property if assigned by an Agency</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">77e416eb-a363-4258-a04e-171d843a6460</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cac:AdditionalItemProperty/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">52500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  •  @schemeDataURI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme Data URI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2022/</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cac:AdditionalItemProperty/cbc:ID/schemeDataURI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">52600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ISO22057</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cac:AdditionalItemProperty/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">52700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  •  @schemeVersionID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme version identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">2022</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cac:AdditionalItemProperty/cbc:ID/schemeVersionID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">52800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Item instance property name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the item instance property.The name must be sufficiently descriptive to define the value.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Rigidity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cac:AdditionalItemProperty/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">52900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:NameCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Item instance name code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name code of the item instance property.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">EPDNumber</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cac:AdditionalItemProperty/cbc:NameCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">53000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  •  @listID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Name code list id.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An identifier for the code list used for the Name code, this is bilaterally agreed</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">IPNC</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cac:AdditionalItemProperty/cbc:NameCode/listID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">53100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:Value</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Item instance property value </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The value of the item instance property.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">NEPD-1717-700-SE</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cac:AdditionalItemProperty/cbc:Value</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">53200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:ValueQuantity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Item instance value quantity </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The value quantity of the item instance property.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">15.00</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cac:AdditionalItemProperty/cbc:ValueQuantity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">53300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  •  @unitCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">EA</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cac:AdditionalItemProperty/cbc:ValueQuantity/unitCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">53400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:ValueQualifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Item instance value qualifier </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The value qualifier of the item instance property.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">descr</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ItemInstance/cac:AdditionalItemProperty/cbc:ValueQualifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">53500</Data>
             </Cell>
          </Row>
          <Row>
@@ -13677,7 +14041,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">52200</Data>
+               <Data ss:Type="Number">53600</Data>
             </Cell>
          </Row>
          <Row>
@@ -13703,7 +14067,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">52300</Data>
+               <Data ss:Type="Number">53700</Data>
             </Cell>
          </Row>
          <Row>
@@ -13729,7 +14093,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">52400</Data>
+               <Data ss:Type="Number">53800</Data>
             </Cell>
          </Row>
          <Row>
@@ -13755,7 +14119,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">52500</Data>
+               <Data ss:Type="Number">53900</Data>
             </Cell>
          </Row>
          <Row>
@@ -13781,7 +14145,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">52600</Data>
+               <Data ss:Type="Number">54000</Data>
             </Cell>
          </Row>
          <Row>
@@ -13807,7 +14171,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">52700</Data>
+               <Data ss:Type="Number">54100</Data>
             </Cell>
          </Row>
          <Row>
@@ -13833,7 +14197,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">52800</Data>
+               <Data ss:Type="Number">54200</Data>
             </Cell>
          </Row>
          <Row>
@@ -13859,7 +14223,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">52900</Data>
+               <Data ss:Type="Number">54300</Data>
             </Cell>
          </Row>
          <Row>
@@ -13885,7 +14249,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">53000</Data>
+               <Data ss:Type="Number">54400</Data>
             </Cell>
          </Row>
          <Row>
@@ -13911,7 +14275,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">53100</Data>
+               <Data ss:Type="Number">54500</Data>
             </Cell>
          </Row>
          <Row>
@@ -13937,7 +14301,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">53200</Data>
+               <Data ss:Type="Number">54600</Data>
             </Cell>
          </Row>
          <Row>
@@ -13963,7 +14327,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">53300</Data>
+               <Data ss:Type="Number">54700</Data>
             </Cell>
          </Row>
          <Row>
@@ -13989,7 +14353,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">53400</Data>
+               <Data ss:Type="Number">54800</Data>
             </Cell>
          </Row>
          <Row>
@@ -14015,7 +14379,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">53500</Data>
+               <Data ss:Type="Number">54900</Data>
             </Cell>
          </Row>
          <Row>
@@ -14041,7 +14405,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">53600</Data>
+               <Data ss:Type="Number">55000</Data>
             </Cell>
          </Row>
       </Table>

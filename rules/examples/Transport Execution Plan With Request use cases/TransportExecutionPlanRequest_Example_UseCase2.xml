@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ubl:TransportExecutionPlanRequest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2"
+<TransportExecutionPlanRequest xmlns="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2"
                                    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
                                    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
    <cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:transport_execution_plan_request:1</cbc:CustomizationID>
@@ -34,7 +34,7 @@
    </cac:TransportUserParty>
 	
    <cac:TransportServiceProviderParty>
-      <cbc:EndpointID schemeID="0198">85955619</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0198">DK85955619</cbc:EndpointID>
       <cac:PartyIdentification>
          <cbc:ID schemeID="0088">7300010000001</cbc:ID>    
       </cac:PartyIdentification>
@@ -255,4 +255,4 @@
 		</cac:GoodsItem>	
 	</cac:TransportHandlingUnit>  
   </cac:Consignment>
-</ubl:TransportExecutionPlanRequest>
+</TransportExecutionPlanRequest>

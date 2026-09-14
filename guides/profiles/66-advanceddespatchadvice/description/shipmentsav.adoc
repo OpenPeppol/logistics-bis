@@ -6,7 +6,7 @@ Description of the actual shipment that contains the goods that is being despatc
 [[shipment-id]]
 == Shipment ID
 
-Normally the Freight Forwarder’s identity of the shipment should be used. If the ID is a GS1 GSID (Global Shipment Identification Number), it should be 
+Normally the Freight Forwarder's identity of the shipment should be used. If the ID is a GS1 GSID (Global Shipment Identification Number), it should be 
 indicated by the attribute @schemeID. If it is not, the attribute can be omitted. The Global Shipment Identification Number (GSIN) is a number that 
 identifies a shipment and is assigned by the seller of goods. The goods shipper collects one or more logistic units for transportation to a recipient. 
 A GSIN is assigned to this group of logistic units to identify them as a shipment.

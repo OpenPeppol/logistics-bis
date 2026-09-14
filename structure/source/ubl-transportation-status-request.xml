@@ -6,24 +6,41 @@
 	<?DocumentTerm TransportationStatusRequest?>
 	<?Property key="sch:prefix" PEPPOL-T126?>
 	<?Property key="sch:identifier" T126-basic?>
-	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:transportation_status_request:1<?Rule PEPPOL-T126-R001?></cbc:CustomizationID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:transportation_status_request:1
+		<?Rule PEPPOL-T126-R001?></cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1
 		<?Name Profile ID?>
 		<?Description Identifies the Peppol profile or business process context in which the transaction appears.?>
 		<?Rule PEPPOL-T126-R002?>
 		<?Cardinality 1..1?>
 	</cbc:ProfileID>
+	<cbc:ProfileExecutionID>XZ-4532
+		<?Name Profile Execution ID?>
+		<?Description Identifies an instance of executing a profile, to associate all transactions in a collaboration.?>
+		<?Cardinality 0..1?>
+	</cbc:ProfileExecutionID>
+
 	<cbc:ID>TSR_1</cbc:ID>
-	<cbc:IssueDate>2011-10-06<?Name Issue Date?><?Description The date when the Transportation Status Request was issued. Format = "YYYY-MM-DD". ?><?Cardinality 1..1?></cbc:IssueDate>
+	<cbc:IssueDate>2011-10-06
+		<?Name Issue Date?>
+		<?Description The date when the Transportation Status Request was issued. Format = "YYYY-MM-DD". ?>
+		<?Cardinality 1..1?>
+	</cbc:IssueDate>
 	<cbc:IssueTime>09:29:30+02:00
 		<?Name Issue Time?>
 		<?Description The time when the Transportation Status Request was issued. ?>
 		<?Rule PEPPOL-T123-R018?>
 		<?Cardinality 1..1?>
 	</cbc:IssueTime>
-	<cbc:ShippingOrderID schemeID = "zzz">KHN23-44044
+	<cbc:Description>Description
+		<?Name Status Request Description ?>
+		<?Description Description of the Status Request. ?>
+		<?Cardinality 0..1?>
+	</cbc:Description>
+	<cbc:ShippingOrderID schemeID = "ZZZ">KHN23-44044
 		<?Name Shipping Order ID ?>
-		<?Description An identifier (in the form of a reference number) of the Shipping Order or Forwarding Instruction associated with this shipment. ?>
+		<?Description An identifier (in the form of a reference number) of the Shipping Order or Forwarding Instruction associated with this 
+			shipment. ?>
 		<?Cardinality 1..1?>
 		<?schemeID-usage Optional?>
 	</cbc:ShippingOrderID>
@@ -34,11 +51,12 @@
 		<?CodeList TransportationStatusTypeCode?>
 		<?listID-usage Optional?>
 	</cbc:TransportationStatusTypeCode>
+	
 	<cac:SenderParty>
 		<?Name Sender party ?>
 		<?Description The party sending the Transportation Status Request. ?>
 		<?Cardinality 1..1?>
-		<cbc:EndpointID schemeID="0198">41955619
+		<cbc:EndpointID schemeID="0198">DK41955619
 			<?Name Sender party electronic address ?>
 			<?Description The endpoint for the sender party. ?>
 			<?Cardinality 1..1?>
@@ -80,7 +98,8 @@
 			</cbc:StreetName>
 			<cbc:AdditionalStreetName>Greve Landsby
 				<?Name Address line 2 ?>
-				<?Description An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. ?>				
+				<?Description An additional address line in a postal address that can be used to give further details supplementing the main line. 
+					Common use are secondary house number in a complex or in a building. ?>				
 				<?Cardinality 0..1?>
 			</cbc:AdditionalStreetName>
 			<cbc:CityName>Greve
@@ -90,7 +109,8 @@
 			</cbc:CityName>
 			<cbc:PostalZone>2670
 				<?Name Post code ?>
-				<?Description The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. ?>
+				<?Description The identifier for an addressable group of properties according to the relevant national postal service, such as a 
+					ZIP code or Post Code. ?>
 				<?Cardinality 0..1?>
 			</cbc:PostalZone>
 			<cbc:CountrySubentity>Region Sjælland
@@ -110,7 +130,9 @@
 					<?Name Country code ?>
 					<?Cardinality 1..1?>
 					<?CodeList ISO3166?>
-					<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. ?>
+					<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance 
+						agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the 
+						alpha-2 representation. ?>
 				</cbc:IdentificationCode>
 			</cac:Country>
 		</cac:PostalAddress>
@@ -165,7 +187,9 @@
 						<?Name Country code ?>
 						<?Cardinality 1..1?>
 						<?CodeList ISO3166?>
-						<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. ?>
+						<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+							Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+							according to the alpha-2 representation. ?>
 					</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:RegistrationAddress>
@@ -191,11 +215,12 @@
 			</cbc:ElectronicMail>
 		</cac:Contact>
 	</cac:SenderParty>
+	
 	<cac:ReceiverParty>
 		<?Name Receiver Party ?>
 		<?Description The party receiving the Transportation Status Request. ?>
 		<?Cardinality 1..1?>
-		<cbc:EndpointID schemeID="0198">10154596
+		<cbc:EndpointID schemeID="0198">DK10154596
 			<?Name Receiver party electronic address ?>
 			<?Description The endpoint id for the receiver party. ?>
 			<?Cardinality 1..1?>
@@ -237,7 +262,8 @@
 			</cbc:StreetName>
 			<cbc:AdditionalStreetName>Indkørsel 5
 				<?Name Address line 2 ?>
-				<?Description An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. ?>				
+				<?Description An additional address line in a postal address that can be used to give further details supplementing the main line. 
+					Common use are secondary house number in a complex or in a building. ?>				
 				<?Cardinality 0..1?>
 			</cbc:AdditionalStreetName>
 			<cbc:CityName>Vallensbæk Landsby
@@ -247,7 +273,8 @@
 			</cbc:CityName>
 			<cbc:PostalZone>2625
 				<?Name Post code ?>
-				<?Description The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. ?>
+				<?Description The identifier for an addressable group of properties according to the relevant national postal service, such as a 
+					ZIP code or Post Code. ?>
 				<?Cardinality 0..1?>
 			</cbc:PostalZone>
 			<cbc:CountrySubentity>Region Hovedstaden
@@ -270,7 +297,9 @@
 					<?Name Country code ?>
 					<?Cardinality 1..1?>
 					<?CodeList ISO3166?>
-					<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. ?>
+					<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+						Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+						according to the alpha-2 representation. ?>
 				</cbc:IdentificationCode>
 			</cac:Country>
 		</cac:PostalAddress>
@@ -327,7 +356,9 @@
 						<?Name Country code ?>
 						<?Cardinality 1..1?>
 						<?CodeList ISO3166?>
-						<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. ?>
+						<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+							Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+							according to the alpha-2 representation. ?>
 					</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:RegistrationAddress>
@@ -353,6 +384,7 @@
 			</cbc:ElectronicMail>
 		</cac:Contact>
 	</cac:ReceiverParty>
+	
 	<cac:TransportExecutionPlanDocumentReference>
 		<?Name Additional document reference?>
 		<?Description Reference to a Transport Execution Plan. ?>
@@ -372,10 +404,11 @@
 			<?Cardinality 0..1?>
 		</cbc:IssueTime>
 	</cac:TransportExecutionPlanDocumentReference>
+	
 	<cac:Consignment>
 		<?Name Consignment information ?>
-		<?Description An identifiable collection of goods items sent from one party (the Despatch Party) to another party (the Consignee) via one or more 
-			modes of transport.?>
+		<?Description An identifiable collection of goods items sent from one party (the Despatch Party) to another party (the Consignee) via 
+			one or more modes of transport.?>
 		<?Cardinality 0..1?>
 		<cbc:ID schemeID="GINC">735005233GS1TRANSPORT000001
 			<?Name Consignment identifier ?>
@@ -389,6 +422,7 @@
 			<?schemeID-CodeList ConsignmentIDType?>
 			<?Cardinality 1..1?>
 		</cbc:ID>
+		
 		<cac:TransportEvent>
 				<?Name Transport event ?>
 				<?Description A transport event in this consignment a status is requested for.?>
@@ -405,18 +439,63 @@
 				<?CodeList TransportEventTypeCode?>
 			</cbc:TransportEventTypeCode>
 		</cac:TransportEvent>
+		
 		<cac:TransportHandlingUnit>
 			<?Name Transport handling unit ?>
 			<?Description A transport handling unit from which a status is requested. ?>
 			<?Cardinality 0..n?>
 			<cbc:ID schemeID="SSCC">173500538500000016
 				<?Name Identifier transport handling unit ?>
-				<?Description The Transport Handling Unit is identified with a Serial Shipping Container Code (SSCC). The GS1 identification key used to 
-					identify logistics units. The key comprises an extension digit, GS1 Company Prefix, serial reference and check digit. ?>
+				<?Description The Transport Handling Unit is identified with a Serial Shipping Container Code (SSCC). The GS1 identification key 
+					used to identify logistics units. The key comprises an extension digit, GS1 Company Prefix, serial reference and check digit. ?>
 				<?Cardinality 1..1?>
 				<?schemeID-usage Optional?>
 				<?schemeID-CodeList TransportHandlingUnitIDType?>
 			</cbc:ID>
 		</cac:TransportHandlingUnit>
 	</cac:Consignment>
+
+	<cac:DocumentReference>
+		<?Name Document reference?>
+		<?Description Reference to additional documents relevant for this Transportation Status Request. ?>
+		<?Cardinality 0..n?>
+		<cbc:ID>7648779
+			<?Name Identity of the reference?>
+			<?Description The reference number of added document?>
+		</cbc:ID>
+		<cbc:DocumentTypeCode>380 
+			<?Name Document type code?>
+			<?Description The type of reference. Must me part of UNCL1001?>
+			<?Cardinality 0..1?>
+			<?CodeList UNCL1001?>
+		</cbc:DocumentTypeCode>
+		<cbc:DocumentType>Delivery specification
+			<?Name Document type?>
+			<?Description The type of reference that cannot be specified by a code?>
+			<?Cardinality 0..1?>
+		</cbc:DocumentType>
+		<cac:Attachment>
+			<?Name Attachment?>
+			<?Cardinality 0..1?>
+			<?Description Group to describe an attached document. An attachment can refer to an external document or be included with the 
+				document being exchanged.?>
+			<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">
+				aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== 
+				<?Name Embedded binary object?>
+				<?Cardinality 0..1?>
+				<?mimeCode-CodeList MimeCode?>
+				<?Description The referenced document can here be inserted as a binary object.?>
+			</cbc:EmbeddedDocumentBinaryObject>
+			<cac:ExternalReference>
+				<?Name External reference?>
+				<?Description A reference to an attached document that is external to the document(s) being exchanged.?>
+				<?Cardinality 0..1?>
+				<cbc:URI>www.beast.se 
+					<?Name Address to internet resource?>
+					<?Description The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.?>
+				</cbc:URI>
+			</cac:ExternalReference>
+		</cac:Attachment>
+	</cac:DocumentReference>
+
 </ubl:TransportationStatusRequest>

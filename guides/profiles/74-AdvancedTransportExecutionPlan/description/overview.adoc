@@ -1,0 +1,18 @@
+[[overview-1]]
+= Overview
+
+The Advanced Transport Execution Plan includes five different transactions of two kinds
+* Business information documents
+** Transport Execution Plan Request
+** Transport Execution Plan
+* Status information documents
+** Application Response
+** Transportation Status Request
+** Transportation Status
+
+The business informations documents consist of one consignment, a number of document references, a signature (optional) and several parties.
+
+The consignment refers to a shipment and describes the transport events, the shipment stages, the transport contract and the transport handling units that carries the goods items in the consignment. The transport handling unit can use some transport equipment e.g., a container that again has seals. The goods item contains one item that may have information about commodity codes and desription about dangerous goods.  
+
+The status information documents consists besides sender and receiver party of Document Response, Transport Event and document references. 
+//image::images/descriptionOverview.png[image,width=572,height=670]

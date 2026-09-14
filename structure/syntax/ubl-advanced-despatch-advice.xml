@@ -24,9 +24,13 @@
 	     <Element>
          <Term>cbc:ProfileID</Term>
          <Name>Business process type identifier</Name>
-         <Description>Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Advanced Despatch Advice. One profile is used when the receiver of the Despatch Advice is expected to return a response message, the other is used when no response message is used. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1" and "urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_receipt_advice:1"</Description>
+         <Description>Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the 
+		Advanced Despatch Advice. One profile is used when the receiver of the Despatch Advice is expected to return a response message, the other is used 
+		when no response message is used. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1" 
+		and "urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_receipt_advice:1"</Description>
          <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-001</Reference>
+         <Reference type="RULE">PEPPOL-T120-R002</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</Value>
       </Element>
 	
@@ -212,7 +216,7 @@
                <Description>The name of the Despatch Supplier Party.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:Name</Term>
-                  <Name>Name of the fuel supplier</Name>
+                  <Name>Name of the Despatch supplier</Name>
                   <Description>The Despatch Supplier.</Description>
                   <Reference type="RULE">PEPPOL-T120-R109</Reference>
                   <Value type="EXAMPLE">Sender inc.</Value>
@@ -444,13 +448,13 @@
             <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
                <Name>Party name</Name>
-               <Description>The name of the Delivery Customer Party.</Description>
+               <Description>The name of the Delivery Receiver Party.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:Name</Term>
-                  <Name>Name of the fuel supplier</Name>
-                  <Description>The Despatch Supplier.</Description>
+                  <Name>Name of the Delivery Receiver Party</Name>
+                  <Description>The Delivery Receiver.</Description>
                   <Reference type="RULE">PEPPOL-T120-R108</Reference>
-                  <Value type="EXAMPLE">Sender inc.</Value>
+                  <Value type="EXAMPLE">Receiver inc.</Value>
                </Element>
             </Element>
             <Element cardinality="0..1">
@@ -538,11 +542,11 @@
             <Element cardinality="0..1">
                <Term>cac:PartyTaxScheme</Term>
                <Name>Party tax scheme</Name>
-               <Description>The tax information about the Delivery Party.</Description>
+               <Description>The tax information about the Delivery Receiver Party.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:CompanyID</Term>
                   <Name>Company ID</Name>
-                  <Description>The Delivery Party Value Added Tax identifer.</Description>
+                  <Description>The Delivery Receiver Party Value Added Tax identifer.</Description>
                   <Value type="EXAMPLE">GB523859989</Value>
                </Element>
                <Element cardinality="1..1">
@@ -562,7 +566,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:RegistrationName</Term>
                   <Name>Consignee party's Legal name. </Name>
-                  <Description>The Legal Name of the Receiving party. </Description>
+                  <Description>The Legal Name of the Delivery Receiving party. </Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-014</Reference>
                   <Value type="EXAMPLE">Sender inc.</Value>
@@ -604,7 +608,7 @@
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
                <Name>Contact person name</Name>
-               <Description>The contact of the Delivery customer party.</Description>
+               <Description>The contact of the Delivery Receiver party.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Contact name</Name>
@@ -2842,7 +2846,6 @@
                   <Description>Identifies the order that the reference order line belongs
 							to.</Description>
                   <Reference type="BUSINESS_TERM">tir16-p010</Reference>
-                  <Reference type="RULE">PEPPOL-T120-R002</Reference>
                   <Value type="EXAMPLE">AEG012345</Value>
                </Element>
                <Element cardinality="0..1">
@@ -3347,6 +3350,20 @@
                <Name>Item instance information</Name>
                <Description>Adding information on individual instances of the item.</Description>
                <Element cardinality="0..1">
+                  <Term>cbc:ProductTraceID</Term>
+                  <Name>Product traceable identifier.</Name>
+                  <Description>An identifier used for tracing this item instance, such as the EPC number used in RFID.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-p057</Reference>
+                  <Attribute usage="Optional">
+                     <Term>schemeID</Term>
+                     <Name>Scheme identifier</Name>
+                     <Description>Scheme identifier for the ProductTraceID</Description>
+                     <Reference type="CODE_LIST">ProductTraceIDschemeIDCode</Reference>
+                     <Value type="EXAMPLE">UDI</Value>
+                  </Attribute>
+                  <Value type="EXAMPLE">(01)47964367965424(11)173434(17)226565(10)A379B3(21)1237</Value>
+               </Element>
+               <Element cardinality="0..1">
                   <Term>cbc:ManufactureDate</Term>
                   <Name>Item manufactured date</Name>
                   <Description>The manufacturing date of all items listed in this despatch line.</Description>
@@ -3372,6 +3389,79 @@
                   <Description>Serial number for item listed in the despatch line..</Description>
                   <Reference type="BUSINESS_TERM">tir16-083</Reference>
                   <Value type="EXAMPLE">4558784</Value>
+               </Element>
+               <Element cardinality="0..n">
+                  <Term>cac:AdditionalItemProperty</Term>
+                  <Name>Additional item instance property information</Name>
+                  <Description>A group of business terms providing information about properties of
+						the item instance.</Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ID</Term>
+                     <Name>Item instance identifier </Name>
+                     <Description>ID of the property if assigned by an Agency</Description>
+                     <Attribute usage="Optional">
+                        <Term>schemeDataURI</Term>
+                        <Name>Scheme Data URI</Name>
+                        <Value type="EXAMPLE">https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2022/</Value>
+                     </Attribute>
+                     <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Scheme identifier</Name>
+                        <Value type="EXAMPLE">ISO22057</Value>
+                     </Attribute>
+                     <Attribute usage="Optional">
+                        <Term>schemeVersionID</Term>
+                        <Name>Scheme version identifier</Name>
+                        <Value type="EXAMPLE">2022</Value>
+                     </Attribute>
+                     <Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
+                  </Element>
+                  <Element>
+                     <Term>cbc:Name</Term>
+                     <Name>Item instance property name</Name>
+                     <Description>The name of the item instance property.The name must be sufficiently
+							descriptive to define the value.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-p059</Reference>
+                     <Value type="EXAMPLE">Rigidity</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:NameCode</Term>
+                     <Name>Item instance name code </Name>
+                     <Description>The name code of the item instance property.</Description>
+                     <Attribute usage="Mandatory">
+                        <Term>listID</Term>
+                        <Name>Name code list id.</Name>
+                        <Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+                        <Value type="EXAMPLE">IPNC</Value>
+                     </Attribute>
+                     <Value type="EXAMPLE">EPDNumber</Value>
+                  </Element>
+                  <Element>
+                     <Term>cbc:Value</Term>
+                     <Name>Item instance property value </Name>
+                     <Description>The value of the item instance property.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-p060</Reference>
+                     <Value type="EXAMPLE">NEPD-1717-700-SE</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ValueQuantity</Term>
+                     <Name>Item instance value quantity </Name>
+                     <Description>The value quantity of the item instance property.</Description>
+                     <Attribute>
+                        <Term>unitCode</Term>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
+                        <Value type="EXAMPLE">EA</Value>
+                     </Attribute>
+                     <Value type="EXAMPLE">15.00</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ValueQualifier</Term>
+                     <Name>Item instance value qualifier </Name>
+                     <Description>The value qualifier of the item instance property.</Description>
+                     <Value type="EXAMPLE">descr</Value>
+                  </Element>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:LotIdentification</Term>

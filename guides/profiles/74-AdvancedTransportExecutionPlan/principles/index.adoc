@@ -1,0 +1,44 @@
+[[principles-and-prerequisites]]
+= Principles and prerequisites
+
+This chapter describes the principles and assumptions that underlie the use of the Transport Execution Plan with Request.
+
+The Transport Execution Plan Request and the Transport Execution Plan are used to give instructions for the transportation services required for a consignment of goods to any party who is contracted to provide the transportation services. A Transport Execution Plan Request is used by a Transport User to request if a Transport Service Provider can provide the required service. A Transport Execution Plan is used by the Transport Service Provider as a response to the request from the Transport User. 
+A Transport Execution Plan is also used as a receipt message to confirm or reject a change or cancellation of the plan from either the Transport User or the Transport Service Provider. 
+
+A Transport Execution Plan may also be forwarded to a Freight Forwarder or a Carrier involved in the transportation.
+
+//image::images/principlesandprerequisites.png[image,width=605,height=371]
+
+
+[[transport-execution-in-general]]
+== Business processes in scope
+The processes covered by this profile are:
+
+* The *Transport Execution Plan Request* is sent by the Transport User to request a transportation service. 
+
+* The *Application Response* is sent by the Transport Service Provider (typically) to confirm or reject that the transportation service can be delivered.
+
+* The *Transportation Status Request* is sent from the Transport service provider or the Transport User with the event status 125 (no status) and a description of a question regarding the transportation status he needs an answer for.
+
+* The *Transportation Status* is sent fron the opponent (Transport service provider or the Transport User) with the event status 125 (no status) and a description as the answer.
+
+* The *Transport Execution Plan* is sent by the Transport Service Provider about the despatch, required delivery service for the goods being sent or other requested transportation service as a final confimation. Additionally, it can convey details about the goods for cross checking with the order and ultimately the Transport Execution Plan is used for declaring how the despatched goods are to be transported and how they are packed.
+
+
+
+
+The main activities supported by this message are:
+
+* Full description of how the goods are packed. A delivery is taken to be a number of items that are despatched as a single consignment to a single delivery address.
+* The type of transport required for the despatch and delivery of the goods being shipped. The means of transport, routing and arrival details.
+
+:leveloffset: +1
+
+include::parties.adoc[]
+
+include::otherconcepts.adoc[]
+
+//include::requirements.adoc[]
+
+:leveloffset: -1

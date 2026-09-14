@@ -1,0 +1,10 @@
+[[measurement-dimension]]
+= Measurement dimension
+
+Information ablut the length, width or height of the goods item. 
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=measurement-dimension]
+----

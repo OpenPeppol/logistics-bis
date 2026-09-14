@@ -1,11 +1,14 @@
-This documentation guids you through the simple steps to add a new document to the Peppol documentation generation tool
+This documentation guides you through the simple steps to add a new document (BIS and/or transaction) to the Peppol documentation generation tool
 
-Step 1. Add the exampel file to the /structure/source/ directory. 
+Step 1a. Add the exampel file to the /structure/source/ directory. 
 Make sure that the DocumentTerm and properties processing instruction are included
 e.g.
 <?DocumentTerm DespatchAdvice?>
 <?Property key="sch:prefix" PEPPOL-T16?>
 <?Property key="sch:identifier" T16-basic?>
+
+Step 1b. Add the folders and documents that are the base of the BIS to the /guides/profiles directory. Normally something existing is copied and given 
+a suitable name.
 
 Step 2. Create namespace document in the /structure/namespace directory if there is no existing namespace document for the transaction
 
@@ -19,11 +22,11 @@ Edit the files to the corresponding
 Step 4. Edit /rules/buildconfig.xml
 Step 4a. Add unit test folder e.g. 
 <testfolder>unit-advanced-despatch-advice</testfolder>
-And create the folder for others to add the unit tests
+And create the folder for others to add the unit tests. You also need to create a file with the normal naming standard in the new folder.
 
 Step 4b. Add snippet folder e.g.
 <testfolder>snippets/advanceddespatch</testfolder>
-And create the folder for others to add snippets
+And create the folder for others to add snippets. You also need to create a file with the normal naming standard in the new folder.
 
 Step 4c. Add base configuration for the transaction e.g.
 	<configuration>

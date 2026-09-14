@@ -1,0 +1,15 @@
+[[transport-handling-unit]]
+= Transport handling unit
+
+Transport handling units are the units dealt with under transport. It describes a uniquely identifiable unit consisting of one or more packages, goods items, or pieces of transport equipment. 
+If the ID has the format of an SSCC, the attribute @schemeID should be included to indicate it.
+A consignment must have at least one Transport handling unit. 
+Includes the description of the transport equipment related to the transport handling unit and the measurment information with the length, width or height of the goods item. 
+
+See also description of Goods item in the next chapter.
+
+The following is an example of a transport handling unit:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=transport-handling-unit]
+----

@@ -30,6 +30,13 @@
          <Reference type="RULE">PEPPOL-T126-R002</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</Value>
       </Element>
+	     <Element cardinality="0..1">
+         <Term>cbc:ProfileExecutionID</Term>
+         <Name>Profile Execution ID</Name>
+         <Description>Identifies an instance of executing a profile, to associate all transactions in a collaboration.</Description>
+         <Value type="EXAMPLE">XZ-4532</Value>
+      </Element>
+
 	     <Element>
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
@@ -57,13 +64,20 @@
          <Reference type="RULE">PEPPOL-T123-R018</Reference>
          <Value type="EXAMPLE">09:29:30+02:00</Value>
       </Element>
+	     <Element cardinality="0..1">
+         <Term>cbc:Description</Term>
+         <Name>Status Request Description </Name>
+         <Description>Description of the Status Request. </Description>
+         <Value type="EXAMPLE">Description</Value>
+      </Element>
 	     <Element cardinality="1..1">
          <Term>cbc:ShippingOrderID</Term>
          <Name>Shipping Order ID </Name>
-         <Description>An identifier (in the form of a reference number) of the Shipping Order or Forwarding Instruction associated with this shipment. </Description>
+         <Description>An identifier (in the form of a reference number) of the Shipping Order or Forwarding Instruction associated with this 
+			shipment. </Description>
          <Attribute usage="Optional">
             <Term>schemeID</Term>
-            <Value type="EXAMPLE">zzz</Value>
+            <Value type="EXAMPLE">ZZZ</Value>
          </Attribute>
          <Value type="EXAMPLE">KHN23-44044</Value>
       </Element>
@@ -74,6 +88,7 @@
          <Reference type="CODE_LIST">TransportationStatusTypeCode</Reference>
          <Value type="EXAMPLE">3</Value>
       </Element>
+	
 	     <Element cardinality="1..1">
          <Term>cac:SenderParty</Term>
          <Name>Sender party </Name>
@@ -89,7 +104,7 @@
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0198</Value>
             </Attribute>
-            <Value type="EXAMPLE">41955619</Value>
+            <Value type="EXAMPLE">DK41955619</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -131,7 +146,8 @@
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2 </Name>
-               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. 
+					Common use are secondary house number in a complex or in a building. </Description>
                <Value type="EXAMPLE">Greve Landsby</Value>
             </Element>
             <Element cardinality="0..1">
@@ -143,7 +159,8 @@
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
-               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a 
+					ZIP code or Post Code. </Description>
                <Value type="EXAMPLE">2670</Value>
             </Element>
             <Element cardinality="0..1">
@@ -167,7 +184,9 @@
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
-                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance 
+						agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the 
+						alpha-2 representation. </Description>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">DK</Value>
                </Element>
@@ -232,7 +251,9 @@
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+							Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+							according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
@@ -263,6 +284,7 @@
             </Element>
          </Element>
       </Element>
+	
 	     <Element cardinality="1..1">
          <Term>cac:ReceiverParty</Term>
          <Name>Receiver Party </Name>
@@ -278,7 +300,7 @@
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0198</Value>
             </Attribute>
-            <Value type="EXAMPLE">10154596</Value>
+            <Value type="EXAMPLE">DK10154596</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -320,7 +342,8 @@
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2 </Name>
-               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. 
+					Common use are secondary house number in a complex or in a building. </Description>
                <Value type="EXAMPLE">Indkørsel 5</Value>
             </Element>
             <Element cardinality="0..1">
@@ -332,7 +355,8 @@
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
-               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a 
+					ZIP code or Post Code. </Description>
                <Value type="EXAMPLE">2625</Value>
             </Element>
             <Element cardinality="0..1">
@@ -356,7 +380,9 @@
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
-                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+						Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+						according to the alpha-2 representation. </Description>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">DK</Value>
                </Element>
@@ -422,7 +448,9 @@
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 
+							Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be 
+							according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
@@ -453,6 +481,7 @@
             </Element>
          </Element>
       </Element>
+	
 	     <Element cardinality="0..1">
          <Term>cac:TransportExecutionPlanDocumentReference</Term>
          <Name>Additional document reference</Name>
@@ -476,11 +505,12 @@
             <Value type="EXAMPLE">07:49:00+02:00</Value>
          </Element>
       </Element>
+	
 	     <Element cardinality="0..1">
          <Term>cac:Consignment</Term>
          <Name>Consignment information </Name>
-         <Description>An identifiable collection of goods items sent from one party (the Despatch Party) to another party (the Consignee) via one or more 
-			modes of transport.</Description>
+         <Description>An identifiable collection of goods items sent from one party (the Despatch Party) to another party (the Consignee) via 
+			one or more modes of transport.</Description>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
             <Name>Consignment identifier </Name>
@@ -522,8 +552,8 @@
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Identifier transport handling unit </Name>
-               <Description>The Transport Handling Unit is identified with a Serial Shipping Container Code (SSCC). The GS1 identification key used to 
-					identify logistics units. The key comprises an extension digit, GS1 Company Prefix, serial reference and check digit. </Description>
+               <Description>The Transport Handling Unit is identified with a Serial Shipping Container Code (SSCC). The GS1 identification key 
+					used to identify logistics units. The key comprises an extension digit, GS1 Company Prefix, serial reference and check digit. </Description>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Reference type="CODE_LIST">TransportHandlingUnitIDType</Reference>
@@ -533,5 +563,63 @@
             </Element>
          </Element>
       </Element>
+
+	     <Element cardinality="0..n">
+         <Term>cac:DocumentReference</Term>
+         <Name>Document reference</Name>
+         <Description>Reference to additional documents relevant for this Transportation Status Request. </Description>
+         <Element>
+            <Term>cbc:ID</Term>
+            <Name>Identity of the reference</Name>
+            <Description>The reference number of added document</Description>
+            <Value type="EXAMPLE">7648779</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:DocumentTypeCode</Term>
+            <Name>Document type code</Name>
+            <Description>The type of reference. Must me part of UNCL1001</Description>
+            <Reference type="CODE_LIST">UNCL1001</Reference>
+            <Value type="EXAMPLE">380</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:DocumentType</Term>
+            <Name>Document type</Name>
+            <Description>The type of reference that cannot be specified by a code</Description>
+            <Value type="EXAMPLE">Delivery specification</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:Attachment</Term>
+            <Name>Attachment</Name>
+            <Description>Group to describe an attached document. An attachment can refer to an external document or be included with the 
+				document being exchanged.</Description>
+            <Element cardinality="0..1">
+               <Term>cbc:EmbeddedDocumentBinaryObject</Term>
+               <Name>Embedded binary object</Name>
+               <Description>The referenced document can here be inserted as a binary object.</Description>
+               <Attribute>
+                  <Term>mimeCode</Term>
+                  <Reference type="CODE_LIST">MimeCode</Reference>
+                  <Value type="EXAMPLE">application/pdf</Value>
+               </Attribute>
+               <Attribute>
+                  <Term>filename</Term>
+                  <Value type="EXAMPLE">Hours-spent.pdf</Value>
+               </Attribute>
+               <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:ExternalReference</Term>
+               <Name>External reference</Name>
+               <Description>A reference to an attached document that is external to the document(s) being exchanged.</Description>
+               <Element>
+                  <Term>cbc:URI</Term>
+                  <Name>Address to internet resource</Name>
+                  <Description>The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Description>
+                  <Value type="EXAMPLE">www.beast.se</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+
    </Document>
 </Structure>

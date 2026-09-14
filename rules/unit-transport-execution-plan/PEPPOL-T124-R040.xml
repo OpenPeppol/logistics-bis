@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-T124-base-1.0">
+	<assert>
+		<description>Verify that the Planned Pickup Transport Event is being 
+		specified for the Consignment when the Transport Service Code is "4", "22", "23" or "24". </description>
+		<scope>PEPPOL-T124-R040</scope>
+	</assert>
+	<test id="1">
+		<assert>
+			<success>PEPPOL-T124-R040</success>
+		</assert>
+		<ubl:TransportExecutionPlan xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:MainTransportationService>
+				<cbc:TransportServiceCode>4</cbc:TransportServiceCode>
+			</cac:MainTransportationService>
+			<cac:Consignment>
+				<cac:PlannedPickupTransportEvent>
+					<cbc:IdentificationID>21412312412</cbc:IdentificationID>
+				</cac:PlannedPickupTransportEvent>
+				<cac:PlannedDeliveryTransportEvent>
+					<cbc:IdentificationID>625435485674654132</cbc:IdentificationID>
+				</cac:PlannedDeliveryTransportEvent>
+				<cac:MainCarriageShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+				</cac:MainCarriageShipmentStage>
+			</cac:Consignment>
+		</ubl:TransportExecutionPlan>
+	</test>
+
+	<test id="2">
+		<assert>
+			<success>PEPPOL-T124-R040</success>
+		</assert>
+		<ubl:TransportExecutionPlan xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:MainTransportationService>
+				<cbc:TransportServiceCode>1</cbc:TransportServiceCode>
+			</cac:MainTransportationService>
+			<cac:Consignment>
+				<cac:PlannedPickupTransportEvent>
+					<cbc:IdentificationID>21412312412</cbc:IdentificationID>
+				</cac:PlannedPickupTransportEvent>
+				<cac:PlannedDeliveryTransportEvent>
+					<cbc:IdentificationID>625435485674654132</cbc:IdentificationID>
+				</cac:PlannedDeliveryTransportEvent>
+			</cac:Consignment>
+		</ubl:TransportExecutionPlan>
+	</test>
+
+	<test id="3">
+		<assert>
+			<success>PEPPOL-T124-R040</success>
+		</assert>
+		<ubl:TransportExecutionPlan xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:MainTransportationService>
+				<cbc:TransportServiceCode>1</cbc:TransportServiceCode>
+			</cac:MainTransportationService>
+			<cac:Consignment>
+				<cac:PlannedPickupTransportEvent>
+					<cbc:IdentificationID>21412312412</cbc:IdentificationID>
+				</cac:PlannedPickupTransportEvent>
+				<cac:MainCarriageShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+				</cac:MainCarriageShipmentStage>
+			</cac:Consignment>
+		</ubl:TransportExecutionPlan>
+	</test>
+
+	<test id="4">
+		<assert>
+			<success>PEPPOL-T124-R040</success>
+		</assert>
+		<ubl:TransportExecutionPlan xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:MainTransportationService>
+				<cbc:TransportServiceCode>1</cbc:TransportServiceCode>
+			</cac:MainTransportationService>
+			<cac:Consignment>
+				<cac:PlannedDeliveryTransportEvent>
+					<cbc:IdentificationID>625435485674654132</cbc:IdentificationID>
+				</cac:PlannedDeliveryTransportEvent>
+				<cac:MainCarriageShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+				</cac:MainCarriageShipmentStage>
+			</cac:Consignment>
+		</ubl:TransportExecutionPlan>
+	</test>
+
+	<test id="5">
+		<assert>
+			<success>PEPPOL-T124-R040</success>
+		</assert>
+		<ubl:TransportExecutionPlan xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:MainTransportationService>
+				<cbc:TransportServiceCode>1</cbc:TransportServiceCode>
+			</cac:MainTransportationService>
+			<cac:Consignment>
+				
+			</cac:Consignment>
+		</ubl:TransportExecutionPlan>
+	</test>
+
+	<test id="6">
+		<assert>
+			<error>PEPPOL-T124-R040</error>
+		</assert>
+		<ubl:TransportExecutionPlan xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:MainTransportationService>
+				<cbc:TransportServiceCode>4</cbc:TransportServiceCode>
+			</cac:MainTransportationService>
+			<cac:Consignment>
+				<cac:PlannedDeliveryTransportEvent>
+					<cbc:IdentificationID>625435485674654132</cbc:IdentificationID>
+				</cac:PlannedDeliveryTransportEvent>
+				<cac:MainCarriageShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+				</cac:MainCarriageShipmentStage>
+			</cac:Consignment>
+		</ubl:TransportExecutionPlan>
+	</test>
+
+</testSet>

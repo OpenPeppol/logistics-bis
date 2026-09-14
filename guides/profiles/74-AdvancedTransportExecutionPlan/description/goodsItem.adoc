@@ -1,0 +1,10 @@
+[[goods-item]]
+= Goods item
+
+Goods item describes on a need to know basis an item under transport. The item can be identified with a textual description or an item specification containing the commodity classification and the hazardous information for an item connected to dangerous goods.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-2.xml[tags=goods-item]
+----

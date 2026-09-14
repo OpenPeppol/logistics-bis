@@ -160,6 +160,32 @@
          </Row>
          <Row>
             <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:ProfileExecutionID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Profile Execution ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies an instance of executing a profile, to associate all transactions in a collaboration.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">XZ-4532</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cbc:ProfileExecutionID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
                <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
@@ -181,7 +207,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">300</Data>
+               <Data ss:Type="Number">400</Data>
             </Cell>
          </Row>
          <Row>
@@ -207,7 +233,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">400</Data>
+               <Data ss:Type="Number">500</Data>
             </Cell>
          </Row>
          <Row>
@@ -233,7 +259,33 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">500</Data>
+               <Data ss:Type="Number">600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:Description</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Status Request Description </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Description of the Status Request.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Description</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cbc:Description</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">700</Data>
             </Cell>
          </Row>
          <Row>
@@ -259,7 +311,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">600</Data>
+               <Data ss:Type="Number">800</Data>
             </Cell>
          </Row>
          <Row>
@@ -276,7 +328,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">zzz</Data>
+               <Data ss:Type="String">ZZZ</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cbc:ShippingOrderID/schemeID</Data>
@@ -285,7 +337,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">700</Data>
+               <Data ss:Type="Number">900</Data>
             </Cell>
          </Row>
          <Row>
@@ -311,7 +363,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">800</Data>
+               <Data ss:Type="Number">1000</Data>
             </Cell>
          </Row>
          <Row>
@@ -337,7 +389,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">900</Data>
+               <Data ss:Type="Number">1100</Data>
             </Cell>
          </Row>
          <Row>
@@ -354,7 +406,7 @@
                <Data ss:Type="String">The endpoint for the sender party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">41955619</Data>
+               <Data ss:Type="String">DK41955619</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cbc:EndpointID</Data>
@@ -363,7 +415,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1000</Data>
+               <Data ss:Type="Number">1200</Data>
             </Cell>
          </Row>
          <Row>
@@ -389,7 +441,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1100</Data>
+               <Data ss:Type="Number">1300</Data>
             </Cell>
          </Row>
          <Row>
@@ -415,7 +467,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1200</Data>
+               <Data ss:Type="Number">1400</Data>
             </Cell>
          </Row>
          <Row>
@@ -441,7 +493,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1300</Data>
+               <Data ss:Type="Number">1500</Data>
             </Cell>
          </Row>
          <Row>
@@ -467,7 +519,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1400</Data>
+               <Data ss:Type="Number">1600</Data>
             </Cell>
          </Row>
          <Row>
@@ -493,7 +545,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1500</Data>
+               <Data ss:Type="Number">1700</Data>
             </Cell>
          </Row>
          <Row>
@@ -519,7 +571,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1600</Data>
+               <Data ss:Type="Number">1800</Data>
             </Cell>
          </Row>
          <Row>
@@ -545,7 +597,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1700</Data>
+               <Data ss:Type="Number">1900</Data>
             </Cell>
          </Row>
          <Row>
@@ -571,7 +623,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1800</Data>
+               <Data ss:Type="Number">2000</Data>
             </Cell>
          </Row>
          <Row>
@@ -597,7 +649,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1900</Data>
+               <Data ss:Type="Number">2100</Data>
             </Cell>
          </Row>
          <Row>
@@ -623,7 +675,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2000</Data>
+               <Data ss:Type="Number">2200</Data>
             </Cell>
          </Row>
          <Row>
@@ -649,7 +701,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2100</Data>
+               <Data ss:Type="Number">2300</Data>
             </Cell>
          </Row>
          <Row>
@@ -675,7 +727,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2200</Data>
+               <Data ss:Type="Number">2400</Data>
             </Cell>
          </Row>
          <Row>
@@ -701,7 +753,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2300</Data>
+               <Data ss:Type="Number">2500</Data>
             </Cell>
          </Row>
          <Row>
@@ -727,7 +779,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2400</Data>
+               <Data ss:Type="Number">2600</Data>
             </Cell>
          </Row>
          <Row>
@@ -753,7 +805,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2500</Data>
+               <Data ss:Type="Number">2700</Data>
             </Cell>
          </Row>
          <Row>
@@ -779,7 +831,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2600</Data>
+               <Data ss:Type="Number">2800</Data>
             </Cell>
          </Row>
          <Row>
@@ -805,7 +857,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2700</Data>
+               <Data ss:Type="Number">2900</Data>
             </Cell>
          </Row>
          <Row>
@@ -831,7 +883,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2800</Data>
+               <Data ss:Type="Number">3000</Data>
             </Cell>
          </Row>
          <Row>
@@ -857,7 +909,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2900</Data>
+               <Data ss:Type="Number">3100</Data>
             </Cell>
          </Row>
          <Row>
@@ -883,7 +935,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3000</Data>
+               <Data ss:Type="Number">3200</Data>
             </Cell>
          </Row>
          <Row>
@@ -909,7 +961,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3100</Data>
+               <Data ss:Type="Number">3300</Data>
             </Cell>
          </Row>
          <Row>
@@ -935,7 +987,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3200</Data>
+               <Data ss:Type="Number">3400</Data>
             </Cell>
          </Row>
          <Row>
@@ -961,7 +1013,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3300</Data>
+               <Data ss:Type="Number">3500</Data>
             </Cell>
          </Row>
          <Row>
@@ -987,7 +1039,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3400</Data>
+               <Data ss:Type="Number">3600</Data>
             </Cell>
          </Row>
          <Row>
@@ -1013,7 +1065,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3500</Data>
+               <Data ss:Type="Number">3700</Data>
             </Cell>
          </Row>
          <Row>
@@ -1039,7 +1091,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3600</Data>
+               <Data ss:Type="Number">3800</Data>
             </Cell>
          </Row>
          <Row>
@@ -1065,7 +1117,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3700</Data>
+               <Data ss:Type="Number">3900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1091,7 +1143,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3800</Data>
+               <Data ss:Type="Number">4000</Data>
             </Cell>
          </Row>
          <Row>
@@ -1117,7 +1169,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3900</Data>
+               <Data ss:Type="Number">4100</Data>
             </Cell>
          </Row>
          <Row>
@@ -1143,7 +1195,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4000</Data>
+               <Data ss:Type="Number">4200</Data>
             </Cell>
          </Row>
          <Row>
@@ -1169,7 +1221,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4100</Data>
+               <Data ss:Type="Number">4300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1195,7 +1247,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4200</Data>
+               <Data ss:Type="Number">4400</Data>
             </Cell>
          </Row>
          <Row>
@@ -1221,7 +1273,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4300</Data>
+               <Data ss:Type="Number">4500</Data>
             </Cell>
          </Row>
          <Row>
@@ -1238,7 +1290,7 @@
                <Data ss:Type="String">The endpoint id for the receiver party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">10154596</Data>
+               <Data ss:Type="String">DK10154596</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cbc:EndpointID</Data>
@@ -1247,7 +1299,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4400</Data>
+               <Data ss:Type="Number">4600</Data>
             </Cell>
          </Row>
          <Row>
@@ -1273,7 +1325,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4500</Data>
+               <Data ss:Type="Number">4700</Data>
             </Cell>
          </Row>
          <Row>
@@ -1299,7 +1351,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4600</Data>
+               <Data ss:Type="Number">4800</Data>
             </Cell>
          </Row>
          <Row>
@@ -1325,7 +1377,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4700</Data>
+               <Data ss:Type="Number">4900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1351,7 +1403,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4800</Data>
+               <Data ss:Type="Number">5000</Data>
             </Cell>
          </Row>
          <Row>
@@ -1377,7 +1429,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4900</Data>
+               <Data ss:Type="Number">5100</Data>
             </Cell>
          </Row>
          <Row>
@@ -1403,7 +1455,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5000</Data>
+               <Data ss:Type="Number">5200</Data>
             </Cell>
          </Row>
          <Row>
@@ -1429,7 +1481,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5100</Data>
+               <Data ss:Type="Number">5300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1455,7 +1507,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5200</Data>
+               <Data ss:Type="Number">5400</Data>
             </Cell>
          </Row>
          <Row>
@@ -1481,7 +1533,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5300</Data>
+               <Data ss:Type="Number">5500</Data>
             </Cell>
          </Row>
          <Row>
@@ -1507,7 +1559,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5400</Data>
+               <Data ss:Type="Number">5600</Data>
             </Cell>
          </Row>
          <Row>
@@ -1533,7 +1585,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5500</Data>
+               <Data ss:Type="Number">5700</Data>
             </Cell>
          </Row>
          <Row>
@@ -1559,7 +1611,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5600</Data>
+               <Data ss:Type="Number">5800</Data>
             </Cell>
          </Row>
          <Row>
@@ -1585,7 +1637,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5700</Data>
+               <Data ss:Type="Number">5900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1611,7 +1663,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5800</Data>
+               <Data ss:Type="Number">6000</Data>
             </Cell>
          </Row>
          <Row>
@@ -1637,7 +1689,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5900</Data>
+               <Data ss:Type="Number">6100</Data>
             </Cell>
          </Row>
          <Row>
@@ -1663,7 +1715,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6000</Data>
+               <Data ss:Type="Number">6200</Data>
             </Cell>
          </Row>
          <Row>
@@ -1689,7 +1741,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6100</Data>
+               <Data ss:Type="Number">6300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1715,7 +1767,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6200</Data>
+               <Data ss:Type="Number">6400</Data>
             </Cell>
          </Row>
          <Row>
@@ -1741,7 +1793,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6300</Data>
+               <Data ss:Type="Number">6500</Data>
             </Cell>
          </Row>
          <Row>
@@ -1767,7 +1819,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6400</Data>
+               <Data ss:Type="Number">6600</Data>
             </Cell>
          </Row>
          <Row>
@@ -1793,7 +1845,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6500</Data>
+               <Data ss:Type="Number">6700</Data>
             </Cell>
          </Row>
          <Row>
@@ -1819,7 +1871,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6600</Data>
+               <Data ss:Type="Number">6800</Data>
             </Cell>
          </Row>
          <Row>
@@ -1845,7 +1897,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6700</Data>
+               <Data ss:Type="Number">6900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1871,7 +1923,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6800</Data>
+               <Data ss:Type="Number">7000</Data>
             </Cell>
          </Row>
          <Row>
@@ -1897,7 +1949,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6900</Data>
+               <Data ss:Type="Number">7100</Data>
             </Cell>
          </Row>
          <Row>
@@ -1923,7 +1975,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7000</Data>
+               <Data ss:Type="Number">7200</Data>
             </Cell>
          </Row>
          <Row>
@@ -1949,7 +2001,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7100</Data>
+               <Data ss:Type="Number">7300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1975,7 +2027,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7200</Data>
+               <Data ss:Type="Number">7400</Data>
             </Cell>
          </Row>
          <Row>
@@ -2001,7 +2053,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7300</Data>
+               <Data ss:Type="Number">7500</Data>
             </Cell>
          </Row>
          <Row>
@@ -2027,7 +2079,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7400</Data>
+               <Data ss:Type="Number">7600</Data>
             </Cell>
          </Row>
          <Row>
@@ -2053,7 +2105,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7500</Data>
+               <Data ss:Type="Number">7700</Data>
             </Cell>
          </Row>
          <Row>
@@ -2079,7 +2131,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7600</Data>
+               <Data ss:Type="Number">7800</Data>
             </Cell>
          </Row>
          <Row>
@@ -2105,7 +2157,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7700</Data>
+               <Data ss:Type="Number">7900</Data>
             </Cell>
          </Row>
          <Row>
@@ -2131,7 +2183,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7800</Data>
+               <Data ss:Type="Number">8000</Data>
             </Cell>
          </Row>
          <Row>
@@ -2157,7 +2209,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7900</Data>
+               <Data ss:Type="Number">8100</Data>
             </Cell>
          </Row>
          <Row>
@@ -2183,7 +2235,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8000</Data>
+               <Data ss:Type="Number">8200</Data>
             </Cell>
          </Row>
          <Row>
@@ -2209,7 +2261,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8100</Data>
+               <Data ss:Type="Number">8300</Data>
             </Cell>
          </Row>
          <Row>
@@ -2235,7 +2287,33 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8200</Data>
+               <Data ss:Type="Number">8400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Used to indicate that the ID is in the GINC (Global Identification Number for Consignment) format. This number identifies a consignment, which is a logical grouping of goods (one or more logistics units) transferred to a freight forwarder to be transported for a specific journey. The consignment number must be allocated by a freight forwarder (or a carrier acting as a freight forwarder) or a consignor, but only if prior agreement of the freight forwarder is given.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">GINC</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:Consignment/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8500</Data>
             </Cell>
          </Row>
          <Row>
@@ -2287,7 +2365,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8400</Data>
+               <Data ss:Type="Number">8600</Data>
             </Cell>
          </Row>
          <Row>
@@ -2313,7 +2391,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8500</Data>
+               <Data ss:Type="Number">8700</Data>
             </Cell>
          </Row>
          <Row>
@@ -2339,7 +2417,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8600</Data>
+               <Data ss:Type="Number">8800</Data>
             </Cell>
          </Row>
          <Row>
@@ -2365,7 +2443,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8700</Data>
+               <Data ss:Type="Number">8900</Data>
             </Cell>
          </Row>
          <Row>
@@ -2391,7 +2469,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8800</Data>
+               <Data ss:Type="Number">9000</Data>
             </Cell>
          </Row>
          <Row>
@@ -2417,7 +2495,267 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8900</Data>
+               <Data ss:Type="Number">9100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..n</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:DocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Reference to additional documents relevant for this Transportation Status Request.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:DocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identity of the reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The reference number of added document</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">7648779</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:DocumentReference/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:DocumentTypeCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document type code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The type of reference. Must me part of UNCL1001</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">380</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:DocumentReference/cbc:DocumentTypeCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:DocumentType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document type</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The type of reference that cannot be specified by a code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Delivery specification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:DocumentReference/cbc:DocumentType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Attachment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Attachment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:DocumentReference/cac:Attachment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:EmbeddedDocumentBinaryObject</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Embedded binary object</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The referenced document can here be inserted as a binary object.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:DocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @mimeCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">application/pdf</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:DocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/mimeCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @filename</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Hours-spent.pdf</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:DocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/filename</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:ExternalReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">External reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A reference to an attached document that is external to the document(s) being exchanged.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:DocumentReference/cac:Attachment/cac:ExternalReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">10000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:URI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address to internet resource</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">www.beast.se</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:DocumentReference/cac:Attachment/cac:ExternalReference/cbc:URI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">10100</Data>
             </Cell>
          </Row>
       </Table>
