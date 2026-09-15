@@ -12,7 +12,7 @@ This is a hotfix on the 1.3 release. The previous release did not include the la
 
 == Updated Transactions
 * Waybill (T125)
-** Updated snippets and examples to remove usage of code 0212 (Finnish Organization Identifier) from codelist whih has been deprecated. In the snippets and examples it is replaced with 0216 (OVTcode)
+** Updated snippets and examples to remove usage of code 0212 (Finnish Organization Identifier) from codelist which has been deprecated. In the snippets and examples it is replaced with 0216 (OVTcode)
 
 
 == Updated Codelists
