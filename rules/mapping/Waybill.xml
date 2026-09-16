@@ -276,7 +276,7 @@
                <Data ss:Type="String">The date when this version of the Waybill is issued. Format = "YYYY-MM-DD".</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2005-06-25</Data>
+               <Data ss:Type="String">2026-09-16</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cbc:IssueDate</Data>
@@ -640,7 +640,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Purchasing</Data>
+               <Data ss:Type="String">Building 4</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:SenderParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -718,7 +718,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Heremouthshire</Data>
+               <Data ss:Type="String">Region Sjælland</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:SenderParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -770,7 +770,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Gate 34</Data>
+               <Data ss:Type="String">Goods reception</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:SenderParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -1082,7 +1082,7 @@
                <Data ss:Type="String">The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mr Sender</Data>
+               <Data ss:Type="String">Anders Holm</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:SenderParty/cac:Contact/cbc:Name</Data>
@@ -1108,7 +1108,7 @@
                <Data ss:Type="String">The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String">+45 46 55 00 00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:SenderParty/cac:Contact/cbc:Telephone</Data>
@@ -1134,7 +1134,7 @@
                <Data ss:Type="String">The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">sender@Sender-company.co.uk</Data>
+               <Data ss:Type="String">logistics@pharmatech.example</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:SenderParty/cac:Contact/cbc:ElectronicMail</Data>
@@ -1420,7 +1420,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Purchasing</Data>
+               <Data ss:Type="String">Cargo terminal 2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ReceiverParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -1472,7 +1472,7 @@
                <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">4600</Data>
+               <Data ss:Type="String">01530</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ReceiverParty/cac:PostalAddress/cbc:PostalZone</Data>
@@ -1498,7 +1498,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Heremouthshire</Data>
+               <Data ss:Type="String">Uusimaa</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ReceiverParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -1550,7 +1550,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Gate 34</Data>
+               <Data ss:Type="String">Cargo gate 34</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ReceiverParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -1654,7 +1654,7 @@
                <Data ss:Type="String">The registration name of the Receiver party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Leman</Data>
+               <Data ss:Type="String">Finnair Oyj</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ReceiverParty/cac:PartyLegalEntity/cbc:RegistrationName</Data>
@@ -1862,7 +1862,7 @@
                <Data ss:Type="String">The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mrs Bouquet</Data>
+               <Data ss:Type="String">Marja Laine</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ReceiverParty/cac:Contact/cbc:Name</Data>
@@ -1888,7 +1888,7 @@
                <Data ss:Type="String">The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String">+358 9 818 81</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ReceiverParty/cac:Contact/cbc:Telephone</Data>
@@ -1914,7 +1914,7 @@
                <Data ss:Type="String">The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">bouquet@fpconsortial.co.uk</Data>
+               <Data ss:Type="String">cargo@finnair.example</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ReceiverParty/cac:Contact/cbc:ElectronicMail</Data>
@@ -2304,7 +2304,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Purchasing</Data>
+               <Data ss:Type="String">Building 4</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -2382,7 +2382,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Heremouthshire</Data>
+               <Data ss:Type="String">Region Sjælland</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -2434,7 +2434,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Gate 34</Data>
+               <Data ss:Type="String">Goods reception</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -2746,7 +2746,7 @@
                <Data ss:Type="String">The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mr Sender</Data>
+               <Data ss:Type="String">Anders Holm</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:Contact/cbc:Name</Data>
@@ -2772,7 +2772,7 @@
                <Data ss:Type="String">The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String">+45 46 55 00 00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:Contact/cbc:Telephone</Data>
@@ -2798,7 +2798,7 @@
                <Data ss:Type="String">The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">sender@consignor-company.co.uk</Data>
+               <Data ss:Type="String">logistics@pharmatech.example</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:Contact/cbc:ElectronicMail</Data>
@@ -3084,7 +3084,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Purchasing</Data>
+               <Data ss:Type="String">Cargo terminal 2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -3136,7 +3136,7 @@
                <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">4600</Data>
+               <Data ss:Type="String">01530</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PostalAddress/cbc:PostalZone</Data>
@@ -3162,7 +3162,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Heremouthshire</Data>
+               <Data ss:Type="String">Uusimaa</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -3214,7 +3214,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Gate 34</Data>
+               <Data ss:Type="String">Cargo gate 34</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -3318,7 +3318,7 @@
                <Data ss:Type="String">The registration name of the carrier party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Leman</Data>
+               <Data ss:Type="String">Finnair Oyj</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PartyLegalEntity/cbc:RegistrationName</Data>
@@ -3526,7 +3526,7 @@
                <Data ss:Type="String">The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mrs Bouquet</Data>
+               <Data ss:Type="String">Marja Laine</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:Contact/cbc:Name</Data>
@@ -3552,7 +3552,7 @@
                <Data ss:Type="String">The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String">+358 9 818 81</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:Contact/cbc:Telephone</Data>
@@ -3578,7 +3578,7 @@
                <Data ss:Type="String">The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">bouquet@fpconsortial.co.uk</Data>
+               <Data ss:Type="String">cargo@finnair.example</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:Contact/cbc:ElectronicMail</Data>
@@ -3968,7 +3968,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Purchasing</Data>
+               <Data ss:Type="String">Cargo terminal 2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -4020,7 +4020,7 @@
                <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">4600</Data>
+               <Data ss:Type="String">01530</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PostalAddress/cbc:PostalZone</Data>
@@ -4046,7 +4046,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Heremouthshire</Data>
+               <Data ss:Type="String">Uusimaa</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -4098,7 +4098,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Gate 34</Data>
+               <Data ss:Type="String">Cargo gate 34</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -4202,7 +4202,7 @@
                <Data ss:Type="String">The name of the freight forwarder party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Leman</Data>
+               <Data ss:Type="String">Finnair Oyj</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PartyLegalEntity/cbc:RegistrationName</Data>
@@ -4410,7 +4410,7 @@
                <Data ss:Type="String">The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mr Sender</Data>
+               <Data ss:Type="String">Tuomas Virtanen</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:Contact/cbc:Name</Data>
@@ -4436,7 +4436,7 @@
                <Data ss:Type="String">The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String">+358 9 818 81</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:Contact/cbc:Telephone</Data>
@@ -4462,7 +4462,7 @@
                <Data ss:Type="String">The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">sender@forwarder-company.se</Data>
+               <Data ss:Type="String">forwarding@finnair.example</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:Contact/cbc:ElectronicMail</Data>
@@ -4566,7 +4566,7 @@
                <Data ss:Type="String">Free-form text pertinent to this shipment, conveying information that is not contained explicitly in other structures.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">hank at arriving</Data>
+               <Data ss:Type="String">Notify consignee on arrival</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cbc:Information</Data>
@@ -4722,7 +4722,7 @@
                <Data ss:Type="String">The gross weight of the consignment as a whole. Must be equal the sum of the gross weight specified for the included transport handling unites if this is specified. Mandatory if grossvolumen or loading lenght is not specified</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1030</Data>
+               <Data ss:Type="String">320</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cbc:GrossWeightMeasure</Data>
@@ -4774,7 +4774,7 @@
                <Data ss:Type="String">The gross volumen of the consignment. Must be greather or equal the the volumen specified for the included transport handling unites if this is specified. Mandatory if grosswaight or loading lenght is not specified.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">20</Data>
+               <Data ss:Type="String">1.2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cbc:GrossVolumeMeasure</Data>
@@ -4826,7 +4826,7 @@
                <Data ss:Type="String">The total length in a means of transport or a piece of transport equipment which, given the width and height of the transport means, will accommodate all of the consignments in a single consolidation. Mandatory if grossweight or grossvolumen is not specified</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0.4</Data>
+               <Data ss:Type="String">1.2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cbc:LoadingLengthMeasure</Data>
@@ -5008,7 +5008,7 @@
                <Data ss:Type="String">A textual descript this goods item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Torsk sl u/h fersk fulliset 20kg iso 2-4 kg</Data>
+               <Data ss:Type="String">Corrosive liquid, n.o.s. (octanoyl chloride), 10 drums of 25 L on one pallet</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cbc:Description</Data>
@@ -5086,7 +5086,7 @@
                <Data ss:Type="String">The name of the Item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Torsk</Data>
+               <Data ss:Type="String">Octanoyl chloride solution</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cbc:Name</Data>
@@ -5138,7 +5138,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">KO2012140200</Data>
+               <Data ss:Type="String">12352104</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode</Data>
@@ -5190,7 +5190,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3.0.2</Data>
+               <Data ss:Type="String">27.0</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listVersionID</Data>
@@ -5216,7 +5216,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SBMI</Data>
+               <Data ss:Type="String">UNSPSC</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/name</Data>
@@ -5268,7 +5268,7 @@
                <Data ss:Type="String">An identifier for this hazardous item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123</Data>
+               <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:ID</Data>
@@ -5294,7 +5294,7 @@
                <Data ss:Type="String">Text providing further information about the hazardous substance.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Information about the hazardous item</Data>
+               <Data ss:Type="String">Keep upright. Do not load together with foodstuffs.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:AdditionalInformation</Data>
@@ -5372,7 +5372,7 @@
                <Data ss:Type="String">The name of the category of hazard that applies to the Item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Acute toxicity</Data>
+               <Data ss:Type="String">Corrosive</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:CategoryName</Data>
@@ -5398,7 +5398,7 @@
                <Data ss:Type="String">A code signifying a kind of hazard for a material.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123</Data>
+               <Data ss:Type="String">8</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:HazardousCategoryCode</Data>
@@ -5424,7 +5424,7 @@
                <Data ss:Type="String">dentifies a hazard class applicable to dangerous goods as defined by the relevant regulation authority, such as the IMDG Class Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for the road/rail environment.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Code</Data>
+               <Data ss:Type="String">8</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:HazardClassID</Data>
@@ -5450,7 +5450,7 @@
                <Data ss:Type="String">Net weight of the Hazardous item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123</Data>
+               <Data ss:Type="String">250</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:NetWeightMeasure</Data>
@@ -5502,7 +5502,7 @@
                <Data ss:Type="String">Net volume of the Hazardous item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12.3</Data>
+               <Data ss:Type="String">0.25</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:NetVolumeMeasure</Data>
@@ -5580,7 +5580,7 @@
                <Data ss:Type="String">A code signifying the packaging requirement for transportation of the hazardous goods as assigned by IATA, IMDB, ADR, RID etc.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123</Data>
+               <Data ss:Type="String">II</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:HazardousItem/cac:HazardousGoodsTransit/cbc:PackingCriteriaCode</Data>
@@ -5632,7 +5632,7 @@
                <Data ss:Type="String">An identifier for this temperature measurement.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">ABC</Data>
+               <Data ss:Type="String">TC</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:HazardousItem/cac:EmergencyTemperature/cbc:AttributeID</Data>
@@ -5658,7 +5658,7 @@
                <Data ss:Type="String">The value of this temperature measurement.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">78</Data>
+               <Data ss:Type="String">30</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsolidatedShipment/cac:GoodsItem/cac:Item/cac:HazardousItem/cac:EmergencyTemperature/cbc:Measure</Data>
@@ -5918,7 +5918,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Purchasing</Data>
+               <Data ss:Type="String">Building 2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -5996,7 +5996,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Heremouthshire</Data>
+               <Data ss:Type="String">Uusimaa</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -6048,7 +6048,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Gate 34</Data>
+               <Data ss:Type="String">Goods reception, dock 3</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -6360,7 +6360,7 @@
                <Data ss:Type="String">The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mr Sender</Data>
+               <Data ss:Type="String">Liisa Mäkinen</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:Contact/cbc:Name</Data>
@@ -6386,7 +6386,7 @@
                <Data ss:Type="String">The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String">+358 9 4711</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:Contact/cbc:Telephone</Data>
@@ -6412,7 +6412,7 @@
                <Data ss:Type="String">The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">sender@consignor-company.co.uk</Data>
+               <Data ss:Type="String">goods.reception@hus.example</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:Contact/cbc:ElectronicMail</Data>
@@ -6880,7 +6880,7 @@
                <Data ss:Type="String">The Journey ID, eg. flight number used for this shipment stage</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SK1589</Data>
+               <Data ss:Type="String">AY954</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:MainCarriageShipmentStage/cac:TransportMeans/cbc:JourneyID</Data>
@@ -7166,7 +7166,7 @@
                <Data ss:Type="String">The handling for this transporthandling unit expressed as a text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To be set vertical</Data>
+               <Data ss:Type="String">Keep upright</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cbc:HandlingInstructions</Data>
@@ -7322,7 +7322,7 @@
                <Data ss:Type="String">A code signifying the size and type of this piece of piece of transport equipment. When the piece of transport equipment is a shipping container, it is recommended to use ContainerSizeTypeCode for validation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">10</Data>
+               <Data ss:Type="String">15</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:TransportEquipment/cbc:SizeTypeCode</Data>
@@ -7348,7 +7348,7 @@
                <Data ss:Type="String">An indicator that this piece of transport equipments refrigeration is on (true) or off (false).</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">true</Data>
+               <Data ss:Type="String">false</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:TransportEquipment/cbc:RefrigerationOnIndicator</Data>
@@ -7400,7 +7400,7 @@
                <Data ss:Type="String">An indicator that this piece of transport equipment can supply power (true) or not (false).</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">true</Data>
+               <Data ss:Type="String">false</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:TransportEquipment/cbc:PowerIndicator</Data>
@@ -7452,7 +7452,7 @@
                <Data ss:Type="String">The seal number.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">SEAL-8842391</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:TransportEquipment/cac:TransportEquipmentSeal/cbc:ID</Data>
@@ -7530,7 +7530,7 @@
                <Data ss:Type="String">For the measure. Use UN/ECE Recommendation 20 and 21.subset.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123</Data>
+               <Data ss:Type="String">1.2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:MeasurementDimension/cbc:Measure</Data>
@@ -7634,7 +7634,7 @@
                <Data ss:Type="String">The value of the minimal temperature measurement.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">-21</Data>
+               <Data ss:Type="String">5</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:MinimumTemperature/cbc:Measure</Data>
@@ -7738,7 +7738,7 @@
                <Data ss:Type="String">The value of the maximum temperature measurement.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">-21</Data>
+               <Data ss:Type="String">25</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:MaximumTemperature/cbc:Measure</Data>
@@ -7816,7 +7816,7 @@
                <Data ss:Type="String">A textual descript this goods item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Torsk sl u/h fersk fulliset 20kg iso 2-4 kg</Data>
+               <Data ss:Type="String">Corrosive liquid, n.o.s. (octanoyl chloride), 10 drums of 25 L on one pallet</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cbc:Description</Data>
@@ -7894,7 +7894,7 @@
                <Data ss:Type="String">The name of the Item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Torsk</Data>
+               <Data ss:Type="String">Octanoyl chloride solution</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cbc:Name</Data>
@@ -7946,7 +7946,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">KO2012140200</Data>
+               <Data ss:Type="String">12352104</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode</Data>
@@ -7998,7 +7998,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3.0.2</Data>
+               <Data ss:Type="String">27.0</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listVersionID</Data>
@@ -8024,7 +8024,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SBMI</Data>
+               <Data ss:Type="String">UNSPSC</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/name</Data>
@@ -8076,7 +8076,7 @@
                <Data ss:Type="String">An identifier for this hazardous item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123</Data>
+               <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:ID</Data>
@@ -8102,7 +8102,7 @@
                <Data ss:Type="String">Text providing further information about the hazardous substance.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Information about the hazardous item</Data>
+               <Data ss:Type="String">Keep upright. Do not load together with foodstuffs.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:AdditionalInformation</Data>
@@ -8180,7 +8180,7 @@
                <Data ss:Type="String">The name of the category of hazard that applies to the Item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Acute toxicity</Data>
+               <Data ss:Type="String">Corrosive</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:CategoryName</Data>
@@ -8206,7 +8206,7 @@
                <Data ss:Type="String">A code signifying a kind of hazard for a material.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123</Data>
+               <Data ss:Type="String">8</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:HazardousCategoryCode</Data>
@@ -8232,7 +8232,7 @@
                <Data ss:Type="String">dentifies a hazard class applicable to dangerous goods as defined by the relevant regulation authority, such as the IMDG Class Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for the road/rail environment.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Code</Data>
+               <Data ss:Type="String">8</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:HazardClassID</Data>
@@ -8258,7 +8258,7 @@
                <Data ss:Type="String">Net weight of the Hazardous item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123</Data>
+               <Data ss:Type="String">250</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:NetWeightMeasure</Data>
@@ -8310,7 +8310,7 @@
                <Data ss:Type="String">Net volume of the Hazardous item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12.3</Data>
+               <Data ss:Type="String">0.25</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:NetVolumeMeasure</Data>
@@ -8388,7 +8388,7 @@
                <Data ss:Type="String">A code signifying the packaging requirement for transportation of the hazardous goods as assigned by IATA, IMDB, ADR, RID etc.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123</Data>
+               <Data ss:Type="String">II</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem/cac:HazardousGoodsTransit/cbc:PackingCriteriaCode</Data>
@@ -8440,7 +8440,7 @@
                <Data ss:Type="String">An identifier for this temperature measurement.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">ABC</Data>
+               <Data ss:Type="String">TC</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem/cac:EmergencyTemperature/cbc:AttributeID</Data>
@@ -8466,7 +8466,7 @@
                <Data ss:Type="String">The value of this temperature measurement.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">78</Data>
+               <Data ss:Type="String">30</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem/cac:EmergencyTemperature/cbc:Measure</Data>
@@ -8544,7 +8544,7 @@
                <Data ss:Type="String">The reference number of added document</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7648779</Data>
+               <Data ss:Type="String">DGD-2026-000451</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:DocumentReference/cbc:ID</Data>
@@ -8570,7 +8570,7 @@
                <Data ss:Type="String">The type of reference. Must me part of UNCL1001</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">380</Data>
+               <Data ss:Type="String">890</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:DocumentReference/cbc:DocumentTypeCode</Data>
@@ -8596,7 +8596,7 @@
                <Data ss:Type="String">The type of reference that cannot be specified by a code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">MRN</Data>
+               <Data ss:Type="String">Dangerous goods declaration</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:DocumentReference/cbc:DocumentType</Data>
@@ -8700,7 +8700,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Hours-spent.pdf</Data>
+               <Data ss:Type="String">dangerous-goods-declaration.pdf</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:DocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/filename</Data>
@@ -8752,7 +8752,7 @@
                <Data ss:Type="String">The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">www.beast.se</Data>
+               <Data ss:Type="String">https://docs.pharmatech.example/dgd/2026-000451.pdf</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:DocumentReference/cac:Attachment/cac:ExternalReference/cbc:URI</Data>
@@ -9246,7 +9246,7 @@
                <Data ss:Type="String">The name of the delivery location.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Name</Data>
+               <Data ss:Type="String">HUS Meilahti hospital, goods reception</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cbc:Name</Data>
@@ -9298,7 +9298,7 @@
                <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Avon Way</Data>
+               <Data ss:Type="String">Haartmaninkatu 4</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:StreetName</Data>
@@ -9324,7 +9324,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Purchasing</Data>
+               <Data ss:Type="String">Building 2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:AdditionalStreetName</Data>
@@ -9350,7 +9350,7 @@
                <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Bridgtow</Data>
+               <Data ss:Type="String">Helsinki</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:CityName</Data>
@@ -9376,7 +9376,7 @@
                <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">ZZ99 1ZZ</Data>
+               <Data ss:Type="String">00290</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:PostalZone</Data>
@@ -9402,7 +9402,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Avon</Data>
+               <Data ss:Type="String">Uusimaa</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:CountrySubentity</Data>
@@ -9454,7 +9454,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3rd Floor, Room 5</Data>
+               <Data ss:Type="String">Goods reception, dock 3</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:Address/cac:AddressLine/cbc:Line</Data>
@@ -9506,7 +9506,7 @@
                <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">GB</Data>
+               <Data ss:Type="String">FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:Address/cac:Country/cbc:IdentificationCode</Data>
@@ -9558,7 +9558,7 @@
                <Data ss:Type="String">Always "EPSG:3857" by definition.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EPSG:3857</Data>
+               <Data ss:Type="String">EPSG:4326</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:LocationCoordinate/cbc:CoordinateSystemCode</Data>
@@ -9584,7 +9584,7 @@
                <Data ss:Type="String">The X coordinate. Use degrees with decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">59.331660358041425</Data>
+               <Data ss:Type="String">60.190560</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:LocationCoordinate/cbc:LatitudeDegreesMeasure</Data>
@@ -9636,7 +9636,7 @@
                <Data ss:Type="String">The Y coordinate. Use degrees with decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">18.063363084988005</Data>
+               <Data ss:Type="String">24.915560</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:LocationCoordinate/cbc:LongitudeDegreesMeasure</Data>
@@ -9714,7 +9714,7 @@
                <Data ss:Type="String">The start date for the delivery period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-09-29</Data>
+               <Data ss:Type="String">2026-09-17</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:EstimatedDeliveryPeriod/cbc:StartDate</Data>
@@ -9740,7 +9740,7 @@
                <Data ss:Type="String">The start time for the delivery period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">08:00:00+01:00</Data>
+               <Data ss:Type="String">08:00:00+03:00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:EstimatedDeliveryPeriod/cbc:StartTime</Data>
@@ -9766,7 +9766,7 @@
                <Data ss:Type="String">The end date for the delivery period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-09-29</Data>
+               <Data ss:Type="String">2026-09-17</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:EstimatedDeliveryPeriod/cbc:EndDate</Data>
@@ -9792,7 +9792,7 @@
                <Data ss:Type="String">The end time for the delivery period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">10:00:00+01:00</Data>
+               <Data ss:Type="String">10:00:00+03:00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:EstimatedDeliveryPeriod/cbc:EndTime</Data>
@@ -9896,7 +9896,7 @@
                <Data ss:Type="String">The main address line in a postal address usually the street name and number for the despatch address.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Avon Way</Data>
+               <Data ss:Type="String">Københavnsvej 216</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cbc:StreetName</Data>
@@ -9922,7 +9922,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">way 2</Data>
+               <Data ss:Type="String">Building 4</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cbc:AdditionalStreetName</Data>
@@ -9948,7 +9948,7 @@
                <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Bridgtow</Data>
+               <Data ss:Type="String">Køge</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cbc:CityName</Data>
@@ -9974,7 +9974,7 @@
                <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">ZZ99 1ZZ</Data>
+               <Data ss:Type="String">4600</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cbc:PostalZone</Data>
@@ -10000,7 +10000,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Avon</Data>
+               <Data ss:Type="String">Region Sjælland</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cbc:CountrySubentity</Data>
@@ -10052,7 +10052,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3rd Floor, Room 5</Data>
+               <Data ss:Type="String">Goods reception</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cac:AddressLine/cbc:Line</Data>
@@ -10104,7 +10104,7 @@
                <Data ss:Type="String">A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">GB</Data>
+               <Data ss:Type="String">DK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cac:Country/cbc:IdentificationCode</Data>
@@ -10156,7 +10156,7 @@
                <Data ss:Type="String">Always "EPSG:3857" by definition.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EPSG:3857</Data>
+               <Data ss:Type="String">EPSG:4326</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cac:LocationCoordinate/cbc:CoordinateSystemCode</Data>
@@ -10182,7 +10182,7 @@
                <Data ss:Type="String">The X coordinate. Use degrees with decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">59.33169866504851</Data>
+               <Data ss:Type="String">55.450000</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cac:LocationCoordinate/cbc:LatitudeDegreesMeasure</Data>
@@ -10234,7 +10234,7 @@
                <Data ss:Type="String">The Y coordinate. Use degrees with decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">18.063330898492403</Data>
+               <Data ss:Type="String">12.180000</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cac:LocationCoordinate/cbc:LongitudeDegreesMeasure</Data>
@@ -10364,7 +10364,7 @@
                <Data ss:Type="String">The start date for the delivery period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-09-29</Data>
+               <Data ss:Type="String">2026-09-16</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:EstimatedDespatchPeriod/cbc:StartDate</Data>
@@ -10390,7 +10390,7 @@
                <Data ss:Type="String">The start time for the despatch period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">08:00:00+01:00</Data>
+               <Data ss:Type="String">08:00:00+02:00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:EstimatedDespatchPeriod/cbc:StartTime</Data>
@@ -10416,7 +10416,7 @@
                <Data ss:Type="String">The end date for the despatch period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-09-29</Data>
+               <Data ss:Type="String">2026-09-16</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:EstimatedDespatchPeriod/cbc:EndDate</Data>
@@ -10442,7 +10442,7 @@
                <Data ss:Type="String">The end time for the despatch period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">10:00:00+01:00</Data>
+               <Data ss:Type="String">10:00:00+02:00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:EstimatedDespatchPeriod/cbc:EndTime</Data>
@@ -10572,7 +10572,7 @@
                <Data ss:Type="String">Delivery terms location. The location to which the delivery terms refer. Used to qualify the delivery terms e.g. "Terms of delivery are FOB Rotterdam"</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Kalmar</Data>
+               <Data ss:Type="String">HEL</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryTerms/cac:DeliveryLocation/cbc:ID</Data>
@@ -10624,7 +10624,7 @@
                <Data ss:Type="String">The reference number of added document</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7648779</Data>
+               <Data ss:Type="String">PL-2026-000451</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:DocumentReference/cbc:ID</Data>
@@ -10650,7 +10650,7 @@
                <Data ss:Type="String">The type of reference. Must me part of UNCL1001</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">380</Data>
+               <Data ss:Type="String">271</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:DocumentReference/cbc:DocumentTypeCode</Data>
@@ -10676,7 +10676,7 @@
                <Data ss:Type="String">The type of reference that cannot be specified by a code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Delivery soecification</Data>
+               <Data ss:Type="String">Packing list</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:DocumentReference/cbc:DocumentType</Data>
@@ -10780,7 +10780,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Hours-spent.pdf</Data>
+               <Data ss:Type="String">packing-list.pdf</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:DocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/filename</Data>
@@ -10832,7 +10832,7 @@
                <Data ss:Type="String">The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">www.beast.se</Data>
+               <Data ss:Type="String">https://docs.pharmatech.example/packinglist/2026-000451.pdf</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:DocumentReference/cac:Attachment/cac:ExternalReference/cbc:URI</Data>
@@ -10884,7 +10884,7 @@
                <Data ss:Type="String">The Id of the Signature.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3453</Data>
+               <Data ss:Type="String">SIG-2026-000451</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cbc:ID</Data>
@@ -10910,7 +10910,7 @@
                <Data ss:Type="String">The date upon which this signature was verified. Format = "YYYY-MM-DD".</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-09-29</Data>
+               <Data ss:Type="String">2026-09-16</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cbc:ValidationDate</Data>
@@ -11092,7 +11092,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Purchasing</Data>
+               <Data ss:Type="String">Building 2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:SignatoryParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -11170,7 +11170,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Heremouthshire</Data>
+               <Data ss:Type="String">Uusimaa</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:SignatoryParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -11222,7 +11222,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Gate 34</Data>
+               <Data ss:Type="String">Goods reception, dock 3</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:SignatoryParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -11378,7 +11378,7 @@
                <Data ss:Type="String">The persons first name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Valiry</Data>
+               <Data ss:Type="String">Liisa</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:SignatoryParty/cac:Person/cbc:FirstName</Data>
@@ -11404,7 +11404,7 @@
                <Data ss:Type="String">The persons family name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sender</Data>
+               <Data ss:Type="String">Mäkinen</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:SignatoryParty/cac:Person/cbc:FamilyName</Data>
@@ -11534,7 +11534,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Hours-spent.pdf</Data>
+               <Data ss:Type="String">signature.pdf</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:DigitalSignatureAttachment/cbc:EmbeddedDocumentBinaryObject/filename</Data>
@@ -11586,7 +11586,7 @@
                <Data ss:Type="String">The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">www.beast.se</Data>
+               <Data ss:Type="String">https://docs.pharmatech.example/signature/2026-000451.pdf</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:DigitalSignatureAttachment/cac:ExternalReference/cbc:URI</Data>
