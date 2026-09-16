@@ -1573,7 +1573,7 @@
       <Ref card="0..n">cbc:SpecialServiceInstructions</Ref>
       <Ref card="0..1">cbc:SequenceID</Ref>
       <Ref card="0..1">cbc:ShippingPriorityLevelCode</Ref>
-      <Ref card="0..1">cbc:HandlingCode</Ref>
+      <Ref card="0..n">cbc:HandlingCode</Ref>
       <Ref card="0..n">cbc:HandlingInstructions</Ref>
       <Ref card="0..n">cbc:Information</Ref>
       <Ref card="0..1">cbc:TotalGoodsItemQuantity</Ref>
@@ -1638,7 +1638,17 @@
       <Ref card="0..n">cac:TransportHandlingUnit</Ref>
       <Ref card="0..1">cac:FirstArrivalPortLocation</Ref>
       <Ref card="0..1">cac:LastExitPortLocation</Ref>
-      <Ref card="0..1"> cac:OfficeOfEntryLocation</Ref>
+      <Ref card="0..1">cac:OfficeOfEntryLocation</Ref>
+      <Ref card="0..1">cac:OfficeOfSubSequentiallyEntryLocation</Ref>
+      <Ref card="0..1">cac:OfficeOfExitLocation</Ref>
+      <Ref card="0..1">cac:OfficeOfDepartureLocation</Ref>
+      <Ref card="0..1">cac:OfficeOfDestinationLocation</Ref>
+      <Ref card="0..1">cac:OfficeOfImportLocation</Ref>
+      <Ref card="0..1">cac:OfficeOfExportLocation</Ref>
+      <Ref card="0..n">cac:OfficeOfTransitLocation</Ref>
+      <Ref card="0..n">cac:DocumentReference</Ref>
+      <Ref card="0..n">cac:EnvironmentalEmission</Ref>
+      <Ref card="0..n">cac:InsurancePolicy</Ref>
    </Element>
    <Element name="ConsignorParty">
       <Ref card="0..1">cbc:MarkCareIndicator</Ref>

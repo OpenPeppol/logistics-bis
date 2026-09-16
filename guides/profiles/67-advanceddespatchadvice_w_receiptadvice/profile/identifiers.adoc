@@ -1,10 +1,10 @@
 [[namespaces]]
 = Namespaces
 
-The advanced despatch advice data model is bound to {ubl} of the document type {ubl-despatch-advice}. The target namespace for the UBL 2.1 Despatch Advice is:
+The advanced despatch advice data model is bound to {ubl25} of the document type {ubl-despatch-advice}. The target namespace for the UBL 2.5 Despatch Advice is:
 
 *urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2*
 
-The receipt advice data model is bound to {ubl23} of the document type {ubl-receipt-advice}. The target namespace for the UBL 2.3 Receipt Advice is:
+The receipt advice data model is bound to {ubl25} of the document type {ubl-receipt-advice}. The target namespace for the UBL 2.5 Receipt Advice is:
 
 *urn:oasis:names:specification:ubl:schema:xsd:ReceiptAdvice-2*

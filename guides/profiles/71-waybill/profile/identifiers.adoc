@@ -1,6 +1,6 @@
 [[namespaces]]
 = Namespaces
 
-The Waybill data model is bound to {ubl23} of the document type {ubl-waybill}. The target namespace for the UBL 2.3 Waybill is:
+The Waybill data model is bound to {ubl25} of the document type {ubl-waybill}. The target namespace for the UBL 2.5 Waybill is:
 
 *urn:oasis:names:specification:ubl:schema:xsd:Waybill-2*

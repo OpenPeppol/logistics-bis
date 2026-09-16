@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Namespace xmlns="urn:fdc:difi.no:2017:vefa:structure:Namespace-1">
   <Identifier prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Waybill-2</Identifier>
-  <Version>2.3</Version>
+  <Version>2.5</Version>
   <Include prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Include>
   <Include prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Include>
   <Include prefix="ext">urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2</Include>
@@ -14,16 +14,22 @@
     <Ref card="1..1">cbc:ID</Ref>
     <Ref card="0..1">cbc:CarrierAssignedID</Ref>
     <Ref card="0..1">cbc:UUID</Ref>
-    <Ref card="1..1">cbc:IssueDate</Ref>
+    <Ref card="0..1">cbc:VersionID</Ref>
+    <Ref card="0..1">cbc:StatusCode</Ref>
+    <Ref card="0..1">cbc:IssueDate</Ref>
     <Ref card="0..1">cbc:IssueTime</Ref>
     <Ref card="0..1">cbc:Name</Ref>
     <Ref card="0..n">cbc:Description</Ref>
     <Ref card="0..n">cbc:Note</Ref>
     <Ref card="0..1">cbc:ShippingOrderID</Ref>
-    <Ref card="0..n">cbc:AdValoremIndicator</Ref>
+    <Ref card="0..1">cbc:WaybillTypeCode</Ref>
+    <Ref card="0..1">cbc:ConsolidatedIndicator</Ref>
+    <Ref card="0..1">cbc:AdValoremIndicator</Ref>
     <Ref card="0..1">cbc:DeclaredCarriageValueAmount</Ref>
-    <Ref card="0..n">cac:Signature</Ref>
     <Ref card="0..n">cbc:OtherInstruction</Ref>
+    <Ref card="0..1">cac:IssueLocation</Ref>
+    <Ref card="0..1">cac:SenderParty</Ref>
+    <Ref card="0..1">cac:ReceiverParty</Ref>
     <Ref card="0..1">cac:ConsignorParty</Ref>
     <Ref card="0..1">cac:CarrierParty</Ref>
     <Ref card="0..1">cac:FreightForwarderParty</Ref>

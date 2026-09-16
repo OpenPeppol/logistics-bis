@@ -1,6 +1,6 @@
 [[namespaces]]
 = Namespaces
 
-The Weight statement data model is bound to {ubl23} of the document type {ubl-weight-statement}. The target namespace for the UBL2.3 WeightStatement is:
+The Weight statement data model is bound to {ubl25} of the document type {ubl-weight-statement}. The target namespace for the UBL 2.5 WeightStatement is:
 
 *urn:oasis:names:specification:ubl:schema:xsd:WeightStatement-2*

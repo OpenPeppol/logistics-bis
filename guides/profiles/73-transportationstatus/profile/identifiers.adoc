@@ -1,5 +1,5 @@
 [[namespaces]]
 = Namespaces
 
-The Transportation Status data model is bound to {ubl23} of the document type {ubl-transportation-status}. The target namespace for the UBL2.3 TransportationStatus is:
+The Transportation Status data model is bound to {ubl25} of the document type {ubl-transportation-status}. The target namespace for the UBL 2.5 TransportationStatus is:
 *urn:oasis:names:specification:ubl:schema:xsd:TransportationStatus-2*
