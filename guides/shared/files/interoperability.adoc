@@ -37,7 +37,7 @@ These choices are intended to lower the implementation threshold by limiting opt
 
 Technical interoperability::
 * Technical Interaction (Process and semantic implementation):
-** Binding to OASIS UBL 2.1, see {ubl}
+** Binding to OASIS UBL 2.5, see {ubl25}
 ** ISO/IEC 19757-3 Schematron, for automation of document validation, see {schematron}
 
 

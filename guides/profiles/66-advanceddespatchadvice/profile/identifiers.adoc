@@ -1,6 +1,6 @@
 [[namespaces]]
 = Namespaces
 
-The despatch advice data model is bound to {ubl} of the document type {ubl-despatch-advice}. The target namespace for the UBL2.1 Despatch Advice is:
+The despatch advice data model is bound to {ubl25} of the document type {ubl-despatch-advice}. The target namespace for the UBL 2.5 Despatch Advice is:
 
 *urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2*

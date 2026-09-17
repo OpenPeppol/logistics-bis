@@ -8,7 +8,7 @@
    <cbc:CarrierAssignedID>123456789987654321</cbc:CarrierAssignedID>
    <cbc:VersionID>1</cbc:VersionID>
    <cbc:StatusCode>Planned</cbc:StatusCode>
-   <cbc:IssueDate>2005-06-25</cbc:IssueDate>
+   <cbc:IssueDate>2026-09-16</cbc:IssueDate>
    <cbc:IssueTime>09:00:00+02:00</cbc:IssueTime>
    <cbc:Name>Air Waybill</cbc:Name>
    <cbc:ShippingOrderID>KHN23-44044</cbc:ShippingOrderID>
@@ -22,12 +22,93 @@
       </cac:PartyName>
       <cac:PostalAddress>
          <cbc:StreetName>Københavnsvej 216</cbc:StreetName>
-         <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
+         <cbc:AdditionalStreetName>Building 4</cbc:AdditionalStreetName>
          <cbc:CityName>Køge</cbc:CityName>
          <cbc:PostalZone>4600</cbc:PostalZone>
-         <cbc:CountrySubentity>Heremouthshire</cbc:CountrySubentity>
+         <cbc:CountrySubentity>Region Sjælland</cbc:CountrySubentity>
          <cac:AddressLine>
-            <cbc:Line>Gate 34</cbc:Line>      
+            <cbc:Line>Goods reception</cbc:Line>      
+         </cac:AddressLine>
+         <cac:Country>
+            <cbc:IdentificationCode>DK</cbc:IdentificationCode>      
+         </cac:Country>    
+      </cac:PostalAddress>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Novo Nordisk Pharmatech A/S</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0198">13246149</cbc:CompanyID>
+         <cac:RegistrationAddress>
+            <cbc:CityName>Køge</cbc:CityName>
+            <cac:Country>
+               <cbc:IdentificationCode>DK</cbc:IdentificationCode>        
+            </cac:Country>      
+         </cac:RegistrationAddress>    
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+         <cbc:Name>Anders Holm</cbc:Name>
+         <cbc:Telephone>+45 46 55 00 00</cbc:Telephone>
+         <cbc:ElectronicMail>logistics@pharmatech.example</cbc:ElectronicMail>    
+      </cac:Contact>  
+   </cac:SenderParty>
+   <cac:ReceiverParty>
+      <cbc:EndpointID schemeID="0212">0108023-3</cbc:EndpointID>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0088">7300010000001</cbc:ID>    
+      </cac:PartyIdentification>
+      <cac:PartyName>
+         <cbc:Name>Finnair Oyj</cbc:Name>    
+      </cac:PartyName>
+      <cac:PostalAddress>
+         <cbc:StreetName>Tietotie 9</cbc:StreetName>
+         <cbc:AdditionalStreetName>Cargo terminal 2</cbc:AdditionalStreetName>
+         <cbc:CityName>Vantaa</cbc:CityName>
+         <cbc:PostalZone>01530</cbc:PostalZone>
+         <cbc:CountrySubentity>Uusimaa</cbc:CountrySubentity>
+         <cac:AddressLine>
+            <cbc:Line>Cargo gate 34</cbc:Line>      
+         </cac:AddressLine>
+         <cac:Country>
+            <cbc:IdentificationCode>FI</cbc:IdentificationCode>      
+         </cac:Country>    
+      </cac:PostalAddress>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Finnair Oyj</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0212">0108023-3</cbc:CompanyID>
+         <cac:RegistrationAddress>
+            <cbc:CityName>Vantaa</cbc:CityName>
+            <cac:Country>
+               <cbc:IdentificationCode>FI</cbc:IdentificationCode>        
+            </cac:Country>      
+         </cac:RegistrationAddress>    
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+         <cbc:Name>Marja Laine</cbc:Name>
+         <cbc:Telephone>+358 9 818 81</cbc:Telephone>
+         <cbc:ElectronicMail>cargo@finnair.example</cbc:ElectronicMail>    
+      </cac:Contact>
+      <cac:Person>
+         <cbc:FirstName>Hans</cbc:FirstName>
+         <cbc:FamilyName>Nielsen</cbc:FamilyName>
+         <cac:IdentityDocumentReference>
+            <cbc:ID>45642323</cbc:ID>
+            <cbc:DocumentType>ID06</cbc:DocumentType>      
+         </cac:IdentityDocumentReference>    
+      </cac:Person>  
+   </cac:ReceiverParty>
+   <cac:ConsignorParty>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0088">7300010000001</cbc:ID>    
+      </cac:PartyIdentification>
+      <cac:PartyName>
+         <cbc:Name>Novo Nordisk Pharmatech A/S</cbc:Name>    
+      </cac:PartyName>
+      <cac:PostalAddress>
+         <cbc:StreetName>Københavnsvej 216</cbc:StreetName>
+         <cbc:AdditionalStreetName>Building 4</cbc:AdditionalStreetName>
+         <cbc:CityName>Køge</cbc:CityName>
+         <cbc:PostalZone>4600</cbc:PostalZone>
+         <cbc:CountrySubentity>Region Sjælland</cbc:CountrySubentity>
+         <cac:AddressLine>
+            <cbc:Line>Goods reception</cbc:Line>      
          </cac:AddressLine>
          <cac:Country>
             <cbc:IdentificationCode>DK</cbc:IdentificationCode>      
@@ -125,9 +206,9 @@
          </cac:RegistrationAddress>    
       </cac:PartyLegalEntity>
       <cac:Contact>
-         <cbc:Name>Mr Sender</cbc:Name>
-         <cbc:Telephone>0158 1233714</cbc:Telephone>
-         <cbc:ElectronicMail>sender@consignor-company.co.uk</cbc:ElectronicMail>    
+         <cbc:Name>Anders Holm</cbc:Name>
+         <cbc:Telephone>+45 46 55 00 00</cbc:Telephone>
+         <cbc:ElectronicMail>logistics@pharmatech.example</cbc:ElectronicMail>    
       </cac:Contact>  
    </cac:ConsignorParty>
    <cac:CarrierParty>
@@ -140,19 +221,19 @@
       </cac:PartyName>
       <cac:PostalAddress>
          <cbc:StreetName>Tietotie 9</cbc:StreetName>
-         <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
+         <cbc:AdditionalStreetName>Cargo terminal 2</cbc:AdditionalStreetName>
          <cbc:CityName>Vantaa</cbc:CityName>
-         <cbc:PostalZone>4600</cbc:PostalZone>
-         <cbc:CountrySubentity>Heremouthshire</cbc:CountrySubentity>
+         <cbc:PostalZone>01530</cbc:PostalZone>
+         <cbc:CountrySubentity>Uusimaa</cbc:CountrySubentity>
          <cac:AddressLine>
-            <cbc:Line>Gate 34</cbc:Line>      
+            <cbc:Line>Cargo gate 34</cbc:Line>      
          </cac:AddressLine>
          <cac:Country>
             <cbc:IdentificationCode>FI</cbc:IdentificationCode>      
          </cac:Country>    
       </cac:PostalAddress>
       <cac:PartyLegalEntity>
-         <cbc:RegistrationName>Leman</cbc:RegistrationName>
+         <cbc:RegistrationName>Finnair Oyj</cbc:RegistrationName>
          <cbc:CompanyID schemeID="0212">0108023-3</cbc:CompanyID>
          <cac:RegistrationAddress>
             <cbc:CityName>Vantaa</cbc:CityName>
@@ -162,9 +243,9 @@
          </cac:RegistrationAddress>    
       </cac:PartyLegalEntity>
       <cac:Contact>
-         <cbc:Name>Mrs Bouquet</cbc:Name>
-         <cbc:Telephone>0158 1233714</cbc:Telephone>
-         <cbc:ElectronicMail>bouquet@fpconsortial.co.uk</cbc:ElectronicMail>    
+         <cbc:Name>Marja Laine</cbc:Name>
+         <cbc:Telephone>+358 9 818 81</cbc:Telephone>
+         <cbc:ElectronicMail>cargo@finnair.example</cbc:ElectronicMail>    
       </cac:Contact>
       <cac:Person>
          <cbc:FirstName>Peter</cbc:FirstName>
@@ -184,19 +265,19 @@
       </cac:PartyName>
       <cac:PostalAddress>
          <cbc:StreetName>Tietotie 9</cbc:StreetName>
-         <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
+         <cbc:AdditionalStreetName>Cargo terminal 2</cbc:AdditionalStreetName>
          <cbc:CityName>Vantaa</cbc:CityName>
-         <cbc:PostalZone>4600</cbc:PostalZone>
-         <cbc:CountrySubentity>Heremouthshire</cbc:CountrySubentity>
+         <cbc:PostalZone>01530</cbc:PostalZone>
+         <cbc:CountrySubentity>Uusimaa</cbc:CountrySubentity>
          <cac:AddressLine>
-            <cbc:Line>Gate 34</cbc:Line>      
+            <cbc:Line>Cargo gate 34</cbc:Line>      
          </cac:AddressLine>
          <cac:Country>
             <cbc:IdentificationCode>FI</cbc:IdentificationCode>      
          </cac:Country>    
       </cac:PostalAddress>
       <cac:PartyLegalEntity>
-         <cbc:RegistrationName>Leman</cbc:RegistrationName>
+         <cbc:RegistrationName>Finnair Oyj</cbc:RegistrationName>
          <cbc:CompanyID schemeID="0212">0108023-3</cbc:CompanyID>
          <cac:RegistrationAddress>
             <cbc:CityName>Vantaa</cbc:CityName>
@@ -206,48 +287,48 @@
          </cac:RegistrationAddress>    
       </cac:PartyLegalEntity>
       <cac:Contact>
-         <cbc:Name>Mr Sender</cbc:Name>
-         <cbc:Telephone>0158 1233714</cbc:Telephone>
-         <cbc:ElectronicMail>sender@forwarder-company.se</cbc:ElectronicMail>    
+         <cbc:Name>Tuomas Virtanen</cbc:Name>
+         <cbc:Telephone>+358 9 818 81</cbc:Telephone>
+         <cbc:ElectronicMail>forwarding@finnair.example</cbc:ElectronicMail>    
       </cac:Contact>  
    </cac:FreightForwarderParty>
    <cac:Shipment>
       <cbc:ID schemeID="GSIN">73500538500000019</cbc:ID>
-      <cbc:Information>hank at arriving</cbc:Information>
+      <cbc:Information>Notify consignee on arrival</cbc:Information>
       <cac:Consignment>
          <cbc:ID schemeID="GINC">735005233GS1TRANSPORT000001</cbc:ID>
          <cbc:ConsigneeAssignedID>1234</cbc:ConsigneeAssignedID>
          <cbc:ConsignorAssignedID>5678</cbc:ConsignorAssignedID>
-         <cbc:GrossWeightMeasure unitCode="KGM">1030</cbc:GrossWeightMeasure>
-         <cbc:GrossVolumeMeasure unitCode="MTQ">20</cbc:GrossVolumeMeasure>
-         <cbc:LoadingLengthMeasure unitCode="MTR">0.4</cbc:LoadingLengthMeasure>
+         <cbc:GrossWeightMeasure unitCode="KGM">320</cbc:GrossWeightMeasure>
+         <cbc:GrossVolumeMeasure unitCode="MTQ">1.2</cbc:GrossVolumeMeasure>
+         <cbc:LoadingLengthMeasure unitCode="MTR">1.2</cbc:LoadingLengthMeasure>
          <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
          <cbc:TotalTransportHandlingUnitQuantity unitCode="EA">1</cbc:TotalTransportHandlingUnitQuantity>
          <cac:ConsolidatedShipment>
             <cac:GoodsItem>
-               <cbc:Description>Torsk sl u/h fersk fulliset 20kg iso 2-4 kg</cbc:Description>
+               <cbc:Description>Corrosive liquid, n.o.s. (octanoyl chloride), 10 drums of 25 L on one pallet</cbc:Description>
                <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
                <cac:Item>
-                  <cbc:Name>Torsk</cbc:Name>
+                  <cbc:Name>Octanoyl chloride solution</cbc:Name>
                   <cac:CommodityClassification>
-                     <cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">KO2012140200</cbc:ItemClassificationCode>            
+                     <cbc:ItemClassificationCode listID="ZZZ" listVersionID="27.0" name="UNSPSC">12352104</cbc:ItemClassificationCode>            
                   </cac:CommodityClassification>
                   <cac:HazardousItem>
-                     <cbc:ID>123</cbc:ID>
-                     <cbc:AdditionalInformation>Information about the hazardous item</cbc:AdditionalInformation>
+                     <cbc:ID>1</cbc:ID>
+                     <cbc:AdditionalInformation>Keep upright. Do not load together with foodstuffs.</cbc:AdditionalInformation>
                      <cbc:UNDGCode>ADR</cbc:UNDGCode>
                      <cbc:TechnicalName>Corrosive liquid, n.o.s., 8, UN 1760, II (contains Octanoyl chloride)</cbc:TechnicalName>
-                     <cbc:CategoryName>Acute toxicity</cbc:CategoryName>
-                     <cbc:HazardousCategoryCode>123</cbc:HazardousCategoryCode>
-                     <cbc:HazardClassID>Code</cbc:HazardClassID>
-                     <cbc:NetWeightMeasure unitCode="KGM">123</cbc:NetWeightMeasure>
-                     <cbc:NetVolumeMeasure unitCode="MTQ">12.3</cbc:NetVolumeMeasure>
+                     <cbc:CategoryName>Corrosive</cbc:CategoryName>
+                     <cbc:HazardousCategoryCode>8</cbc:HazardousCategoryCode>
+                     <cbc:HazardClassID>8</cbc:HazardClassID>
+                     <cbc:NetWeightMeasure unitCode="KGM">250</cbc:NetWeightMeasure>
+                     <cbc:NetVolumeMeasure unitCode="MTQ">0.25</cbc:NetVolumeMeasure>
                      <cac:HazardousGoodsTransit>
-                        <cbc:PackingCriteriaCode>123</cbc:PackingCriteriaCode>              
+                        <cbc:PackingCriteriaCode>II</cbc:PackingCriteriaCode>              
                      </cac:HazardousGoodsTransit>
                      <cac:EmergencyTemperature>
-                        <cbc:AttributeID>ABC</cbc:AttributeID>
-                        <cbc:Measure unitCode="CEL">78</cbc:Measure>              
+                        <cbc:AttributeID>TC</cbc:AttributeID>
+                        <cbc:Measure unitCode="CEL">30</cbc:Measure>              
                      </cac:EmergencyTemperature>            
                   </cac:HazardousItem>          
                </cac:Item>        
@@ -262,12 +343,12 @@
             </cac:PartyName>
             <cac:PostalAddress>
                <cbc:StreetName>Topeliuksenkatu 5</cbc:StreetName>
-               <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
+               <cbc:AdditionalStreetName>Building 2</cbc:AdditionalStreetName>
                <cbc:CityName>Helsinki</cbc:CityName>
                <cbc:PostalZone>00260</cbc:PostalZone>
-               <cbc:CountrySubentity>Heremouthshire</cbc:CountrySubentity>
+               <cbc:CountrySubentity>Uusimaa</cbc:CountrySubentity>
                <cac:AddressLine>
-                  <cbc:Line>Gate 34</cbc:Line>          
+                  <cbc:Line>Goods reception, dock 3</cbc:Line>          
                </cac:AddressLine>
                <cac:Country>
                   <cbc:IdentificationCode>FI</cbc:IdentificationCode>          
@@ -284,9 +365,9 @@
                </cac:RegistrationAddress>        
             </cac:PartyLegalEntity>
             <cac:Contact>
-               <cbc:Name>Mr Sender</cbc:Name>
-               <cbc:Telephone>0158 1233714</cbc:Telephone>
-               <cbc:ElectronicMail>sender@consignor-company.co.uk</cbc:ElectronicMail>        
+               <cbc:Name>Liisa Mäkinen</cbc:Name>
+               <cbc:Telephone>+358 9 4711</cbc:Telephone>
+               <cbc:ElectronicMail>goods.reception@hus.example</cbc:ElectronicMail>        
             </cac:Contact>      
          </cac:ConsigneeParty>
          <cac:OriginalDepartureCountry>
@@ -311,7 +392,7 @@
                </cac:PartyName>        
             </cac:CarrierParty>
             <cac:TransportMeans>
-               <cbc:JourneyID>SK1589</cbc:JourneyID>        
+               <cbc:JourneyID>AY954</cbc:JourneyID>        
             </cac:TransportMeans>
             <cac:LoadingPortLocation>
                <cbc:ID>CPH</cbc:ID>        
@@ -324,69 +405,69 @@
             <cbc:ID schemeID="SSCC">173500538500000061</cbc:ID>
             <cbc:TransportHandlingUnitTypeCode>AG</cbc:TransportHandlingUnitTypeCode>
             <cbc:HandlingCode listID="HandlingCode">ZZ</cbc:HandlingCode>
-            <cbc:HandlingInstructions>To be set vertical</cbc:HandlingInstructions>
+            <cbc:HandlingInstructions>Keep upright</cbc:HandlingInstructions>
             <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
             <cbc:ShippingMarks>Keep dry</cbc:ShippingMarks>
             <cac:TransportEquipment>
                <cbc:ID>34563444</cbc:ID>
                <cbc:TransportEquipmentTypeCode>CN</cbc:TransportEquipmentTypeCode>
-               <cbc:SizeTypeCode>10</cbc:SizeTypeCode>
-               <cbc:RefrigerationOnIndicator>true</cbc:RefrigerationOnIndicator>
+               <cbc:SizeTypeCode>15</cbc:SizeTypeCode>
+               <cbc:RefrigerationOnIndicator>false</cbc:RefrigerationOnIndicator>
                <cbc:Description>A 20 foot refrigerated container that is not actively controlling temperature of the product.</cbc:Description>
-               <cbc:PowerIndicator>true</cbc:PowerIndicator>
+               <cbc:PowerIndicator>false</cbc:PowerIndicator>
                <cac:TransportEquipmentSeal>
-                  <cbc:ID/>          
+                  <cbc:ID>SEAL-8842391</cbc:ID>          
                </cac:TransportEquipmentSeal>        
             </cac:TransportEquipment>
             <cac:MeasurementDimension>
                <cbc:AttributeID>LN</cbc:AttributeID>
-               <cbc:Measure unitCode="MTR">123</cbc:Measure>        
+               <cbc:Measure unitCode="MTR">1.2</cbc:Measure>        
             </cac:MeasurementDimension>
             <cac:MinimumTemperature>
                <cbc:AttributeID>TC</cbc:AttributeID>
-               <cbc:Measure unitCode="CEL">-21</cbc:Measure>        
+               <cbc:Measure unitCode="CEL">5</cbc:Measure>        
             </cac:MinimumTemperature>
             <cac:MaximumTemperature>
                <cbc:AttributeID>TC</cbc:AttributeID>
-               <cbc:Measure unitCode="CEL">-21</cbc:Measure>        
+               <cbc:Measure unitCode="CEL">25</cbc:Measure>        
             </cac:MaximumTemperature>
             <cac:GoodsItem>
-               <cbc:Description>Torsk sl u/h fersk fulliset 20kg iso 2-4 kg</cbc:Description>
+               <cbc:Description>Corrosive liquid, n.o.s. (octanoyl chloride), 10 drums of 25 L on one pallet</cbc:Description>
                <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
                <cac:Item>
-                  <cbc:Name>Torsk</cbc:Name>
+                  <cbc:Name>Octanoyl chloride solution</cbc:Name>
                   <cac:CommodityClassification>
-                     <cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">KO2012140200</cbc:ItemClassificationCode>            
+                     <cbc:ItemClassificationCode listID="ZZZ" listVersionID="27.0" name="UNSPSC">12352104</cbc:ItemClassificationCode>            
                   </cac:CommodityClassification>
                   <cac:HazardousItem>
-                     <cbc:ID>123</cbc:ID>
-                     <cbc:AdditionalInformation>Information about the hazardous item</cbc:AdditionalInformation>
+                     <cbc:ID>1</cbc:ID>
+                     <cbc:AdditionalInformation>Keep upright. Do not load together with foodstuffs.</cbc:AdditionalInformation>
                      <cbc:UNDGCode>ADR</cbc:UNDGCode>
                      <cbc:TechnicalName>Corrosive liquid, n.o.s., 8, UN 1760, II (contains Octanoyl chloride)</cbc:TechnicalName>
-                     <cbc:CategoryName>Acute toxicity</cbc:CategoryName>
-                     <cbc:HazardousCategoryCode>123</cbc:HazardousCategoryCode>
-                     <cbc:HazardClassID>Code</cbc:HazardClassID>
-                     <cbc:NetWeightMeasure unitCode="KGM">123</cbc:NetWeightMeasure>
-                     <cbc:NetVolumeMeasure unitCode="MTQ">12.3</cbc:NetVolumeMeasure>
+                     <cbc:CategoryName>Corrosive</cbc:CategoryName>
+                     <cbc:HazardousCategoryCode>8</cbc:HazardousCategoryCode>
+                     <cbc:HazardClassID>8</cbc:HazardClassID>
+                     <cbc:NetWeightMeasure unitCode="KGM">250</cbc:NetWeightMeasure>
+                     <cbc:NetVolumeMeasure unitCode="MTQ">0.25</cbc:NetVolumeMeasure>
                      <cac:HazardousGoodsTransit>
-                        <cbc:PackingCriteriaCode>123</cbc:PackingCriteriaCode>              
+                        <cbc:PackingCriteriaCode>II</cbc:PackingCriteriaCode>              
                      </cac:HazardousGoodsTransit>
                      <cac:EmergencyTemperature>
-                        <cbc:AttributeID>ABC</cbc:AttributeID>
-                        <cbc:Measure unitCode="CEL">78</cbc:Measure>              
+                        <cbc:AttributeID>TC</cbc:AttributeID>
+                        <cbc:Measure unitCode="CEL">30</cbc:Measure>              
                      </cac:EmergencyTemperature>            
                   </cac:HazardousItem>          
                </cac:Item>        
             </cac:GoodsItem>      
          </cac:TransportHandlingUnit>
          <cac:DocumentReference>
-            <cbc:ID>7648779</cbc:ID>
-            <cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
-            <cbc:DocumentType>MRN</cbc:DocumentType>
+            <cbc:ID>DGD-2026-000451</cbc:ID>
+            <cbc:DocumentTypeCode>890</cbc:DocumentTypeCode>
+            <cbc:DocumentType>Dangerous goods declaration</cbc:DocumentType>
             <cac:Attachment>
-               <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+               <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="dangerous-goods-declaration.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
                <cac:ExternalReference>
-                  <cbc:URI>www.beast.se</cbc:URI>          
+                  <cbc:URI>https://docs.pharmatech.example/dgd/2026-000451.pdf</cbc:URI>          
                </cac:ExternalReference>        
             </cac:Attachment>      
          </cac:DocumentReference>    
@@ -414,83 +495,83 @@
          <cbc:TrackingID>456789</cbc:TrackingID>
          <cac:DeliveryLocation>
             <cbc:ID schemeID="0088">5790000435951</cbc:ID>
-            <cbc:Name>Name</cbc:Name>
+            <cbc:Name>HUS Meilahti hospital, goods reception</cbc:Name>
             <cac:Address>
-               <cbc:StreetName>Avon Way</cbc:StreetName>
-               <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
-               <cbc:CityName>Bridgtow</cbc:CityName>
-               <cbc:PostalZone>ZZ99 1ZZ</cbc:PostalZone>
-               <cbc:CountrySubentity>Avon</cbc:CountrySubentity>
+               <cbc:StreetName>Haartmaninkatu 4</cbc:StreetName>
+               <cbc:AdditionalStreetName>Building 2</cbc:AdditionalStreetName>
+               <cbc:CityName>Helsinki</cbc:CityName>
+               <cbc:PostalZone>00290</cbc:PostalZone>
+               <cbc:CountrySubentity>Uusimaa</cbc:CountrySubentity>
                <cac:AddressLine>
-                  <cbc:Line>3rd Floor, Room 5</cbc:Line>          
+                  <cbc:Line>Goods reception, dock 3</cbc:Line>          
                </cac:AddressLine>
                <cac:Country>
-                  <cbc:IdentificationCode>GB</cbc:IdentificationCode>          
+                  <cbc:IdentificationCode>FI</cbc:IdentificationCode>          
                </cac:Country>        
             </cac:Address>
             <cac:LocationCoordinate>
-               <cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
-               <cbc:LatitudeDegreesMeasure unitCode="DD">59.331660358041425</cbc:LatitudeDegreesMeasure>
-               <cbc:LongitudeDegreesMeasure unitCode="DD">18.063363084988005</cbc:LongitudeDegreesMeasure>        
+               <cbc:CoordinateSystemCode>EPSG:4326</cbc:CoordinateSystemCode>
+               <cbc:LatitudeDegreesMeasure unitCode="DD">60.190560</cbc:LatitudeDegreesMeasure>
+               <cbc:LongitudeDegreesMeasure unitCode="DD">24.915560</cbc:LongitudeDegreesMeasure>        
             </cac:LocationCoordinate>      
          </cac:DeliveryLocation>
          <cac:EstimatedDeliveryPeriod>
-            <cbc:StartDate>2021-09-29</cbc:StartDate>
-            <cbc:StartTime>08:00:00+01:00</cbc:StartTime>
-            <cbc:EndDate>2021-09-29</cbc:EndDate>
-            <cbc:EndTime>10:00:00+01:00</cbc:EndTime>      
+            <cbc:StartDate>2026-09-17</cbc:StartDate>
+            <cbc:StartTime>08:00:00+03:00</cbc:StartTime>
+            <cbc:EndDate>2026-09-17</cbc:EndDate>
+            <cbc:EndTime>10:00:00+03:00</cbc:EndTime>      
          </cac:EstimatedDeliveryPeriod>
          <cac:Despatch>
             <cac:DespatchAddress>
                <cbc:ID>34456456456456</cbc:ID>
-               <cbc:StreetName>Avon Way</cbc:StreetName>
-               <cbc:AdditionalStreetName>way 2</cbc:AdditionalStreetName>
-               <cbc:CityName>Bridgtow</cbc:CityName>
-               <cbc:PostalZone>ZZ99 1ZZ</cbc:PostalZone>
-               <cbc:CountrySubentity>Avon</cbc:CountrySubentity>
+               <cbc:StreetName>Københavnsvej 216</cbc:StreetName>
+               <cbc:AdditionalStreetName>Building 4</cbc:AdditionalStreetName>
+               <cbc:CityName>Køge</cbc:CityName>
+               <cbc:PostalZone>4600</cbc:PostalZone>
+               <cbc:CountrySubentity>Region Sjælland</cbc:CountrySubentity>
                <cac:AddressLine>
-                  <cbc:Line>3rd Floor, Room 5</cbc:Line>          
+                  <cbc:Line>Goods reception</cbc:Line>          
                </cac:AddressLine>
                <cac:Country>
-                  <cbc:IdentificationCode>GB</cbc:IdentificationCode>          
+                  <cbc:IdentificationCode>DK</cbc:IdentificationCode>          
                </cac:Country>
                <cac:LocationCoordinate>
-                  <cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
-                  <cbc:LatitudeDegreesMeasure unitCode="DD">59.33169866504851</cbc:LatitudeDegreesMeasure>
-                  <cbc:LongitudeDegreesMeasure unitCode="DD">18.063330898492403</cbc:LongitudeDegreesMeasure>
+                  <cbc:CoordinateSystemCode>EPSG:4326</cbc:CoordinateSystemCode>
+                  <cbc:LatitudeDegreesMeasure unitCode="DD">55.450000</cbc:LatitudeDegreesMeasure>
+                  <cbc:LongitudeDegreesMeasure unitCode="DD">12.180000</cbc:LongitudeDegreesMeasure>
                   <cbc:AltitudeMeasure unitCode="MTR">12.5</cbc:AltitudeMeasure>          
                </cac:LocationCoordinate>        
             </cac:DespatchAddress>
             <cac:EstimatedDespatchPeriod>
-               <cbc:StartDate>2021-09-29</cbc:StartDate>
-               <cbc:StartTime>08:00:00+01:00</cbc:StartTime>
-               <cbc:EndDate>2021-09-29</cbc:EndDate>
-               <cbc:EndTime>10:00:00+01:00</cbc:EndTime>        
+               <cbc:StartDate>2026-09-16</cbc:StartDate>
+               <cbc:StartTime>08:00:00+02:00</cbc:StartTime>
+               <cbc:EndDate>2026-09-16</cbc:EndDate>
+               <cbc:EndTime>10:00:00+02:00</cbc:EndTime>        
             </cac:EstimatedDespatchPeriod>      
          </cac:Despatch>
          <cac:DeliveryTerms>
             <cbc:ID>DAP</cbc:ID>
             <cbc:SpecialTerms>DAP</cbc:SpecialTerms>
             <cac:DeliveryLocation>
-               <cbc:ID>Kalmar</cbc:ID>        
+               <cbc:ID>HEL</cbc:ID>        
             </cac:DeliveryLocation>      
          </cac:DeliveryTerms>    
       </cac:Delivery>  
    </cac:Shipment>
    <cac:DocumentReference>
-      <cbc:ID>7648779</cbc:ID>
-      <cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
-      <cbc:DocumentType>Delivery soecification</cbc:DocumentType>
+      <cbc:ID>PL-2026-000451</cbc:ID>
+      <cbc:DocumentTypeCode>271</cbc:DocumentTypeCode>
+      <cbc:DocumentType>Packing list</cbc:DocumentType>
       <cac:Attachment>
-         <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+         <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="packing-list.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
          <cac:ExternalReference>
-            <cbc:URI>www.beast.se</cbc:URI>      
+            <cbc:URI>https://docs.pharmatech.example/packinglist/2026-000451.pdf</cbc:URI>      
          </cac:ExternalReference>    
       </cac:Attachment>  
    </cac:DocumentReference>
    <cac:Signature>
-      <cbc:ID>3453</cbc:ID>
-      <cbc:ValidationDate>2021-09-29</cbc:ValidationDate>
+      <cbc:ID>SIG-2026-000451</cbc:ID>
+      <cbc:ValidationDate>2026-09-16</cbc:ValidationDate>
       <cbc:ValidationTime>09:49:00+02:00</cbc:ValidationTime>
       <cac:SignatoryParty>
          <cac:PartyName>
@@ -498,12 +579,12 @@
          </cac:PartyName>
          <cac:PostalAddress>
             <cbc:StreetName>Topeliuksenkatu 5</cbc:StreetName>
-            <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
+            <cbc:AdditionalStreetName>Building 2</cbc:AdditionalStreetName>
             <cbc:CityName>Helsinki</cbc:CityName>
             <cbc:PostalZone>00260</cbc:PostalZone>
-            <cbc:CountrySubentity>Heremouthshire</cbc:CountrySubentity>
+            <cbc:CountrySubentity>Uusimaa</cbc:CountrySubentity>
             <cac:AddressLine>
-               <cbc:Line>Gate 34</cbc:Line>        
+               <cbc:Line>Goods reception, dock 3</cbc:Line>        
             </cac:AddressLine>
             <cac:Country>
                <cbc:IdentificationCode>FI</cbc:IdentificationCode>        
@@ -511,15 +592,15 @@
          </cac:PostalAddress>
          <cac:Person>
             <cbc:ID schemeID="zzz">45976</cbc:ID>
-            <cbc:FirstName>Valiry</cbc:FirstName>
-            <cbc:FamilyName>Sender</cbc:FamilyName>
+            <cbc:FirstName>Liisa</cbc:FirstName>
+            <cbc:FamilyName>Mäkinen</cbc:FamilyName>
             <cbc:JobTitle>Director</cbc:JobTitle>      
          </cac:Person>    
       </cac:SignatoryParty>
       <cac:DigitalSignatureAttachment>
-         <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+         <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="signature.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
          <cac:ExternalReference>
-            <cbc:URI>www.beast.se</cbc:URI>      
+            <cbc:URI>https://docs.pharmatech.example/signature/2026-000451.pdf</cbc:URI>      
          </cac:ExternalReference>    
       </cac:DigitalSignatureAttachment>  
    </cac:Signature>

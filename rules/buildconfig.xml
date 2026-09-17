@@ -32,70 +32,70 @@
 	<configuration>
 		<identifier>peppolbis-T120-base-1.1</identifier>
 		<title>Advanced Despach Advice 1.0 (T120)</title>
-		<inherit>ubl-despatchadvice-2.1</inherit>
+		<inherit>ubl-despatchadvice-2.5</inherit>
 		<file source="sch/PEPPOLBIS-T120.sch" path="xsl/PEPPOLBIS-T120.xsl"/>
 	</configuration>
 
 	<!--<configuration>
 		<identifier>peppolbis-T121-base-1.1</identifier>
 		<title>Despach Advice Response 1.0 (T121)</title>
-		<inherit>ubl-applicationresponse-2.1</inherit>
+		<inherit>ubl-applicationresponse-2.5</inherit>
 		<file source="sch/PEPPOLBIS-T121.sch" path="xsl/PEPPOLBIS-T121.xsl"/>
 	</configuration>-->
 	
 	<configuration>
 		<identifier>peppolbis-T122-base-1.1</identifier>
 		<title>Weight Statement (T122)</title>
-		<inherit>ubl-weightstatement-2.3</inherit>
+		<inherit>ubl-weightstatement-2.5</inherit>
 		<file source="sch/PEPPOLBIS-T122.sch" path="xsl/PEPPOLBIS-T122.xsl"/>
 	</configuration>
 
 	<configuration>
 		<identifier>peppolbis-T123-base-1.0</identifier>
 		<title>Transport Execution Plan Request (T123)</title>
-		<inherit>ubl-transport-execution-plan-request-2.4</inherit>
+		<inherit>ubl-transport-execution-plan-request-2.5</inherit>
 		<file source="sch/PEPPOLBIS-T123.sch" path="xsl/PEPPOLBIS-T123.xsl"/>
 	</configuration>
 
 	<configuration>
 		<identifier>peppolbis-T124-base-1.0</identifier>
 		<title>Transport Execution Plan (T124)</title>
-		<inherit>ubl-transport-execution-plan-2.4</inherit>
+		<inherit>ubl-transport-execution-plan-2.5</inherit>
 		<file source="sch/PEPPOLBIS-T124.sch" path="xsl/PEPPOLBIS-T124.xsl"/>
 	</configuration>
 
 	<configuration>
 		<identifier>peppolbis-T125-base-1.0</identifier>
 		<title>Waybill (T125)</title>
-		<inherit>ubl-waybill-2.3</inherit>
+		<inherit>ubl-waybill-2.5</inherit>
 		<file source="sch/PEPPOLBIS-T125.sch" path="xsl/PEPPOLBIS-T125.xsl"/>
 	</configuration>
 
 	<configuration>
 		<identifier>peppolbis-T126-base-1.0</identifier>
 		<title>Transportation Status Request (T126)</title>
-		<inherit>ubl-transportation-status-request-2.3</inherit>
+		<inherit>ubl-transportation-status-request-2.5</inherit>
 		<file source="sch/PEPPOLBIS-T126.sch" path="xsl/PEPPOLBIS-T126.xsl"/>
 	</configuration>
 
 	<configuration>
 		<identifier>peppolbis-T127-base-1.0</identifier>
 		<title>Transportation Status (T127)</title>
-		<inherit>ubl-transportation-status-2.3</inherit>
+		<inherit>ubl-transportation-status-2.5</inherit>
 		<file source="sch/PEPPOLBIS-T127.sch" path="xsl/PEPPOLBIS-T127.xsl"/>
 	</configuration>
 
 	<configuration>
 		<identifier>peppolbis-T128-base-1.0</identifier>
 		<title>Receipt Advice (T128)</title>
-		<inherit>ubl-receipt-advice-2.3</inherit>
+		<inherit>ubl-receipt-advice-2.5</inherit>
 		<file source="sch/PEPPOLBIS-T128.sch" path="xsl/PEPPOLBIS-T128.xsl"/>
 	</configuration>
 
 	<configuration>
 		<identifier>peppolbis-T129-base-1.0</identifier>
 		<title>Application Response 1.0 (T129)</title>
-		<inherit>ubl-applicationresponse-2.1</inherit>
+		<inherit>ubl-applicationresponse-2.5</inherit>
 		<file source="sch/PEPPOLBIS-T129.sch" path="xsl/PEPPOLBIS-T129.xsl"/>
 	</configuration>
 

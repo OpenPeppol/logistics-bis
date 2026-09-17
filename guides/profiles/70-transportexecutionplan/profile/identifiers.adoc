@@ -1,5 +1,5 @@
 [[namespaces]]
 = Namespaces
 
-The Transport Execution Plan data model is bound to {ubl23} of the document type {ubl-transport-execution-plan}. The target namespace for the UBL2.3 TransportExecutionPlan is:
+The Transport Execution Plan data model is bound to {ubl25} of the document type {ubl-transport-execution-plan}. The target namespace for the UBL 2.5 TransportExecutionPlan is:
 *urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2*

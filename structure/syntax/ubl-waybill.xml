@@ -64,7 +64,7 @@
          <Description>The date when this version of the Waybill is issued. Format = "YYYY-MM-DD". </Description>
          <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">tir16-004</Reference>
-         <Value type="EXAMPLE">2005-06-25</Value>
+         <Value type="EXAMPLE">2026-09-16</Value>
       </Element>
 	     <Element cardinality="1..1">
          <Term>cbc:IssueTime</Term>
@@ -144,7 +144,7 @@
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2</Name>
                <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
-               <Value type="EXAMPLE">Purchasing</Value>
+               <Value type="EXAMPLE">Building 4</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
@@ -162,7 +162,7 @@
                <Term>cbc:CountrySubentity</Term>
                <Name>Country subdivision </Name>
                <Description>For specifying a region, county, state, province etc. within a country by using text. </Description>
-               <Value type="EXAMPLE">Heremouthshire</Value>
+               <Value type="EXAMPLE">Region Sjælland</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
@@ -171,7 +171,7 @@
                   <Term>cbc:Line</Term>
                   <Name>Address line 3 </Name>
                   <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
-                  <Value type="EXAMPLE">Gate 34</Value>
+                  <Value type="EXAMPLE">Goods reception</Value>
                </Element>
             </Element>
             <Element cardinality="1..1">
@@ -240,19 +240,19 @@
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
                <Description>The contact name. </Description>
-               <Value type="EXAMPLE">Mr Sender</Value>
+               <Value type="EXAMPLE">Anders Holm</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number </Name>
                <Description>The phone number of the contact. </Description>
-               <Value type="EXAMPLE">0158 1233714</Value>
+               <Value type="EXAMPLE">+45 46 55 00 00</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address </Name>
                <Description>The electronic mail of the contact. </Description>
-               <Value type="EXAMPLE">sender@Sender-company.co.uk</Value>
+               <Value type="EXAMPLE">logistics@pharmatech.example</Value>
             </Element>
          </Element>
       </Element>
@@ -311,7 +311,7 @@
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2</Name>
                <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
-               <Value type="EXAMPLE">Purchasing</Value>
+               <Value type="EXAMPLE">Cargo terminal 2</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
@@ -323,13 +323,13 @@
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
                <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
-               <Value type="EXAMPLE">4600</Value>
+               <Value type="EXAMPLE">01530</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country subdivision </Name>
                <Description>For specifying a region, county, state, province etc. within a country by using text. </Description>
-               <Value type="EXAMPLE">Heremouthshire</Value>
+               <Value type="EXAMPLE">Uusimaa</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
@@ -338,7 +338,7 @@
                   <Term>cbc:Line</Term>
                   <Name>Address line 3 </Name>
                   <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
-                  <Value type="EXAMPLE">Gate 34</Value>
+                  <Value type="EXAMPLE">Cargo gate 34</Value>
                </Element>
             </Element>
             <Element>
@@ -360,7 +360,7 @@
                <Term>cbc:RegistrationName</Term>
                <Name>The registration name of the Receiver party </Name>
                <Description>The registration name of the Receiver party.</Description>
-               <Value type="EXAMPLE">Leman</Value>
+               <Value type="EXAMPLE">Finnair Oyj</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CompanyID</Term>
@@ -406,19 +406,19 @@
                <Term>cbc:Name</Term>
                <Name>Contact name</Name>
                <Description>The contact name.</Description>
-               <Value type="EXAMPLE">Mrs Bouquet</Value>
+               <Value type="EXAMPLE">Marja Laine</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact email telephone</Name>
                <Description>The phone number of the contact.</Description>
-               <Value type="EXAMPLE">0158 1233714</Value>
+               <Value type="EXAMPLE">+358 9 818 81</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address</Name>
                <Description>The electronic mail of the contact.</Description>
-               <Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
+               <Value type="EXAMPLE">cargo@finnair.example</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -502,7 +502,7 @@
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2</Name>
                <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
-               <Value type="EXAMPLE">Purchasing</Value>
+               <Value type="EXAMPLE">Building 4</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
@@ -520,7 +520,7 @@
                <Term>cbc:CountrySubentity</Term>
                <Name>Country subdivision </Name>
                <Description>For specifying a region, county, state, province etc. within a country by using text. </Description>
-               <Value type="EXAMPLE">Heremouthshire</Value>
+               <Value type="EXAMPLE">Region Sjælland</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
@@ -529,7 +529,7 @@
                   <Term>cbc:Line</Term>
                   <Name>Address line 3 </Name>
                   <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
-                  <Value type="EXAMPLE">Gate 34</Value>
+                  <Value type="EXAMPLE">Goods reception</Value>
                </Element>
             </Element>
             <Element cardinality="1..1">
@@ -598,19 +598,19 @@
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
                <Description>The contact name. </Description>
-               <Value type="EXAMPLE">Mr Sender</Value>
+               <Value type="EXAMPLE">Anders Holm</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number </Name>
                <Description>The phone number of the contact. </Description>
-               <Value type="EXAMPLE">0158 1233714</Value>
+               <Value type="EXAMPLE">+45 46 55 00 00</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address </Name>
                <Description>The electronic mail of the contact. </Description>
-               <Value type="EXAMPLE">sender@consignor-company.co.uk</Value>
+               <Value type="EXAMPLE">logistics@pharmatech.example</Value>
             </Element>
          </Element>
       </Element>
@@ -669,7 +669,7 @@
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2</Name>
                <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
-               <Value type="EXAMPLE">Purchasing</Value>
+               <Value type="EXAMPLE">Cargo terminal 2</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
@@ -681,13 +681,13 @@
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
                <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
-               <Value type="EXAMPLE">4600</Value>
+               <Value type="EXAMPLE">01530</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country subdivision </Name>
                <Description>For specifying a region, county, state, province etc. within a country by using text. </Description>
-               <Value type="EXAMPLE">Heremouthshire</Value>
+               <Value type="EXAMPLE">Uusimaa</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
@@ -696,7 +696,7 @@
                   <Term>cbc:Line</Term>
                   <Name>Address line 3 </Name>
                   <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
-                  <Value type="EXAMPLE">Gate 34</Value>
+                  <Value type="EXAMPLE">Cargo gate 34</Value>
                </Element>
             </Element>
             <Element>
@@ -718,7 +718,7 @@
                <Term>cbc:RegistrationName</Term>
                <Name>The registration name of the carrier party </Name>
                <Description>The registration name of the carrier party.</Description>
-               <Value type="EXAMPLE">Leman</Value>
+               <Value type="EXAMPLE">Finnair Oyj</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CompanyID</Term>
@@ -764,19 +764,19 @@
                <Term>cbc:Name</Term>
                <Name>Contact name</Name>
                <Description>The contact name.</Description>
-               <Value type="EXAMPLE">Mrs Bouquet</Value>
+               <Value type="EXAMPLE">Marja Laine</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact email telephone</Name>
                <Description>The phone number of the contact.</Description>
-               <Value type="EXAMPLE">0158 1233714</Value>
+               <Value type="EXAMPLE">+358 9 818 81</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address</Name>
                <Description>The electronic mail of the contact.</Description>
-               <Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
+               <Value type="EXAMPLE">cargo@finnair.example</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -858,7 +858,7 @@
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2</Name>
                <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
-               <Value type="EXAMPLE">Purchasing</Value>
+               <Value type="EXAMPLE">Cargo terminal 2</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
@@ -870,13 +870,13 @@
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
                <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
-               <Value type="EXAMPLE">4600</Value>
+               <Value type="EXAMPLE">01530</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country subdivision </Name>
                <Description>For specifying a region, county, state, province etc. within a country by using text. </Description>
-               <Value type="EXAMPLE">Heremouthshire</Value>
+               <Value type="EXAMPLE">Uusimaa</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
@@ -885,7 +885,7 @@
                   <Term>cbc:Line</Term>
                   <Name>Address line 3 </Name>
                   <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
-                  <Value type="EXAMPLE">Gate 34</Value>
+                  <Value type="EXAMPLE">Cargo gate 34</Value>
                </Element>
             </Element>
             <Element cardinality="1..1">
@@ -907,7 +907,7 @@
                <Term>cbc:RegistrationName</Term>
                <Name>Freight forwarder party name </Name>
                <Description>The name of the freight forwarder party.</Description>
-               <Value type="EXAMPLE">Leman</Value>
+               <Value type="EXAMPLE">Finnair Oyj</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CompanyID</Term>
@@ -953,19 +953,19 @@
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
                <Description>The contact name. </Description>
-               <Value type="EXAMPLE">Mr Sender</Value>
+               <Value type="EXAMPLE">Tuomas Virtanen</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number </Name>
                <Description>The phone number of the contact. </Description>
-               <Value type="EXAMPLE">0158 1233714</Value>
+               <Value type="EXAMPLE">+358 9 818 81</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address </Name>
                <Description>The electronic mail of the contact. </Description>
-               <Value type="EXAMPLE">sender@forwarder-company.se</Value>
+               <Value type="EXAMPLE">forwarding@finnair.example</Value>
             </Element>
          </Element>
       </Element>
@@ -996,7 +996,7 @@
             <Name>Shipment description</Name>
             <Description>Free-form text pertinent to this shipment, conveying information that is not contained explicitly in other structures.</Description>
             <Reference type="BUSINESS_TERM">tir16-039</Reference>
-            <Value type="EXAMPLE">hank at arriving</Value>
+            <Value type="EXAMPLE">Notify consignee on arrival</Value>
          </Element>
          <Element cardinality="1..1">
             <Term>cac:Consignment</Term>
@@ -1041,7 +1041,7 @@
                   <Term>unitCode</Term>
                   <Value type="EXAMPLE">KGM</Value>
                </Attribute>
-               <Value type="EXAMPLE">1030</Value>
+               <Value type="EXAMPLE">320</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:GrossVolumeMeasure</Term>
@@ -1053,7 +1053,7 @@
                   <Term>unitCode</Term>
                   <Value type="EXAMPLE">MTQ</Value>
                </Attribute>
-               <Value type="EXAMPLE">20</Value>
+               <Value type="EXAMPLE">1.2</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:LoadingLengthMeasure</Term>
@@ -1064,7 +1064,7 @@
                   <Term>unitCode</Term>
                   <Value type="EXAMPLE">MTR</Value>
                </Attribute>
-               <Value type="EXAMPLE">0.4</Value>
+               <Value type="EXAMPLE">1.2</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:HazardousRiskIndicator</Term>
@@ -1096,7 +1096,7 @@
                      <Term>cbc:Description</Term>
                      <Name>Description </Name>
                      <Description>A textual descript this goods item. </Description>
-                     <Value type="EXAMPLE">Torsk sl u/h fersk fulliset 20kg iso 2-4 kg</Value>
+                     <Value type="EXAMPLE">Corrosive liquid, n.o.s. (octanoyl chloride), 10 drums of 25 L on one pallet</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:HazardousRiskIndicator</Term>
@@ -1112,7 +1112,7 @@
                         <Term>cbc:Name</Term>
                         <Name>Name</Name>
                         <Description>The name of the Item. </Description>
-                        <Value type="EXAMPLE">Torsk</Value>
+                        <Value type="EXAMPLE">Octanoyl chloride solution</Value>
                      </Element>
                      <Element cardinality="0..n">
                         <Term>cac:CommodityClassification</Term>
@@ -1129,13 +1129,13 @@
                            </Attribute>
                            <Attribute usage="Optional">
                               <Term>listVersionID</Term>
-                              <Value type="EXAMPLE">3.0.2</Value>
+                              <Value type="EXAMPLE">27.0</Value>
                            </Attribute>
                            <Attribute usage="Optional">
                               <Term>name</Term>
-                              <Value type="EXAMPLE">SBMI</Value>
+                              <Value type="EXAMPLE">UNSPSC</Value>
                            </Attribute>
-                           <Value type="EXAMPLE">KO2012140200</Value>
+                           <Value type="EXAMPLE">12352104</Value>
                         </Element>
                      </Element>
                      <Element cardinality="0..n">
@@ -1146,13 +1146,13 @@
                            <Term>cbc:ID</Term>
                            <Name>Identifier</Name>
                            <Description>An identifier for this hazardous item. </Description>
-                           <Value type="EXAMPLE">123</Value>
+                           <Value type="EXAMPLE">1</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:AdditionalInformation</Term>
                            <Name>Additional Information</Name>
                            <Description>Text providing further information about the hazardous substance. </Description>
-                           <Value type="EXAMPLE">Information about the hazardous item</Value>
+                           <Value type="EXAMPLE">Keep upright. Do not load together with foodstuffs.</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:UNDGCode</Term>
@@ -1171,19 +1171,19 @@
                            <Term>cbc:CategoryName</Term>
                            <Name>Category Name</Name>
                            <Description>The name of the category of hazard that applies to the Item. </Description>
-                           <Value type="EXAMPLE">Acute toxicity</Value>
+                           <Value type="EXAMPLE">Corrosive</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:HazardousCategoryCode</Term>
                            <Name>Hazardous Category Code</Name>
                            <Description>A code signifying a kind of hazard for a material. </Description>
-                           <Value type="EXAMPLE">123</Value>
+                           <Value type="EXAMPLE">8</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:HazardClassID</Term>
                            <Name>Haszardous hazard class Identifier</Name>
                            <Description>dentifies a hazard class applicable to dangerous goods as defined by the relevant regulation authority, such as the IMDG Class Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for the road/rail environment. </Description>
-                           <Value type="EXAMPLE">Code</Value>
+                           <Value type="EXAMPLE">8</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:NetWeightMeasure</Term>
@@ -1196,7 +1196,7 @@
                               <Reference type="CODE_LIST">UNECERec20</Reference>
                               <Value type="EXAMPLE">KGM</Value>
                            </Attribute>
-                           <Value type="EXAMPLE">123</Value>
+                           <Value type="EXAMPLE">250</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:NetVolumeMeasure</Term>
@@ -1209,7 +1209,7 @@
                               <Reference type="CODE_LIST">UNECERec20</Reference>
                               <Value type="EXAMPLE">MTQ</Value>
                            </Attribute>
-                           <Value type="EXAMPLE">12.3</Value>
+                           <Value type="EXAMPLE">0.25</Value>
                         </Element>
                         <Element cardinality="0..n">
                            <Term>cac:HazardousGoodsTransit</Term>
@@ -1219,7 +1219,7 @@
                               <Term>cbc:PackingCriteriaCode</Term>
                               <Name>Packing Criteria Code </Name>
                               <Description>A code signifying the packaging requirement for transportation of the hazardous goods as assigned by IATA, IMDB, ADR, RID etc. </Description>
-                              <Value type="EXAMPLE">123</Value>
+                              <Value type="EXAMPLE">II</Value>
                            </Element>
                         </Element>
                         <Element cardinality="0..1">
@@ -1230,7 +1230,7 @@
                               <Term>cbc:AttributeID</Term>
                               <Name>Attribute ID </Name>
                               <Description>An identifier for this temperature measurement. </Description>
-                              <Value type="EXAMPLE">ABC</Value>
+                              <Value type="EXAMPLE">TC</Value>
                            </Element>
                            <Element cardinality="1..1">
                               <Term>cbc:Measure</Term>
@@ -1243,7 +1243,7 @@
                                  <Reference type="CODE_LIST">UNECERec20</Reference>
                                  <Value type="EXAMPLE">CEL</Value>
                               </Attribute>
-                              <Value type="EXAMPLE">78</Value>
+                              <Value type="EXAMPLE">30</Value>
                            </Element>
                         </Element>
                      </Element>
@@ -1294,7 +1294,7 @@
                      <Term>cbc:AdditionalStreetName</Term>
                      <Name>Address line 2</Name>
                      <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
-                     <Value type="EXAMPLE">Purchasing</Value>
+                     <Value type="EXAMPLE">Building 2</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
@@ -1312,7 +1312,7 @@
                      <Term>cbc:CountrySubentity</Term>
                      <Name>Country subdivision </Name>
                      <Description>For specifying a region, county, state, province etc. within a country by using text. </Description>
-                     <Value type="EXAMPLE">Heremouthshire</Value>
+                     <Value type="EXAMPLE">Uusimaa</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:AddressLine</Term>
@@ -1321,7 +1321,7 @@
                         <Term>cbc:Line</Term>
                         <Name>Address line 3 </Name>
                         <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
-                        <Value type="EXAMPLE">Gate 34</Value>
+                        <Value type="EXAMPLE">Goods reception, dock 3</Value>
                      </Element>
                   </Element>
                   <Element>
@@ -1390,19 +1390,19 @@
                      <Term>cbc:Name</Term>
                      <Name>Contact name </Name>
                      <Description>The contact name. </Description>
-                     <Value type="EXAMPLE">Mr Sender</Value>
+                     <Value type="EXAMPLE">Liisa Mäkinen</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:Telephone</Term>
                      <Name>Contact telephone number </Name>
                      <Description>The phone number of the contact. </Description>
-                     <Value type="EXAMPLE">0158 1233714</Value>
+                     <Value type="EXAMPLE">+358 9 4711</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:ElectronicMail</Term>
                      <Name>Contact email address </Name>
                      <Description>The electronic mail of the contact. </Description>
-                     <Value type="EXAMPLE">sender@consignor-company.co.uk</Value>
+                     <Value type="EXAMPLE">goods.reception@hus.example</Value>
                   </Element>
                </Element>
             </Element>
@@ -1504,7 +1504,7 @@
                      <Term>cbc:JourneyID</Term>
                      <Name>Journey ID </Name>
                      <Description>The Journey ID, eg. flight number used for this shipment stage</Description>
-                     <Value type="EXAMPLE">SK1589</Value>
+                     <Value type="EXAMPLE">AY954</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
@@ -1568,7 +1568,7 @@
                   <Term>cbc:HandlingInstructions</Term>
                   <Name>Handling instructions </Name>
                   <Description>The handling for this transporthandling unit expressed as a text. </Description>
-                  <Value type="EXAMPLE">To be set vertical</Value>
+                  <Value type="EXAMPLE">Keep upright</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:HazardousRiskIndicator</Term>
@@ -1604,13 +1604,13 @@
                      <Name>Size type code. </Name>
                      <Description>A code signifying the size and type of this piece of piece of transport equipment. When the piece of transport equipment is a shipping container, it is recommended to use ContainerSizeTypeCode for validation. </Description>
                      <Reference type="CODE_LIST">TRED8155</Reference>
-                     <Value type="EXAMPLE">10</Value>
+                     <Value type="EXAMPLE">15</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:RefrigerationOnIndicator</Term>
                      <Name>Indicator refrigeration transport equipment. </Name>
                      <Description>An indicator that this piece of transport equipments refrigeration is on (true) or off (false). </Description>
-                     <Value type="EXAMPLE">true</Value>
+                     <Value type="EXAMPLE">false</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:Description</Term>
@@ -1622,7 +1622,18 @@
                      <Term>cbc:PowerIndicator</Term>
                      <Name>Power indicator transport equipment. </Name>
                      <Description>An indicator that this piece of transport equipment can supply power (true) or not (false). </Description>
-                     <Value type="EXAMPLE">true</Value>
+                     <Value type="EXAMPLE">false</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cac:TransportEquipmentSeal</Term>
+                     <Name>Transport equipment seal.</Name>
+                     <Description>A seal securing the door of a piece of transport equipment.</Description>
+                     <Element cardinality="1..1">
+                        <Term>cbc:ID</Term>
+                        <Name>ID.</Name>
+                        <Description>The seal number.</Description>
+                        <Value type="EXAMPLE">SEAL-8842391</Value>
+                     </Element>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:TransportEquipmentSeal</Term>
@@ -1656,7 +1667,7 @@
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">MTR</Value>
                      </Attribute>
-                     <Value type="EXAMPLE">123</Value>
+                     <Value type="EXAMPLE">1.2</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
@@ -1679,7 +1690,7 @@
                         <Name>Measure unit of measure </Name>
                         <Value type="EXAMPLE">CEL</Value>
                      </Attribute>
-                     <Value type="EXAMPLE">-21</Value>
+                     <Value type="EXAMPLE">5</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
@@ -1702,7 +1713,7 @@
                         <Name>Measure unit of measure </Name>
                         <Value type="EXAMPLE">CEL</Value>
                      </Attribute>
-                     <Value type="EXAMPLE">-21</Value>
+                     <Value type="EXAMPLE">25</Value>
                   </Element>
                </Element>
                <Element cardinality="0..n">
@@ -1713,7 +1724,7 @@
                      <Term>cbc:Description</Term>
                      <Name>Description </Name>
                      <Description>A textual descript this goods item. </Description>
-                     <Value type="EXAMPLE">Torsk sl u/h fersk fulliset 20kg iso 2-4 kg</Value>
+                     <Value type="EXAMPLE">Corrosive liquid, n.o.s. (octanoyl chloride), 10 drums of 25 L on one pallet</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:HazardousRiskIndicator</Term>
@@ -1729,7 +1740,7 @@
                         <Term>cbc:Name</Term>
                         <Name>Name</Name>
                         <Description>The name of the Item. </Description>
-                        <Value type="EXAMPLE">Torsk</Value>
+                        <Value type="EXAMPLE">Octanoyl chloride solution</Value>
                      </Element>
                      <Element cardinality="0..n">
                         <Term>cac:CommodityClassification</Term>
@@ -1746,13 +1757,13 @@
                            </Attribute>
                            <Attribute usage="Optional">
                               <Term>listVersionID</Term>
-                              <Value type="EXAMPLE">3.0.2</Value>
+                              <Value type="EXAMPLE">27.0</Value>
                            </Attribute>
                            <Attribute usage="Optional">
                               <Term>name</Term>
-                              <Value type="EXAMPLE">SBMI</Value>
+                              <Value type="EXAMPLE">UNSPSC</Value>
                            </Attribute>
-                           <Value type="EXAMPLE">KO2012140200</Value>
+                           <Value type="EXAMPLE">12352104</Value>
                         </Element>
                      </Element>
                      <Element cardinality="0..n">
@@ -1763,13 +1774,13 @@
                            <Term>cbc:ID</Term>
                            <Name>Identifier</Name>
                            <Description>An identifier for this hazardous item. </Description>
-                           <Value type="EXAMPLE">123</Value>
+                           <Value type="EXAMPLE">1</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:AdditionalInformation</Term>
                            <Name>Additional Information</Name>
                            <Description>Text providing further information about the hazardous substance. </Description>
-                           <Value type="EXAMPLE">Information about the hazardous item</Value>
+                           <Value type="EXAMPLE">Keep upright. Do not load together with foodstuffs.</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:UNDGCode</Term>
@@ -1788,19 +1799,19 @@
                            <Term>cbc:CategoryName</Term>
                            <Name>Category Name</Name>
                            <Description>The name of the category of hazard that applies to the Item. </Description>
-                           <Value type="EXAMPLE">Acute toxicity</Value>
+                           <Value type="EXAMPLE">Corrosive</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:HazardousCategoryCode</Term>
                            <Name>Hazardous Category Code</Name>
                            <Description>A code signifying a kind of hazard for a material. </Description>
-                           <Value type="EXAMPLE">123</Value>
+                           <Value type="EXAMPLE">8</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:HazardClassID</Term>
                            <Name>Haszardous hazard class Identifier</Name>
                            <Description>dentifies a hazard class applicable to dangerous goods as defined by the relevant regulation authority, such as the IMDG Class Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for the road/rail environment. </Description>
-                           <Value type="EXAMPLE">Code</Value>
+                           <Value type="EXAMPLE">8</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:NetWeightMeasure</Term>
@@ -1813,7 +1824,7 @@
                               <Reference type="CODE_LIST">UNECERec20</Reference>
                               <Value type="EXAMPLE">KGM</Value>
                            </Attribute>
-                           <Value type="EXAMPLE">123</Value>
+                           <Value type="EXAMPLE">250</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:NetVolumeMeasure</Term>
@@ -1826,7 +1837,7 @@
                               <Reference type="CODE_LIST">UNECERec20</Reference>
                               <Value type="EXAMPLE">MTQ</Value>
                            </Attribute>
-                           <Value type="EXAMPLE">12.3</Value>
+                           <Value type="EXAMPLE">0.25</Value>
                         </Element>
                         <Element cardinality="0..n">
                            <Term>cac:HazardousGoodsTransit</Term>
@@ -1836,7 +1847,7 @@
                               <Term>cbc:PackingCriteriaCode</Term>
                               <Name>Packing Criteria Code </Name>
                               <Description>A code signifying the packaging requirement for transportation of the hazardous goods as assigned by IATA, IMDB, ADR, RID etc. </Description>
-                              <Value type="EXAMPLE">123</Value>
+                              <Value type="EXAMPLE">II</Value>
                            </Element>
                         </Element>
                         <Element cardinality="0..1">
@@ -1847,7 +1858,7 @@
                               <Term>cbc:AttributeID</Term>
                               <Name>Attribute ID </Name>
                               <Description>An identifier for this temperature measurement. </Description>
-                              <Value type="EXAMPLE">ABC</Value>
+                              <Value type="EXAMPLE">TC</Value>
                            </Element>
                            <Element cardinality="1..1">
                               <Term>cbc:Measure</Term>
@@ -1860,7 +1871,7 @@
                                  <Reference type="CODE_LIST">UNECERec20</Reference>
                                  <Value type="EXAMPLE">CEL</Value>
                               </Attribute>
-                              <Value type="EXAMPLE">78</Value>
+                              <Value type="EXAMPLE">30</Value>
                            </Element>
                         </Element>
                      </Element>
@@ -1875,20 +1886,20 @@
                   <Term>cbc:ID</Term>
                   <Name>Identity of the reference</Name>
                   <Description>The reference number of added document</Description>
-                  <Value type="EXAMPLE">7648779</Value>
+                  <Value type="EXAMPLE">DGD-2026-000451</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:DocumentTypeCode</Term>
                   <Name>Document type code</Name>
                   <Description>The type of reference. Must me part of UNCL1001</Description>
                   <Reference type="CODE_LIST">UNCL1001</Reference>
-                  <Value type="EXAMPLE">380</Value>
+                  <Value type="EXAMPLE">890</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:DocumentType</Term>
                   <Name>Document type</Name>
                   <Description>The type of reference that cannot be specified by a code</Description>
-                  <Value type="EXAMPLE">MRN</Value>
+                  <Value type="EXAMPLE">Dangerous goods declaration</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:Attachment</Term>
@@ -1905,7 +1916,7 @@
                      </Attribute>
                      <Attribute>
                         <Term>filename</Term>
-                        <Value type="EXAMPLE">Hours-spent.pdf</Value>
+                        <Value type="EXAMPLE">dangerous-goods-declaration.pdf</Value>
                      </Attribute>
                      <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
                   </Element>
@@ -1917,7 +1928,7 @@
                         <Term>cbc:URI</Term>
                         <Name>Address to internet resource</Name>
                         <Description>The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Description>
-                        <Value type="EXAMPLE">www.beast.se</Value>
+                        <Value type="EXAMPLE">https://docs.pharmatech.example/dgd/2026-000451.pdf</Value>
                      </Element>
                   </Element>
                </Element>
@@ -2031,7 +2042,7 @@
                   <Term>cbc:Name</Term>
                   <Name>Name of the delivery location</Name>
                   <Description>The name of the delivery location.</Description>
-                  <Value type="EXAMPLE">Name</Value>
+                  <Value type="EXAMPLE">HUS Meilahti hospital, goods reception</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:Address</Term>
@@ -2041,31 +2052,31 @@
                      <Term>cbc:StreetName</Term>
                      <Name>Address line 1</Name>
                      <Description>The main address line in a postal address usually the street name and number.</Description>
-                     <Value type="EXAMPLE">Avon Way</Value>
+                     <Value type="EXAMPLE">Haartmaninkatu 4</Value>
                   </Element>
                   <Element cardinality="0..1 0..1">
                      <Term>cbc:AdditionalStreetName</Term>
                      <Name>Address line 2</Name>
                      <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
-                     <Value type="EXAMPLE">Purchasing</Value>
+                     <Value type="EXAMPLE">Building 2</Value>
                   </Element>
                   <Element cardinality="0..1 0..1">
                      <Term>cbc:CityName</Term>
                      <Name>City</Name>
                      <Description>The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
-                     <Value type="EXAMPLE">Bridgtow</Value>
+                     <Value type="EXAMPLE">Helsinki</Value>
                   </Element>
                   <Element cardinality="0..1 0..1">
                      <Term>cbc:PostalZone</Term>
                      <Name>Post code</Name>
                      <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
-                     <Value type="EXAMPLE">ZZ99 1ZZ</Value>
+                     <Value type="EXAMPLE">00290</Value>
                   </Element>
                   <Element cardinality="0..1 0..1">
                      <Term>cbc:CountrySubentity</Term>
                      <Name>Country subdivision</Name>
                      <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
-                     <Value type="EXAMPLE">Avon</Value>
+                     <Value type="EXAMPLE">Uusimaa</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:AddressLine</Term>
@@ -2074,7 +2085,7 @@
                         <Term>cbc:Line</Term>
                         <Name>Address line 3</Name>
                         <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
-                        <Value type="EXAMPLE">3rd Floor, Room 5</Value>
+                        <Value type="EXAMPLE">Goods reception, dock 3</Value>
                      </Element>
                   </Element>
                   <Element cardinality="1..1">
@@ -2085,7 +2096,7 @@
                         <Name>Country code</Name>
                         <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
-                        <Value type="EXAMPLE">GB</Value>
+                        <Value type="EXAMPLE">FI</Value>
                      </Element>
                   </Element>
                </Element>
@@ -2097,7 +2108,7 @@
                      <Term>cbc:CoordinateSystemCode</Term>
                      <Name>Coordinate system code</Name>
                      <Description>Always "EPSG:3857" by definition.</Description>
-                     <Value type="EXAMPLE">EPSG:3857</Value>
+                     <Value type="EXAMPLE">EPSG:4326</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cbc:LatitudeDegreesMeasure</Term>
@@ -2110,7 +2121,7 @@
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">DD</Value>
                      </Attribute>
-                     <Value type="EXAMPLE">59.331660358041425</Value>
+                     <Value type="EXAMPLE">60.190560</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cbc:LongitudeDegreesMeasure</Term>
@@ -2123,7 +2134,7 @@
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">DD</Value>
                      </Attribute>
-                     <Value type="EXAMPLE">18.063363084988005</Value>
+                     <Value type="EXAMPLE">24.915560</Value>
                   </Element>
                </Element>
             </Element>
@@ -2138,7 +2149,7 @@
                   <Reference type="BUSINESS_TERM">tir16-042</Reference>
                   <Reference type="RULE">PEPPOL-T125-R011</Reference>
                   <Reference type="RULE">PEPPOL-T125-R012</Reference>
-                  <Value type="EXAMPLE">2021-09-29</Value>
+                  <Value type="EXAMPLE">2026-09-17</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:StartTime</Term>
@@ -2148,7 +2159,7 @@
                   <Reference type="RULE">PEPPOL-T125-R013</Reference>
                   <Reference type="RULE">PEPPOL-T125-R015</Reference>
                   <Reference type="RULE">PEPPOL-T125-R016</Reference>
-                  <Value type="EXAMPLE">08:00:00+01:00</Value>
+                  <Value type="EXAMPLE">08:00:00+03:00</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:EndDate</Term>
@@ -2157,7 +2168,7 @@
                   <Reference type="BUSINESS_TERM">tir16-044</Reference>
                   <Reference type="RULE">PEPPOL-T125-R011</Reference>
                   <Reference type="RULE">PEPPOL-T125-R012</Reference>
-                  <Value type="EXAMPLE">2021-09-29</Value>
+                  <Value type="EXAMPLE">2026-09-17</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:EndTime</Term>
@@ -2167,7 +2178,7 @@
                   <Reference type="RULE">PEPPOL-T125-R013</Reference>
                   <Reference type="RULE">PEPPOL-T125-R014</Reference>
                   <Reference type="RULE">PEPPOL-T125-R017</Reference>
-                  <Value type="EXAMPLE">10:00:00+01:00</Value>
+                  <Value type="EXAMPLE">10:00:00+03:00</Value>
                </Element>
             </Element>
             <Element cardinality="0..1">
@@ -2189,14 +2200,14 @@
                      <Name>Address line 1 </Name>
                      <Description>The main address line in a postal address usually the street name and number for the despatch address. </Description>
                      <Reference type="BUSINESS_TERM">tir16-p003</Reference>
-                     <Value type="EXAMPLE">Avon Way</Value>
+                     <Value type="EXAMPLE">Københavnsvej 216</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:AdditionalStreetName</Term>
                      <Name>Address line 2</Name>
                      <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
                      <Reference type="BUSINESS_TERM">tir16-p004</Reference>
-                     <Value type="EXAMPLE">way 2</Value>
+                     <Value type="EXAMPLE">Building 4</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
@@ -2204,7 +2215,7 @@
                      <Description>The common name of the city where the postal address is. The
 							name is written in full rather than as a code.</Description>
                      <Reference type="BUSINESS_TERM">tir16-p005</Reference>
-                     <Value type="EXAMPLE">Bridgtow</Value>
+                     <Value type="EXAMPLE">Køge</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:PostalZone</Term>
@@ -2213,7 +2224,7 @@
 							to the relevant national postal service, such as a ZIP code or Post
 							Code.</Description>
                      <Reference type="BUSINESS_TERM">tir16-p006</Reference>
-                     <Value type="EXAMPLE">ZZ99 1ZZ</Value>
+                     <Value type="EXAMPLE">4600</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CountrySubentity</Term>
@@ -2221,7 +2232,7 @@
                      <Description>For specifying a region, county, state, province etc. within a
 							country by using text.</Description>
                      <Reference type="BUSINESS_TERM">tir16-p007</Reference>
-                     <Value type="EXAMPLE">Avon</Value>
+                     <Value type="EXAMPLE">Region Sjælland</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:AddressLine</Term>
@@ -2233,7 +2244,7 @@
 									used to give further details supplementing the main
 									line.</Description>
                         <DataType>Text</DataType>
-                        <Value type="EXAMPLE">3rd Floor, Room 5</Value>
+                        <Value type="EXAMPLE">Goods reception</Value>
                      </Element>
                   </Element>
                   <Element cardinality="0..1">
@@ -2250,7 +2261,7 @@
                         <DataType>Code</DataType>
                         <Reference type="BUSINESS_TERM">tir16-p008</Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
-                        <Value type="EXAMPLE">GB</Value>
+                        <Value type="EXAMPLE">DK</Value>
                      </Element>
                   </Element>
                   <Element cardinality="0..1">
@@ -2261,7 +2272,7 @@
                         <Term>cbc:CoordinateSystemCode</Term>
                         <Name>Coordinate system code</Name>
                         <Description>Always "EPSG:3857" by definition.</Description>
-                        <Value type="EXAMPLE">EPSG:3857</Value>
+                        <Value type="EXAMPLE">EPSG:4326</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:LatitudeDegreesMeasure</Term>
@@ -2274,7 +2285,7 @@
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
-                        <Value type="EXAMPLE">59.33169866504851</Value>
+                        <Value type="EXAMPLE">55.450000</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:LongitudeDegreesMeasure</Term>
@@ -2287,7 +2298,7 @@
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
-                        <Value type="EXAMPLE">18.063330898492403</Value>
+                        <Value type="EXAMPLE">12.180000</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:AltitudeMeasure</Term>
@@ -2314,7 +2325,7 @@
                      <Description>The start date for the delivery period.</Description>
                      <Reference type="RULE">PEPPOL-T125-R021</Reference>
                      <Reference type="RULE">PEPPOL-T125-R022</Reference>
-                     <Value type="EXAMPLE">2021-09-29</Value>
+                     <Value type="EXAMPLE">2026-09-16</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:StartTime</Term>
@@ -2323,7 +2334,7 @@
                      <Reference type="RULE">PEPPOL-T125-R023</Reference>
                      <Reference type="RULE">PEPPOL-T125-R025</Reference>
                      <Reference type="RULE">PEPPOL-T125-R026</Reference>
-                     <Value type="EXAMPLE">08:00:00+01:00</Value>
+                     <Value type="EXAMPLE">08:00:00+02:00</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:EndDate</Term>
@@ -2331,7 +2342,7 @@
                      <Description>The end date for the despatch period.</Description>
                      <Reference type="RULE">PEPPOL-T125-R021</Reference>
                      <Reference type="RULE">PEPPOL-T125-R022</Reference>
-                     <Value type="EXAMPLE">2021-09-29</Value>
+                     <Value type="EXAMPLE">2026-09-16</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:EndTime</Term>
@@ -2340,7 +2351,7 @@
                      <Reference type="RULE">PEPPOL-T125-R023</Reference>
                      <Reference type="RULE">PEPPOL-T125-R024</Reference>
                      <Reference type="RULE">PEPPOL-T125-R027</Reference>
-                     <Value type="EXAMPLE">10:00:00+01:00</Value>
+                     <Value type="EXAMPLE">10:00:00+02:00</Value>
                   </Element>
                </Element>
             </Element>
@@ -2370,7 +2381,7 @@
                      <Term>cbc:ID</Term>
                      <Name>Delivery terms location</Name>
                      <Description>Delivery terms location. The location to which the delivery terms refer. Used to qualify the delivery terms e.g. "Terms of delivery are FOB Rotterdam"</Description>
-                     <Value type="EXAMPLE">Kalmar</Value>
+                     <Value type="EXAMPLE">HEL</Value>
                   </Element>
                </Element>
             </Element>
@@ -2384,20 +2395,20 @@
             <Term>cbc:ID</Term>
             <Name>Identity of the reference</Name>
             <Description>The reference number of added document</Description>
-            <Value type="EXAMPLE">7648779</Value>
+            <Value type="EXAMPLE">PL-2026-000451</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DocumentTypeCode</Term>
             <Name>Document type code</Name>
             <Description>The type of reference. Must me part of UNCL1001</Description>
             <Reference type="CODE_LIST">UNCL1001</Reference>
-            <Value type="EXAMPLE">380</Value>
+            <Value type="EXAMPLE">271</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DocumentType</Term>
             <Name>Document type</Name>
             <Description>The type of reference that cannot be specified by a code</Description>
-            <Value type="EXAMPLE">Delivery soecification</Value>
+            <Value type="EXAMPLE">Packing list</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:Attachment</Term>
@@ -2414,7 +2425,7 @@
                </Attribute>
                <Attribute>
                   <Term>filename</Term>
-                  <Value type="EXAMPLE">Hours-spent.pdf</Value>
+                  <Value type="EXAMPLE">packing-list.pdf</Value>
                </Attribute>
                <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
             </Element>
@@ -2426,7 +2437,7 @@
                   <Term>cbc:URI</Term>
                   <Name>Address to internet resource</Name>
                   <Description>The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Description>
-                  <Value type="EXAMPLE">www.beast.se</Value>
+                  <Value type="EXAMPLE">https://docs.pharmatech.example/packinglist/2026-000451.pdf</Value>
                </Element>
             </Element>
          </Element>
@@ -2439,12 +2450,12 @@
             <Term>cbc:ID</Term>
             <Name>Identifier Signature </Name>
             <Description>The Id of the Signature.</Description>
-            <Value type="EXAMPLE">3453</Value>
+            <Value type="EXAMPLE">SIG-2026-000451</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:ValidationDate</Term>
             <Description>The date upon which this signature was verified. Format = "YYYY-MM-DD". </Description>
-            <Value type="EXAMPLE">2021-09-29</Value>
+            <Value type="EXAMPLE">2026-09-16</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:ValidationTime</Term>
@@ -2479,7 +2490,7 @@
                   <Term>cbc:AdditionalStreetName</Term>
                   <Name>Address line 2</Name>
                   <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
-                  <Value type="EXAMPLE">Purchasing</Value>
+                  <Value type="EXAMPLE">Building 2</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
@@ -2497,7 +2508,7 @@
                   <Term>cbc:CountrySubentity</Term>
                   <Name>Country subdivision </Name>
                   <Description>For specifying a region, county, state, province etc. within a country by using text. </Description>
-                  <Value type="EXAMPLE">Heremouthshire</Value>
+                  <Value type="EXAMPLE">Uusimaa</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -2506,7 +2517,7 @@
                      <Term>cbc:Line</Term>
                      <Name>Address line 3 </Name>
                      <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
-                     <Value type="EXAMPLE">Gate 34</Value>
+                     <Value type="EXAMPLE">Goods reception, dock 3</Value>
                   </Element>
                </Element>
                <Element cardinality="1..1">
@@ -2540,13 +2551,13 @@
                   <Term>cbc:FirstName</Term>
                   <Name>First Name </Name>
                   <Description>The persons first name. </Description>
-                  <Value type="EXAMPLE">Valiry</Value>
+                  <Value type="EXAMPLE">Liisa</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cbc:FamilyName</Term>
                   <Name>Family Name </Name>
                   <Description>The persons family name. </Description>
-                  <Value type="EXAMPLE">Sender</Value>
+                  <Value type="EXAMPLE">Mäkinen</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:JobTitle</Term>
@@ -2571,7 +2582,7 @@
                </Attribute>
                <Attribute>
                   <Term>filename</Term>
-                  <Value type="EXAMPLE">Hours-spent.pdf</Value>
+                  <Value type="EXAMPLE">signature.pdf</Value>
                </Attribute>
                <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
             </Element>
@@ -2583,7 +2594,7 @@
                   <Term>cbc:URI</Term>
                   <Name>Address to internet resource</Name>
                   <Description>The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Description>
-                  <Value type="EXAMPLE">www.beast.se</Value>
+                  <Value type="EXAMPLE">https://docs.pharmatech.example/signature/2026-000451.pdf</Value>
                </Element>
             </Element>
          </Element>
