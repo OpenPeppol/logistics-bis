@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Air service type (IATA SSIM)</Title>
+    <Identifier>AirServiceTypeCode</Identifier>
+    <Version>2026</Version>
+    <Agency>IATA</Agency>
+
+    <!--
+        Service type codes from the IATA Standard Schedules Information Manual (SSIM),
+        used as the type of means of transport when the transport mode code is 4, air
+        transport.
+
+        UN/ECE Recommendation 28 holds no codes for air. It points to the ATA/IATA
+        aircraft types of the same manual, but an aircraft type says which model flies,
+        not what the flight carries: the same Boeing 737 is flown with passengers and as
+        a freighter. The service type answers the question a waybill asks, "J" being an
+        airline flight that carries the cargo in the hold and "F" a freighter that
+        carries cargo only.
+
+        Only the services that can carry cargo are listed, whether the cargo rides in the
+        hold, in the cabin, on the main deck or, for a road feeder service, on a lorry.
+        The following IATA service types are therefore left out: 
+        C, charter, passengers only.
+        U, passenger service operated by a surface vehicle.
+        M, mail only, which is not cargo.
+        O, charter requiring special handling, which says nothing about the load.
+        P, non-revenue positioning, ferry, delivery and demonstration flights.
+        D, general aviation, non-commercial, and empty flights.
+        N, business aviation and air taxi.
+        E, government and civil aviation authority flights.
+        W, military.
+        I, state and diplomatic flights.
+        K, crew training.
+        T, technical test.
+        X, technical stop with no commercial traffic.
+    -->
+
+    <Code>
+        <Id>J</Id>
+        <Name>Passenger, normal service (scheduled)</Name>
+        <Description>Scheduled passenger flight. Cargo is carried in the hold below the cabin.</Description>
+    </Code>
+    <Code>
+        <Id>S</Id>
+        <Name>Passenger, shuttle mode (scheduled)</Name>
+        <Description>Scheduled passenger flight in shuttle mode. Cargo is carried in the hold below the cabin.</Description>
+    </Code>
+    <Code>
+        <Id>G</Id>
+        <Name>Passenger, normal service (additional flight)</Name>
+        <Description>Passenger flight outside the published schedule. Cargo is carried in the hold below the cabin.</Description>
+    </Code>
+    <Code>
+        <Id>B</Id>
+        <Name>Passenger, shuttle mode (additional flight)</Name>
+        <Description>Passenger flight in shuttle mode outside the published schedule. Cargo is carried in the hold below the cabin.</Description>
+    </Code>
+    <Code>
+        <Id>Q</Id>
+        <Name>Passenger and cargo in cabin (scheduled)</Name>
+        <Description>Scheduled flight on an aircraft in mixed configuration. Cargo is carried in the cabin as well as in the hold.</Description>
+    </Code>
+    <Code>
+        <Id>R</Id>
+        <Name>Passenger and cargo in cabin (additional flight)</Name>
+        <Description>Flight on an aircraft in mixed configuration outside the published schedule. Cargo is carried in the cabin as well as in the hold.</Description>
+    </Code>
+    <Code>
+        <Id>L</Id>
+        <Name>Passenger and cargo and/or mail (charter)</Name>
+        <Description>Charter flight carrying passengers together with cargo.</Description>
+    </Code>
+    <Code>
+        <Id>F</Id>
+        <Name>Cargo, loose loaded and/or preloaded devices (scheduled)</Name>
+        <Description>Scheduled freighter. The aircraft carries cargo only, on the main deck and in the hold.</Description>
+    </Code>
+    <Code>
+        <Id>A</Id>
+        <Name>Cargo and/or mail (additional flight)</Name>
+        <Description>Freighter outside the published schedule. The aircraft carries cargo only.</Description>
+    </Code>
+    <Code>
+        <Id>H</Id>
+        <Name>Cargo and/or mail (charter)</Name>
+        <Description>Charter freighter. The aircraft carries cargo only.</Description>
+    </Code>
+    <Code>
+        <Id>V</Id>
+        <Name>Cargo, operated by surface vehicle (scheduled)</Name>
+        <Description>Scheduled cargo service carried by a surface vehicle under a flight number, a road feeder service replacing a leg of the air carriage.</Description>
+    </Code>
+
+</CodeList>

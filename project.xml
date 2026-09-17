@@ -233,6 +233,14 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNECERec28.xml</Path>		                         
 	 </Resource>
+	 <Resource>
+	     <Type>CodeList-1</Type>
+	     <Path>structure/codelist/TransportMeansTypeCode.xml</Path>
+	 </Resource>
+	 <Resource>
+	     <Type>CodeList-1</Type>
+	     <Path>structure/codelist/AirServiceTypeCode.xml</Path>
+	 </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/TRED8155.xml</Path>

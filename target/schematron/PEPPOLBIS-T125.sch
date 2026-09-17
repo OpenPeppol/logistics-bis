@@ -301,6 +301,8 @@
            value="tokenize('1A AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS XI YE YT ZA ZM ZW', '\s')"/>
       <let name="clUNCL8273"
            value="tokenize('ADR ADS ADT ADU ADY ADZ ADV ADW ADX AEA AEB AGS ANR ARD CFR COM GVE GVS ICA IMD RGE RID UI ZZZ', '\s')"/>
+      <let name="clTransportMeansTypeCode"
+           value="tokenize('31 32 33 34 35 36 37 38 39 60 70 71 72 80 81 82 83 84 85 86 87 88 89 150 151 152 153 154 155 157 159 160 170 172 173 174 175 176 177 178 180 181 182 183 184 185 189 190 191 192 210 220 230 310 311 312 313 314 315 320 330 341 342 343 360 362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 810 811 812 813 814 815 816 817 818 821 822 823 824 825 826 827 828 829 831 832 833 834 835 836 837 838 839 840 841 842 843 844 845 846 847 848 849 850 851 852 853 854 855 1501 1502 1503 1504 1505 1506 1511 1512 1513 1514 1515 1516 1517 1518 1519 1521 1522 1523 1524 1525 1531 1532 1533 1534 1541 1542 1543 1551 1552 1553 1591 1592 1593 1594 1601 1602 1603 1604 1605 1606 1607 1711 1712 1721 1723 1724 1725 1726 1727 1728 1729 1751 1752 1753 1761 1762 1763 1764 1765 1766 1781 1782 2201 2202 2203 2301 2302 2303 2304 2305 3100 3101 3102 3103 3104 3105 3106 3107 3108 3109 3110 3111 3112 3113 3114 3115 3116 3117 3118 3119 3120 3121 3122 3123 3124 3125 3126 3127 3128 3129 3130 3131 3132 3133 3134 3135 3136 3137 3138 3201 3301 3302 3303 3304 J S G B F V A H Q R L', '\s')"/>
       <let name="clTRED8155"
            value="tokenize('1 2 6 7 9 10 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45', '\s')"/>
       <let name="clConsignmentIDType" value="tokenize('GINC', '\s')"/>
@@ -1037,7 +1039,11 @@
                  flag="fatal"
                  id="PEPPOL-T125-B25301">Value MUST be part of code list 'Recommandation 19 (UN/ECE)'.</assert>
       </rule>
-      <rule context="/ubl:Waybill/cac:Shipment/cac:Consignment/cac:MainCarriageShipmentStage/cbc:TransportMeansTypeCode"/>
+      <rule context="/ubl:Waybill/cac:Shipment/cac:Consignment/cac:MainCarriageShipmentStage/cbc:TransportMeansTypeCode">
+         <assert test="(some $code in $clTransportMeansTypeCode satisfies $code = normalize-space(text()))"
+                 flag="fatal"
+                 id="PEPPOL-T125-B25401">Value MUST be part of code list 'Transport Means Type Code (openPEPPOL)'.</assert>
+      </rule>
       <rule context="/ubl:Waybill/cac:Shipment/cac:Consignment/cac:MainCarriageShipmentStage/cac:CarrierParty">
          <assert test="cac:PartyIdentification" flag="fatal" id="PEPPOL-T125-B25501">Element 'cac:PartyIdentification' MUST be provided.</assert>
       </rule>
@@ -1291,7 +1297,11 @@
                  flag="fatal"
                  id="PEPPOL-T125-B33601">Value MUST be part of code list 'Recommandation 19 (UN/ECE)'.</assert>
       </rule>
-      <rule context="/ubl:Waybill/cac:Shipment/cac:ShipmentStage/cbc:TransportMeansTypeCode"/>
+      <rule context="/ubl:Waybill/cac:Shipment/cac:ShipmentStage/cbc:TransportMeansTypeCode">
+         <assert test="(some $code in $clTransportMeansTypeCode satisfies $code = normalize-space(text()))"
+                 flag="fatal"
+                 id="PEPPOL-T125-B33701">Value MUST be part of code list 'Transport Means Type Code (openPEPPOL)'.</assert>
+      </rule>
       <rule context="/ubl:Waybill/cac:Shipment/cac:ShipmentStage/cac:TransportMeans"/>
       <rule context="/ubl:Waybill/cac:Shipment/cac:ShipmentStage/cac:TransportMeans/cac:AirTransport">
          <assert test="cbc:AircraftID" flag="fatal" id="PEPPOL-T125-B33901">Element 'cbc:AircraftID' MUST be provided.</assert>
@@ -1597,6 +1607,9 @@
       </rule>
    </pattern>
     <pattern>
+	
+	     <let name="clAirServiceTypeCode"
+           value="tokenize('J S G B Q R L F A H V', '\s')"/>
 
 	     <rule context="cbc:CustomizationID">
 		       <assert id="PEPPOL-T125-R001"
@@ -1695,6 +1708,12 @@
 		       <assert id="PEPPOL-T125-R051"
                  test="not(cac:TransportMeans) or (count(cac:TransportMeans/cac:AirTransport) + count(cac:TransportMeans/cac:RoadTransport) + count(cac:TransportMeans/cac:RailTransport) + count(cac:TransportMeans/cac:MaritimeTransport) = 1)"
                  flag="warning">[PEPPOL-T125-R051] Only one type of transport means can be specified</assert>
+		       <assert id="PEPPOL-T125-R052"
+                 test="not(normalize-space(cbc:TransportModeCode) = '4') or not(cbc:TransportMeansTypeCode) or (every $type in cbc:TransportMeansTypeCode satisfies (some $code in $clAirServiceTypeCode satisfies $code = normalize-space($type)))"
+                 flag="fatal">[PEPPOL-T125-R052] For air transport, transport mode code 4, the transport means type code MUST be an air service type code, for example 'J' for a passenger flight carrying cargo or 'F' for a freighter.</assert>
+		       <assert id="PEPPOL-T125-R053"
+                 test="normalize-space(cbc:TransportModeCode) = '4' or not(cbc:TransportMeansTypeCode) or (every $type in cbc:TransportMeansTypeCode satisfies not(some $code in $clAirServiceTypeCode satisfies $code = normalize-space($type)))"
+                 flag="fatal">[PEPPOL-T125-R053] An air service type code MUST only be used as transport means type code when the transport mode code is 4, air transport.</assert>
 	     </rule>
 	
 	     <rule context="ubl:Waybill">
@@ -1727,6 +1746,16 @@
                  flag="fatal">[PEPPOL-T125-R034] Party must include either a party name or a party identification.</assert>
 	     </rule>
 	
+
+	     <rule context="cac:MainCarriageShipmentStage">
+		       <assert id="PEPPOL-T125-R052"
+                 test="not(normalize-space(cbc:TransportModeCode) = '4') or not(cbc:TransportMeansTypeCode) or (every $type in cbc:TransportMeansTypeCode satisfies (some $code in $clAirServiceTypeCode satisfies $code = normalize-space($type)))"
+                 flag="fatal">[PEPPOL-T125-R052] For air transport, transport mode code 4, the transport means type code MUST be an air service type code, for example 'J' for a passenger flight carrying cargo or 'F' for a freighter.</assert>
+		       <assert id="PEPPOL-T125-R053"
+                 test="normalize-space(cbc:TransportModeCode) = '4' or not(cbc:TransportMeansTypeCode) or (every $type in cbc:TransportMeansTypeCode satisfies not(some $code in $clAirServiceTypeCode satisfies $code = normalize-space($type)))"
+                 flag="fatal">[PEPPOL-T125-R053] An air service type code MUST only be used as transport means type code when the transport mode code is 4, air transport.</assert>
+	     </rule>
+
    </pattern>    
 
 </schema>

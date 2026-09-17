@@ -1463,9 +1463,9 @@
                <Element cardinality="0..1">
                   <Term>cbc:TransportMeansTypeCode</Term>
                   <Name>Transport Means type code</Name>
-                  <Description>A code signifying transport means used in this shipment stage. For air transport use "Airliner", "CargoAircraft" or "Truck". </Description>
+                  <Description>A code signifying the type of means of transport used in this shipment stage. When the transport mode code is 4, air transport, the code MUST be an air service type code (IATA SSIM), for example "J" for a passenger flight that carries cargo in the hold or "F" for a freighter. </Description>
                   <Reference type="CODE_LIST">TransportMeansTypeCode</Reference>
-                  <Value type="EXAMPLE">Airliner</Value>
+                  <Value type="EXAMPLE">J</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:CarrierParty</Term>
@@ -1940,7 +1940,7 @@
             <Element cardinality="0..1">
                <Term>cbc:TransportMeansTypeCode</Term>
                <Name>Transport Means type code</Name>
-               <Description>A code signifying transport means used in this shipment stage. </Description>
+               <Description>A code signifying the type of means of transport used in this shipment stage. When the transport mode code is 4, air transport, the code MUST be an air service type code (IATA SSIM). </Description>
                <Reference type="CODE_LIST">TransportMeansTypeCode</Reference>
                <Value type="EXAMPLE">31</Value>
             </Element>

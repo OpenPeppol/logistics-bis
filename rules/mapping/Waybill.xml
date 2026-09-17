@@ -6669,10 +6669,10 @@
                <Data ss:Type="String">Transport Means type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code signifying transport means used in this shipment stage. For air transport use "Airliner", "CargoAircraft" or "Truck".</Data>
+               <Data ss:Type="String">A code signifying the type of means of transport used in this shipment stage. When the transport mode code is 4, air transport, the code MUST be an air service type code (IATA SSIM), for example "J" for a passenger flight that carries cargo in the hold or "F" for a freighter.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Airliner</Data>
+               <Data ss:Type="String">J</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:MainCarriageShipmentStage/cbc:TransportMeansTypeCode</Data>
@@ -8827,7 +8827,7 @@
                <Data ss:Type="String">Transport Means type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code signifying transport means used in this shipment stage.</Data>
+               <Data ss:Type="String">A code signifying the type of means of transport used in this shipment stage. When the transport mode code is 4, air transport, the code MUST be an air service type code (IATA SSIM).</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">31</Data>
