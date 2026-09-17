@@ -163,4 +163,24 @@
 		</ubl:Waybill>
 	</test>
 
+	<test id="9">
+		<!-- Air transport with a service type that carries no cargo, a ferry flight -->
+		<assert>
+			<error>PEPPOL-T125-R052</error>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cac:MainCarriageShipmentStage>
+						<cbc:TransportModeCode>4</cbc:TransportModeCode>
+						<cbc:TransportMeansTypeCode>P</cbc:TransportMeansTypeCode>
+					</cac:MainCarriageShipmentStage>
+				</cac:Consignment>
+			</cac:Shipment>
+		</ubl:Waybill>
+	</test>
 </testSet>

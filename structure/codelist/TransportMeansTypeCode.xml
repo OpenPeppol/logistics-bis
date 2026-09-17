@@ -1061,10 +1061,6 @@
 		<Name>Passenger, shuttle mode (scheduled)</Name>
 	</Code>
 	<Code>
-		<Id>U</Id>
-		<Name>Passenger, operated by surface vehicle (scheduled)</Name>
-	</Code>
-	<Code>
 		<Id>G</Id>
 		<Name>Passenger, normal service (additional flight)</Name>
 	</Code>
@@ -1073,16 +1069,8 @@
 		<Name>Passenger, shuttle mode (additional flight)</Name>
 	</Code>
 	<Code>
-		<Id>C</Id>
-		<Name>Passenger only (charter)</Name>
-	</Code>
-	<Code>
 		<Id>F</Id>
 		<Name>Cargo, loose loaded and/or preloaded devices (scheduled)</Name>
-	</Code>
-	<Code>
-		<Id>M</Id>
-		<Name>Mail only (scheduled)</Name>
 	</Code>
 	<Code>
 		<Id>V</Id>
@@ -1107,45 +1095,5 @@
 	<Code>
 		<Id>L</Id>
 		<Name>Passenger and cargo and/or mail (charter)</Name>
-	</Code>
-	<Code>
-		<Id>O</Id>
-		<Name>Charter requiring special handling</Name>
-	</Code>
-	<Code>
-		<Id>P</Id>
-		<Name>Non-revenue (positioning, ferry, delivery, demonstration)</Name>
-	</Code>
-	<Code>
-		<Id>D</Id>
-		<Name>General aviation, non-commercial</Name>
-	</Code>
-	<Code>
-		<Id>N</Id>
-		<Name>Business aviation or air taxi</Name>
-	</Code>
-	<Code>
-		<Id>E</Id>
-		<Name>Special, government</Name>
-	</Code>
-	<Code>
-		<Id>W</Id>
-		<Name>Military</Name>
-	</Code>
-	<Code>
-		<Id>I</Id>
-		<Name>State or diplomatic</Name>
-	</Code>
-	<Code>
-		<Id>K</Id>
-		<Name>Crew training</Name>
-	</Code>
-	<Code>
-		<Id>T</Id>
-		<Name>Technical test</Name>
-	</Code>
-	<Code>
-		<Id>X</Id>
-		<Name>Technical stop</Name>
 	</Code>
 </CodeList>

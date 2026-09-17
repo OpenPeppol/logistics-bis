@@ -2,7 +2,7 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 	<!-- Air service types (IATA SSIM), code list AirServiceTypeCode. Used as the type of
 	     means of transport when the transport mode code is 4, air transport. -->
-	<let name="clAirServiceTypeCode" value="tokenize('A B C D E F G H I J K L M N O P Q R S T U V W X', '\s')"/>
+	<let name="clAirServiceTypeCode" value="tokenize('J S G B Q R L F A H V', '\s')"/>
 
 	<rule context="cbc:CustomizationID">
 		<assert id="PEPPOL-T125-R001"
