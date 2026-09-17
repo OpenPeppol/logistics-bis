@@ -122,6 +122,51 @@
 		       </otherwise>
 	     </choose>
    </function>
+    <function xmlns="http://www.w3.org/1999/XSL/Transform"
+             name="u:check-lux-0240"
+             as="xs:boolean">
+      <param name="val" as="xs:string"/>
+      <choose>
+         <when test="not(matches($val, '^[0-9]{11}$'))">
+            <sequence select="false()"/>
+         </when>
+         <otherwise>
+            <variable name="typecode" select="xs:integer(substring($val, 5, 2))"/>
+            <choose>
+               <when test="not($typecode ge 20 and $typecode le 99)">
+                  <sequence select="false()"/>
+               </when>
+               <otherwise>
+                  <variable name="digits"
+                            select="for $c in string-to-codepoints($val) return $c - 48"/>
+                  <variable name="weights" select="(5, 4, 3, 2, 7, 6, 5, 4, 3, 2)"/>
+                  <variable name="wsum"
+                            select="sum(for $i in 1 to 10 return $digits[$i] * $weights[$i])"/>
+                  <variable name="remainder" select="$wsum mod 11"/>
+                  <variable name="exp11" select="if ($remainder = 0) then 0 else 11 - $remainder"/>
+                  <variable name="exp12"
+                            select="if ($remainder = 0) then 1 else if ($remainder = 1) then 0 else 12 - $remainder"/>
+                  <variable name="checkdigit" select="$digits[11]"/>
+                  <variable name="valid"
+                            select="if ($typecode = 24) then ($checkdigit = $exp11 or $checkdigit = $exp12) else $checkdigit = $exp11"/>
+                  <sequence select="$valid"/>
+               </otherwise>
+            </choose>
+         </otherwise>
+      </choose>
+   </function>
+    <function xmlns="http://www.w3.org/1999/XSL/Transform"
+             name="u:mod89-LU_VAT"
+             as="xs:boolean">
+      <param name="val" as="xs:string"/>
+      <variable name="normalized" select="upper-case(normalize-space($val))"/>
+      <variable name="base" select="substring($normalized, 3, 6)"/>
+      <variable name="checkdigits" select="substring($normalized, 9, 2)"/>
+      <variable name="calculated"
+                select="format-integer(xs:integer($base) mod 89, '00')"/>
+      <sequence select="$checkdigits = $calculated"/>
+  </function>
+
     
 
     <pattern>
