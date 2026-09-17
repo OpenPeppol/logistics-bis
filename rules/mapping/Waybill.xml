@@ -6660,7 +6660,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..n</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cbc:TransportMeansTypeCode</Data>
@@ -6669,7 +6669,7 @@
                <Data ss:Type="String">Transport Means type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code signifying the type of means of transport used in this shipment stage. When the transport mode code is 4, air transport, the code MUST be an air service type code (IATA SSIM), for example "J" for a passenger flight that carries cargo in the hold or "F" for a freighter.</Data>
+               <Data ss:Type="String">A code signifying transport means used in this shipment stage. For air transport use "Airliner", "CargoAircraft" or "Truck".</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">J</Data>
