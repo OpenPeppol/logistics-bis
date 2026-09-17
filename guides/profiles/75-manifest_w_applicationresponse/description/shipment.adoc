@@ -1,0 +1,12 @@
+[[shipment]]
+= Shipment
+
+The Manifest can reference the shipment(s) it covers via `cac:Shipment`. A shipment is the contractual arrangement whereby an identifiable collection of goods items is transported from one party (the Consignor) to another (the Consignee).
+
+Since the detailed consignment, transport handling unit and goods item information is typically already exchanged in a Waybill or other transport document for the same shipment, the Manifest is not expected to repeat that level of detail. Instead it normally carries summary information (identification, total weight/volume, number of goods items and transport handling units) sufficient for the receiving party to reconcile the Manifest against the shipment(s) it already knows about, together with a `cac:DocumentReference` to the underlying transport document (see xref:document-reference[Document reference]).
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=shipment]
+----

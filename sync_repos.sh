@@ -1,7 +1,7 @@
 #!/bin/bash
 # Script to sync specific directories and files from multiple Git repositories
 POACCREPO="https://github.com/OpenPEPPOL/poacc-upgrade-3.git"
-POACCBRANCH="2026-Q2-QA2"
+POACCBRANCH="2026-Q4-MR"
 
 # Function to clone and copy files
 sync_repo() {

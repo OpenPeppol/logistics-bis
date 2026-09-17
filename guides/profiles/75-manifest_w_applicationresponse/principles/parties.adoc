@@ -1,0 +1,60 @@
+[[parties-and-roles]]
+= Parties and roles
+
+The table below gives the definitions of the parties and roles involved in the Manifest process.
+
+[cols="2,8",options="header",]
+|====
+|Business partners |Definition
+|*Logistics Operator* a|
+
+The Logistics Operator is the legal person or organization who operates, or arranges the operation of, the means of transport (vessel, aircraft, truck or wagon) that the Manifest describes.
+
+|*Authority* a|
+
+The Authority is a public body (e.g. customs, port state control, terminal control) that requires a Manifest before, during or after a journey, in order to control cargo, crew and/or passengers.
+
+|*Consignor* a|
+
+The consignor is the legal person or organization who is sending the goods described in the Manifest's shipment.
+
+|*Consignee* a|
+
+The consignee is the legal person or organization to whom the goods described in the Manifest's shipment are addressed.
+
+|====
+
+[cols="2,9",options="header",]
+|====
+|Role/actor |Definition
+|*Sending Logistics Operator (cac:SendingLogisticsOperatorParty)* a|
+
+The party who issues the Manifest. This is normally the Logistics Operator responsible for the means of transport.
+
+|*Authority (cac:AuthorityParty)* a|
+
+The Authority or regulator who receives the Manifest, when the Manifest is sent to a public body.
+
+|*Consignor (cac:ConsignorParty)* a|
+
+Consignor is the party responsible for sending the goods described in the shipment.
+
+|*Consignee (cac:ConsigneeParty)* a|
+
+Consignee is the party receiving the goods described in the shipment.
+
+|*Sender (cac:SenderParty)* a|
+
+Used in the Application Response. The party sending the Application Response - normally the same party as the Authority (or other receiving party) on the Manifest.
+
+|*Receiver (cac:ReceiverParty)* a|
+
+Used in the Application Response. The party receiving the Application Response - normally the same party as the Sending Logistics Operator on the Manifest.
+
+|====
+
+Note that the Manifest can be exchanged directly between two commercial parties (e.g. a carrier and a terminal operator) as well as between a Logistics Operator and a public Authority. In both cases the responding party plays the *Sender* role on the Application Response, and the party that issued the Manifest plays the *Receiver* role.
+
+The diagram below shows the roles in the Manifest process.
+
+image::images/roles.svg[image,width=649,height=395]

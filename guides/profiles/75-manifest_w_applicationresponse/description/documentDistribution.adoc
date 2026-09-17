@@ -1,0 +1,10 @@
+[[document-distribution]]
+= Document distribution
+
+`cac:DocumentDistribution` identifies an additional interested party to whom the Manifest is distributed, beyond the immediate receiving party. This can be used, for example, when a copy of the Manifest also needs to reach a terminal operator or another authority.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=document-distribution]
+----

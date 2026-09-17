@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1" xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Title>Transport Means Type Code (openPEPPOL)</Title>
+	<Identifier>TransportMeansTypeCode</Identifier>
+	<Version>3.0</Version>
+	<Agency>openPEPPOL</Agency>
+	<Code>
+		<Id>31</Id>
+		<Name>Truck</Name>
+	</Code>
+	<Code>
+		<Id>32</Id>
+		<Name>Truck, tanker</Name>
+	</Code>
+	<Code>
+		<Id>33</Id>
+		<Name>Tractor</Name>
+	</Code>
+	<Code>
+		<Id>34</Id>
+		<Name>Van</Name>
+	</Code>
+	<Code>
+		<Id>35</Id>
+		<Name>Tiptanker</Name>
+	</Code>
+	<Code>
+		<Id>36</Id>
+		<Name>Truck, dry bulk</Name>
+	</Code>
+	<Code>
+		<Id>37</Id>
+		<Name>Truck, container</Name>
+	</Code>
+	<Code>
+		<Id>38</Id>
+		<Name>Carrier, car</Name>
+	</Code>
+	<Code>
+		<Id>39</Id>
+		<Name>Truck, reefer</Name>
+	</Code>
+	<Code>
+		<Id>60</Id>
+		<Name>Multimodal, type unknown</Name>
+	</Code>
+	<Code>
+		<Id>70</Id>
+		<Name>Fixed transport installation, type unknown</Name>
+	</Code>
+	<Code>
+		<Id>71</Id>
+		<Name>Pipeline</Name>
+	</Code>
+	<Code>
+		<Id>72</Id>
+		<Name>Powerline</Name>
+	</Code>
+	<Code>
+		<Id>80</Id>
+		<Name>Vessel, type unknown</Name>
+	</Code>
+	<Code>
+		<Id>81</Id>
+		<Name>Motor freighter</Name>
+	</Code>
+	<Code>
+		<Id>82</Id>
+		<Name>Motor tanker</Name>
+	</Code>
+	<Code>
+		<Id>83</Id>
+		<Name>Container vessel</Name>
+	</Code>
+	<Code>
+		<Id>84</Id>
+		<Name>Gas tanker</Name>
+	</Code>
+	<Code>
+		<Id>85</Id>
+		<Name>Motor freighter, tug</Name>
+	</Code>
+	<Code>
+		<Id>86</Id>
+		<Name>Motor tanker, tug</Name>
+	</Code>
+	<Code>
+		<Id>87</Id>
+		<Name>Motor freighter with one or more ships alongside</Name>
+	</Code>
+	<Code>
+		<Id>88</Id>
+		<Name>Motor freighter with tanker</Name>
+	</Code>
+	<Code>
+		<Id>89</Id>
+		<Name>Motor freighter pushing one or more freighters</Name>
+	</Code>
+	<Code>
+		<Id>150</Id>
+		<Name>General cargo vessel</Name>
+	</Code>
+	<Code>
+		<Id>151</Id>
+		<Name>Unit carrier</Name>
+	</Code>
+	<Code>
+		<Id>152</Id>
+		<Name>Bulk carrier</Name>
+	</Code>
+	<Code>
+		<Id>153</Id>
+		<Name>Tanker</Name>
+	</Code>
+	<Code>
+		<Id>154</Id>
+		<Name>Liquefied gas tanker</Name>
+	</Code>
+	<Code>
+		<Id>155</Id>
+		<Name>Other special tanker</Name>
+	</Code>
+	<Code>
+		<Id>157</Id>
+		<Name>Cargo and passenger vessel</Name>
+	</Code>
+	<Code>
+		<Id>159</Id>
+		<Name>Passenger ship</Name>
+	</Code>
+	<Code>
+		<Id>160</Id>
+		<Name>Assistance vessel</Name>
+	</Code>
+	<Code>
+		<Id>170</Id>
+		<Name>Other sea-going vessel</Name>
+	</Code>
+	<Code>
+		<Id>172</Id>
+		<Name>Work ship</Name>
+	</Code>
+	<Code>
+		<Id>173</Id>
+		<Name>Push boat</Name>
+	</Code>
+	<Code>
+		<Id>174</Id>
+		<Name>Dredger</Name>
+	</Code>
+	<Code>
+		<Id>175</Id>
+		<Name>Fishing boat</Name>
+	</Code>
+	<Code>
+		<Id>176</Id>
+		<Name>Research and education ship</Name>
+	</Code>
+	<Code>
+		<Id>177</Id>
+		<Name>Navy vessel</Name>
+	</Code>
+	<Code>
+		<Id>178</Id>
+		<Name>Structure, floating</Name>
+	</Code>
+	<Code>
+		<Id>180</Id>
+		<Name>Pleasure boat</Name>
+	</Code>
+	<Code>
+		<Id>181</Id>
+		<Name>Speedboat</Name>
+	</Code>
+	<Code>
+		<Id>182</Id>
+		<Name>Sailing boat with auxiliary motor</Name>
+	</Code>
+	<Code>
+		<Id>183</Id>
+		<Name>Sailing yacht</Name>
+	</Code>
+	<Code>
+		<Id>184</Id>
+		<Name>Boat for sport fishing</Name>
+	</Code>
+	<Code>
+		<Id>185</Id>
+		<Name>Craft, pleasure, longer than 20 metres</Name>
+	</Code>
+	<Code>
+		<Id>189</Id>
+		<Name>Craft, other, recreational</Name>
+	</Code>
+	<Code>
+		<Id>190</Id>
+		<Name>Fast ship</Name>
+	</Code>
+	<Code>
+		<Id>191</Id>
+		<Name>Hydrofoil</Name>
+	</Code>
+	<Code>
+		<Id>192</Id>
+		<Name>Catamaran, fast</Name>
+	</Code>
+	<Code>
+		<Id>210</Id>
+		<Name>Train, railroad</Name>
+	</Code>
+	<Code>
+		<Id>220</Id>
+		<Name>Train, passenger</Name>
+	</Code>
+	<Code>
+		<Id>230</Id>
+		<Name>Train, freight</Name>
+	</Code>
+	<Code>
+		<Id>310</Id>
+		<Name>Truck, mail</Name>
+	</Code>
+	<Code>
+		<Id>311</Id>
+		<Name>Truck dump</Name>
+	</Code>
+	<Code>
+		<Id>312</Id>
+		<Name>Truck, forklift</Name>
+	</Code>
+	<Code>
+		<Id>313</Id>
+		<Name>Loader, shovel</Name>
+	</Code>
+	<Code>
+		<Id>314</Id>
+		<Name>Truck, platform, fixed</Name>
+	</Code>
+	<Code>
+		<Id>315</Id>
+		<Name>Carrier, straddle</Name>
+	</Code>
+	<Code>
+		<Id>320</Id>
+		<Name>Crane, mobile</Name>
+	</Code>
+	<Code>
+		<Id>330</Id>
+		<Name>Bus</Name>
+	</Code>
+	<Code>
+		<Id>341</Id>
+		<Name>Van, delivery</Name>
+	</Code>
+	<Code>
+		<Id>342</Id>
+		<Name>Van, light</Name>
+	</Code>
+	<Code>
+		<Id>343</Id>
+		<Name>Van, furniture</Name>
+	</Code>
+	<Code>
+		<Id>360</Id>
+		<Name>Tractor, industrial</Name>
+	</Code>
+	<Code>
+		<Id>362</Id>
+		<Name>Truck, freezer with isothermic trailer</Name>
+	</Code>
+	<Code>
+		<Id>363</Id>
+		<Name>Truck, isothermic with isothermic trailer</Name>
+	</Code>
+	<Code>
+		<Id>364</Id>
+		<Name>Truck, refrigerated with isothermic trailer</Name>
+	</Code>
+	<Code>
+		<Id>365</Id>
+		<Name>Truck, freezer with refrigerated trailer</Name>
+	</Code>
+	<Code>
+		<Id>366</Id>
+		<Name>Truck, isothermic with refrigerated trailer</Name>
+	</Code>
+	<Code>
+		<Id>367</Id>
+		<Name>Truck, opening floor, with extendable trailer</Name>
+	</Code>
+	<Code>
+		<Id>368</Id>
+		<Name>Truck, rigid, with tank and tank trailer</Name>
+	</Code>
+	<Code>
+		<Id>369</Id>
+		<Name>Truck, bulk with tank trailer</Name>
+	</Code>
+	<Code>
+		<Id>370</Id>
+		<Name>Truck, rigid with tank and bulk trailer</Name>
+	</Code>
+	<Code>
+		<Id>371</Id>
+		<Name>Truck, bulk with bulk trailer</Name>
+	</Code>
+	<Code>
+		<Id>372</Id>
+		<Name>Truck, tautliner with extendable trailer</Name>
+	</Code>
+	<Code>
+		<Id>373</Id>
+		<Name>Truck, tautliner with removable roof and extendable trailer</Name>
+	</Code>
+	<Code>
+		<Id>374</Id>
+		<Name>Truck, bulk truck with extendable trailer</Name>
+	</Code>
+	<Code>
+		<Id>375</Id>
+		<Name>Truck, refrigerated with freezer trailer</Name>
+	</Code>
+	<Code>
+		<Id>376</Id>
+		<Name>Truck, isothermic with freezer trailer</Name>
+	</Code>
+	<Code>
+		<Id>377</Id>
+		<Name>Truck, furniture with trailer</Name>
+	</Code>
+	<Code>
+		<Id>378</Id>
+		<Name>Truck, tautliner with furniture trailer</Name>
+	</Code>
+	<Code>
+		<Id>379</Id>
+		<Name>Truck, tautliner, removable roof with furniture trailer</Name>
+	</Code>
+	<Code>
+		<Id>380</Id>
+		<Name>Truck, tip-up with gondola trailer</Name>
+	</Code>
+	<Code>
+		<Id>381</Id>
+		<Name>Truck, tautliner with gondola trailer</Name>
+	</Code>
+	<Code>
+		<Id>382</Id>
+		<Name>Truck, tautliner, with removable roof and gondola trailer</Name>
+	</Code>
+	<Code>
+		<Id>383</Id>
+		<Name>Truck, opening-floor with gondola trailer</Name>
+	</Code>
+	<Code>
+		<Id>384</Id>
+		<Name>Truck, bulk with gondola trailer</Name>
+	</Code>
+	<Code>
+		<Id>385</Id>
+		<Name>Truck, tip-up with extendable gondola trailer</Name>
+	</Code>
+	<Code>
+		<Id>386</Id>
+		<Name>Truck, tautliner with extendable gondola trailer</Name>
+	</Code>
+	<Code>
+		<Id>387</Id>
+		<Name>Truck, tautliner, removable roof with extendable gondola trailer</Name>
+	</Code>
+	<Code>
+		<Id>388</Id>
+		<Name>Truck, opening floor with extendable gondola trailer</Name>
+	</Code>
+	<Code>
+		<Id>389</Id>
+		<Name>Truck, bulk with extendable gondola trailer</Name>
+	</Code>
+	<Code>
+		<Id>390</Id>
+		<Name>Truck, tip-up truck with opening-floor trailer</Name>
+	</Code>
+	<Code>
+		<Id>391</Id>
+		<Name>Truck, tautliner with opening-floor trailer</Name>
+	</Code>
+	<Code>
+		<Id>392</Id>
+		<Name>Truck, tautliner, removable roof, with opening-floor trailer</Name>
+	</Code>
+	<Code>
+		<Id>393</Id>
+		<Name>Truck, opening-floor with opening-floor trailer</Name>
+	</Code>
+	<Code>
+		<Id>394</Id>
+		<Name>Truck, bulk truck with opening-floor trailer</Name>
+	</Code>
+	<Code>
+		<Id>395</Id>
+		<Name>Truck, with trailer</Name>
+	</Code>
+	<Code>
+		<Id>396</Id>
+		<Name>Truck, tilt, with tilt trailer</Name>
+	</Code>
+	<Code>
+		<Id>397</Id>
+		<Name>Truck, refrigerated, with refrigerated trailer</Name>
+	</Code>
+	<Code>
+		<Id>398</Id>
+		<Name>Truck, freezer with freezer trailer</Name>
+	</Code>
+	<Code>
+		<Id>399</Id>
+		<Name>Truck, removal with removal trailer</Name>
+	</Code>
+	<Code>
+		<Id>810</Id>
+		<Name>Motor freighter pushing at least one tank-ship</Name>
+	</Code>
+	<Code>
+		<Id>811</Id>
+		<Name>Tug, freighter</Name>
+	</Code>
+	<Code>
+		<Id>812</Id>
+		<Name>Tug, tanker</Name>
+	</Code>
+	<Code>
+		<Id>813</Id>
+		<Name>Tug, freighter, coupled</Name>
+	</Code>
+	<Code>
+		<Id>814</Id>
+		<Name>Tug, freighter/tanker, coupled</Name>
+	</Code>
+	<Code>
+		<Id>815</Id>
+		<Name>Freightbarge</Name>
+	</Code>
+	<Code>
+		<Id>816</Id>
+		<Name>Tankbarge</Name>
+	</Code>
+	<Code>
+		<Id>817</Id>
+		<Name>Freightbarge with containers</Name>
+	</Code>
+	<Code>
+		<Id>818</Id>
+		<Name>Tankbarge, gas</Name>
+	</Code>
+	<Code>
+		<Id>821</Id>
+		<Name>Pushtow, one cargo barge</Name>
+	</Code>
+	<Code>
+		<Id>822</Id>
+		<Name>Pushtow, two cargo barges</Name>
+	</Code>
+	<Code>
+		<Id>823</Id>
+		<Name>Pushtow, three cargo barges</Name>
+	</Code>
+	<Code>
+		<Id>824</Id>
+		<Name>Pushtow, four cargo barges</Name>
+	</Code>
+	<Code>
+		<Id>825</Id>
+		<Name>Pushtow, five cargo barges</Name>
+	</Code>
+	<Code>
+		<Id>826</Id>
+		<Name>Pushtow, six cargo barges</Name>
+	</Code>
+	<Code>
+		<Id>827</Id>
+		<Name>Pushtow, seven cargo barges</Name>
+	</Code>
+	<Code>
+		<Id>828</Id>
+		<Name>Pushtow, eight cargo barges</Name>
+	</Code>
+	<Code>
+		<Id>829</Id>
+		<Name>Pushtow, nine cargo barges</Name>
+	</Code>
+	<Code>
+		<Id>831</Id>
+		<Name>Pushtow, one gas/tank barge</Name>
+	</Code>
+	<Code>
+		<Id>832</Id>
+		<Name>Pushtow, two barges at least one tanker or gas barge</Name>
+	</Code>
+	<Code>
+		<Id>833</Id>
+		<Name>Pushtow, three barges at least one tanker or gas barge</Name>
+	</Code>
+	<Code>
+		<Id>834</Id>
+		<Name>Pushtow, four barges at least one tanker or gas barge</Name>
+	</Code>
+	<Code>
+		<Id>835</Id>
+		<Name>Pushtow, five barges at least one tanker or gas barge</Name>
+	</Code>
+	<Code>
+		<Id>836</Id>
+		<Name>Pushtow, six barges at least one tanker or gas barge</Name>
+	</Code>
+	<Code>
+		<Id>837</Id>
+		<Name>Pushtow, seven barges at least one tanker or gas barge</Name>
+	</Code>
+	<Code>
+		<Id>838</Id>
+		<Name>Pushtow, eight barges at least one tanker or gas barge</Name>
+	</Code>
+	<Code>
+		<Id>839</Id>
+		<Name>Pushtow, nine or more barges at least one tanker or gas barge</Name>
+	</Code>
+	<Code>
+		<Id>840</Id>
+		<Name>Tug, single</Name>
+	</Code>
+	<Code>
+		<Id>841</Id>
+		<Name>Tug, one or more tows</Name>
+	</Code>
+	<Code>
+		<Id>842</Id>
+		<Name>Tug, assisting a vessel or linked combination</Name>
+	</Code>
+	<Code>
+		<Id>843</Id>
+		<Name>Pushboat, single</Name>
+	</Code>
+	<Code>
+		<Id>844</Id>
+		<Name>Passenger ship, ferry, red cross ship, cruise ship</Name>
+	</Code>
+	<Code>
+		<Id>845</Id>
+		<Name>Service vessel, police patrol, port services</Name>
+	</Code>
+	<Code>
+		<Id>846</Id>
+		<Name>Vessel, work maintenance craft, floating derrick, cable-ship, buoy-ship, dredge</Name>
+	</Code>
+	<Code>
+		<Id>847</Id>
+		<Name>Object, towed, not otherwise specified</Name>
+	</Code>
+	<Code>
+		<Id>848</Id>
+		<Name>Fishing boat</Name>
+	</Code>
+	<Code>
+		<Id>849</Id>
+		<Name>Bunkership</Name>
+	</Code>
+	<Code>
+		<Id>850</Id>
+		<Name>Barge, tanker, chemical</Name>
+	</Code>
+	<Code>
+		<Id>851</Id>
+		<Name>Object, not otherwise specified</Name>
+	</Code>
+	<Code>
+		<Id>852</Id>
+		<Name>Service vessel</Name>
+	</Code>
+	<Code>
+		<Id>853</Id>
+		<Name>Police patrol vessel</Name>
+	</Code>
+	<Code>
+		<Id>854</Id>
+		<Name>Port service vessel</Name>
+	</Code>
+	<Code>
+		<Id>855</Id>
+		<Name>Navigation surveillance vessel</Name>
+	</Code>
+	<Code>
+		<Id>1501</Id>
+		<Name>Grain vessel</Name>
+	</Code>
+	<Code>
+		<Id>1502</Id>
+		<Name>Timber/log carrier</Name>
+	</Code>
+	<Code>
+		<Id>1503</Id>
+		<Name>Wood chips vessel</Name>
+	</Code>
+	<Code>
+		<Id>1504</Id>
+		<Name>Steel products vessel</Name>
+	</Code>
+	<Code>
+		<Id>1505</Id>
+		<Name>Carrier, general cargo/container</Name>
+	</Code>
+	<Code>
+		<Id>1506</Id>
+		<Name>Temperature controlled cargo vessels</Name>
+	</Code>
+	<Code>
+		<Id>1511</Id>
+		<Name>Full container ship/cellular vessel</Name>
+	</Code>
+	<Code>
+		<Id>1512</Id>
+		<Name>RoRo vessel</Name>
+	</Code>
+	<Code>
+		<Id>1513</Id>
+		<Name>Car carrier</Name>
+	</Code>
+	<Code>
+		<Id>1514</Id>
+		<Name>Livestock carrier</Name>
+	</Code>
+	<Code>
+		<Id>1515</Id>
+		<Name>Barge carrier - Lash ship</Name>
+	</Code>
+	<Code>
+		<Id>1516</Id>
+		<Name>Chemical carrier</Name>
+	</Code>
+	<Code>
+		<Id>1517</Id>
+		<Name>Irradiated fuel carrier</Name>
+	</Code>
+	<Code>
+		<Id>1518</Id>
+		<Name>Heavy cargo vessel</Name>
+	</Code>
+	<Code>
+		<Id>1519</Id>
+		<Name>RoRo/Container vessel</Name>
+	</Code>
+	<Code>
+		<Id>1521</Id>
+		<Name>Dry bulk carrier</Name>
+	</Code>
+	<Code>
+		<Id>1522</Id>
+		<Name>Ore carrier</Name>
+	</Code>
+	<Code>
+		<Id>1523</Id>
+		<Name>Cement carrier</Name>
+	</Code>
+	<Code>
+		<Id>1524</Id>
+		<Name>Gravel carrier</Name>
+	</Code>
+	<Code>
+		<Id>1525</Id>
+		<Name>Coal carrier</Name>
+	</Code>
+	<Code>
+		<Id>1531</Id>
+		<Name>Crude oil tanker</Name>
+	</Code>
+	<Code>
+		<Id>1532</Id>
+		<Name>Chemical tanker, coaster</Name>
+	</Code>
+	<Code>
+		<Id>1533</Id>
+		<Name>Chemical tanker, deep sea</Name>
+	</Code>
+	<Code>
+		<Id>1534</Id>
+		<Name>Oil and other derivatives tanker</Name>
+	</Code>
+	<Code>
+		<Id>1541</Id>
+		<Name>LPG tanker</Name>
+	</Code>
+	<Code>
+		<Id>1542</Id>
+		<Name>LNG tanker</Name>
+	</Code>
+	<Code>
+		<Id>1543</Id>
+		<Name>LNG/LPG tanker</Name>
+	</Code>
+	<Code>
+		<Id>1551</Id>
+		<Name>Asphalt/bitumen tanker</Name>
+	</Code>
+	<Code>
+		<Id>1552</Id>
+		<Name>Molasses tanker</Name>
+	</Code>
+	<Code>
+		<Id>1553</Id>
+		<Name>Vegetable oil tanker</Name>
+	</Code>
+	<Code>
+		<Id>1591</Id>
+		<Name>Cruise ship</Name>
+	</Code>
+	<Code>
+		<Id>1592</Id>
+		<Name>Ferry</Name>
+	</Code>
+	<Code>
+		<Id>1593</Id>
+		<Name>Other passenger ship</Name>
+	</Code>
+	<Code>
+		<Id>1594</Id>
+		<Name>Passenger ship, sailing</Name>
+	</Code>
+	<Code>
+		<Id>1601</Id>
+		<Name>Tug, without tow</Name>
+	</Code>
+	<Code>
+		<Id>1602</Id>
+		<Name>Tug, with tow</Name>
+	</Code>
+	<Code>
+		<Id>1603</Id>
+		<Name>Salvage vessel</Name>
+	</Code>
+	<Code>
+		<Id>1604</Id>
+		<Name>Rescue vessel</Name>
+	</Code>
+	<Code>
+		<Id>1605</Id>
+		<Name>Oil combat vessel</Name>
+	</Code>
+	<Code>
+		<Id>1606</Id>
+		<Name>Oil rig</Name>
+	</Code>
+	<Code>
+		<Id>1607</Id>
+		<Name>Hospital vessel</Name>
+	</Code>
+	<Code>
+		<Id>1711</Id>
+		<Name>Pilot boat</Name>
+	</Code>
+	<Code>
+		<Id>1712</Id>
+		<Name>Patrol/measure ship</Name>
+	</Code>
+	<Code>
+		<Id>1721</Id>
+		<Name>Supply vessel</Name>
+	</Code>
+	<Code>
+		<Id>1723</Id>
+		<Name>Offshore support vessel</Name>
+	</Code>
+	<Code>
+		<Id>1724</Id>
+		<Name>Pontoon</Name>
+	</Code>
+	<Code>
+		<Id>1725</Id>
+		<Name>Stone dumping vessel</Name>
+	</Code>
+	<Code>
+		<Id>1726</Id>
+		<Name>Cable layer</Name>
+	</Code>
+	<Code>
+		<Id>1727</Id>
+		<Name>Buoyage vessel</Name>
+	</Code>
+	<Code>
+		<Id>1728</Id>
+		<Name>Icebreaker</Name>
+	</Code>
+	<Code>
+		<Id>1729</Id>
+		<Name>Pipelaying vessel</Name>
+	</Code>
+	<Code>
+		<Id>1751</Id>
+		<Name>Trawler</Name>
+	</Code>
+	<Code>
+		<Id>1752</Id>
+		<Name>Cutter</Name>
+	</Code>
+	<Code>
+		<Id>1753</Id>
+		<Name>Factory ship</Name>
+	</Code>
+	<Code>
+		<Id>1761</Id>
+		<Name>Fishery research vessel</Name>
+	</Code>
+	<Code>
+		<Id>1762</Id>
+		<Name>Climate registration vessel</Name>
+	</Code>
+	<Code>
+		<Id>1763</Id>
+		<Name>Ship for environmental measurement</Name>
+	</Code>
+	<Code>
+		<Id>1764</Id>
+		<Name>Scientific vessel</Name>
+	</Code>
+	<Code>
+		<Id>1765</Id>
+		<Name>Sailing school ship</Name>
+	</Code>
+	<Code>
+		<Id>1766</Id>
+		<Name>Training vessel</Name>
+	</Code>
+	<Code>
+		<Id>1781</Id>
+		<Name>Crane, floating</Name>
+	</Code>
+	<Code>
+		<Id>1782</Id>
+		<Name>Dock, floating</Name>
+	</Code>
+	<Code>
+		<Id>2201</Id>
+		<Name>Train, super express</Name>
+	</Code>
+	<Code>
+		<Id>2202</Id>
+		<Name>Train, sleeper</Name>
+	</Code>
+	<Code>
+		<Id>2203</Id>
+		<Name>Train, passenger, hired group</Name>
+	</Code>
+	<Code>
+		<Id>2301</Id>
+		<Name>Blocktrain</Name>
+	</Code>
+	<Code>
+		<Id>2302</Id>
+		<Name>Train, container</Name>
+	</Code>
+	<Code>
+		<Id>2303</Id>
+		<Name>Train, with one wagon</Name>
+	</Code>
+	<Code>
+		<Id>2304</Id>
+		<Name>Train, with more than one and less than 20 wagons</Name>
+	</Code>
+	<Code>
+		<Id>2305</Id>
+		<Name>Train, with more than 20 wagons</Name>
+	</Code>
+	<Code>
+		<Id>3100</Id>
+		<Name>Truck, tautliner with removal trailer</Name>
+	</Code>
+	<Code>
+		<Id>3101</Id>
+		<Name>Truck, tautliner with removable roof and removal trailer</Name>
+	</Code>
+	<Code>
+		<Id>3102</Id>
+		<Name>Car, with caravan</Name>
+	</Code>
+	<Code>
+		<Id>3103</Id>
+		<Name>Truck, tautliner, 25 tonne</Name>
+	</Code>
+	<Code>
+		<Id>3104</Id>
+		<Name>Truck, tautliner, 25 tonne with removable roof</Name>
+	</Code>
+	<Code>
+		<Id>3105</Id>
+		<Name>Lorry, articulated, flat bed, 25 tonne</Name>
+	</Code>
+	<Code>
+		<Id>3106</Id>
+		<Name>Lorry, articulated, flat bed, 24 tonne, with 10 metre crane</Name>
+	</Code>
+	<Code>
+		<Id>3107</Id>
+		<Name>Lorry, articulated, flat bed, 24 tonne, with 15 metre crane</Name>
+	</Code>
+	<Code>
+		<Id>3108</Id>
+		<Name>Lorry, articulated, flat bed, 24 tonne, with 18 metre crane</Name>
+	</Code>
+	<Code>
+		<Id>3109</Id>
+		<Name>Lorry, articulated, flat bed, 10 tonne</Name>
+	</Code>
+	<Code>
+		<Id>3110</Id>
+		<Name>Truck, tautliner, 25 tonne, with 90 cubic metre trailer</Name>
+	</Code>
+	<Code>
+		<Id>3111</Id>
+		<Name>Truck, tautliner, 25 tonne, with 120 cubic metre trailer</Name>
+	</Code>
+	<Code>
+		<Id>3112</Id>
+		<Name>Lorry, flat with trailer and 10 metre crane</Name>
+	</Code>
+	<Code>
+		<Id>3113</Id>
+		<Name>Lorry, articulated with tank</Name>
+	</Code>
+	<Code>
+		<Id>3114</Id>
+		<Name>Lorry, flat, 15 tonne</Name>
+	</Code>
+	<Code>
+		<Id>3115</Id>
+		<Name>Lorry, flat, 15 tonne with crane</Name>
+	</Code>
+	<Code>
+		<Id>3116</Id>
+		<Name>Truck, isothermic</Name>
+	</Code>
+	<Code>
+		<Id>3117</Id>
+		<Name>Truck, refrigerated</Name>
+	</Code>
+	<Code>
+		<Id>3118</Id>
+		<Name>Van, freezer</Name>
+	</Code>
+	<Code>
+		<Id>3119</Id>
+		<Name>Van, isothermic</Name>
+	</Code>
+	<Code>
+		<Id>3120</Id>
+		<Name>Van, refrigerated</Name>
+	</Code>
+	<Code>
+		<Id>3121</Id>
+		<Name>Truck, bulk</Name>
+	</Code>
+	<Code>
+		<Id>3122</Id>
+		<Name>Truck, tip-up</Name>
+	</Code>
+	<Code>
+		<Id>3123</Id>
+		<Name>Truck, articulated, tip-up</Name>
+	</Code>
+	<Code>
+		<Id>3124</Id>
+		<Name>Truck, rigid, with tank</Name>
+	</Code>
+	<Code>
+		<Id>3125</Id>
+		<Name>Truck, tautliner</Name>
+	</Code>
+	<Code>
+		<Id>3126</Id>
+		<Name>Truck, tautliner, with removable roof</Name>
+	</Code>
+	<Code>
+		<Id>3127</Id>
+		<Name>Truck, with opening floor</Name>
+	</Code>
+	<Code>
+		<Id>3128</Id>
+		<Name>Truck, freezer</Name>
+	</Code>
+	<Code>
+		<Id>3129</Id>
+		<Name>Truck, with crane for moving goods, without trailer</Name>
+	</Code>
+	<Code>
+		<Id>3130</Id>
+		<Name>Truck, with crane for moving goods, with trailer</Name>
+	</Code>
+	<Code>
+		<Id>3131</Id>
+		<Name>Truck, with crane for lifting goods, without trailer</Name>
+	</Code>
+	<Code>
+		<Id>3132</Id>
+		<Name>Truck, with crane for lifting goods, with trailer</Name>
+	</Code>
+	<Code>
+		<Id>3133</Id>
+		<Name>Taxi cab</Name>
+	</Code>
+	<Code>
+		<Id>3134</Id>
+		<Name>Truck, furniture</Name>
+	</Code>
+	<Code>
+		<Id>3135</Id>
+		<Name>Truck, hydrant</Name>
+	</Code>
+	<Code>
+		<Id>3136</Id>
+		<Name>Car</Name>
+	</Code>
+	<Code>
+		<Id>3137</Id>
+		<Name>Truck, with tail-lift</Name>
+	</Code>
+	<Code>
+		<Id>3138</Id>
+		<Name>Armoured vehicle</Name>
+	</Code>
+	<Code>
+		<Id>3201</Id>
+		<Name>Car, elevator</Name>
+	</Code>
+	<Code>
+		<Id>3301</Id>
+		<Name>Bus, with trailer</Name>
+	</Code>
+	<Code>
+		<Id>3302</Id>
+		<Name>Bus, highway</Name>
+	</Code>
+	<Code>
+		<Id>3303</Id>
+		<Name>Bus, sightseeing</Name>
+	</Code>
+	<Code>
+		<Id>3304</Id>
+		<Name>Bus, airport/city</Name>
+	</Code>
+</CodeList>

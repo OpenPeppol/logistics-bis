@@ -1,0 +1,10 @@
+[[signature]]
+= Signature
+
+Information about the signature of the Manifest, identifying the party responsible for this version of the document.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=signature]
+----

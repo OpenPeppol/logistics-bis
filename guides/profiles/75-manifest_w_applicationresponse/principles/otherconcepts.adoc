@@ -1,0 +1,17 @@
+[[other-important-concepts]]
+= Other important concepts
+
+The table below gives the definitions of key concepts used in the Manifest and its Application Response.
+
+[cols="2,4",options="header",]
+|====
+|Term |Definition
+|*Manifest* |A document listing the contents, cargo, passengers and crew of an airplane, a ship, a truck or a wagon.
+|*Shipment* |A contractual arrangement whereby an identifiable collection of goods items is to be transported from one party (usually a Consignor) to another party (usually a Consignee). Can be identified by a GS1 GSIN (Global Shipment Identification Number) or an identity in any other format. The Manifest references the shipment(s) it covers; the detailed consignment, packaging and goods item information is typically already available to the receiving party through the Waybill or other transport documents referenced from the Manifest.
+|*Crew* |A person forming part of the crew operating the means of transport (e.g. driver, pilot, master, seafarer).
+|*Passenger* |A person being transported by the means of transport, relevant for manifests covering passenger transport (e.g. ferry or air manifests).
+|*Document reference* |A reference from the Manifest to another document relevant for the transport, for example the Waybill or Bill of Lading covering the same shipment.
+|*Application Response* |A generic UBL document used to communicate, in a structured way, the outcome of processing another document. In this profile it is used by the receiving party to tell the sender whether the Manifest is accepted or not accepted.
+|*Document response* |Within the Application Response, the element (`cac:DocumentResponse`) that carries the actual decision (accepted/not accepted), together with a reference back to the Manifest it responds to.
+|*Response code* |A code (`cbc:ResponseCode`) expressing the outcome of the response, for example accepted or rejected. See the xref:process-and-typical-scenarios[Processes and use cases] chapter for how this is used in this profile.
+|====

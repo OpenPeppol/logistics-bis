@@ -1,0 +1,23 @@
+[[identification]]
+= Document identification
+
+The Manifest is identified by the Document ID (`cbc:ID`) on header level. In addition, the type of Manifest can be expressed both as a code (`cbc:ManifestTypeCode`) and as free text (`cbc:ManifestType`), for example to distinguish a road cargo manifest from a passenger manifest.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=document-id]
+----
+
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=manifest-type]
+----
+
+The Application Response is likewise identified by its own Document ID (`cbc:ID`), which is distinct from, and in addition to, the `cac:DocumentReference/cbc:ID` that points back to the Manifest it responds to (see xref:document-response[Document response]).
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-2.xml[tags=document-id]
+----

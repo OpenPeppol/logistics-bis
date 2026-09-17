@@ -234,6 +234,46 @@
                  test="matches(normalize-space(), '^[0-9]{12}$')"
                  flag="warning">[PEPPOL-COMMON-R057]-Dutch Chamber of Commerce Establishment numbers (0217) MUST be stated in the correct format (123456789012).</assert>
       </rule>
+        <rule context="cbc:EndpointID[@schemeID = '0106'] | cac:PartyIdentification/cbc:ID[@schemeID = '0106'] | cbc:CompanyID[@schemeID = '0106']">
+         <assert id="PEPPOL-COMMON-R054"
+                 test="matches(normalize-space(), '^[0-9]{8}$')"
+                 flag="fatal">[PEPPOL-COMMON-R054]-Dutch Chamber of Commerce (KVK) numbers (0106) MUST be stated in the correct format (12345678).</assert>
+      </rule>
+      <rule context="cbc:EndpointID[@schemeID = '0190'] | cac:PartyIdentification/cbc:ID[@schemeID = '0190'] | cbc:CompanyID[@schemeID = '0190']">
+         <assert id="PEPPOL-COMMON-R055"
+                 test="matches(normalize-space(), '^[0-9]{20}$')"
+                 flag="fatal">[PEPPOL-COMMON-R055]-Dutch organization identification numbers (0190) MUST be stated in the correct format (12345678901234567890).</assert>
+      </rule>
+      <rule context="cbc:EndpointID[@schemeID = '9944'] | cac:PartyIdentification/cbc:ID[@schemeID = '9944'] | cbc:CompanyID[@schemeID = '9944']">
+         <assert id="PEPPOL-COMMON-R056-1"
+                 test="matches(normalize-space(), '^NL[0-9]{9}B[0-9]{2}$')"
+                 flag="fatal">[PEPPOL-COMMON-R056-1]-Dutch VAT numbers (9944) MUST be stated in the correct format (NL123456789B12).</assert>
+      </rule>
+    
+      <rule context="cac:PartyTaxScheme                    [normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']                    /cbc:CompanyID                    [starts-with(normalize-space(.), 'NL')]">
+         <assert id="PEPPOL-COMMON-R056-2"
+                 test="matches(normalize-space(.), '^NL[0-9]{9}B[0-9]{2}$')"
+                 flag="fatal">[PEPPOL-COMMON-R056-2]-Dutch VAT numbers MUST have the format (NL123456789B12).</assert>
+      </rule>
+      <rule context="cbc:EndpointID[@schemeID = '0217'] | cac:PartyIdentification/cbc:ID[@schemeID = '0217'] | cbc:CompanyID[@schemeID = '0217']">
+         <assert id="PEPPOL-COMMON-R057"
+                 test="matches(normalize-space(), '^[0-9]{12}$')"
+                 flag="fatal">[PEPPOL-COMMON-R057]-Dutch Chamber of Commerce Establishment numbers (0217) MUST be stated in the correct format (123456789012).</assert>
+      </rule>
+    
+      <rule context="cbc:EndpointID[@schemeID = '0240'] | cac:PartyIdentification/cbc:ID[@schemeID = '0240'] | cbc:CompanyID[@schemeID = '0240']">
+         <assert id="PEPPOL-COMMON-R059"
+                 test="u:check-lux-0240(normalize-space(.))"
+                 flag="warning">[PEPPOL-COMMON-R059]-Luxembourg Register of Legal Persons number (Matricule) MUST be stated in the correct format.</assert>
+      </rule>
+    
+      <rule context="cac:PartyTaxScheme                    [normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']                    /cbc:CompanyID                    [starts-with(upper-case(normalize-space(.)), 'LU')]">
+         <assert id="PEPPOL-COMMON-R058"
+                 flag="warning"
+                 test="matches(upper-case(normalize-space(.)), '^LU[0-9]{8}$') and u:mod89-LU_VAT(.)">
+        [PEPPOL-COMMON-R058]-Luxembourg VAT number MUST be stated in the correct format.
+      </assert>	
+	     </rule>
    </pattern>
     <pattern xmlns:ns2="http://www.schematron-quickfix.com/validator/process">
       <let name="clDocumentStatusCode" value="tokenize('1 5 9 22 55', '\s')"/>
