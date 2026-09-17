@@ -301,7 +301,7 @@
          </cac:PaymentTerms>
          <cac:MainCarriageShipmentStage>
             <cbc:TransportModeCode>4</cbc:TransportModeCode>
-            <cbc:TransportMeansTypeCode>Airliner</cbc:TransportMeansTypeCode>
+            <cbc:TransportMeansTypeCode>J</cbc:TransportMeansTypeCode>
             <cac:CarrierParty>
                <cac:PartyIdentification>
                   <cbc:ID schemeID="IATA">188</cbc:ID>          

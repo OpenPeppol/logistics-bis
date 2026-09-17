@@ -1179,9 +1179,9 @@
 				<?Cardinality 1..1?>
 				<?CodeList UNECERec19?>
 				</cbc:TransportModeCode>			
-				<cbc:TransportMeansTypeCode>Airliner
+				<cbc:TransportMeansTypeCode>J
 				<?Name Transport Means type code?>
-				<?Description A code signifying transport means used in this shipment stage. For air transport use "Airliner", "CargoAircraft" or "Truck". ?>
+				<?Description A code signifying the type of means of transport used in this shipment stage. When the transport mode code is 4, air transport, the code MUST be an air service type code (IATA SSIM), for example "J" for a passenger flight that carries cargo in the hold or "F" for a freighter. ?>
 				<?Cardinality 0..n?>
 				<?CodeList TransportMeansTypeCode?>					
 				</cbc:TransportMeansTypeCode>
@@ -1557,7 +1557,7 @@
 			</cbc:TransportModeCode>
 			<cbc:TransportMeansTypeCode>31
 				<?Name Transport Means type code?>
-				<?Description A code signifying transport means used in this shipment stage. ?>
+				<?Description A code signifying the type of means of transport used in this shipment stage. When the transport mode code is 4, air transport, the code MUST be an air service type code (IATA SSIM). ?>
 				<?Cardinality 0..1?>
 				<?CodeList TransportMeansTypeCode?>					
 			</cbc:TransportMeansTypeCode>
