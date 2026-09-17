@@ -1182,7 +1182,7 @@
 				<cbc:TransportMeansTypeCode>Airliner
 				<?Name Transport Means type code?>
 				<?Description A code signifying transport means used in this shipment stage. For air transport use "Airliner", "CargoAircraft" or "Truck". ?>
-				<?Cardinality 0..n?>
+				<?Cardinality 0..1?>
 				<?CodeList TransportMeansTypeCode?>					
 				</cbc:TransportMeansTypeCode>
 				
