@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-T125-base-1.0">
+	<assert>
+		<description>Verify that an air service type code is only used as transport means type code when the transport mode code is 4, air transport.</description>
+		<scope>PEPPOL-T125-R053</scope>
+	</assert>
+
+	<test id="1">
+		<!-- Air service type code on an air stage -->
+		<assert>
+			<success>PEPPOL-T125-R053</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cac:MainCarriageShipmentStage>
+						<cbc:TransportModeCode>4</cbc:TransportModeCode>
+						<cbc:TransportMeansTypeCode>J</cbc:TransportMeansTypeCode>
+					</cac:MainCarriageShipmentStage>
+				</cac:Consignment>
+			</cac:Shipment>
+		</ubl:Waybill>
+	</test>
+
+	<test id="2">
+		<!-- Road transport with a road code -->
+		<assert>
+			<success>PEPPOL-T125-R053</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					<cbc:TransportMeansTypeCode>31</cbc:TransportMeansTypeCode>
+				</cac:ShipmentStage>
+			</cac:Shipment>
+		</ubl:Waybill>
+	</test>
+
+	<test id="3">
+		<!-- Road transport, no transport means type code at all -->
+		<assert>
+			<success>PEPPOL-T125-R053</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+				</cac:ShipmentStage>
+			</cac:Shipment>
+		</ubl:Waybill>
+	</test>
+
+	<test id="4">
+		<!-- Air service type code on a road stage -->
+		<assert>
+			<error>PEPPOL-T125-R053</error>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					<cbc:TransportMeansTypeCode>J</cbc:TransportMeansTypeCode>
+				</cac:ShipmentStage>
+			</cac:Shipment>
+		</ubl:Waybill>
+	</test>
+
+	<test id="5">
+		<!-- Air service type code on a main carriage stage by sea -->
+		<assert>
+			<error>PEPPOL-T125-R053</error>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cac:MainCarriageShipmentStage>
+						<cbc:TransportModeCode>1</cbc:TransportModeCode>
+						<cbc:TransportMeansTypeCode>F</cbc:TransportMeansTypeCode>
+					</cac:MainCarriageShipmentStage>
+				</cac:Consignment>
+			</cac:Shipment>
+		</ubl:Waybill>
+	</test>
+
+	<test id="6">
+		<!-- Air service type code without any transport mode code -->
+		<assert>
+			<error>PEPPOL-T125-R053</error>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:ShipmentStage>
+					<cbc:TransportMeansTypeCode>J</cbc:TransportMeansTypeCode>
+				</cac:ShipmentStage>
+			</cac:Shipment>
+		</ubl:Waybill>
+	</test>
+
+</testSet>

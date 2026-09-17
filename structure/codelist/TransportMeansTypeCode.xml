@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1" xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
 	<Title>Transport Means Type Code (openPEPPOL)</Title>
 	<Identifier>TransportMeansTypeCode</Identifier>
-	<Version>3.0</Version>
+	<Version>3.1</Version>
 	<Agency>openPEPPOL</Agency>
 	<Code>
 		<Id>31</Id>
@@ -1043,5 +1043,109 @@
 	<Code>
 		<Id>3304</Id>
 		<Name>Bus, airport/city</Name>
+	</Code>
+	<!--
+		Air transport. UN/ECE Recommendation 28 carries no codes for air. The codes below are
+		the service types of the IATA Standard Schedules Information Manual (SSIM), published
+		on their own as code list AirServiceTypeCode, and they are the only values allowed
+		when the transport mode code is 4, air transport. They say what the flight carries,
+		which an aircraft type does not: the same aircraft model flies both passengers and
+		freight.
+	-->
+	<Code>
+		<Id>J</Id>
+		<Name>Passenger, normal service (scheduled)</Name>
+	</Code>
+	<Code>
+		<Id>S</Id>
+		<Name>Passenger, shuttle mode (scheduled)</Name>
+	</Code>
+	<Code>
+		<Id>U</Id>
+		<Name>Passenger, operated by surface vehicle (scheduled)</Name>
+	</Code>
+	<Code>
+		<Id>G</Id>
+		<Name>Passenger, normal service (additional flight)</Name>
+	</Code>
+	<Code>
+		<Id>B</Id>
+		<Name>Passenger, shuttle mode (additional flight)</Name>
+	</Code>
+	<Code>
+		<Id>C</Id>
+		<Name>Passenger only (charter)</Name>
+	</Code>
+	<Code>
+		<Id>F</Id>
+		<Name>Cargo, loose loaded and/or preloaded devices (scheduled)</Name>
+	</Code>
+	<Code>
+		<Id>M</Id>
+		<Name>Mail only (scheduled)</Name>
+	</Code>
+	<Code>
+		<Id>V</Id>
+		<Name>Cargo, operated by surface vehicle (scheduled)</Name>
+	</Code>
+	<Code>
+		<Id>A</Id>
+		<Name>Cargo and/or mail (additional flight)</Name>
+	</Code>
+	<Code>
+		<Id>H</Id>
+		<Name>Cargo and/or mail (charter)</Name>
+	</Code>
+	<Code>
+		<Id>Q</Id>
+		<Name>Passenger and cargo in cabin, mixed configuration (scheduled)</Name>
+	</Code>
+	<Code>
+		<Id>R</Id>
+		<Name>Passenger and cargo in cabin, mixed configuration (additional flight)</Name>
+	</Code>
+	<Code>
+		<Id>L</Id>
+		<Name>Passenger and cargo and/or mail (charter)</Name>
+	</Code>
+	<Code>
+		<Id>O</Id>
+		<Name>Charter requiring special handling</Name>
+	</Code>
+	<Code>
+		<Id>P</Id>
+		<Name>Non-revenue (positioning, ferry, delivery, demonstration)</Name>
+	</Code>
+	<Code>
+		<Id>D</Id>
+		<Name>General aviation, non-commercial</Name>
+	</Code>
+	<Code>
+		<Id>N</Id>
+		<Name>Business aviation or air taxi</Name>
+	</Code>
+	<Code>
+		<Id>E</Id>
+		<Name>Special, government</Name>
+	</Code>
+	<Code>
+		<Id>W</Id>
+		<Name>Military</Name>
+	</Code>
+	<Code>
+		<Id>I</Id>
+		<Name>State or diplomatic</Name>
+	</Code>
+	<Code>
+		<Id>K</Id>
+		<Name>Crew training</Name>
+	</Code>
+	<Code>
+		<Id>T</Id>
+		<Name>Technical test</Name>
+	</Code>
+	<Code>
+		<Id>X</Id>
+		<Name>Technical stop</Name>
 	</Code>
 </CodeList>

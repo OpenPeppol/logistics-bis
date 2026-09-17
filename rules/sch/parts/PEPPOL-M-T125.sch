@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
+	<!-- Air service types (IATA SSIM), code list AirServiceTypeCode. Used as the type of
+	     means of transport when the transport mode code is 4, air transport. -->
+	<let name="clAirServiceTypeCode" value="tokenize('A B C D E F G H I J K L M N O P Q R S T U V W X', '\s')"/>
 
 	<rule context="cbc:CustomizationID">
 		<assert id="PEPPOL-T125-R001"
@@ -52,6 +55,8 @@
 	<rule context="cac:ShipmentStage">
 		<assert id= "PEPPOL-T125-R050" test= "(cbc:TransportModeCode = 4 and cac:TransportMeans/cac:AirTransport/cbc:AircraftID) or (cbc:TransportModeCode = 3 and cac:TransportMeans/cac:RoadTransport/cbc:LicensePlateID) or (cbc:TransportModeCode = 2 and cac:TransportMeans/cac:RailTransport/cbc:TrainID) or (cbc:TransportModeCode = 1 and cac:TransportMeans/cac:MaritimeTransport/cbc:VesselID) or not(cac:TransportMeans)" flag="warning">[PEPPOL-T125-R050] Id for the transport means needs to be specified if Transport Means group is provided.</assert>
 		<assert id= "PEPPOL-T125-R051" test= "not(cac:TransportMeans) or (count(cac:TransportMeans/cac:AirTransport) + count(cac:TransportMeans/cac:RoadTransport) + count(cac:TransportMeans/cac:RailTransport) + count(cac:TransportMeans/cac:MaritimeTransport) = 1)" flag="warning">[PEPPOL-T125-R051] Only one type of transport means can be specified</assert>
+		<assert id="PEPPOL-T125-R052" test="not(normalize-space(cbc:TransportModeCode) = '4') or not(cbc:TransportMeansTypeCode) or (every $type in cbc:TransportMeansTypeCode satisfies (some $code in $clAirServiceTypeCode satisfies $code = normalize-space($type)))" flag="fatal">[PEPPOL-T125-R052] For air transport, transport mode code 4, the transport means type code MUST be an air service type code, for example 'J' for a passenger flight carrying cargo or 'F' for a freighter.</assert>
+		<assert id="PEPPOL-T125-R053" test="normalize-space(cbc:TransportModeCode) = '4' or not(cbc:TransportMeansTypeCode) or (every $type in cbc:TransportMeansTypeCode satisfies not(some $code in $clAirServiceTypeCode satisfies $code = normalize-space($type)))" flag="fatal">[PEPPOL-T125-R053] An air service type code MUST only be used as transport means type code when the transport mode code is 4, air transport.</assert>
 	</rule>
 	
 	<rule context="ubl:Waybill">
@@ -72,5 +77,11 @@
 		<assert id="PEPPOL-T125-R034" test="cac:PartyName or cac:PartyIdentification" flag="fatal">[PEPPOL-T125-R034] Party must include either a party name or a party identification.</assert>
 	</rule>
 	
+
+	<rule context="cac:MainCarriageShipmentStage">
+		<assert id="PEPPOL-T125-R052" test="not(normalize-space(cbc:TransportModeCode) = '4') or not(cbc:TransportMeansTypeCode) or (every $type in cbc:TransportMeansTypeCode satisfies (some $code in $clAirServiceTypeCode satisfies $code = normalize-space($type)))" flag="fatal">[PEPPOL-T125-R052] For air transport, transport mode code 4, the transport means type code MUST be an air service type code, for example 'J' for a passenger flight carrying cargo or 'F' for a freighter.</assert>
+		<assert id="PEPPOL-T125-R053" test="normalize-space(cbc:TransportModeCode) = '4' or not(cbc:TransportMeansTypeCode) or (every $type in cbc:TransportMeansTypeCode satisfies not(some $code in $clAirServiceTypeCode satisfies $code = normalize-space($type)))" flag="fatal">[PEPPOL-T125-R053] An air service type code MUST only be used as transport means type code when the transport mode code is 4, air transport.</assert>
+	</rule>
+
 </pattern>
 
