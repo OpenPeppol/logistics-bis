@@ -122,6 +122,50 @@
 		       </otherwise>
 	     </choose>
    </function>
+    <function xmlns="http://www.w3.org/1999/XSL/Transform"
+             name="u:check-lux-0240"
+             as="xs:boolean">
+      <param name="val" as="xs:string"/>
+      <choose>
+         <when test="not(matches($val, '^[0-9]{11}$'))">
+            <sequence select="false()"/>
+         </when>
+         <otherwise>
+            <variable name="typecode" select="xs:integer(substring($val, 5, 2))"/>
+            <choose>
+               <when test="not($typecode ge 20 and $typecode le 99)">
+                  <sequence select="false()"/>
+               </when>
+               <otherwise>
+                  <variable name="digits"
+                            select="for $c in string-to-codepoints($val) return $c - 48"/>
+                  <variable name="weights" select="(5, 4, 3, 2, 7, 6, 5, 4, 3, 2)"/>
+                  <variable name="wsum"
+                            select="sum(for $i in 1 to 10 return $digits[$i] * $weights[$i])"/>
+                  <variable name="remainder" select="$wsum mod 11"/>
+                  <variable name="exp11" select="if ($remainder = 0) then 0 else 11 - $remainder"/>
+                  <variable name="exp12"
+                            select="if ($remainder = 0) then 1 else if ($remainder = 1) then 0 else 12 - $remainder"/>
+                  <variable name="checkdigit" select="$digits[11]"/>
+                  <variable name="valid"
+                            select="if ($typecode = 24) then ($checkdigit = $exp11 or $checkdigit = $exp12) else $checkdigit = $exp11"/>
+                  <sequence select="$valid"/>
+               </otherwise>
+            </choose>
+         </otherwise>
+      </choose>
+   </function>
+    <function xmlns="http://www.w3.org/1999/XSL/Transform"
+             name="u:mod89-LU_VAT"
+             as="xs:boolean">
+      <param name="val" as="xs:string"/>
+      <variable name="normalized" select="upper-case(normalize-space($val))"/>
+      <variable name="base" select="substring($normalized, 3, 6)"/>
+      <variable name="checkdigits" select="substring($normalized, 9, 2)"/>
+      <variable name="calculated"
+                select="format-integer(xs:integer($base) mod 89, '00')"/>
+      <sequence select="$checkdigits = $calculated"/>
+  </function>
     
 
     <pattern>
@@ -149,8 +193,9 @@
     
       <rule context="cbc:EndpointID[@schemeID = '0088'] | cac:PartyIdentification/cbc:ID[@schemeID = '0088'] | cbc:CompanyID[@schemeID = '0088']">
          <assert id="PEPPOL-COMMON-R040"
-                 test="matches(normalize-space(), '^[0-9]+$') and u:gln(normalize-space())"
-                 flag="fatal">[PEPPOL-COMMON-R040]-GLN must have a valid format according to GS1 rules.</assert>
+                 test="matches(normalize-space(), '^[0-9]{13}$') and u:gln(normalize-space())"
+                 flag="fatal">[PEPPOL-COMMON-R040]-GLN13
+        must have a valid format according to GS1 rules.</assert>
       </rule>
       <rule context="cbc:EndpointID[@schemeID = '0192'] | cac:PartyIdentification/cbc:ID[@schemeID = '0192'] | cbc:CompanyID[@schemeID = '0192']">
          <assert id="PEPPOL-COMMON-R041"
@@ -180,22 +225,22 @@
       <rule context="cbc:EndpointID[@schemeID = '0201'] | cac:PartyIdentification/cbc:ID[@schemeID = '0201'] | cbc:CompanyID[@schemeID = '0201']">
          <assert id="PEPPOL-COMMON-R044"
                  test="u:checkCodiceIPA(normalize-space())"
-                 flag="warning">[PEPPOL-COMMON-R044]-IPA Code (Codice Univoco Unità Organizzativa) must be stated in the correct format</assert>
+                 flag="warning">[PEPPOL-COMMON-R044]-IPA Code (Codice Univoco Unità Organizzativa) SHOULD be stated in the correct format</assert>
       </rule>
       <rule context="cbc:EndpointID[@schemeID = '0210'] | cac:PartyIdentification/cbc:ID[@schemeID = '0210'] | cbc:CompanyID[@schemeID = '0210']">
          <assert id="PEPPOL-COMMON-R045"
                  test="u:checkCF(normalize-space())"
-                 flag="warning">[PEPPOL-COMMON-R045]-Tax Code (Codice Fiscale) must be stated in the correct format</assert>
+                 flag="warning">[PEPPOL-COMMON-R045]-Tax Code (Codice Fiscale) SHOULD be stated in the correct format</assert>
       </rule>
       <rule context="cbc:EndpointID[@schemeID = '9907']">
          <assert id="PEPPOL-COMMON-R046"
                  test="u:checkCF(normalize-space())"
-                 flag="warning">[PEPPOL-COMMON-R046]-Tax Code (Codice Fiscale) must be stated in the correct format</assert>
+                 flag="warning">[PEPPOL-COMMON-R046]-Tax Code (Codice Fiscale) SHOULD be stated in the correct format</assert>
       </rule>
       <rule context="cbc:EndpointID[@schemeID = '0211'] | cac:PartyIdentification/cbc:ID[@schemeID = '0211'] | cbc:CompanyID[@schemeID = '0211']">
          <assert id="PEPPOL-COMMON-R047"
                  test="u:checkPIVAseIT(normalize-space())"
-                 flag="warning">[PEPPOL-COMMON-R047]-Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
+                 flag="warning">[PEPPOL-COMMON-R047]-Italian VAT Code (Partita Iva) SHOULD be stated in the correct format</assert>
       </rule>
     
       <rule context="cbc:EndpointID[@schemeID = '0007'] | cac:PartyIdentification/cbc:ID[@schemeID = '0007'] | cbc:CompanyID[@schemeID = '0007']">
@@ -211,29 +256,43 @@
         <rule context="cbc:EndpointID[@schemeID = '0106'] | cac:PartyIdentification/cbc:ID[@schemeID = '0106'] | cbc:CompanyID[@schemeID = '0106']">
          <assert id="PEPPOL-COMMON-R054"
                  test="matches(normalize-space(), '^[0-9]{8}$')"
-                 flag="warning">[PEPPOL-COMMON-R054]-Dutch Chamber of Commerce (KVK) numbers (0106) MUST be stated in the correct format (12345678).</assert>
+                 flag="fatal">[PEPPOL-COMMON-R054]-Dutch Chamber of Commerce (KVK) numbers (0106) MUST be stated in the correct format (12345678).</assert>
       </rule>
       <rule context="cbc:EndpointID[@schemeID = '0190'] | cac:PartyIdentification/cbc:ID[@schemeID = '0190'] | cbc:CompanyID[@schemeID = '0190']">
          <assert id="PEPPOL-COMMON-R055"
                  test="matches(normalize-space(), '^[0-9]{20}$')"
-                 flag="warning">[PEPPOL-COMMON-R055]-Dutch organization identification numbers (0190) MUST be stated in the correct format (12345678901234567890).</assert>
+                 flag="fatal">[PEPPOL-COMMON-R055]-Dutch organization identification numbers (0190) MUST be stated in the correct format (12345678901234567890).</assert>
       </rule>
       <rule context="cbc:EndpointID[@schemeID = '9944'] | cac:PartyIdentification/cbc:ID[@schemeID = '9944'] | cbc:CompanyID[@schemeID = '9944']">
          <assert id="PEPPOL-COMMON-R056-1"
                  test="matches(normalize-space(), '^NL[0-9]{9}B[0-9]{2}$')"
-                 flag="warning">[PEPPOL-COMMON-R056-1]-Dutch VAT numbers (9944) MUST be stated in the correct format (NL123456789B12).</assert>
+                 flag="fatal">[PEPPOL-COMMON-R056-1]-Dutch VAT numbers (9944) MUST be stated in the correct format (NL123456789B12).</assert>
       </rule>
     
       <rule context="cac:PartyTaxScheme                    [normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']                    /cbc:CompanyID                    [starts-with(normalize-space(.), 'NL')]">
          <assert id="PEPPOL-COMMON-R056-2"
                  test="matches(normalize-space(.), '^NL[0-9]{9}B[0-9]{2}$')"
-                 flag="warning">[PEPPOL-COMMON-R056-2]-Dutch VAT numbers MUST have the format (NL123456789B12).</assert>
+                 flag="fatal">[PEPPOL-COMMON-R056-2]-Dutch VAT numbers MUST have the format (NL123456789B12).</assert>
       </rule>
       <rule context="cbc:EndpointID[@schemeID = '0217'] | cac:PartyIdentification/cbc:ID[@schemeID = '0217'] | cbc:CompanyID[@schemeID = '0217']">
          <assert id="PEPPOL-COMMON-R057"
                  test="matches(normalize-space(), '^[0-9]{12}$')"
-                 flag="warning">[PEPPOL-COMMON-R057]-Dutch Chamber of Commerce Establishment numbers (0217) MUST be stated in the correct format (123456789012).</assert>
+                 flag="fatal">[PEPPOL-COMMON-R057]-Dutch Chamber of Commerce Establishment numbers (0217) MUST be stated in the correct format (123456789012).</assert>
       </rule>
+    
+      <rule context="cbc:EndpointID[@schemeID = '0240'] | cac:PartyIdentification/cbc:ID[@schemeID = '0240'] | cbc:CompanyID[@schemeID = '0240']">
+         <assert id="PEPPOL-COMMON-R059"
+                 test="u:check-lux-0240(normalize-space(.))"
+                 flag="warning">[PEPPOL-COMMON-R059]-Luxembourg Register of Legal Persons number (Matricule) MUST be stated in the correct format.</assert>
+      </rule>
+    
+      <rule context="cac:PartyTaxScheme                    [normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']                    /cbc:CompanyID                    [starts-with(upper-case(normalize-space(.)), 'LU')]">
+         <assert id="PEPPOL-COMMON-R058"
+                 flag="warning"
+                 test="matches(upper-case(normalize-space(.)), '^LU[0-9]{8}$') and u:mod89-LU_VAT(.)">
+        [PEPPOL-COMMON-R058]-Luxembourg VAT number MUST be stated in the correct format.
+      </assert>	
+	     </rule>
    </pattern>
     <pattern xmlns:ns2="http://www.schematron-quickfix.com/validator/process">
       <let name="clMimeCode"
