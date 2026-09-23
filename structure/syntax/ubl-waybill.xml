@@ -1460,7 +1460,7 @@
                   <Reference type="CODE_LIST">UNECERec19</Reference>
                   <Value type="EXAMPLE">4</Value>
                </Element>
-               <Element cardinality="0..1">
+               <Element cardinality="0..n">
                   <Term>cbc:TransportMeansTypeCode</Term>
                   <Name>Transport Means type code</Name>
                   <Description>A code signifying the type of means of transport used in this shipment stage. When the transport mode code is 4, air transport, the code MUST be an air service type code (IATA SSIM), for example "J" for a passenger flight that carries cargo in the hold or "F" for a freighter. </Description>
