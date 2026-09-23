@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    <Title>Document name code, Manifest</Title>
+    <Identifier>UNCL1001_T131</Identifier>
+    <Version>D.17A</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>OpenPeppol</Subset>
+
+    <!-- DRAFT: this is a curated subset of UNCL1001 for use as the codelist behind cbc:ManifestTypeCode
+         in the Manifest profile (Trdm129 / PEPPOL-T131, itself still a placeholder pending OpenPeppol
+         governance confirmation). It follows the same pattern already used elsewhere in this repository
+         for restricting UNCL1001 to the codes relevant for one specific business term (see e.g.
+         UNCL1001_T01.xml, UNCL1001_T121.xml), rather than inventing a new, non-standard codelist.
+         The selection below covers the IMO FAL declaration categories (Cargo Declaration, Crew List,
+         Passenger List, Ship's Stores Declaration) plus the customs/commercial manifest variants already
+         defined in UNCL1001. It should be reviewed and confirmed with stakeholders before being finalised. -->
+
+    <Code>
+        <Id>85</Id>
+        <Name>Customs manifest</Name>
+        <Description>Message/document identifying a customs manifest. The document itemises a list of cargo prepared by shipping companies from bills of lading and presented to customs for formal report of cargo.</Description>
+    </Code>
+    <Code>
+        <Id>87</Id>
+        <Name>General cargo summary manifest report</Name>
+        <Description>A document code to indicate that the message being transmitted is summary manifest information for general cargo.</Description>
+    </Code>
+    <Code>
+        <Id>250</Id>
+        <Name>Crew list declaration</Name>
+        <Description>Declaration regarding crew members aboard the conveyance. Equivalent to IMO FAL 5, Crew List.</Description>
+    </Code>
+    <Code>
+        <Id>745</Id>
+        <Name>Passenger list</Name>
+        <Description>Declaration to Customs regarding passengers aboard the conveyance; equivalent to IMO FAL 6.</Description>
+    </Code>
+    <Code>
+        <Id>785</Id>
+        <Name>Cargo manifest</Name>
+        <Description>Listing of goods comprising the cargo carried in a means of transport or in a transport-unit. The cargo manifest gives the commercial particulars of the goods, such as transport document numbers, consignors, consignees, shipping marks, number and kind of packages and descriptions and quantities of the goods.</Description>
+    </Code>
+    <Code>
+        <Id>786</Id>
+        <Name>Freight manifest</Name>
+        <Description>Document/message containing the same information as a cargo manifest, and additional details on freight amounts, charges, etc.</Description>
+    </Code>
+    <Code>
+        <Id>788</Id>
+        <Name>Container manifest (unit packing list)</Name>
+        <Description>Document/message specifying the contents of particular freight containers or other transport units, prepared by the party responsible for their loading into the container or unit.</Description>
+    </Code>
+    <Code>
+        <Id>799</Id>
+        <Name>Ship's stores declaration</Name>
+        <Description>Declaration to Customs regarding the contents of the ship's stores (equivalent to IMO FAL 3), i.e. goods intended for consumption by passengers/crew on board vessels, aircraft or trains, whether or not sold or landed; goods necessary for operation/maintenance of conveyance, including fuel/lubricants, excluding spare parts/equipment (IMO).</Description>
+    </Code>
+    <Code>
+        <Id>833</Id>
+        <Name>Cargo declaration (departure)</Name>
+        <Description>Generic term, sometimes referred to as Freight declaration, applied to the documents providing the particulars required by the Customs concerning the cargo (freight) carried by commercial means of transport (CCC).</Description>
+    </Code>
+    <Code>
+        <Id>933</Id>
+        <Name>Cargo declaration (arrival)</Name>
+        <Description>Generic term, sometimes referred to as Freight declaration, applied to the documents providing the particulars required by the Customs concerning the cargo (freight) carried by commercial means of transport (CCC).</Description>
+    </Code>
+
+</CodeList>

@@ -1,7 +1,7 @@
 [[identification]]
 = Document identification
 
-The Manifest is identified by the Document ID (`cbc:ID`) on header level. In addition, the type of Manifest can be expressed both as a code (`cbc:ManifestTypeCode`) and as free text (`cbc:ManifestType`), for example to distinguish a road cargo manifest from a passenger manifest.
+The Manifest is identified by the Document ID (`cbc:ID`) on header level. In addition, the type of Manifest can be expressed both as a code (`cbc:ManifestTypeCode`) and as free text (`cbc:ManifestType`), for example to distinguish a road cargo manifest from a passenger manifest. `cbc:ManifestTypeCode` draws its values from a curated subset of the standard UNCL1001 "Document name code" list (`UNCL1001_T131`, DRAFT), covering the IMO FAL categories (cargo manifest, crew list, passenger list, ship's/aircraft's stores declaration) and related customs manifest codes, rather than a bespoke codelist.
 
 Example:
 [source, xml, indent=0]

@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ubl:Manifest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Manifest-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<?DocumentTerm Manifest?>
+	<?Property key="sch:prefix" PEPPOL-T131?>
+	<?Property key="sch:identifier" T131-basic?>
+	<!-- DRAFT: Trdm131 (Manifest) and the PEPPOL-T131 rule prefix used throughout this file are placeholder
+	     identifiers. They have not yet been confirmed by OpenPeppol governance and must be verified/registered
+	     before this profile is published. -->
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:manifest:1<?Rule PEPPOL-T131-R001?>
+	</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1
+		<?Description Identifies the BII profile or business process context in which the transaction appears.?>
+		<?Rule PEPPOL-T131-R002?>
+	</cbc:ProfileID>
+	<cbc:ID>MAN23-44044-1</cbc:ID>
+	<cbc:IssueDate>2026-09-23<?Description The date when this version of the Manifest is issued. Format = "YYYY-MM-DD". ?>
+	</cbc:IssueDate>
+	<cbc:IssueTime>09:30:00+02:00<?Description The time when this version of the Manifest is issued. Format = "hh:mm:ss". ?>
+		<?Rule PEPPOL-T131-R003?>
+		<?Cardinality 1..1?>
+	</cbc:IssueTime>
+	<cbc:ManifestTypeCode>785
+		<?Name Manifest type code ?>
+		<?Description A code signifying the type of Manifest, e.g. cargo manifest, crew list, passenger list or ship's/aircraft's stores declaration. Must be part of UNCL1001 (restricted to the subset relevant for Manifest - see structure/codelist/UNCL1001_T131.xml). ?>
+		<?Cardinality 0..1?>
+		<?CodeList UNCL1001_T131?>
+		<!-- DRAFT: UNCL1001_T131 is a curated subset of the standard UNCL1001 "Document name code" list,
+		     covering the IMO FAL categories (Cargo Declaration/Manifest, Crew List, Passenger List,
+		     Ship's Stores Declaration) plus related customs/commercial manifest codes. This follows the
+		     established pattern used elsewhere in this repository for restricting UNCL1001 to a
+		     business-term-specific subset (cf. UNCL1001_T01.xml, UNCL1001_T121.xml), rather than inventing
+		     a new, non-standard codelist. 785 = "Cargo manifest". Not yet formally reviewed/registered. -->
+	</cbc:ManifestTypeCode>
+	<cbc:ManifestType>Cargo Manifest
+		<?Name Manifest type ?>
+		<?Description The type of Manifest expressed as free text, used when the type cannot be, or is not, expressed by ManifestTypeCode. ?>
+		<?Cardinality 0..1?>
+	</cbc:ManifestType>
+	<cbc:VersionID>1
+		<?Name Version ?>
+		<?Description The version of this Manifest. Used for maintaining updated versions of the same Manifest. ?>
+		<?Cardinality 0..1?>
+	</cbc:VersionID>
+	<cbc:AdValoremIndicator>false
+		<?Name Ad valorem indicator ?>
+		<?Description An indication that the goods declared in this Manifest are subject to an ad valorem duty, i.e. a duty calculated as a percentage of the declared value of the goods (true), or not (false). ?>
+		<?Cardinality 0..1?>
+	</cbc:AdValoremIndicator>
+	<cbc:DeclaredCarriageValueAmount currencyID="EUR">125000
+		<?Name Declared carriage value amount ?>
+		<?Description The value of the goods declared for carriage. Used as the basis for calculating any ad valorem duty when AdValoremIndicator is true. ?>
+		<?Cardinality 0..1?>
+	</cbc:DeclaredCarriageValueAmount>
+	<cac:SendingLogisticsOperatorParty>
+		<?Name Sending Logistics Operator party ?>
+		<?Description The party issuing the Manifest. Normally the Logistics Operator that operates, or arranges the operation of, the means of transport (vessel, aircraft, truck or wagon) that the Manifest describes. ?>
+		<?Cardinality 1..1?>
+		<cbc:EndpointID schemeID="0212">0108023-3
+			<?Name Endpoint ID ?>
+			<?Description An identifier for the end point of the routing service for the Sending Logistics Operator party (e.g., EAN Location Number, GLN). ?>
+			<?Cardinality 1..1?>
+			<?schemeID-usage Mandatory?>
+			<?schemeID-CodeList eas?>
+			<?Rule PEPPOL-T131-R004?>
+		</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<?Name Sending Logistics Operator identification ?>
+			<?Description An identifier for the Sending Logistics Operator party. ?>
+			<?Cardinality 0..1?>
+			<cbc:ID schemeID="0212">0108023-3
+				<?Name ID ?>
+				<?Description The ID used for identification.?>
+				<?schemeID-CodeList ICD?>
+				<?schemeID-usage Optional?>
+				<?Cardinality 1..1?>
+			</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<?Name Party name ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Finnair Oyj
+				<?Name Sending Logistics Operator party name?>
+				<?Description The name of the Sending Logistics Operator party.?>
+			</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<?Name Postal address ?>
+			<?Description The postal address of the Sending Logistics Operator party.?>
+			<?Cardinality 0..1?>
+			<cbc:StreetName>Tietotie 9
+				<?Name Address line 1 ?>
+				<?Description The main address line in a postal address usually the street name and number. ?>
+				<?Cardinality 0..1?>
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName> Cargo terminal 2
+				<?Name Address line 2?>
+				<?Cardinality 0..1?>
+				<?Description An additional address line in a postal address that can be used to give further details supplementing the main line. ?>
+			</cbc:AdditionalStreetName>
+			<cbc:CityName>Vantaa
+				<?Name City ?>
+				<?Description The common name of the city where the postal address is. ?>
+				<?Cardinality 0..1?>
+			</cbc:CityName>
+			<cbc:PostalZone>01530
+				<?Name Post code ?>
+				<?Description The identifier for an addressable group of properties according to the relevant national postal service. ?>
+				<?Cardinality 0..1?>
+			</cbc:PostalZone>
+			<cbc:CountrySubentity>Uusimaa
+				<?Name Country subdivision ?>
+				<?Description For specifying a region, county, state, province etc. within a country by using text. ?>
+				<?Cardinality 0..1?>
+			</cbc:CountrySubentity>
+			<cac:Country>
+				<?Name Country ?>
+				<?Description The country of the address ?>
+				<?Cardinality 1..1?>
+				<cbc:IdentificationCode>FI
+					<?Name Country code ?>
+					<?Cardinality 1..1?>
+					<?CodeList ISO3166?>
+					<?Description A code that identifies the country, according to ISO 3166-1 alpha-2. ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<?Name Party legal entity ?>
+			<?Cardinality 1..1?>
+			<cbc:RegistrationName>Finnair Oyj
+				<?Name Sending Logistics Operator party name ?>
+				<?Description The name of the Sending Logistics Operator party.?>
+				<?Cardinality 1..1?>
+			</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0212">0108023-3
+				<?Name Sending Logistics Operator parties legal registration ID ?>
+				<?Description The official identifier of the party as registered with the relevant fiscal authority. ?>
+				<?Cardinality 0..1?>
+				<?schemeID-Name Scheme identifier ?>
+				<?schemeID-Description The identification scheme identifier of the Sending Logistics Operator legal registration identifier ?>
+				<?schemeID-Usage optional?>
+				<?schemeID-CodeList ICD?>
+			</cbc:CompanyID>
+		</cac:PartyLegalEntity>
+		<cac:Contact>
+			<?Name Contact ?>
+			<?Description The contact of the Sending Logistics Operator party. ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Marja Laine
+				<?Name Contact name ?>
+				<?Description The contact name. ?>
+				<?Cardinality 0..1?>
+			</cbc:Name>
+			<cbc:Telephone>+358 9 818 81
+				<?Name Contact telephone number ?>
+				<?Description The phone number of the contact. ?>
+				<?Cardinality 0..1?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>cargo@finnair.example
+				<?Name Contact email address ?>
+				<?Description The electronic mail of the contact. ?>
+				<?Cardinality 0..1?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:SendingLogisticsOperatorParty>
+	<cac:AuthorityParty>
+		<?Name Authority party ?>
+		<?Description A public body (e.g. customs, port state control, terminal control) that requires this Manifest before, during or after a journey, in order to control cargo, crew and/or passengers. ?>
+		<?Cardinality 0..1?>
+		<cbc:EndpointID schemeID="0212">0245439-5
+			<?Name Endpoint ID ?>
+			<?Description An identifier for the end point of the routing service for the Authority party (e.g., EAN Location Number, GLN). ?>
+			<?Cardinality 1..1?>
+			<?schemeID-usage Mandatory?>
+			<?schemeID-CodeList eas?>
+			<?Rule PEPPOL-T131-R005?>
+		</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<?Name Authority party identification ?>
+			<?Description An identifier for the Authority party. ?>
+			<?Cardinality 0..1?>
+			<cbc:ID schemeID="0212">0245439-5
+				<?schemeID-CodeList ICD?>
+				<?schemeID-usage Optional?>
+				<?Cardinality 1..1?>
+			</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<?Name Party name ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Finnish Customs (Tulli)
+				<?Name Authority party name?>
+				<?Description The name of the Authority party. ?>
+			</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<?Name Postal address ?>
+			<?Description The postal address of the Authority.?>
+			<?Cardinality 0..1?>
+			<cbc:StreetName>Tekniikantie 13
+				<?Name Address line 1 ?>
+				<?Description The main address line in a postal address usually the street name and number. ?>
+				<?Cardinality 0..1?>
+			</cbc:StreetName>
+			<cbc:CityName>Helsinki
+				<?Name City ?>
+				<?Description The common name of the city where the postal address is. ?>
+				<?Cardinality 0..1?>
+			</cbc:CityName>
+			<cbc:PostalZone>00052
+				<?Name Post code ?>
+				<?Description The identifier for an addressable group of properties according to the relevant national postal service. ?>
+				<?Cardinality 0..1?>
+			</cbc:PostalZone>
+			<cac:Country>
+				<?Name Country ?>
+				<?Description The country of the address ?>
+				<?Cardinality 1..1?>
+				<cbc:IdentificationCode>FI
+					<?Name Country code ?>
+					<?Cardinality 1..1?>
+					<?CodeList ISO3166?>
+					<?Description A code that identifies the country, according to ISO 3166-1 alpha-2. ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:Contact>
+			<?Name Contact?>
+			<?Description The contact of the Authority party.?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Mikko Virtanen
+				<?Name Contact name?>
+				<?Description The contact name.?>
+				<?Cardinality 0..1?>
+			</cbc:Name>
+			<cbc:Telephone>+358 295 5200
+				<?Name Contact telephone number?>
+				<?Description The phone number of the contact.?>
+				<?Cardinality 0..1?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>cargo.control@tulli.example
+				<?Name Contact email address?>
+				<?Description The electronic mail of the contact.?>
+				<?Cardinality 0..1?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:AuthorityParty>
+	<cac:ConsignorParty>
+		<?Name Consignor Party ?>
+		<?Description The party sending the goods described in the Manifest's shipment. ?>
+		<?Cardinality 0..1?>
+		<cac:PartyIdentification>
+			<?Name Consignor identification ?>
+			<?Description An identifier for the Consignor party. ?>
+			<?Cardinality 0..1?>
+			<cbc:ID schemeID="0088">7300010000001
+				<?Name ID ?>
+				<?Description The ID used for identification.?>
+				<?schemeID-CodeList ICD?>
+				<?schemeID-usage Optional?>
+				<?Cardinality 1..1?>
+				<?Rule PEPPOL-T131-R006?>
+			</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<?Name Party name ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Novo Nordisk Pharmatech A/S
+				<?Name Consignor party name?>
+				<?Description The name of the Consignor party.?>
+				<?Rule PEPPOL-T131-R006?>
+			</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<?Name Postal address ?>
+			<?Description The postal address of the Consignor party.?>
+			<?Cardinality 0..1?>
+			<cbc:StreetName>Københavnsvej 216
+				<?Name Address line 1 ?>
+				<?Description The main address line in a postal address usually the street name and number. ?>
+				<?Cardinality 0..1?>
+			</cbc:StreetName>
+			<cbc:CityName>Køge
+				<?Name City ?>
+				<?Description The common name of the city where the postal address is. ?>
+				<?Cardinality 0..1?>
+			</cbc:CityName>
+			<cbc:PostalZone>4600
+				<?Name Post code ?>
+				<?Description The identifier for an addressable group of properties according to the relevant national postal service. ?>
+				<?Cardinality 0..1?>
+			</cbc:PostalZone>
+			<cac:Country>
+				<?Name Country ?>
+				<?Description The country of the address ?>
+				<?Cardinality 1..1?>
+				<cbc:IdentificationCode>DK
+					<?Name Country code ?>
+					<?Cardinality 1..1?>
+					<?CodeList ISO3166?>
+					<?Description A code that identifies the country, according to ISO 3166-1 alpha-2. ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<?Name Party legal entity ?>
+			<?Cardinality 1..1?>
+			<cbc:RegistrationName>Novo Nordisk Pharmatech A/S
+				<?Name Consignor party name ?>
+				<?Description The name of the Consignor party.?>
+				<?Cardinality 1..1?>
+			</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0198">DK13246149
+				<?Name Consignor parties legal registration ID ?>
+				<?Description The official identifier of the party as registered with the relevant fiscal authority. ?>
+				<?Cardinality 0..1?>
+				<?schemeID-Name Scheme identifier ?>
+				<?schemeID-Description The identification scheme identifier of the Consignor legal registration identifier ?>
+				<?schemeID-Usage optional?>
+				<?schemeID-CodeList ICD?>
+			</cbc:CompanyID>
+		</cac:PartyLegalEntity>
+		<cac:Contact>
+			<?Name Contact ?>
+			<?Description The contact of the Consignor party. ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Anders Holm
+				<?Name Contact name ?>
+				<?Description The contact name. ?>
+				<?Cardinality 0..1?>
+			</cbc:Name>
+			<cbc:Telephone>+45 46 55 00 00
+				<?Name Contact telephone number ?>
+				<?Description The phone number of the contact. ?>
+				<?Cardinality 0..1?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>logistics@pharmatech.example
+				<?Name Contact email address ?>
+				<?Description The electronic mail of the contact. ?>
+				<?Cardinality 0..1?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:ConsignorParty>
+	<cac:ConsigneeParty>
+		<?Name Consignee Party ?>
+		<?Description The party to whom the goods described in the Manifest's shipment are addressed. ?>
+		<?Cardinality 0..1?>
+		<cac:PartyIdentification>
+			<?Name Consignee identification ?>
+			<?Description An identifier for the Consignee party. ?>
+			<?Cardinality 0..1?>
+			<cbc:ID schemeID="0212">0108023-1
+				<?Name ID ?>
+				<?Description The ID used for identification.?>
+				<?schemeID-CodeList ICD?>
+				<?schemeID-usage Optional?>
+				<?Cardinality 1..1?>
+				<?Rule PEPPOL-T131-R007?>
+			</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<?Name Party name ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>HUS Hospital
+				<?Name Consignee party name?>
+				<?Description The name of the Consignee party.?>
+				<?Rule PEPPOL-T131-R007?>
+			</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<?Name Postal address ?>
+			<?Description The postal address of the Consignee party.?>
+			<?Cardinality 0..1?>
+			<cbc:StreetName>Topeliuksenkatu 5
+				<?Name Address line 1 ?>
+				<?Description The main address line in a postal address usually the street name and number. ?>
+				<?Cardinality 0..1?>
+			</cbc:StreetName>
+			<cac:AddressLine>
+				<?Name Address line ?>
+				<?Cardinality 0..1?>
+				<cbc:Line>Goods reception, dock 3
+					<?Name Address line 3 ?>
+					<?Description An additional address line in an address that can be used to give further details supplementing the main line. ?>
+					<?Cardinality 1..1?>
+				</cbc:Line>
+			</cac:AddressLine>
+			<cbc:CityName>Helsinki
+				<?Name City ?>
+				<?Description The common name of the city where the postal address is. ?>
+				<?Cardinality 0..1?>
+			</cbc:CityName>
+			<cbc:PostalZone>00260
+				<?Name Post code ?>
+				<?Description The identifier for an addressable group of properties according to the relevant national postal service. ?>
+				<?Cardinality 0..1?>
+			</cbc:PostalZone>
+			<cac:Country>
+				<?Name Country ?>
+				<?Description The country of the address ?>
+				<?Cardinality 1..1?>
+				<cbc:IdentificationCode>FI
+					<?Name Country code ?>
+					<?Cardinality 1..1?>
+					<?CodeList ISO3166?>
+					<?Description A code that identifies the country, according to ISO 3166-1 alpha-2. ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:Contact>
+			<?Name Contact ?>
+			<?Description The contact of the Consignee party. ?>
+			<?Cardinality 0..1?>
+			<cbc:Name>Liisa Mäkinen
+				<?Name Contact name ?>
+				<?Description The contact name. ?>
+				<?Cardinality 0..1?>
+			</cbc:Name>
+			<cbc:Telephone>+358 9 4711 0000
+				<?Name Contact telephone number ?>
+				<?Description The phone number of the contact. ?>
+				<?Cardinality 0..1?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>goods.reception@hus.example
+				<?Name Contact email address ?>
+				<?Description The electronic mail of the contact. ?>
+				<?Cardinality 0..1?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:ConsigneeParty>
+	<cac:CrewPerson>
+		<?Name Crew Person ?>
+		<?Description A crew member of the means of transport (vessel or aircraft) that the Manifest describes. Repeat for each crew member declared. ?>
+		<?Cardinality 0..n?>
+		<cbc:FirstName>Peter
+			<?Name First name ?>
+			<?Description The crew member's first name. ?>
+			<?Cardinality 0..1?>
+		</cbc:FirstName>
+		<cbc:FamilyName>Poulsen
+			<?Name Family name ?>
+			<?Description The crew member's family name. ?>
+			<?Cardinality 0..1?>
+		</cbc:FamilyName>
+		<cbc:JobTitle>Captain
+			<?Name Job title ?>
+			<?Description The crew member's job title / function on board (e.g. Captain, First Officer, Purser). ?>
+			<?Cardinality 0..1?>
+		</cbc:JobTitle>
+		<cbc:NationalityCode>DK
+			<?Name Nationality code ?>
+			<?Description A code that identifies the crew member's nationality, according to ISO 3166-1 alpha-2. ?>
+			<?Cardinality 0..1?>
+			<?CodeList ISO3166?>
+		</cbc:NationalityCode>
+		<cac:IdentityDocumentReference>
+			<?Name Identity Document Reference?>
+			<?Description Reference to an identity document for the crew member, e.g. a passport or seaman's book.?>
+			<?Cardinality 1..1?>
+			<cbc:ID>45642323
+				<?Name ID?>
+				<?Description The ID of the identity document, for instance a passport number.?>
+				<?Cardinality 1..1?>
+			</cbc:ID>
+			<cbc:DocumentType>Passport
+				<?Name Document Type?>
+				<?Description The type of identity document.?>
+				<?Cardinality 1..1?>
+			</cbc:DocumentType>
+		</cac:IdentityDocumentReference>
+	</cac:CrewPerson>
+	<cac:PassengerPerson>
+		<?Name Passenger Person ?>
+		<?Description A passenger carried on the means of transport (vessel or aircraft) that the Manifest describes. Repeat for each passenger declared. ?>
+		<?Cardinality 0..n?>
+		<cbc:FirstName>Anna
+			<?Name First name ?>
+			<?Description The passenger's first name. ?>
+			<?Cardinality 0..1?>
+		</cbc:FirstName>
+		<cbc:FamilyName>Korhonen
+			<?Name Family name ?>
+			<?Description The passenger's family name. ?>
+			<?Cardinality 0..1?>
+		</cbc:FamilyName>
+		<cbc:NationalityCode>FI
+			<?Name Nationality code ?>
+			<?Description A code that identifies the passenger's nationality, according to ISO 3166-1 alpha-2. ?>
+			<?Cardinality 0..1?>
+			<?CodeList ISO3166?>
+		</cbc:NationalityCode>
+		<cac:IdentityDocumentReference>
+			<?Name Identity Document Reference?>
+			<?Description Reference to an identity document for the passenger, e.g. a passport.?>
+			<?Cardinality 1..1?>
+			<cbc:ID>PB1234567
+				<?Name ID?>
+				<?Description The ID of the identity document, for instance a passport number.?>
+				<?Cardinality 1..1?>
+			</cbc:ID>
+			<cbc:DocumentType>Passport
+				<?Name Document Type?>
+				<?Description The type of identity document.?>
+				<?Cardinality 1..1?>
+			</cbc:DocumentType>
+		</cac:IdentityDocumentReference>
+	</cac:PassengerPerson>
+	<cac:Shipment>
+		<?Name Shipment ?>
+		<?Description The shipment carried by the means of transport that this Manifest describes. Kept lean by design: the Manifest does not repeat the full goods-item level detail of the underlying Waybill, it summarizes the consignment and refers to the Waybill for full detail (see cac:DocumentReference below). ?>
+		<?Cardinality 0..1?>
+		<cbc:ID schemeID="GSIN">73500538500000019
+			<?Description Identifies the shipment described by this Manifest. If this ID is in the GSIN format, it should be indicated in the attribute @schemeID.?>
+			<?Cardinality 0..1?>
+			<?schemeID-usage optional?>
+			<?schemeID-CodeList ShipmentIDType?>
+		</cbc:ID>
+		<cbc:Information>Pharmaceutical shipment, keep refrigerated
+			<?Description Free-form text pertinent to this shipment, conveying information that is not contained explicitly in other structures.?>
+			<?Cardinality 0..1?>
+		</cbc:Information>
+		<cac:Consignment>
+			<?Name Consignment information ?>
+			<?Description The consignment, forming part of the shipment described by this Manifest, that this Manifest declares. ?>
+			<?Cardinality 1..1?>
+			<cbc:ID schemeID="GINC">735005233GS1TRANSPORT000001
+				<?Name Consignment identifier ?>
+				<?Description If this ID is in the GINC format, it should be indicated in the attribute @schemeID. This is the same consignment as declared on the referenced Waybill.?>
+				<?Cardinality 1..1?>
+				<?schemeID-usage optional?>
+				<?schemeID-CodeList ConsignmentIDType?>
+			</cbc:ID>
+			<cbc:ConsigneeAssignedID>1234
+				<?Name Consignee Consignment identifier ?>
+				<?Description Consignment identifier assigned by the consignee?>
+				<?Cardinality 0..1?>
+			</cbc:ConsigneeAssignedID>
+			<cbc:ConsignorAssignedID>5678
+				<?Name Consignor Consignment identifier ?>
+				<?Description Consignment identifier assigned by the consignor?>
+				<?Cardinality 0..1?>
+			</cbc:ConsignorAssignedID>
+			<cbc:GrossWeightMeasure unitCode="KGM">320
+				<?Name Consignment gross weight ?>
+				<?Description The gross weight of the consignment as declared on the Manifest. Should match the gross weight declared on the referenced Waybill.?>
+				<?Cardinality 0..1?>
+			</cbc:GrossWeightMeasure>
+			<cbc:GrossVolumeMeasure unitCode="MTQ">1.2
+				<?Name Consignment gross volume ?>
+				<?Description The gross volume of the consignment as declared on the Manifest. Should match the gross volume declared on the referenced Waybill.?>
+				<?Cardinality 0..1?>
+			</cbc:GrossVolumeMeasure>
+			<cbc:TotalTransportHandlingUnitQuantity unitCode="EA">1
+				<?Name Total number of transport handling units ?>
+				<?Description The total number of transport handling units in this consignment?>
+				<?Cardinality 0..1?>
+			</cbc:TotalTransportHandlingUnitQuantity>
+			<cac:DocumentReference>
+				<?Name Waybill reference?>
+				<?Description Reference to the Waybill that covers this consignment in full detail (parties, goods items, hazardous items, transport handling units etc.). This reference is mandatory for every Consignment declared in a Manifest under this profile: the Manifest itself is deliberately kept lean and relies on the Waybill for the complete data set. ?>
+				<?Cardinality 1..1?>
+				<?Rule PEPPOL-T131-R009?>
+				<!-- Business rule PEPPOL-T131-R009 (DRAFT): at least one cac:DocumentReference under
+				     cac:Shipment/cac:Consignment SHALL be present and SHALL identify, via
+				     cbc:DocumentTypeCode (UNCL1001), the Waybill that covers this consignment. Use code
+				     700 "Waybill" for a generic/non-transport-mode-specific reference, or the more
+				     specific transport-mode code where known: 703 "House waybill", 710 "Sea waybill",
+				     740 "Air waybill", 741 "Master air waybill", 743 "Substitute air waybill". This
+				     replaces the earlier, incorrect use of code 270 in rules/snippets/manifest/snippet-1.xml,
+				     which should be corrected to keep the profile documentation and this syntax file consistent. -->
+				<cbc:ID>KHN23-44044-1 <?Name Identity of the reference?>
+					<?Description The cbc:ID of the referenced Waybill.?>
+				</cbc:ID>
+				<cbc:DocumentTypeCode>740 <?Name Document type code?>
+					<?Description The type of reference. Must be part of UNCL1001. Use the transport-mode-specific
+						code where known (e.g. 740 Air waybill, 710 Sea waybill, 703 House waybill), or the
+						generic 700 Waybill otherwise.?>
+					<?Cardinality 1..1?>
+					<?CodeList UNCL1001?>
+				</cbc:DocumentTypeCode>
+				<cbc:DocumentType>Air waybill
+					<?Name Document type?>
+					<?Description The type of reference that cannot be specified by a code alone.?>
+					<?Cardinality 0..1?>
+				</cbc:DocumentType>
+			</cac:DocumentReference>
+		</cac:Consignment>
+	</cac:Shipment>
+	<cac:DocumentReference>
+		<?Name Additional document reference?>
+		<?Description Reference to other documents relevant for this Manifest as a whole (as opposed to a single consignment), for example a Master Air Waybill covering several house waybills/consignments consolidated on the same flight. ?>
+		<?Cardinality 0..n?>
+		<cbc:ID> MAWB-2026-000451 <?Name Identity of the reference?>
+			<?Description The reference number of the added document?>
+		</cbc:ID>
+		<cbc:DocumentTypeCode> 741 <?Name Document type code?>
+			<?Description The type of reference. Must be part of UNCL1001.?>
+			<?Cardinality 0..1?>
+			<?CodeList UNCL1001?>
+		</cbc:DocumentTypeCode>
+		<cbc:DocumentType> Master air waybill
+			<?Name Document type?>
+			<?Description The type of reference that cannot be specified by a code?>
+			<?Cardinality 0..1?>
+		</cbc:DocumentType>
+		<cac:Attachment>
+			<?Name Attachment?>
+			<?Cardinality 0..1?>
+			<?Description Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.?>
+			<cac:ExternalReference>
+				<?Name External reference?>
+				<?Description A reference to an attached document that is external to the document(s) being exchanged.?>
+				<?Cardinality 0..1?>
+				<cbc:URI> https://docs.finnair.example/mawb/2026-000451.pdf <?Name Address to internet resource?>
+					<?Description The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.?>
+				</cbc:URI>
+			</cac:ExternalReference>
+		</cac:Attachment>
+	</cac:DocumentReference>
+	<cac:DocumentDistribution>
+		<?Name Document distribution?>
+		<?Description Describes the distribution of a copy of this Manifest to an interested party other than the Authority named in cac:AuthorityParty, e.g. the cargo terminal handling the shipment. ?>
+		<?Cardinality 0..n?>
+		<cbc:ID>DD-2026-000451
+			<?Name Identifier ?>
+			<?Description An identifier for this document distribution.?>
+			<?Cardinality 0..1?>
+		</cbc:ID>
+		<cbc:DistributionType>Copy for cargo terminal file
+			<?Name Distribution type?>
+			<?Description The type of distribution, expressed as text.?>
+			<?Cardinality 0..n?>
+		</cbc:DistributionType>
+		<cac:Party>
+			<?Name Party ?>
+			<?Description The interested party who receives a copy of this Manifest.?>
+			<?Cardinality 1..1?>
+			<cac:PartyName>
+				<?Name Party name ?>
+				<?Cardinality 0..1?>
+				<cbc:Name>Finavia Cargo Terminal
+					<?Name Party name?>
+					<?Description The name of the receiving party.?>
+				</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<?Name Postal address ?>
+				<?Description The postal address of the receiving party.?>
+				<?Cardinality 0..1?>
+				<cbc:CityName>Vantaa
+					<?Name City ?>
+					<?Description The common name of the city where the postal address is. ?>
+					<?Cardinality 0..1?>
+				</cbc:CityName>
+				<cac:Country>
+					<?Name Country ?>
+					<?Description The country of the address ?>
+					<?Cardinality 1..1?>
+					<cbc:IdentificationCode>FI
+						<?Name Country code ?>
+						<?Cardinality 1..1?>
+						<?CodeList ISO3166?>
+						<?Description A code that identifies the country, according to ISO 3166-1 alpha-2. ?>
+					</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:Contact>
+				<?Name Contact?>
+				<?Description The contact of the receiving party.?>
+				<?Cardinality 0..1?>
+				<cbc:Name>Jukka Nieminen
+					<?Name Contact name?>
+					<?Description The contact name.?>
+					<?Cardinality 0..1?>
+				</cbc:Name>
+				<cbc:ElectronicMail>cargo.terminal@finavia.example
+					<?Name Contact email address?>
+					<?Description The electronic mail of the contact.?>
+					<?Cardinality 0..1?>
+				</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:DocumentDistribution>
+	<cac:Signature>
+		<?Name Signature?>
+		<?Description A signature applied to this Manifest, typically by the Authority to confirm receipt/acceptance, or by the Sending Logistics Operator to attest the declaration. ?>
+		<?Cardinality 0..n?>
+		<cbc:ID>SIG-2026-000451
+			<?Name Identifier Signature ?>
+			<?Description The Id of the Signature.?>
+			<?Cardinality 1..1?>
+		</cbc:ID>
+		<cbc:ValidationDate>2026-09-23
+			<?Description The date upon which this signature was verified. Format = "YYYY-MM-DD". ?>
+			<?Cardinality 0..1?>
+		</cbc:ValidationDate>
+		<cbc:ValidationTime>09:35:00+02:00<?Description The local time at which this signature was verified. Format = "hh:mm:ss". ?>
+			<?Cardinality 0..1?>
+		</cbc:ValidationTime>
+		<cac:SignatoryParty>
+			<?Name Signature party ?>
+			<?Description The party signing this Manifest. ?>
+			<?Cardinality 1..1?>
+			<cac:PartyName>
+				<?Name Party name ?>
+				<?Cardinality 0..1?>
+				<cbc:Name>Finnish Customs (Tulli)
+					<?Name Signature party name?>
+					<?Description The name of the Signature party.?>
+				</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<?Name Postal address ?>
+				<?Description The postal address of the Signature Party?>
+				<?Cardinality 0..1?>
+				<cbc:StreetName>Tekniikantie 13
+					<?Name Address line 1 ?>
+					<?Description The main address line in a postal address usually the street name and number. ?>
+					<?Cardinality 0..1?>
+				</cbc:StreetName>
+				<cbc:CityName>Helsinki
+					<?Name City ?>
+					<?Description The common name of the city where the postal address is. ?>
+					<?Cardinality 0..1?>
+				</cbc:CityName>
+				<cac:Country>
+					<?Name Country ?>
+					<?Description The country for the address?>
+					<?Cardinality 1..1?>
+					<cbc:IdentificationCode>FI
+						<?Name Country code ?>
+						<?Cardinality 1..1?>
+						<?CodeList ISO3166?>
+						<?Description A code that identifies the country, according to ISO 3166-1 alpha-2. ?>
+					</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:Person>
+				<?Name Person ?>
+				<?Description The person who applies the signature on behalf of the Signature Party. ?>
+				<?Cardinality 0..1?>
+				<cbc:FirstName>Mikko
+					<?Name First Name ?>
+					<?Description The person's first name. ?>
+					<?Cardinality 0..1?>
+				</cbc:FirstName>
+				<cbc:FamilyName>Virtanen
+					<?Name Family Name ?>
+					<?Description The person's family name. ?>
+					<?Cardinality 1..1?>
+				</cbc:FamilyName>
+				<cbc:JobTitle>Customs Officer
+					<?Name Job title ?>
+					<?Description The person's job title. ?>
+					<?Cardinality 0..1?>
+				</cbc:JobTitle>
+			</cac:Person>
+		</cac:SignatoryParty>
+		<cac:DigitalSignatureAttachment>
+			<?Name Attachment?>
+			<?Cardinality 1..1?>
+			<?Description The actual signature included or referred to as an attachment.?>
+			<cac:ExternalReference>
+				<?Name External reference?>
+				<?Description A reference to an attached document that is external to the document(s) being exchanged.?>
+				<?Cardinality 0..1?>
+				<cbc:URI> https://docs.tulli.example/signature/2026-000451.pdf <?Name Address to internet resource?>
+					<?Description The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.?>
+				</cbc:URI>
+			</cac:ExternalReference>
+		</cac:DigitalSignatureAttachment>
+	</cac:Signature>
+</ubl:Manifest>
