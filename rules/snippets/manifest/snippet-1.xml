@@ -8,7 +8,7 @@
 	<cbc:IssueDate>2026-09-09</cbc:IssueDate>
 	<cbc:IssueTime>08:15:00+02:00</cbc:IssueTime>
 	<!-- tag::manifest-type[] -->
-	<cbc:ManifestTypeCode>ROA</cbc:ManifestTypeCode>
+	<cbc:ManifestTypeCode>785</cbc:ManifestTypeCode>
 	<cbc:ManifestType>Road cargo manifest</cbc:ManifestType>
 	<!-- end::manifest-type[] -->
 	<!-- tag::sending-logistics-operator-party[] -->
@@ -98,19 +98,28 @@
 	<!-- tag::shipment[] -->
 	<cac:Shipment>
 		<cbc:ID schemeID="GSIN">1234567890123456789012</cbc:ID>
-		<cbc:GrossWeightMeasure unitCode="KGM">2400</cbc:GrossWeightMeasure>
-		<cbc:GrossVolumeMeasure unitCode="MTQ">18</cbc:GrossVolumeMeasure>
-		<cbc:TotalGoodsItemQuantity>2</cbc:TotalGoodsItemQuantity>
-		<cbc:TotalTransportHandlingUnitQuantity>2</cbc:TotalTransportHandlingUnitQuantity>
+		<cac:Consignment>
+			<cbc:ID schemeID="GINC">1234567890123456789012001</cbc:ID>
+			<cbc:GrossWeightMeasure unitCode="KGM">2400</cbc:GrossWeightMeasure>
+			<cbc:GrossVolumeMeasure unitCode="MTQ">18</cbc:GrossVolumeMeasure>
+			<cbc:TotalTransportHandlingUnitQuantity>2</cbc:TotalTransportHandlingUnitQuantity>
+			<!-- tag::document-reference[] -->
+			<!--
+			The Waybill covering this consignment is referenced here, nested under
+			cac:Shipment/cac:Consignment/cac:DocumentReference, rather than at the top level of the
+			Manifest. This keeps the Manifest lean: full shipment detail (parties, goods items,
+			hazardous items, transport handling units, etc.) stays on the Waybill, and each
+			consignment declared on the Manifest simply points back to the Waybill that covers it.
+			-->
+			<cac:DocumentReference>
+				<cbc:ID>WB-2026-000451</cbc:ID>
+				<cbc:DocumentTypeCode>700</cbc:DocumentTypeCode>
+				<cbc:DocumentType>Waybill</cbc:DocumentType>
+			</cac:DocumentReference>
+			<!-- end::document-reference[] -->
+		</cac:Consignment>
 	</cac:Shipment>
 	<!-- end::shipment[] -->
-	<!-- tag::document-reference[] -->
-	<cac:DocumentReference>
-		<cbc:ID>WB-2026-000451</cbc:ID>
-		<cbc:DocumentTypeCode>270</cbc:DocumentTypeCode>
-		<cbc:DocumentType>Waybill</cbc:DocumentType>
-	</cac:DocumentReference>
-	<!-- end::document-reference[] -->
 	<!-- tag::document-distribution[] -->
 	<cac:DocumentDistribution>
 		<cac:Party>
