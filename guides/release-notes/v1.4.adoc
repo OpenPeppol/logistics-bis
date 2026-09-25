@@ -1,40 +1,33 @@
-= Version 1.3
+= Version 1.4
 [horizontal]
-Release date::	May 2026
-				* Date of member review:	2026-03-17
-				* Date of publication:		2026-05-18
-				* Mandatory to use from:	2026-08-24
+Release date::	Nov 2026
+				* Date of member review:	2026-09-25
+				* Date of publication:		2026-11-25
+				* Mandatory to use from:	2027-03-25
 
 [NOTE]
 ====
-This is the second release update of the Peppol Logistics standard. This time only minor changes are included.
+This is the fourth release update of the Peppol Logistics standard. This time only minor changes are included.
 ====
 
 == New BIS documents 
-* No BIS documents are added in this release.
+* Manifest With Aplication Response.
 
 == Updated BIS documents
-* PEPPOL BIS Advanced Despatch Advice Only 1.5
-** In section 6.1 explanation of a new value - "Notification only" is added in 6.1.5. Small changes in 6.1.2 too.
-** A new section to explain the use of DespatchAdviceTypeCode is inserted between 6.1 and 6.2 resulting in a re-sequencing of the sections. The new section becomes 6.2 and the sections after that will be increased by 0.1.
-** An explanation of how to specify a vehicle's maximum load capacity is added in section 6.6.2.
-** In section 7.5 an example of using the Waste Declaration Number is added.
-** A new section - 7.8 - is added to explain how the new Product Trace ID should be used.
+* Peppol Waybill 1.1
+**
 
 == New Transactions
 * No transactions are added in this release.
 
 == Updated Transactions
+* Peppol Waybill 1.1 (T125)
+
 * Advanced Despatch Advice (T120)
-** Uppdated description of Despatch Supplier Party Name
-** Added cac:AdditionalItemProperty to cac:ItemInstance
-** Added cbc:ProductTraceID with attribute @schemeID and a link to codelist ProductTraceIDschemeID to cac:ItemInstance
-* Weight Statement (T122)
-** LoC Rule Peppol-T122-R002 added for cbc:ProfileID 
+** the Licence plate delimiter in cbc:LicensePlateID is changed from semicolon (;) to hashtag (#) in line with the Peppol standard delimiter character.
 
 == Updated Codelists
-* DocumentStatusCode updated with new value "55 - Notification only" to be used when changes are sent after invoicing and the changes have no impact on the invoice.
-* DespatchAdviceTypeCode updated with new values 101, 102, 112, 203,204, 205, 206, 207, 208, 209, 210, 211, 303, 304, 305, 308, 309, 310, 311.
+* Code Lists are updated to PoAC version.
 
 == New Codelists
 * Codelist ProductTraceIDschemeIDCode is added.
@@ -47,19 +40,9 @@ This is the second release update of the Peppol Logistics standard. This time on
 * No LoC rules are added in this release.
 
 == Changes Use-case Example files.
-* AdvancedDespatchAdviceCase_08.xml - added instance of cac:AdditionalItemProperty with WasteDeclarationNumber as the ID and the value of the property.
-* AdvancedDespatchAdviceCase_08.xml - changed instance of cac:AdditionalItemProperty for TreatmentCode to show a "sub-code" - a second code.
-* AdvancedDespatchAdviceCase_09.xml - added instance of cac:AdditionalItemProperty with WasteDeclarationNumber as the ID and the value of the property.
-* AdvancedDespatchAdviceCase_09.xml - changed instance of cac:AdditionalItemProperty for TreatmentCode to show a "sub-code" - a second code.
+* No changes to Use-case Example files in this release.
 
 == Request For Change (RFC) that are included/solved in Release 1.3
-* LLC-27 Align Despatch Advice ItemInstance with Advanced Despatch Advice.
-* LLC-28 Clarification of Non-Invoicing Updates and New DocumentStatusCode.
-* LLC-29 Enhance DespatchAdviceTypeCode for Use Case Identification.
-* LLC-30 Add Waste Declaration Number as an AdditionalItemProperty in the Advanced Despatch Advice.
-* LLC-31 Add possibility to ad sub-treatment codes in existing AdditionalItemProperty already used with treatment codes for waste.
-* LLC-32 Wrong description of Despatch Supplier Party in advanced despatch advice.
-* LLC-33 Add BIS description for max load.
-* LLC-34 LoC Rule is missing for ProfileID on Weight Statement.
-* LLC-35 LoC Rule PEPPOL-T120-R002 is referenced to the wrong element in Advanced Despatch Advice.
-
+* LLC-36 Licence plate delimiter update
+* LLC-21  Update of Peppol Waybill – Support for the Copenhagen airport case.
+* 

@@ -985,9 +985,9 @@
 					<?Name Road transport?>
 					<?Description Description of a truck or a vehicle transporting the goods. Use only if Transport mode code is set to road transport?>
 					<?Cardinality 0..1?>
-					<cbc:LicensePlateID> DK-DF10958;DK-DF23314 
+					<cbc:LicensePlateID> DK-DF10958#DK-DF23314 
 						<?Name License plate identifier transport?>
-						<?Description The licence plate(s) identifying the vehicle seperated by semicolon if there are more than one. ?>
+						<?Description The licence plate(s) identifying the vehicle seperated by # if there are more than one. ?>
 						<?Cardinality 1..1?>
 					</cbc:LicensePlateID>
 				</cac:RoadTransport>
