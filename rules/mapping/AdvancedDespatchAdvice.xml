@@ -7033,10 +7033,10 @@
                <Data ss:Type="String">License plate identifier transport</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The licence plate(s) identifying the vehicle seperated by semicolon if there are more than one.</Data>
+               <Data ss:Type="String">The licence plate(s) identifying the vehicle seperated by # if there are more than one.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">DK-DF10958;DK-DF23314</Data>
+               <Data ss:Type="String">DK-DF10958#DK-DF23314</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:Shipment/cac:ShipmentStage/cac:TransportMeans/cac:RoadTransport/cbc:LicensePlateID</Data>
