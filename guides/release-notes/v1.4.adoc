@@ -11,14 +11,14 @@ This is the fourth release update of the Peppol Logistics standard. This time on
 ====
 
 == New BIS documents 
-* Manifest With Aplication Response.
+* Manifest With Application Response 0.1
 
 == Updated BIS documents
 * Peppol Waybill 1.1
-**
+
 
 == New Transactions
-* No transactions are added in this release.
+* * Manifest transaction (T131) is added to the Peppol Logistics BIS. The Manifest transaction is used to provide information about the contents of a shipment, including details about the items being shipped, their quantities, and any relevant documentation. This transaction is particularly useful for customs and regulatory compliance, as it allows for the electronic submission of shipment information to authorities.
 
 == Updated Transactions
 * Peppol Waybill 1.1 (T125)
@@ -30,7 +30,7 @@ This is the fourth release update of the Peppol Logistics standard. This time on
 * Code Lists are updated to PoAC version.
 
 == New Codelists
-* Codelist ProductTraceIDschemeIDCode is added.
+* No new codelists are added in this release.
 
 == Updated Rules
 * No LoC rules are changed in this version.
