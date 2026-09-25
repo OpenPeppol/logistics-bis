@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ubl:Manifest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Manifest-2"
+              xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+              xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+   <cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:manifest:1</cbc:CustomizationID>
+   <cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1</cbc:ProfileID>
+   <cbc:ID>MAN23-44044-1</cbc:ID>
+   <cbc:IssueDate>2026-09-23</cbc:IssueDate>
+   <cbc:IssueTime>09:30:00+02:00</cbc:IssueTime>
+   <cbc:ManifestTypeCode>785</cbc:ManifestTypeCode>
+   <cbc:ManifestType>Cargo Manifest</cbc:ManifestType>
+   <cbc:VersionID>1</cbc:VersionID>
+   <cbc:AdValoremIndicator>false</cbc:AdValoremIndicator>
+   <cbc:DeclaredCarriageValueAmount currencyID="EUR">125000</cbc:DeclaredCarriageValueAmount>
+   <cac:SendingLogisticsOperatorParty>
+      <cbc:EndpointID schemeID="0212">0108023-3</cbc:EndpointID>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0212">0108023-3</cbc:ID>    
+      </cac:PartyIdentification>
+      <cac:PartyName>
+         <cbc:Name>Finnair Oyj</cbc:Name>    
+      </cac:PartyName>
+      <cac:PostalAddress>
+         <cbc:StreetName>Tietotie 9</cbc:StreetName>
+         <cbc:AdditionalStreetName>Cargo terminal 2</cbc:AdditionalStreetName>
+         <cbc:CityName>Vantaa</cbc:CityName>
+         <cbc:PostalZone>01530</cbc:PostalZone>
+         <cbc:CountrySubentity>Uusimaa</cbc:CountrySubentity>
+         <cac:Country>
+            <cbc:IdentificationCode>FI</cbc:IdentificationCode>      
+         </cac:Country>    
+      </cac:PostalAddress>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Finnair Oyj</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0212">0108023-3</cbc:CompanyID>    
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+         <cbc:Name>Marja Laine</cbc:Name>
+         <cbc:Telephone>+358 9 818 81</cbc:Telephone>
+         <cbc:ElectronicMail>cargo@finnair.example</cbc:ElectronicMail>    
+      </cac:Contact>  
+   </cac:SendingLogisticsOperatorParty>
+   <cac:AuthorityParty>
+      <cbc:EndpointID schemeID="0212">0245439-5</cbc:EndpointID>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0212">0245439-5</cbc:ID>    
+      </cac:PartyIdentification>
+      <cac:PartyName>
+         <cbc:Name>Finnish Customs (Tulli)</cbc:Name>    
+      </cac:PartyName>
+      <cac:PostalAddress>
+         <cbc:StreetName>Tekniikantie 13</cbc:StreetName>
+         <cbc:CityName>Helsinki</cbc:CityName>
+         <cbc:PostalZone>00052</cbc:PostalZone>
+         <cac:Country>
+            <cbc:IdentificationCode>FI</cbc:IdentificationCode>      
+         </cac:Country>    
+      </cac:PostalAddress>
+      <cac:Contact>
+         <cbc:Name>Mikko Virtanen</cbc:Name>
+         <cbc:Telephone>+358 295 5200</cbc:Telephone>
+         <cbc:ElectronicMail>cargo.control@tulli.example</cbc:ElectronicMail>    
+      </cac:Contact>  
+   </cac:AuthorityParty>
+   <cac:ConsignorParty>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0088">7300010000001</cbc:ID>    
+      </cac:PartyIdentification>
+      <cac:PartyName>
+         <cbc:Name>Novo Nordisk Pharmatech A/S</cbc:Name>    
+      </cac:PartyName>
+      <cac:PostalAddress>
+         <cbc:StreetName>Københavnsvej 216</cbc:StreetName>
+         <cbc:CityName>Køge</cbc:CityName>
+         <cbc:PostalZone>4600</cbc:PostalZone>
+         <cac:Country>
+            <cbc:IdentificationCode>DK</cbc:IdentificationCode>      
+         </cac:Country>    
+      </cac:PostalAddress>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Novo Nordisk Pharmatech A/S</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0198">DK13246149</cbc:CompanyID>    
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+         <cbc:Name>Anders Holm</cbc:Name>
+         <cbc:Telephone>+45 46 55 00 00</cbc:Telephone>
+         <cbc:ElectronicMail>logistics@pharmatech.example</cbc:ElectronicMail>    
+      </cac:Contact>  
+   </cac:ConsignorParty>
+   <cac:ConsigneeParty>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0212">0108023-1</cbc:ID>    
+      </cac:PartyIdentification>
+      <cac:PartyName>
+         <cbc:Name>HUS Hospital</cbc:Name>    
+      </cac:PartyName>
+      <cac:PostalAddress>
+         <cbc:StreetName>Topeliuksenkatu 5</cbc:StreetName>
+         <cac:AddressLine>
+            <cbc:Line>Goods reception, dock 3</cbc:Line>      
+         </cac:AddressLine>
+         <cbc:CityName>Helsinki</cbc:CityName>
+         <cbc:PostalZone>00260</cbc:PostalZone>
+         <cac:Country>
+            <cbc:IdentificationCode>FI</cbc:IdentificationCode>      
+         </cac:Country>    
+      </cac:PostalAddress>
+      <cac:Contact>
+         <cbc:Name>Liisa Mäkinen</cbc:Name>
+         <cbc:Telephone>+358 9 4711 0000</cbc:Telephone>
+         <cbc:ElectronicMail>goods.reception@hus.example</cbc:ElectronicMail>    
+      </cac:Contact>  
+   </cac:ConsigneeParty>
+   <cac:CrewPerson>
+      <cbc:FirstName>Peter</cbc:FirstName>
+      <cbc:FamilyName>Poulsen</cbc:FamilyName>
+      <cbc:JobTitle>Captain</cbc:JobTitle>
+      <cbc:NationalityCode>DK</cbc:NationalityCode>
+      <cac:IdentityDocumentReference>
+         <cbc:ID>45642323</cbc:ID>
+         <cbc:DocumentType>Passport</cbc:DocumentType>    
+      </cac:IdentityDocumentReference>  
+   </cac:CrewPerson>
+   <cac:PassengerPerson>
+      <cbc:FirstName>Anna</cbc:FirstName>
+      <cbc:FamilyName>Korhonen</cbc:FamilyName>
+      <cbc:NationalityCode>FI</cbc:NationalityCode>
+      <cac:IdentityDocumentReference>
+         <cbc:ID>PB1234567</cbc:ID>
+         <cbc:DocumentType>Passport</cbc:DocumentType>    
+      </cac:IdentityDocumentReference>  
+   </cac:PassengerPerson>
+   <cac:Shipment>
+      <cbc:ID schemeID="GSIN">73500538500000019</cbc:ID>
+      <cbc:Information>Pharmaceutical shipment, keep refrigerated</cbc:Information>
+      <cac:Consignment>
+         <cbc:ID schemeID="GINC">735005233GS1TRANSPORT000001</cbc:ID>
+         <cbc:ConsigneeAssignedID>1234</cbc:ConsigneeAssignedID>
+         <cbc:ConsignorAssignedID>5678</cbc:ConsignorAssignedID>
+         <cbc:GrossWeightMeasure unitCode="KGM">320</cbc:GrossWeightMeasure>
+         <cbc:GrossVolumeMeasure unitCode="MTQ">1.2</cbc:GrossVolumeMeasure>
+         <cbc:TotalTransportHandlingUnitQuantity unitCode="EA">1</cbc:TotalTransportHandlingUnitQuantity>
+         <cac:DocumentReference>
+            <cbc:ID>KHN23-44044-1</cbc:ID>
+            <cbc:DocumentTypeCode>740</cbc:DocumentTypeCode>
+            <cbc:DocumentType>Air waybill</cbc:DocumentType>      
+         </cac:DocumentReference>    
+      </cac:Consignment>  
+   </cac:Shipment>
+   <cac:DocumentReference>
+      <cbc:ID>MAWB-2026-000451</cbc:ID>
+      <cbc:DocumentTypeCode>741</cbc:DocumentTypeCode>
+      <cbc:DocumentType>Master air waybill</cbc:DocumentType>
+      <cac:Attachment>
+         <cac:ExternalReference>
+            <cbc:URI>https://docs.finnair.example/mawb/2026-000451.pdf</cbc:URI>      
+         </cac:ExternalReference>    
+      </cac:Attachment>  
+   </cac:DocumentReference>
+   <cac:DocumentDistribution>
+      <cbc:ID>DD-2026-000451</cbc:ID>
+      <cbc:DistributionType>Copy for cargo terminal file</cbc:DistributionType>
+      <cac:Party>
+         <cac:PartyName>
+            <cbc:Name>Finavia Cargo Terminal</cbc:Name>      
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:CityName>Vantaa</cbc:CityName>
+            <cac:Country>
+               <cbc:IdentificationCode>FI</cbc:IdentificationCode>        
+            </cac:Country>      
+         </cac:PostalAddress>
+         <cac:Contact>
+            <cbc:Name>Jukka Nieminen</cbc:Name>
+            <cbc:ElectronicMail>cargo.terminal@finavia.example</cbc:ElectronicMail>      
+         </cac:Contact>    
+      </cac:Party>  
+   </cac:DocumentDistribution>
+   <cac:Signature>
+      <cbc:ID>SIG-2026-000451</cbc:ID>
+      <cbc:ValidationDate>2026-09-23</cbc:ValidationDate>
+      <cbc:ValidationTime>09:35:00+02:00</cbc:ValidationTime>
+      <cac:SignatoryParty>
+         <cac:PartyName>
+            <cbc:Name>Finnish Customs (Tulli)</cbc:Name>      
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName>Tekniikantie 13</cbc:StreetName>
+            <cbc:CityName>Helsinki</cbc:CityName>
+            <cac:Country>
+               <cbc:IdentificationCode>FI</cbc:IdentificationCode>        
+            </cac:Country>      
+         </cac:PostalAddress>
+         <cac:Person>
+            <cbc:FirstName>Mikko</cbc:FirstName>
+            <cbc:FamilyName>Virtanen</cbc:FamilyName>
+            <cbc:JobTitle>Customs Officer</cbc:JobTitle>      
+         </cac:Person>    
+      </cac:SignatoryParty>
+      <cac:DigitalSignatureAttachment>
+         <cac:ExternalReference>
+            <cbc:URI>https://docs.tulli.example/signature/2026-000451.pdf</cbc:URI>      
+         </cac:ExternalReference>    
+      </cac:DigitalSignatureAttachment>  
+   </cac:Signature>
+</ubl:Manifest>

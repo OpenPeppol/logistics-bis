@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+   <Term>Manifest</Term>
+   <Property key="sch:prefix">PEPPOL-T131</Property>
+   <Property key="sch:identifier">T131-basic</Property>
+   <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Manifest-2</Namespace>
+   <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+   <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+   <Document>
+      <Term>ubl:Manifest</Term>
+	
+	
+	
+	
+	     <Element>
+         <Term>cbc:CustomizationID</Term>
+         <Name>Specification identification</Name>
+         <Description>Identifies the specification of content and rules that apply to the
+				transaction.</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-002</Reference>
+         <Reference type="RULE">PEPPOL-T131-R001</Reference>
+         <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:manifest:1</Value>
+      </Element>
+	     <Element>
+         <Term>cbc:ProfileID</Term>
+         <Name>Business process type identifier</Name>
+         <Description>Identifies the BII profile or business process context in which the transaction appears.</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-001</Reference>
+         <Reference type="RULE">PEPPOL-T131-R002</Reference>
+         <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1</Value>
+      </Element>
+	     <Element>
+         <Term>cbc:ID</Term>
+         <Name>Document identifier</Name>
+         <Description>An transaction instance must contain an identifier. The identifier enables
+				positive referencing the document instance for various purposes including
+				referencing between transactions that are part of the same process.</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-003</Reference>
+         <Value type="EXAMPLE">MAN23-44044-1</Value>
+      </Element>
+	     <Element>
+         <Term>cbc:IssueDate</Term>
+         <Name>Dispatch advice issue date</Name>
+         <Description>The date when this version of the Manifest is issued. Format = "YYYY-MM-DD". </Description>
+         <DataType>Date</DataType>
+         <Reference type="BUSINESS_TERM">tir16-004</Reference>
+         <Value type="EXAMPLE">2026-09-23</Value>
+      </Element>
+	     <Element cardinality="1..1">
+         <Term>cbc:IssueTime</Term>
+         <Name>Dispatch advice issue time</Name>
+         <Description>The time when this version of the Manifest is issued. Format = "hh:mm:ss". </Description>
+         <DataType>Time</DataType>
+         <Reference type="BUSINESS_TERM">tir16-005</Reference>
+         <Reference type="RULE">PEPPOL-T131-R003</Reference>
+         <Value type="EXAMPLE">09:30:00+02:00</Value>
+      </Element>
+	     <Element cardinality="0..1">
+         <Term>cbc:ManifestTypeCode</Term>
+         <Name>Manifest type code </Name>
+         <Description>A code signifying the type of Manifest, e.g. cargo manifest, crew list, passenger list or ship's/aircraft's stores declaration. Must be part of UNCL1001 (restricted to the subset relevant for Manifest - see structure/codelist/UNCL1001_T131.xml). </Description>
+         <Reference type="CODE_LIST">UNCL1001_T131</Reference>
+         <Value type="EXAMPLE">785</Value>
+      </Element>
+	     <Element cardinality="0..1">
+         <Term>cbc:ManifestType</Term>
+         <Name>Manifest type </Name>
+         <Description>The type of Manifest expressed as free text, used when the type cannot be, or is not, expressed by ManifestTypeCode. </Description>
+         <Value type="EXAMPLE">Cargo Manifest</Value>
+      </Element>
+	     <Element cardinality="0..1">
+         <Term>cbc:VersionID</Term>
+         <Name>Version </Name>
+         <Description>The version of this Manifest. Used for maintaining updated versions of the same Manifest. </Description>
+         <Value type="EXAMPLE">1</Value>
+      </Element>
+	     <Element cardinality="0..1">
+         <Term>cbc:AdValoremIndicator</Term>
+         <Name>Ad valorem indicator </Name>
+         <Description>An indication that the goods declared in this Manifest are subject to an ad valorem duty, i.e. a duty calculated as a percentage of the declared value of the goods (true), or not (false). </Description>
+         <Value type="EXAMPLE">false</Value>
+      </Element>
+	     <Element cardinality="0..1">
+         <Term>cbc:DeclaredCarriageValueAmount</Term>
+         <Name>Declared carriage value amount </Name>
+         <Description>The value of the goods declared for carriage. Used as the basis for calculating any ad valorem duty when AdValoremIndicator is true. </Description>
+         <Attribute>
+            <Term>currencyID</Term>
+            <Value type="EXAMPLE">EUR</Value>
+         </Attribute>
+         <Value type="EXAMPLE">125000</Value>
+      </Element>
+	     <Element cardinality="1..1">
+         <Term>cac:SendingLogisticsOperatorParty</Term>
+         <Name>Sending Logistics Operator party </Name>
+         <Description>The party issuing the Manifest. Normally the Logistics Operator that operates, or arranges the operation of, the means of transport (vessel, aircraft, truck or wagon) that the Manifest describes. </Description>
+         <Element cardinality="1..1">
+            <Term>cbc:EndpointID</Term>
+            <Name>Endpoint ID </Name>
+            <Description>An identifier for the end point of the routing service for the Sending Logistics Operator party (e.g., EAN Location Number, GLN). </Description>
+            <Reference type="RULE">PEPPOL-T131-R004</Reference>
+            <Attribute usage="Mandatory">
+               <Term>schemeID</Term>
+               <Reference type="CODE_LIST">eas</Reference>
+               <Value type="EXAMPLE">0212</Value>
+            </Attribute>
+            <Value type="EXAMPLE">0108023-3</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyIdentification</Term>
+            <Name>Sending Logistics Operator identification </Name>
+            <Description>An identifier for the Sending Logistics Operator party. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:ID</Term>
+               <Name>ID </Name>
+               <Description>The ID used for identification.</Description>
+               <Attribute usage="Optional">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0212</Value>
+               </Attribute>
+               <Value type="EXAMPLE">0108023-3</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyName</Term>
+            <Name>Party name </Name>
+            <Element>
+               <Term>cbc:Name</Term>
+               <Name>Sending Logistics Operator party name</Name>
+               <Description>The name of the Sending Logistics Operator party.</Description>
+               <Value type="EXAMPLE">Finnair Oyj</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PostalAddress</Term>
+            <Name>Postal address </Name>
+            <Description>The postal address of the Sending Logistics Operator party.</Description>
+            <Element cardinality="0..1">
+               <Term>cbc:StreetName</Term>
+               <Name>Address line 1 </Name>
+               <Description>The main address line in a postal address usually the street name and number. </Description>
+               <Value type="EXAMPLE">Tietotie 9</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:AdditionalStreetName</Term>
+               <Name>Address line 2</Name>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. </Description>
+               <Value type="EXAMPLE">Cargo terminal 2</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CityName</Term>
+               <Name>City </Name>
+               <Description>The common name of the city where the postal address is. </Description>
+               <Value type="EXAMPLE">Vantaa</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:PostalZone</Term>
+               <Name>Post code </Name>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service. </Description>
+               <Value type="EXAMPLE">01530</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CountrySubentity</Term>
+               <Name>Country subdivision </Name>
+               <Description>For specifying a region, county, state, province etc. within a country by using text. </Description>
+               <Value type="EXAMPLE">Uusimaa</Value>
+            </Element>
+            <Element cardinality="1..1">
+               <Term>cac:Country</Term>
+               <Name>Country </Name>
+               <Description>The country of the address </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:IdentificationCode</Term>
+                  <Name>Country code </Name>
+                  <Description>A code that identifies the country, according to ISO 3166-1 alpha-2. </Description>
+                  <Reference type="CODE_LIST">ISO3166</Reference>
+                  <Value type="EXAMPLE">FI</Value>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="1..1">
+            <Term>cac:PartyLegalEntity</Term>
+            <Name>Party legal entity </Name>
+            <Element cardinality="1..1">
+               <Term>cbc:RegistrationName</Term>
+               <Name>Sending Logistics Operator party name </Name>
+               <Description>The name of the Sending Logistics Operator party.</Description>
+               <Value type="EXAMPLE">Finnair Oyj</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CompanyID</Term>
+               <Name>Sending Logistics Operator parties legal registration ID </Name>
+               <Description>The official identifier of the party as registered with the relevant fiscal authority. </Description>
+               <Attribute>
+                  <Term>schemeID</Term>
+                  <Name>Scheme identifier </Name>
+                  <Description>The identification scheme identifier of the Sending Logistics Operator legal registration identifier </Description>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0212</Value>
+               </Attribute>
+               <Value type="EXAMPLE">0108023-3</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:Contact</Term>
+            <Name>Contact </Name>
+            <Description>The contact of the Sending Logistics Operator party. </Description>
+            <Element cardinality="0..1">
+               <Term>cbc:Name</Term>
+               <Name>Contact name </Name>
+               <Description>The contact name. </Description>
+               <Value type="EXAMPLE">Marja Laine</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Telephone</Term>
+               <Name>Contact telephone number </Name>
+               <Description>The phone number of the contact. </Description>
+               <Value type="EXAMPLE">+358 9 818 81</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:ElectronicMail</Term>
+               <Name>Contact email address </Name>
+               <Description>The electronic mail of the contact. </Description>
+               <Value type="EXAMPLE">cargo@finnair.example</Value>
+            </Element>
+         </Element>
+      </Element>
+	     <Element cardinality="0..1">
+         <Term>cac:AuthorityParty</Term>
+         <Name>Authority party </Name>
+         <Description>A public body (e.g. customs, port state control, terminal control) that requires this Manifest before, during or after a journey, in order to control cargo, crew and/or passengers. </Description>
+         <Element cardinality="1..1">
+            <Term>cbc:EndpointID</Term>
+            <Name>Endpoint ID </Name>
+            <Description>An identifier for the end point of the routing service for the Authority party (e.g., EAN Location Number, GLN). </Description>
+            <Reference type="RULE">PEPPOL-T131-R005</Reference>
+            <Attribute usage="Mandatory">
+               <Term>schemeID</Term>
+               <Reference type="CODE_LIST">eas</Reference>
+               <Value type="EXAMPLE">0212</Value>
+            </Attribute>
+            <Value type="EXAMPLE">0245439-5</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyIdentification</Term>
+            <Name>Authority party identification </Name>
+            <Description>An identifier for the Authority party. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:ID</Term>
+               <Attribute usage="Optional">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0212</Value>
+               </Attribute>
+               <Value type="EXAMPLE">0245439-5</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyName</Term>
+            <Name>Party name </Name>
+            <Element>
+               <Term>cbc:Name</Term>
+               <Name>Authority party name</Name>
+               <Description>The name of the Authority party. </Description>
+               <Value type="EXAMPLE">Finnish Customs (Tulli)</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PostalAddress</Term>
+            <Name>Postal address </Name>
+            <Description>The postal address of the Authority.</Description>
+            <Element cardinality="0..1">
+               <Term>cbc:StreetName</Term>
+               <Name>Address line 1 </Name>
+               <Description>The main address line in a postal address usually the street name and number. </Description>
+               <Value type="EXAMPLE">Tekniikantie 13</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CityName</Term>
+               <Name>City </Name>
+               <Description>The common name of the city where the postal address is. </Description>
+               <Value type="EXAMPLE">Helsinki</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:PostalZone</Term>
+               <Name>Post code </Name>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service. </Description>
+               <Value type="EXAMPLE">00052</Value>
+            </Element>
+            <Element cardinality="1..1">
+               <Term>cac:Country</Term>
+               <Name>Country </Name>
+               <Description>The country of the address </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:IdentificationCode</Term>
+                  <Name>Country code </Name>
+                  <Description>A code that identifies the country, according to ISO 3166-1 alpha-2. </Description>
+                  <Reference type="CODE_LIST">ISO3166</Reference>
+                  <Value type="EXAMPLE">FI</Value>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:Contact</Term>
+            <Name>Contact</Name>
+            <Description>The contact of the Authority party.</Description>
+            <Element cardinality="0..1">
+               <Term>cbc:Name</Term>
+               <Name>Contact name</Name>
+               <Description>The contact name.</Description>
+               <Value type="EXAMPLE">Mikko Virtanen</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Telephone</Term>
+               <Name>Contact telephone number</Name>
+               <Description>The phone number of the contact.</Description>
+               <Value type="EXAMPLE">+358 295 5200</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:ElectronicMail</Term>
+               <Name>Contact email address</Name>
+               <Description>The electronic mail of the contact.</Description>
+               <Value type="EXAMPLE">cargo.control@tulli.example</Value>
+            </Element>
+         </Element>
+      </Element>
+	     <Element cardinality="0..1">
+         <Term>cac:ConsignorParty</Term>
+         <Name>Consignor Party </Name>
+         <Description>The party sending the goods described in the Manifest's shipment. </Description>
+         <Element cardinality="0..1">
+            <Term>cac:PartyIdentification</Term>
+            <Name>Consignor identification </Name>
+            <Description>An identifier for the Consignor party. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:ID</Term>
+               <Name>ID </Name>
+               <Description>The ID used for identification.</Description>
+               <Reference type="RULE">PEPPOL-T131-R006</Reference>
+               <Attribute usage="Optional">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0088</Value>
+               </Attribute>
+               <Value type="EXAMPLE">7300010000001</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyName</Term>
+            <Name>Party name </Name>
+            <Element>
+               <Term>cbc:Name</Term>
+               <Name>Consignor party name</Name>
+               <Description>The name of the Consignor party.</Description>
+               <Reference type="RULE">PEPPOL-T131-R006</Reference>
+               <Value type="EXAMPLE">Novo Nordisk Pharmatech A/S</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PostalAddress</Term>
+            <Name>Postal address </Name>
+            <Description>The postal address of the Consignor party.</Description>
+            <Element cardinality="0..1">
+               <Term>cbc:StreetName</Term>
+               <Name>Address line 1 </Name>
+               <Description>The main address line in a postal address usually the street name and number. </Description>
+               <Value type="EXAMPLE">Københavnsvej 216</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CityName</Term>
+               <Name>City </Name>
+               <Description>The common name of the city where the postal address is. </Description>
+               <Value type="EXAMPLE">Køge</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:PostalZone</Term>
+               <Name>Post code </Name>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service. </Description>
+               <Value type="EXAMPLE">4600</Value>
+            </Element>
+            <Element cardinality="1..1">
+               <Term>cac:Country</Term>
+               <Name>Country </Name>
+               <Description>The country of the address </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:IdentificationCode</Term>
+                  <Name>Country code </Name>
+                  <Description>A code that identifies the country, according to ISO 3166-1 alpha-2. </Description>
+                  <Reference type="CODE_LIST">ISO3166</Reference>
+                  <Value type="EXAMPLE">DK</Value>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="1..1">
+            <Term>cac:PartyLegalEntity</Term>
+            <Name>Party legal entity </Name>
+            <Element cardinality="1..1">
+               <Term>cbc:RegistrationName</Term>
+               <Name>Consignor party name </Name>
+               <Description>The name of the Consignor party.</Description>
+               <Value type="EXAMPLE">Novo Nordisk Pharmatech A/S</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CompanyID</Term>
+               <Name>Consignor parties legal registration ID </Name>
+               <Description>The official identifier of the party as registered with the relevant fiscal authority. </Description>
+               <Attribute>
+                  <Term>schemeID</Term>
+                  <Name>Scheme identifier </Name>
+                  <Description>The identification scheme identifier of the Consignor legal registration identifier </Description>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0198</Value>
+               </Attribute>
+               <Value type="EXAMPLE">DK13246149</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:Contact</Term>
+            <Name>Contact </Name>
+            <Description>The contact of the Consignor party. </Description>
+            <Element cardinality="0..1">
+               <Term>cbc:Name</Term>
+               <Name>Contact name </Name>
+               <Description>The contact name. </Description>
+               <Value type="EXAMPLE">Anders Holm</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Telephone</Term>
+               <Name>Contact telephone number </Name>
+               <Description>The phone number of the contact. </Description>
+               <Value type="EXAMPLE">+45 46 55 00 00</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:ElectronicMail</Term>
+               <Name>Contact email address </Name>
+               <Description>The electronic mail of the contact. </Description>
+               <Value type="EXAMPLE">logistics@pharmatech.example</Value>
+            </Element>
+         </Element>
+      </Element>
+	     <Element cardinality="0..1">
+         <Term>cac:ConsigneeParty</Term>
+         <Name>Consignee Party </Name>
+         <Description>The party to whom the goods described in the Manifest's shipment are addressed. </Description>
+         <Element cardinality="0..1">
+            <Term>cac:PartyIdentification</Term>
+            <Name>Consignee identification </Name>
+            <Description>An identifier for the Consignee party. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:ID</Term>
+               <Name>ID </Name>
+               <Description>The ID used for identification.</Description>
+               <Reference type="RULE">PEPPOL-T131-R007</Reference>
+               <Attribute usage="Optional">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0212</Value>
+               </Attribute>
+               <Value type="EXAMPLE">0108023-1</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyName</Term>
+            <Name>Party name </Name>
+            <Element>
+               <Term>cbc:Name</Term>
+               <Name>Consignee party name</Name>
+               <Description>The name of the Consignee party.</Description>
+               <Reference type="RULE">PEPPOL-T131-R007</Reference>
+               <Value type="EXAMPLE">HUS Hospital</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PostalAddress</Term>
+            <Name>Postal address </Name>
+            <Description>The postal address of the Consignee party.</Description>
+            <Element cardinality="0..1">
+               <Term>cbc:StreetName</Term>
+               <Name>Address line 1 </Name>
+               <Description>The main address line in a postal address usually the street name and number. </Description>
+               <Value type="EXAMPLE">Topeliuksenkatu 5</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:AddressLine</Term>
+               <Name>Address line </Name>
+               <Element cardinality="1..1">
+                  <Term>cbc:Line</Term>
+                  <Name>Address line 3 </Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+                  <Value type="EXAMPLE">Goods reception, dock 3</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CityName</Term>
+               <Name>City </Name>
+               <Description>The common name of the city where the postal address is. </Description>
+               <Value type="EXAMPLE">Helsinki</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:PostalZone</Term>
+               <Name>Post code </Name>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service. </Description>
+               <Value type="EXAMPLE">00260</Value>
+            </Element>
+            <Element cardinality="1..1">
+               <Term>cac:Country</Term>
+               <Name>Country </Name>
+               <Description>The country of the address </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:IdentificationCode</Term>
+                  <Name>Country code </Name>
+                  <Description>A code that identifies the country, according to ISO 3166-1 alpha-2. </Description>
+                  <Reference type="CODE_LIST">ISO3166</Reference>
+                  <Value type="EXAMPLE">FI</Value>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:Contact</Term>
+            <Name>Contact </Name>
+            <Description>The contact of the Consignee party. </Description>
+            <Element cardinality="0..1">
+               <Term>cbc:Name</Term>
+               <Name>Contact name </Name>
+               <Description>The contact name. </Description>
+               <Value type="EXAMPLE">Liisa Mäkinen</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Telephone</Term>
+               <Name>Contact telephone number </Name>
+               <Description>The phone number of the contact. </Description>
+               <Value type="EXAMPLE">+358 9 4711 0000</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:ElectronicMail</Term>
+               <Name>Contact email address </Name>
+               <Description>The electronic mail of the contact. </Description>
+               <Value type="EXAMPLE">goods.reception@hus.example</Value>
+            </Element>
+         </Element>
+      </Element>
+	     <Element cardinality="0..n">
+         <Term>cac:CrewPerson</Term>
+         <Name>Crew Person </Name>
+         <Description>A crew member of the means of transport (vessel or aircraft) that the Manifest describes. Repeat for each crew member declared. </Description>
+         <Element cardinality="0..1">
+            <Term>cbc:FirstName</Term>
+            <Name>First name </Name>
+            <Description>The crew member's first name. </Description>
+            <Value type="EXAMPLE">Peter</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:FamilyName</Term>
+            <Name>Family name </Name>
+            <Description>The crew member's family name. </Description>
+            <Value type="EXAMPLE">Poulsen</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:JobTitle</Term>
+            <Name>Job title </Name>
+            <Description>The crew member's job title / function on board (e.g. Captain, First Officer, Purser). </Description>
+            <Value type="EXAMPLE">Captain</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:NationalityCode</Term>
+            <Name>Nationality code </Name>
+            <Description>A code that identifies the crew member's nationality, according to ISO 3166-1 alpha-2. </Description>
+            <Reference type="CODE_LIST">ISO3166</Reference>
+            <Value type="EXAMPLE">DK</Value>
+         </Element>
+         <Element cardinality="1..1">
+            <Term>cac:IdentityDocumentReference</Term>
+            <Name>Identity Document Reference</Name>
+            <Description>Reference to an identity document for the crew member, e.g. a passport or seaman's book.</Description>
+            <Element cardinality="1..1">
+               <Term>cbc:ID</Term>
+               <Name>ID</Name>
+               <Description>The ID of the identity document, for instance a passport number.</Description>
+               <Value type="EXAMPLE">45642323</Value>
+            </Element>
+            <Element cardinality="1..1">
+               <Term>cbc:DocumentType</Term>
+               <Name>Document Type</Name>
+               <Description>The type of identity document.</Description>
+               <Value type="EXAMPLE">Passport</Value>
+            </Element>
+         </Element>
+      </Element>
+	     <Element cardinality="0..n">
+         <Term>cac:PassengerPerson</Term>
+         <Name>Passenger Person </Name>
+         <Description>A passenger carried on the means of transport (vessel or aircraft) that the Manifest describes. Repeat for each passenger declared. </Description>
+         <Element cardinality="0..1">
+            <Term>cbc:FirstName</Term>
+            <Name>First name </Name>
+            <Description>The passenger's first name. </Description>
+            <Value type="EXAMPLE">Anna</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:FamilyName</Term>
+            <Name>Family name </Name>
+            <Description>The passenger's family name. </Description>
+            <Value type="EXAMPLE">Korhonen</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:NationalityCode</Term>
+            <Name>Nationality code </Name>
+            <Description>A code that identifies the passenger's nationality, according to ISO 3166-1 alpha-2. </Description>
+            <Reference type="CODE_LIST">ISO3166</Reference>
+            <Value type="EXAMPLE">FI</Value>
+         </Element>
+         <Element cardinality="1..1">
+            <Term>cac:IdentityDocumentReference</Term>
+            <Name>Identity Document Reference</Name>
+            <Description>Reference to an identity document for the passenger, e.g. a passport.</Description>
+            <Element cardinality="1..1">
+               <Term>cbc:ID</Term>
+               <Name>ID</Name>
+               <Description>The ID of the identity document, for instance a passport number.</Description>
+               <Value type="EXAMPLE">PB1234567</Value>
+            </Element>
+            <Element cardinality="1..1">
+               <Term>cbc:DocumentType</Term>
+               <Name>Document Type</Name>
+               <Description>The type of identity document.</Description>
+               <Value type="EXAMPLE">Passport</Value>
+            </Element>
+         </Element>
+      </Element>
+	     <Element cardinality="0..1">
+         <Term>cac:Shipment</Term>
+         <Name>Shipment </Name>
+         <Description>The shipment carried by the means of transport that this Manifest describes. Kept lean by design: the Manifest does not repeat the full goods-item level detail of the underlying Waybill, it summarizes the consignment and refers to the Waybill for full detail (see cac:DocumentReference below). </Description>
+         <Element cardinality="0..1">
+            <Term>cbc:ID</Term>
+            <Name>Shipment identifier</Name>
+            <Description>Identifies the shipment described by this Manifest. If this ID is in the GSIN format, it should be indicated in the attribute @schemeID.</Description>
+            <Reference type="BUSINESS_TERM">tir16-038</Reference>
+            <Attribute usage="optional">
+               <Term>schemeID</Term>
+               <Reference type="CODE_LIST">ShipmentIDType</Reference>
+               <Value type="EXAMPLE">GSIN</Value>
+            </Attribute>
+            <Value type="EXAMPLE">73500538500000019</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:Information</Term>
+            <Name>Shipment description</Name>
+            <Description>Free-form text pertinent to this shipment, conveying information that is not contained explicitly in other structures.</Description>
+            <Reference type="BUSINESS_TERM">tir16-039</Reference>
+            <Value type="EXAMPLE">Pharmaceutical shipment, keep refrigerated</Value>
+         </Element>
+         <Element cardinality="1..1">
+            <Term>cac:Consignment</Term>
+            <Name>Consignment information </Name>
+            <Description>The consignment, forming part of the shipment described by this Manifest, that this Manifest declares. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:ID</Term>
+               <Name>Consignment identifier </Name>
+               <Description>If this ID is in the GINC format, it should be indicated in the attribute @schemeID. This is the same consignment as declared on the referenced Waybill.</Description>
+               <Reference type="BUSINESS_TERM">tir16-040</Reference>
+               <Attribute usage="optional">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">ConsignmentIDType</Reference>
+                  <Value type="EXAMPLE">GINC</Value>
+               </Attribute>
+               <Value type="EXAMPLE">735005233GS1TRANSPORT000001</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:ConsigneeAssignedID</Term>
+               <Name>Consignee Consignment identifier </Name>
+               <Description>Consignment identifier assigned by the consignee</Description>
+               <Value type="EXAMPLE">1234</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:ConsignorAssignedID</Term>
+               <Name>Consignor Consignment identifier </Name>
+               <Description>Consignment identifier assigned by the consignor</Description>
+               <Value type="EXAMPLE">5678</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:GrossWeightMeasure</Term>
+               <Name>Consignment gross weight </Name>
+               <Description>The gross weight of the consignment as declared on the Manifest. Should match the gross weight declared on the referenced Waybill.</Description>
+               <Attribute>
+                  <Term>unitCode</Term>
+                  <Value type="EXAMPLE">KGM</Value>
+               </Attribute>
+               <Value type="EXAMPLE">320</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:GrossVolumeMeasure</Term>
+               <Name>Consignment gross volume </Name>
+               <Description>The gross volume of the consignment as declared on the Manifest. Should match the gross volume declared on the referenced Waybill.</Description>
+               <Attribute>
+                  <Term>unitCode</Term>
+                  <Value type="EXAMPLE">MTQ</Value>
+               </Attribute>
+               <Value type="EXAMPLE">1.2</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:TotalTransportHandlingUnitQuantity</Term>
+               <Name>Total number of transport handling units </Name>
+               <Description>The total number of transport handling units in this consignment</Description>
+               <Attribute>
+                  <Term>unitCode</Term>
+                  <Value type="EXAMPLE">EA</Value>
+               </Attribute>
+               <Value type="EXAMPLE">1</Value>
+            </Element>
+            <Element cardinality="1..1">
+               <Term>cac:DocumentReference</Term>
+               <Name>Waybill reference</Name>
+               <Description>Reference to the Waybill that covers this consignment in full detail (parties, goods items, hazardous items, transport handling units etc.). This reference is mandatory for every Consignment declared in a Manifest under this profile: the Manifest itself is deliberately kept lean and relies on the Waybill for the complete data set. </Description>
+               <Reference type="RULE">PEPPOL-T131-R009</Reference>
+               <Element>
+                  <Term>cbc:ID</Term>
+                  <Name>Identity of the reference</Name>
+                  <Description>The cbc:ID of the referenced Waybill.</Description>
+                  <Value type="EXAMPLE">KHN23-44044-1</Value>
+               </Element>
+               <Element cardinality="1..1">
+                  <Term>cbc:DocumentTypeCode</Term>
+                  <Name>Document type code</Name>
+                  <Description>The type of reference. Must be part of UNCL1001. Use the transport-mode-specific
+						code where known (e.g. 740 Air waybill, 710 Sea waybill, 703 House waybill), or the
+						generic 700 Waybill otherwise.</Description>
+                  <Reference type="CODE_LIST">UNCL1001</Reference>
+                  <Value type="EXAMPLE">740</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:DocumentType</Term>
+                  <Name>Document type</Name>
+                  <Description>The type of reference that cannot be specified by a code alone.</Description>
+                  <Value type="EXAMPLE">Air waybill</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+	     <Element cardinality="0..n">
+         <Term>cac:DocumentReference</Term>
+         <Name>Additional document reference</Name>
+         <Description>Reference to other documents relevant for this Manifest as a whole (as opposed to a single consignment), for example a Master Air Waybill covering several house waybills/consignments consolidated on the same flight. </Description>
+         <Element>
+            <Term>cbc:ID</Term>
+            <Name>Identity of the reference</Name>
+            <Description>The reference number of the added document</Description>
+            <Value type="EXAMPLE">MAWB-2026-000451</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:DocumentTypeCode</Term>
+            <Name>Document type code</Name>
+            <Description>The type of reference. Must be part of UNCL1001.</Description>
+            <Reference type="CODE_LIST">UNCL1001</Reference>
+            <Value type="EXAMPLE">741</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:DocumentType</Term>
+            <Name>Document type</Name>
+            <Description>The type of reference that cannot be specified by a code</Description>
+            <Value type="EXAMPLE">Master air waybill</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:Attachment</Term>
+            <Name>Attachment</Name>
+            <Description>Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Description>
+            <Element cardinality="0..1">
+               <Term>cac:ExternalReference</Term>
+               <Name>External reference</Name>
+               <Description>A reference to an attached document that is external to the document(s) being exchanged.</Description>
+               <Element>
+                  <Term>cbc:URI</Term>
+                  <Name>Address to internet resource</Name>
+                  <Description>The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Description>
+                  <Value type="EXAMPLE">https://docs.finnair.example/mawb/2026-000451.pdf</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+	     <Element cardinality="0..n">
+         <Term>cac:DocumentDistribution</Term>
+         <Name>Document distribution</Name>
+         <Description>Describes the distribution of a copy of this Manifest to an interested party other than the Authority named in cac:AuthorityParty, e.g. the cargo terminal handling the shipment. </Description>
+         <Element cardinality="0..1">
+            <Term>cbc:ID</Term>
+            <Name>Identifier </Name>
+            <Description>An identifier for this document distribution.</Description>
+            <Value type="EXAMPLE">DD-2026-000451</Value>
+         </Element>
+         <Element cardinality="0..n">
+            <Term>cbc:DistributionType</Term>
+            <Name>Distribution type</Name>
+            <Description>The type of distribution, expressed as text.</Description>
+            <Value type="EXAMPLE">Copy for cargo terminal file</Value>
+         </Element>
+         <Element cardinality="1..1">
+            <Term>cac:Party</Term>
+            <Name>Party </Name>
+            <Description>The interested party who receives a copy of this Manifest.</Description>
+            <Element cardinality="0..1">
+               <Term>cac:PartyName</Term>
+               <Name>Party name </Name>
+               <Element>
+                  <Term>cbc:Name</Term>
+                  <Name>Party name</Name>
+                  <Description>The name of the receiving party.</Description>
+                  <Value type="EXAMPLE">Finavia Cargo Terminal</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PostalAddress</Term>
+               <Name>Postal address </Name>
+               <Description>The postal address of the receiving party.</Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:CityName</Term>
+                  <Name>City </Name>
+                  <Description>The common name of the city where the postal address is. </Description>
+                  <Value type="EXAMPLE">Vantaa</Value>
+               </Element>
+               <Element cardinality="1..1">
+                  <Term>cac:Country</Term>
+                  <Name>Country </Name>
+                  <Description>The country of the address </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code </Name>
+                     <Description>A code that identifies the country, according to ISO 3166-1 alpha-2. </Description>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
+                     <Value type="EXAMPLE">FI</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Contact</Term>
+               <Name>Contact</Name>
+               <Description>The contact of the receiving party.</Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Contact name</Name>
+                  <Description>The contact name.</Description>
+                  <Value type="EXAMPLE">Jukka Nieminen</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:ElectronicMail</Term>
+                  <Name>Contact email address</Name>
+                  <Description>The electronic mail of the contact.</Description>
+                  <Value type="EXAMPLE">cargo.terminal@finavia.example</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+	     <Element cardinality="0..n">
+         <Term>cac:Signature</Term>
+         <Name>Signature</Name>
+         <Description>A signature applied to this Manifest, typically by the Authority to confirm receipt/acceptance, or by the Sending Logistics Operator to attest the declaration. </Description>
+         <Element cardinality="1..1">
+            <Term>cbc:ID</Term>
+            <Name>Identifier Signature </Name>
+            <Description>The Id of the Signature.</Description>
+            <Value type="EXAMPLE">SIG-2026-000451</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:ValidationDate</Term>
+            <Description>The date upon which this signature was verified. Format = "YYYY-MM-DD". </Description>
+            <Value type="EXAMPLE">2026-09-23</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:ValidationTime</Term>
+            <Description>The local time at which this signature was verified. Format = "hh:mm:ss". </Description>
+            <Value type="EXAMPLE">09:35:00+02:00</Value>
+         </Element>
+         <Element cardinality="1..1">
+            <Term>cac:SignatoryParty</Term>
+            <Name>Signature party </Name>
+            <Description>The party signing this Manifest. </Description>
+            <Element cardinality="0..1">
+               <Term>cac:PartyName</Term>
+               <Name>Party name </Name>
+               <Element>
+                  <Term>cbc:Name</Term>
+                  <Name>Signature party name</Name>
+                  <Description>The name of the Signature party.</Description>
+                  <Value type="EXAMPLE">Finnish Customs (Tulli)</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PostalAddress</Term>
+               <Name>Postal address </Name>
+               <Description>The postal address of the Signature Party</Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:StreetName</Term>
+                  <Name>Address line 1 </Name>
+                  <Description>The main address line in a postal address usually the street name and number. </Description>
+                  <Value type="EXAMPLE">Tekniikantie 13</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CityName</Term>
+                  <Name>City </Name>
+                  <Description>The common name of the city where the postal address is. </Description>
+                  <Value type="EXAMPLE">Helsinki</Value>
+               </Element>
+               <Element cardinality="1..1">
+                  <Term>cac:Country</Term>
+                  <Name>Country </Name>
+                  <Description>The country for the address</Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code </Name>
+                     <Description>A code that identifies the country, according to ISO 3166-1 alpha-2. </Description>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
+                     <Value type="EXAMPLE">FI</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Person</Term>
+               <Name>Person </Name>
+               <Description>The person who applies the signature on behalf of the Signature Party. </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:FirstName</Term>
+                  <Name>First Name </Name>
+                  <Description>The person's first name. </Description>
+                  <Value type="EXAMPLE">Mikko</Value>
+               </Element>
+               <Element cardinality="1..1">
+                  <Term>cbc:FamilyName</Term>
+                  <Name>Family Name </Name>
+                  <Description>The person's family name. </Description>
+                  <Value type="EXAMPLE">Virtanen</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:JobTitle</Term>
+                  <Name>Job title </Name>
+                  <Description>The person's job title. </Description>
+                  <Value type="EXAMPLE">Customs Officer</Value>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="1..1">
+            <Term>cac:DigitalSignatureAttachment</Term>
+            <Name>Attachment</Name>
+            <Description>The actual signature included or referred to as an attachment.</Description>
+            <Element cardinality="0..1">
+               <Term>cac:ExternalReference</Term>
+               <Name>External reference</Name>
+               <Description>A reference to an attached document that is external to the document(s) being exchanged.</Description>
+               <Element>
+                  <Term>cbc:URI</Term>
+                  <Name>Address to internet resource</Name>
+                  <Description>The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Description>
+                  <Value type="EXAMPLE">https://docs.tulli.example/signature/2026-000451.pdf</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+   </Document>
+</Structure>

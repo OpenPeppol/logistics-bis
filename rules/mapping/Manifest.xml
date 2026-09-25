@@ -1,0 +1,4375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:str="urn:fdc:difi.no:2017:vefa:structure-1"
+          xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+          xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:x="urn:schemas-microsoft-com:office:excel"
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+   <Styles>
+      <Style ss:ID="Default" ss:Name="Normal">
+         <Alignment ss:Vertical="Bottom"/>
+         <Borders/>
+         <Font ss:FontName="Calibri"
+               x:Family="Swiss"
+               ss:Size="11"
+               ss:Color="#000000"/>
+         <Interior/>
+         <NumberFormat/>
+         <Protection/>
+      </Style>
+      <Style ss:ID="s24" ss:Name="Heading 3">
+         <Borders>
+            <Border ss:Position="Bottom"
+                    ss:LineStyle="Continuous"
+                    ss:Weight="2"
+                    ss:Color="#8EA9DB"/>
+         </Borders>
+         <Font ss:FontName="Calibri"
+               x:Family="Swiss"
+               ss:Size="11"
+               ss:Color="#339966"
+               ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="s63" ss:Parent="s24">
+         <Borders>
+            <Border ss:Position="Bottom"
+                    ss:LineStyle="Continuous"
+                    ss:Weight="2"
+                    ss:Color="#8EA9DB"/>
+         </Borders>
+         <Font ss:FontName="Calibri"
+               x:Family="Swiss"
+               ss:Size="11"
+               ss:Color="#333333"
+               ss:Bold="1"/>
+         <Interior/>
+      </Style>
+   </Styles>
+   <Worksheet ss:Name="Sheet1">
+      <Table>
+         <Column ss:Width="30"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="30"/>
+         <Row>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Card</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Term</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Name</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Description</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Example</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">XPath</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Node Level</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Sequence</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ubl:Manifest</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">0</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">0</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:CustomizationID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Specification identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies the specification of content and rules that apply to the transaction.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">urn:fdc:peppol.eu:logistics:trns:manifest:1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cbc:CustomizationID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:ProfileID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Business process type identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies the BII profile or business process context in which the transaction appears.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cbc:ProfileID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">MAN23-44044-1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:IssueDate</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Dispatch advice issue date</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The date when this version of the Manifest is issued. Format = "YYYY-MM-DD".</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">2026-09-23</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cbc:IssueDate</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:IssueTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Dispatch advice issue time</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The time when this version of the Manifest is issued. Format = "hh:mm:ss".</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">09:30:00+02:00</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cbc:IssueTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:ManifestTypeCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Manifest type code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code signifying the type of Manifest, e.g. cargo manifest, crew list, passenger list or ship's/aircraft's stores declaration. Must be part of UNCL1001 (restricted to the subset relevant for Manifest - see structure/codelist/UNCL1001_T131.xml).</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">785</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cbc:ManifestTypeCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:ManifestType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Manifest type </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The type of Manifest expressed as free text, used when the type cannot be, or is not, expressed by ManifestTypeCode.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Cargo Manifest</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cbc:ManifestType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:VersionID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Version </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The version of this Manifest. Used for maintaining updated versions of the same Manifest.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cbc:VersionID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:AdValoremIndicator</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Ad valorem indicator </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An indication that the goods declared in this Manifest are subject to an ad valorem duty, i.e. a duty calculated as a percentage of the declared value of the goods (true), or not (false).</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">false</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cbc:AdValoremIndicator</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:DeclaredCarriageValueAmount</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Declared carriage value amount </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The value of the goods declared for carriage. Used as the basis for calculating any ad valorem duty when AdValoremIndicator is true.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">125000</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cbc:DeclaredCarriageValueAmount</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  @currencyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">EUR</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cbc:DeclaredCarriageValueAmount/currencyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:SendingLogisticsOperatorParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Sending Logistics Operator party </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The party issuing the Manifest. Normally the Logistics Operator that operates, or arranges the operation of, the means of transport (vessel, aircraft, truck or wagon) that the Manifest describes.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:EndpointID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Endpoint ID </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An identifier for the end point of the routing service for the Sending Logistics Operator party (e.g., EAN Location Number, GLN).</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0108023-3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cbc:EndpointID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0212</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cbc:EndpointID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Sending Logistics Operator identification </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An identifier for the Sending Logistics Operator party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ID </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The ID used for identification.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0108023-3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PartyIdentification/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0212</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Sending Logistics Operator party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the Sending Logistics Operator party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Finnair Oyj</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PartyName/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The postal address of the Sending Logistics Operator party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 1 </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Tietotie 9</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PostalAddress/cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Cargo terminal 2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">City </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The common name of the city where the postal address is.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Vantaa</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PostalAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Post code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">01530</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PostalAddress/cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country subdivision </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Uusimaa</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PostalAddress/cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The country of the address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PostalAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code that identifies the country, according to ISO 3166-1 alpha-2.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">FI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyLegalEntity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party legal entity </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PartyLegalEntity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:RegistrationName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Sending Logistics Operator party name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the Sending Logistics Operator party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Finnair Oyj</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PartyLegalEntity/cbc:RegistrationName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CompanyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Sending Logistics Operator parties legal registration ID </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The official identifier of the party as registered with the relevant fiscal authority.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0108023-3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PartyLegalEntity/cbc:CompanyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The identification scheme identifier of the Sending Logistics Operator legal registration identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0212</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The contact of the Sending Logistics Operator party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The contact name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Marja Laine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:Contact/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact telephone number </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The phone number of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">+358 9 818 81</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:Contact/cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The electronic mail of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">cargo@finnair.example</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:SendingLogisticsOperatorParty/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:AuthorityParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Authority party </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A public body (e.g. customs, port state control, terminal control) that requires this Manifest before, during or after a journey, in order to control cargo, crew and/or passengers.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:EndpointID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Endpoint ID </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An identifier for the end point of the routing service for the Authority party (e.g., EAN Location Number, GLN).</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0245439-5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cbc:EndpointID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0212</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cbc:EndpointID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Authority party identification </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An identifier for the Authority party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0245439-5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:PartyIdentification/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0212</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Authority party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the Authority party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Finnish Customs (Tulli)</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:PartyName/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The postal address of the Authority.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 1 </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Tekniikantie 13</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:PostalAddress/cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">City </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The common name of the city where the postal address is.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Helsinki</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:PostalAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Post code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">00052</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:PostalAddress/cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The country of the address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:PostalAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code that identifies the country, according to ISO 3166-1 alpha-2.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">FI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The contact of the Authority party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The contact name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Mikko Virtanen</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:Contact/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact telephone number</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The phone number of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">+358 295 5200</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:Contact/cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The electronic mail of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">cargo.control@tulli.example</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:AuthorityParty/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:ConsignorParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignor Party </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The party sending the goods described in the Manifest's shipment.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignor identification </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An identifier for the Consignor party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ID </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The ID used for identification.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">7300010000001</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PartyIdentification/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0088</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignor party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the Consignor party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Novo Nordisk Pharmatech A/S</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PartyName/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The postal address of the Consignor party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 1 </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Københavnsvej 216</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PostalAddress/cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">City </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The common name of the city where the postal address is.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Køge</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PostalAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Post code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">4600</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PostalAddress/cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The country of the address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PostalAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code that identifies the country, according to ISO 3166-1 alpha-2.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">DK</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyLegalEntity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party legal entity </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PartyLegalEntity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:RegistrationName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignor party name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the Consignor party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Novo Nordisk Pharmatech A/S</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PartyLegalEntity/cbc:RegistrationName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CompanyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignor parties legal registration ID </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The official identifier of the party as registered with the relevant fiscal authority.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">DK13246149</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PartyLegalEntity/cbc:CompanyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The identification scheme identifier of the Consignor legal registration identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0198</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The contact of the Consignor party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The contact name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Anders Holm</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:Contact/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact telephone number </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The phone number of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">+45 46 55 00 00</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:Contact/cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The electronic mail of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">logistics@pharmatech.example</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsignorParty/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:ConsigneeParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignee Party </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The party to whom the goods described in the Manifest's shipment are addressed.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignee identification </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An identifier for the Consignee party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ID </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The ID used for identification.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0108023-1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PartyIdentification/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0212</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignee party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the Consignee party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">HUS Hospital</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PartyName/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The postal address of the Consignee party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 1 </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Topeliuksenkatu 5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PostalAddress/cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PostalAddress/cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 3 </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Goods reception, dock 3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">City </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The common name of the city where the postal address is.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Helsinki</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PostalAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Post code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">00260</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PostalAddress/cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The country of the address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PostalAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code that identifies the country, according to ISO 3166-1 alpha-2.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">FI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The contact of the Consignee party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The contact name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Liisa Mäkinen</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:Contact/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact telephone number </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The phone number of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">+358 9 4711 0000</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:Contact/cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The electronic mail of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">goods.reception@hus.example</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:ConsigneeParty/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..n</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:CrewPerson</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Crew Person </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A crew member of the means of transport (vessel or aircraft) that the Manifest describes. Repeat for each crew member declared.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:CrewPerson</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:FirstName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">First name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The crew member's first name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Peter</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:CrewPerson/cbc:FirstName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:FamilyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Family name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The crew member's family name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Poulsen</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:CrewPerson/cbc:FamilyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:JobTitle</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Job title </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The crew member's job title / function on board (e.g. Captain, First Officer, Purser).</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Captain</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:CrewPerson/cbc:JobTitle</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:NationalityCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Nationality code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code that identifies the crew member's nationality, according to ISO 3166-1 alpha-2.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">DK</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:CrewPerson/cbc:NationalityCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:IdentityDocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identity Document Reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Reference to an identity document for the crew member, e.g. a passport or seaman's book.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:CrewPerson/cac:IdentityDocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The ID of the identity document, for instance a passport number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">45642323</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:CrewPerson/cac:IdentityDocumentReference/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:DocumentType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document Type</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The type of identity document.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Passport</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:CrewPerson/cac:IdentityDocumentReference/cbc:DocumentType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..n</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:PassengerPerson</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Passenger Person </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A passenger carried on the means of transport (vessel or aircraft) that the Manifest describes. Repeat for each passenger declared.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:PassengerPerson</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">10000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:FirstName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">First name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The passenger's first name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Anna</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:PassengerPerson/cbc:FirstName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">10100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:FamilyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Family name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The passenger's family name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Korhonen</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:PassengerPerson/cbc:FamilyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">10200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:NationalityCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Nationality code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code that identifies the passenger's nationality, according to ISO 3166-1 alpha-2.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">FI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:PassengerPerson/cbc:NationalityCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">10300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:IdentityDocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identity Document Reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Reference to an identity document for the passenger, e.g. a passport.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:PassengerPerson/cac:IdentityDocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">10400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The ID of the identity document, for instance a passport number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">PB1234567</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:PassengerPerson/cac:IdentityDocumentReference/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">10500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:DocumentType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document Type</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The type of identity document.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Passport</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:PassengerPerson/cac:IdentityDocumentReference/cbc:DocumentType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">10600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:Shipment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Shipment </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The shipment carried by the means of transport that this Manifest describes. Kept lean by design: the Manifest does not repeat the full goods-item level detail of the underlying Waybill, it summarizes the consignment and refers to the Waybill for full detail (see cac:DocumentReference below).</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">10700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Shipment identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies the shipment described by this Manifest. If this ID is in the GSIN format, it should be indicated in the attribute @schemeID.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">73500538500000019</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">10800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">o</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">GSIN</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">10900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:Information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Shipment description</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Free-form text pertinent to this shipment, conveying information that is not contained explicitly in other structures.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Pharmaceutical shipment, keep refrigerated</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cbc:Information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">11000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Consignment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignment information </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The consignment, forming part of the shipment described by this Manifest, that this Manifest declares.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">11100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignment identifier </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">If this ID is in the GINC format, it should be indicated in the attribute @schemeID. This is the same consignment as declared on the referenced Waybill.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">735005233GS1TRANSPORT000001</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">11200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">o</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">GINC</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">11300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ConsigneeAssignedID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignee Consignment identifier </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignment identifier assigned by the consignee</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">1234</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cbc:ConsigneeAssignedID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">11400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ConsignorAssignedID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignor Consignment identifier </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignment identifier assigned by the consignor</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">5678</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cbc:ConsignorAssignedID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">11500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:GrossWeightMeasure</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignment gross weight </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The gross weight of the consignment as declared on the Manifest. Should match the gross weight declared on the referenced Waybill.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">320</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cbc:GrossWeightMeasure</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">11600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @unitCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">KGM</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cbc:GrossWeightMeasure/unitCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">11700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:GrossVolumeMeasure</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Consignment gross volume </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The gross volume of the consignment as declared on the Manifest. Should match the gross volume declared on the referenced Waybill.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">1.2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cbc:GrossVolumeMeasure</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">11800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @unitCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">MTQ</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cbc:GrossVolumeMeasure/unitCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">11900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:TotalTransportHandlingUnitQuantity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Total number of transport handling units </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The total number of transport handling units in this consignment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cbc:TotalTransportHandlingUnitQuantity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">12000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @unitCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">EA</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cbc:TotalTransportHandlingUnitQuantity/unitCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">12100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:DocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Waybill reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Reference to the Waybill that covers this consignment in full detail (parties, goods items, hazardous items, transport handling units etc.). This reference is mandatory for every Consignment declared in a Manifest under this profile: the Manifest itself is deliberately kept lean and relies on the Waybill for the complete data set.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cac:DocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">12200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identity of the reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The cbc:ID of the referenced Waybill.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">KHN23-44044-1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cac:DocumentReference/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">12300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:DocumentTypeCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document type code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The type of reference. Must be part of UNCL1001. Use the transport-mode-specific code where known (e.g. 740 Air waybill, 710 Sea waybill, 703 House waybill), or the generic 700 Waybill otherwise.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">740</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cac:DocumentReference/cbc:DocumentTypeCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">12400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:DocumentType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document type</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The type of reference that cannot be specified by a code alone.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Air waybill</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Shipment/cac:Consignment/cac:DocumentReference/cbc:DocumentType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">12500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..n</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:DocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Additional document reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Reference to other documents relevant for this Manifest as a whole (as opposed to a single consignment), for example a Master Air Waybill covering several house waybills/consignments consolidated on the same flight.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">12600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identity of the reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The reference number of the added document</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">MAWB-2026-000451</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentReference/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">12700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:DocumentTypeCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document type code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The type of reference. Must be part of UNCL1001.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">741</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentReference/cbc:DocumentTypeCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">12800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:DocumentType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document type</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The type of reference that cannot be specified by a code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Master air waybill</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentReference/cbc:DocumentType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">12900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Attachment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Attachment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentReference/cac:Attachment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">13000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:ExternalReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">External reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A reference to an attached document that is external to the document(s) being exchanged.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentReference/cac:Attachment/cac:ExternalReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">13100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:URI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address to internet resource</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">https://docs.finnair.example/mawb/2026-000451.pdf</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentReference/cac:Attachment/cac:ExternalReference/cbc:URI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">13200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..n</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:DocumentDistribution</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document distribution</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Describes the distribution of a copy of this Manifest to an interested party other than the Authority named in cac:AuthorityParty, e.g. the cargo terminal handling the shipment.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">13300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifier </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An identifier for this document distribution.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">DD-2026-000451</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">13400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..n</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:DistributionType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Distribution type</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The type of distribution, expressed as text.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Copy for cargo terminal file</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution/cbc:DistributionType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">13500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The interested party who receives a copy of this Manifest.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution/cac:Party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">13600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution/cac:Party/cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">13700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the receiving party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Finavia Cargo Terminal</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution/cac:Party/cac:PartyName/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">13800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The postal address of the receiving party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution/cac:Party/cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">13900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">City </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The common name of the city where the postal address is.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Vantaa</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution/cac:Party/cac:PostalAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">14000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The country of the address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution/cac:Party/cac:PostalAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">14100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code that identifies the country, according to ISO 3166-1 alpha-2.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">FI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">14200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The contact of the receiving party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution/cac:Party/cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">14300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The contact name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Jukka Nieminen</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution/cac:Party/cac:Contact/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">14400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The electronic mail of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">cargo.terminal@finavia.example</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:DocumentDistribution/cac:Party/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">14500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..n</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:Signature</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Signature</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A signature applied to this Manifest, typically by the Authority to confirm receipt/acceptance, or by the Sending Logistics Operator to attest the declaration.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">14600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifier Signature </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The Id of the Signature.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">SIG-2026-000451</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">14700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:ValidationDate</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The date upon which this signature was verified. Format = "YYYY-MM-DD".</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">2026-09-23</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cbc:ValidationDate</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">14800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:ValidationTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The local time at which this signature was verified. Format = "hh:mm:ss".</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">09:35:00+02:00</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cbc:ValidationTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">14900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:SignatoryParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Signature party </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The party signing this Manifest.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:SignatoryParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">15000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:SignatoryParty/cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">15100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Signature party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the Signature party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Finnish Customs (Tulli)</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:SignatoryParty/cac:PartyName/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">15200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The postal address of the Signature Party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:SignatoryParty/cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">15300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 1 </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Tekniikantie 13</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:SignatoryParty/cac:PostalAddress/cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">15400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">City </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The common name of the city where the postal address is.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Helsinki</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:SignatoryParty/cac:PostalAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">15500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The country for the address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:SignatoryParty/cac:PostalAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">15600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code that identifies the country, according to ISO 3166-1 alpha-2.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">FI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:SignatoryParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">15700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Person</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Person </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The person who applies the signature on behalf of the Signature Party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:SignatoryParty/cac:Person</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">15800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:FirstName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">First Name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The person's first name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Mikko</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:SignatoryParty/cac:Person/cbc:FirstName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">15900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:FamilyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Family Name </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The person's family name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Virtanen</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:SignatoryParty/cac:Person/cbc:FamilyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">16000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:JobTitle</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Job title </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The person's job title.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Customs Officer</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:SignatoryParty/cac:Person/cbc:JobTitle</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">16100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:DigitalSignatureAttachment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Attachment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The actual signature included or referred to as an attachment.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:DigitalSignatureAttachment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">16200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:ExternalReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">External reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A reference to an attached document that is external to the document(s) being exchanged.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:DigitalSignatureAttachment/cac:ExternalReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">16300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:URI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address to internet resource</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">https://docs.tulli.example/signature/2026-000451.pdf</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Manifest/cac:Signature/cac:DigitalSignatureAttachment/cac:ExternalReference/cbc:URI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">16400</Data>
+            </Cell>
+         </Row>
+      </Table>
+   </Worksheet>
+</Workbook>
