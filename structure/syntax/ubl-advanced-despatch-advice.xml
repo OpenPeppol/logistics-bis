@@ -1741,8 +1741,8 @@
                   <Element cardinality="1..1">
                      <Term>cbc:LicensePlateID</Term>
                      <Name>License plate identifier transport</Name>
-                     <Description>The licence plate(s) identifying the vehicle seperated by semicolon if there are more than one. </Description>
-                     <Value type="EXAMPLE">DK-DF10958;DK-DF23314</Value>
+                     <Description>The licence plate(s) identifying the vehicle seperated by # if there are more than one. </Description>
+                     <Value type="EXAMPLE">DK-DF10958#DK-DF23314</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
-    <Name>Peppol Logistics - Release 1.3.1 Hotfix </Name>
+    <Name>Peppol Logistics - Release 1.4 </Name>
 
 	<!-- Introduction -->
 
@@ -76,6 +76,11 @@
 		<Path>structure/syntax/ubl-application-response.xml</Path>
 		<Title>Peppol Logistics Application Response 1.0 (T129)</Title>
 	</Resource>
+    <Resource>
+		<Type>Structure-1</Type>
+		<Path>structure/syntax/ubl-manifest.xml</Path>
+		<Title>Peppol Manifest 1.0 (T131)</Title>
+	</Resource>
 
 	<!-- Rules -->
     <Resource>
@@ -138,7 +143,12 @@
 		<Path>rules/sch/parts/PEPPOL-M-T129.sch</Path>
 		<Title>Business rules for Peppol Logistics Application Response transaction 1.0</Title>
 	</Resource>
-
+    <Resource>
+        <Identifier>T131</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/PEPPOL-M-T131.sch</Path>
+        <Title>Business rules for Peppol Manifest transaction 1.0</Title>
+    </Resource>
 	<!-- Code lists -->
 
     <Resource>

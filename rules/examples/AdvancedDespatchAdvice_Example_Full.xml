@@ -330,7 +330,7 @@
                <cbc:AircraftID>JA8088</cbc:AircraftID>        
             </cac:AirTransport>
             <cac:RoadTransport>
-               <cbc:LicensePlateID>DK-DF10958;DK-DF23314</cbc:LicensePlateID>        
+               <cbc:LicensePlateID>DK-DF10958#DK-DF23314</cbc:LicensePlateID>        
             </cac:RoadTransport>
             <cac:RailTransport>
                <cbc:TrainID>12014</cbc:TrainID>

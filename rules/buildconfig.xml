@@ -99,6 +99,13 @@
 		<file source="sch/PEPPOLBIS-T129.sch" path="xsl/PEPPOLBIS-T129.xsl"/>
 	</configuration>
 
+	<configuration>
+		<identifier>peppolbis-T131-base-1.0</identifier>
+		<title>Manifest 1.0 (T131)</title>
+		<inherit>ubl-manifest-1.0</inherit>
+		<file source="sch/PEPPOLBIS-T131.sch" path="xsl/PEPPOLBIS-T131.xsl"/>
+	</configuration>
+
 	<!-- profile config -->
 	<configuration>
 		<identifier>peppolbis-120-only</identifier>
@@ -234,6 +241,14 @@
 		<profileId>urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1</profileId>
 		<customizationId>urn:fdc:peppol.eu:logistics:trns:application_response:1</customizationId>
 		<inherit>peppolbis-T129-base-1.0</inherit>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-131-manifest</identifier>
+		<title>Manifest</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:manifest:1</customizationId>
+		<inherit>peppolbis-T131-base-1.0</inherit>
 	</configuration>
 
 </buildConfigurations>

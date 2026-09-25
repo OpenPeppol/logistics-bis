@@ -7,7 +7,7 @@ Release date::	May 2026
 
 [NOTE]
 ====
-This is the second release update of the Peppol Logistics standard. This time only minor changes are included.
+This is the third release update of the Peppol Logistics standard. This time only minor changes are included.
 ====
 
 == New BIS documents 
