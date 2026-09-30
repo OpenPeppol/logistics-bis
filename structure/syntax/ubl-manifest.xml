@@ -101,7 +101,6 @@
             <Term>cbc:EndpointID</Term>
             <Name>Endpoint ID </Name>
             <Description>An identifier for the end point of the routing service for the Sending Logistics Operator party (e.g., EAN Location Number, GLN). </Description>
-            <Reference type="RULE">PEPPOL-T131-R004</Reference>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Reference type="CODE_LIST">eas</Reference>
@@ -237,7 +236,6 @@
             <Term>cbc:EndpointID</Term>
             <Name>Endpoint ID </Name>
             <Description>An identifier for the end point of the routing service for the Authority party (e.g., EAN Location Number, GLN). </Description>
-            <Reference type="RULE">PEPPOL-T131-R005</Reference>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Reference type="CODE_LIST">eas</Reference>

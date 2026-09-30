@@ -61,7 +61,6 @@
 			<?Cardinality 1..1?>
 			<?schemeID-usage Mandatory?>
 			<?schemeID-CodeList eas?>
-			<?Rule PEPPOL-T131-R004?>
 		</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<?Name Sending Logistics Operator identification ?>
@@ -173,7 +172,6 @@
 			<?Cardinality 1..1?>
 			<?schemeID-usage Mandatory?>
 			<?schemeID-CodeList eas?>
-			<?Rule PEPPOL-T131-R005?>
 		</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<?Name Authority party identification ?>

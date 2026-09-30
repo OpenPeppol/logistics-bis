@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-T131-base-1.0">
+	<assert>
+		<description>Verify that the Consignor Party's name or identifier is specified</description>
+		<scope>PEPPOL-T131-R006</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>PEPPOL-T131-R006</success>
+		</assert>
+		<ubl:Manifest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Manifest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:ConsignorParty>
+				<cac:PartyIdentification>
+					<cbc:ID schemeID="0088">5790000435951</cbc:ID>
+				</cac:PartyIdentification>
+				<cac:PartyName>
+					<cbc:Name>ABC Company Ltd.</cbc:Name>
+				</cac:PartyName>
+			</cac:ConsignorParty>
+		</ubl:Manifest>
+	</test>
+
+	<test id="2">
+		<assert>
+			<success>PEPPOL-T131-R006</success>
+		</assert>
+		<ubl:Manifest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Manifest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:ConsignorParty>
+				<cac:PartyName>
+					<cbc:Name>ABC Company Ltd.</cbc:Name>
+				</cac:PartyName>
+			</cac:ConsignorParty>
+		</ubl:Manifest>
+	</test>
+
+	<test id="3">
+		<assert>
+			<success>PEPPOL-T131-R006</success>
+		</assert>
+		<ubl:Manifest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Manifest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:ConsignorParty>
+				<cac:PartyIdentification>
+					<cbc:ID schemeID="0088">5790000435951</cbc:ID>
+				</cac:PartyIdentification>
+			</cac:ConsignorParty>
+		</ubl:Manifest>
+	</test>
+
+	<test id="4">
+		<assert>
+			<error>PEPPOL-T131-R006</error>
+		</assert>
+		<ubl:Manifest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Manifest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:ConsignorParty>
+				<cac:Contact>
+					<cbc:Telephone>+46 8 123 456</cbc:Telephone>
+				</cac:Contact>
+			</cac:ConsignorParty>
+		</ubl:Manifest>
+	</test>
+
+</testSet>
