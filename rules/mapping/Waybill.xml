@@ -900,7 +900,7 @@
                <Data ss:Type="String">The official name of the party as registered with the relevant fiscal authority.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">13246149</Data>
+               <Data ss:Type="String">DK13246149</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:SenderParty/cac:PartyLegalEntity/cbc:CompanyID</Data>
@@ -1186,7 +1186,7 @@
                <Data ss:Type="String">An identifier for the end point of the routing service for the Receiver party (e.g., EAN Location Number, GLN).</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0108023-3</Data>
+               <Data ss:Type="String">003701080233</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ReceiverParty/cbc:EndpointID</Data>
@@ -1212,7 +1212,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0212</Data>
+               <Data ss:Type="String">0216</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ReceiverParty/cbc:EndpointID/schemeID</Data>

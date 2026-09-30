@@ -13,7 +13,7 @@
    <cbc:AdValoremIndicator>false</cbc:AdValoremIndicator>
    <cbc:DeclaredCarriageValueAmount currencyID="EUR">125000</cbc:DeclaredCarriageValueAmount>
    <cac:SendingLogisticsOperatorParty>
-      <cbc:EndpointID schemeID="0212">0108023-3</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0216">003701080233</cbc:EndpointID>
       <cac:PartyIdentification>
          <cbc:ID schemeID="0212">0108023-3</cbc:ID>    
       </cac:PartyIdentification>
@@ -41,9 +41,9 @@
       </cac:Contact>  
    </cac:SendingLogisticsOperatorParty>
    <cac:AuthorityParty>
-      <cbc:EndpointID schemeID="0212">0245439-5</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0216">003702454428</cbc:EndpointID>
       <cac:PartyIdentification>
-         <cbc:ID schemeID="0212">0245439-5</cbc:ID>    
+         <cbc:ID schemeID="0212">0245442-8</cbc:ID>    
       </cac:PartyIdentification>
       <cac:PartyName>
          <cbc:Name>Finnish Customs (Tulli)</cbc:Name>    
@@ -89,7 +89,7 @@
    </cac:ConsignorParty>
    <cac:ConsigneeParty>
       <cac:PartyIdentification>
-         <cbc:ID schemeID="0212">0108023-1</cbc:ID>    
+         <cbc:ID schemeID="0212">1567535-0</cbc:ID>    
       </cac:PartyIdentification>
       <cac:PartyName>
          <cbc:Name>HUS Hospital</cbc:Name>    
