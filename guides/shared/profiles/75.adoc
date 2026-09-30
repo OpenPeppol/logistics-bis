@@ -4,7 +4,7 @@
 
 In the table below you will find the values to be used as the specification identifier and the business process type for this profile.
 
-[cols="3s,6a,3a", options="header"]
+[cols="s,a,a", options="header"]
 |===
 | Type
 | Element `cbc:CustomizationID`
@@ -18,5 +18,3 @@ In the table below you will find the values to be used as the specification iden
 | urn:fdc:peppol.eu:logistics:trns:application_response:1
 
 |===
-
-NOTE: Trdm131 (Manifest) follows the numbering pattern used by the existing logistics profiles (Trdm120-Trdm128) but has not yet been assigned or registered by OpenPeppol; it must be confirmed with the OpenPeppol Logistics working group / secretariat before this profile is published. The Application Response leg deliberately reuses the existing, generic Application Response transaction (Trdm129, already used by e.g. the Advanced Transport Execution Plan profile - see xref:prof-74[]) rather than introducing a new Manifest-specific Application Response, so no new Trdm number is needed for it.

@@ -17,5 +17,5 @@ include::{snippet-dir}/snippet-2.xml[tags=document-response-accepted]
 Example of a not accepted (rejected) Manifest:
 [source, xml, indent=0]
 ----
-include::{snippet-dir}/snippet-2.xml[tags=document-response-rejected]
+include::{snippet-dir}/snippet-3.xml[tags=document-response-rejected]
 ----

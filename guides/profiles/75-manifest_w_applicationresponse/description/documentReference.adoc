@@ -3,6 +3,8 @@
 
 A reference to another document relevant for this Manifest, for example the Waybill or Bill of Lading that already describes the consignment, transport handling units and goods items of the shipment(s) listed in the Manifest.
 
+The reference is given per consignment, in `cac:Shipment/cac:Consignment/cac:DocumentReference`, rather than at the top level of the Manifest. This keeps the Manifest lean: the full shipment detail (parties, goods items, hazardous items, transport handling units etc.) stays in the Waybill, and each consignment declared in the Manifest points back to the Waybill that covers it.
+
 Example:
 [source, xml, indent=0]
 ----
