@@ -1618,8 +1618,8 @@
 	     </rule>
 	     <rule context="cbc:ProfileID">
 		       <assert id="PEPPOL-T125-R002"
-                 test="(normalize-space(.) = 'urn:fdc:peppol.eu:logistics:bis:waybill_only:1')"
-                 flag="fatal">ProfileID SHALL have the value 'urn:fdc:peppol.eu:logistics:bis:waybill_only:1'.</assert>
+                 test="(normalize-space(.) = 'urn:fdc:peppol.eu:logistics:bis:waybill:1')"
+                 flag="fatal">ProfileID SHALL have the value 'urn:fdc:peppol.eu:logistics:bis:waybill:1'.</assert>
 	     </rule>
 	
 	     <rule context="cac:Shipment/cac:Consignment">
