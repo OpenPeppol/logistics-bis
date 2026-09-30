@@ -104,9 +104,9 @@
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Reference type="CODE_LIST">eas</Reference>
-               <Value type="EXAMPLE">0212</Value>
+               <Value type="EXAMPLE">0216</Value>
             </Attribute>
-            <Value type="EXAMPLE">0108023-3</Value>
+            <Value type="EXAMPLE">003701080233</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -239,9 +239,9 @@
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Reference type="CODE_LIST">eas</Reference>
-               <Value type="EXAMPLE">0212</Value>
+               <Value type="EXAMPLE">0216</Value>
             </Attribute>
-            <Value type="EXAMPLE">0245439-5</Value>
+            <Value type="EXAMPLE">003702454428</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -254,7 +254,7 @@
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0212</Value>
                </Attribute>
-               <Value type="EXAMPLE">0245439-5</Value>
+               <Value type="EXAMPLE">0245442-8</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -458,7 +458,7 @@
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0212</Value>
                </Attribute>
-               <Value type="EXAMPLE">0108023-1</Value>
+               <Value type="EXAMPLE">1567535-0</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">

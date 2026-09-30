@@ -55,7 +55,7 @@
 		<?Name Sending Logistics Operator party ?>
 		<?Description The party issuing the Manifest. Normally the Logistics Operator that operates, or arranges the operation of, the means of transport (vessel, aircraft, truck or wagon) that the Manifest describes. ?>
 		<?Cardinality 1..1?>
-		<cbc:EndpointID schemeID="0212">0108023-3
+		<cbc:EndpointID schemeID="0216">003701080233
 			<?Name Endpoint ID ?>
 			<?Description An identifier for the end point of the routing service for the Sending Logistics Operator party (e.g., EAN Location Number, GLN). ?>
 			<?Cardinality 1..1?>
@@ -166,7 +166,7 @@
 		<?Name Authority party ?>
 		<?Description A public body (e.g. customs, port state control, terminal control) that requires this Manifest before, during or after a journey, in order to control cargo, crew and/or passengers. ?>
 		<?Cardinality 0..1?>
-		<cbc:EndpointID schemeID="0212">0245439-5
+		<cbc:EndpointID schemeID="0216">003702454428
 			<?Name Endpoint ID ?>
 			<?Description An identifier for the end point of the routing service for the Authority party (e.g., EAN Location Number, GLN). ?>
 			<?Cardinality 1..1?>
@@ -177,7 +177,7 @@
 			<?Name Authority party identification ?>
 			<?Description An identifier for the Authority party. ?>
 			<?Cardinality 0..1?>
-			<cbc:ID schemeID="0212">0245439-5
+			<cbc:ID schemeID="0212">0245442-8
 				<?schemeID-CodeList ICD?>
 				<?schemeID-usage Optional?>
 				<?Cardinality 1..1?>
@@ -347,7 +347,7 @@
 			<?Name Consignee identification ?>
 			<?Description An identifier for the Consignee party. ?>
 			<?Cardinality 0..1?>
-			<cbc:ID schemeID="0212">0108023-1
+			<cbc:ID schemeID="0212">1567535-0
 				<?Name ID ?>
 				<?Description The ID used for identification.?>
 				<?schemeID-CodeList ICD?>
