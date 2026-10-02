@@ -10,9 +10,59 @@
 	<cbc:IssueTime>09:00:00+02:00</cbc:IssueTime>
 	<cbc:Name>Air Waybill</cbc:Name>
 	<cbc:ShippingOrderID>KHN23-44044</cbc:ShippingOrderID>
+	<!-- tag::sender-party[] -->
+	<cac:SenderParty>
+		<cbc:EndpointID schemeID="0198">DK13246149</cbc:EndpointID>
+		<cac:PartyName>
+			<cbc:Name>Consortial</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>Boston Road</cbc:StreetName>
+			<cbc:CityName>Billerica</cbc:CityName>
+			<cbc:PostalZone>01821</cbc:PostalZone>
+			<cac:Country>
+				<cbc:IdentificationCode>US</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Consortial</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0198">DK13246149</cbc:CompanyID>
+		</cac:PartyLegalEntity>
+		<cac:Contact>
+			<cbc:Name>Mrs Bouquet</cbc:Name>
+			<cbc:Telephone> +1 158 1233714</cbc:Telephone>
+			<cbc:ElectronicMail>bouquet@fpconsortial.com</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:SenderParty>
+	<!-- end::sender-party[] -->
+	<!-- tag::receiver-party[] -->
+	<cac:ReceiverParty>
+		<cbc:EndpointID schemeID="0216">003701080233</cbc:EndpointID>
+		<cac:PartyName>
+			<cbc:Name>Finnair Oyj</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>Tietotie 9</cbc:StreetName>
+			<cbc:CityName>Vantaa</cbc:CityName>
+			<cbc:PostalZone>4600</cbc:PostalZone>
+			<cac:Country>
+				<cbc:IdentificationCode>FI</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Leman</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0212">0108023-3</cbc:CompanyID>
+			<cac:RegistrationAddress>
+				<cbc:CityName>Vantaa</cbc:CityName>
+				<cac:Country>
+					<cbc:IdentificationCode>FI</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:RegistrationAddress>
+		</cac:PartyLegalEntity>
+	</cac:ReceiverParty>
+	<!-- end::receiver-party[] -->
 	<!-- tag::consignor-party[] -->
 	<cac:ConsignorParty>
-		<cbc:EndpointID schemeID="0198">DK13246149</cbc:EndpointID>
 		<cac:PartyName>
 			<cbc:Name>Consortial</cbc:Name>
 		</cac:PartyName>

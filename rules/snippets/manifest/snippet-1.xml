@@ -52,7 +52,6 @@
 	<!-- end::authority-party[] -->
 	<!-- tag::consignor-party[] -->
 	<cac:ConsignorParty>
-		<cbc:EndpointID schemeID="0184">DK87654321</cbc:EndpointID>
 		<cac:PartyName>
 			<cbc:Name>Semantic ApS</cbc:Name>
 		</cac:PartyName>
@@ -62,11 +61,17 @@
 				<cbc:IdentificationCode>DK</cbc:IdentificationCode>
 			</cac:Country>
 		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Semantic ApS</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0184">DK87654321</cbc:CompanyID>
+		</cac:PartyLegalEntity>
 	</cac:ConsignorParty>
 	<!-- end::consignor-party[] -->
 	<!-- tag::consignee-party[] -->
 	<cac:ConsigneeParty>
-		<cbc:EndpointID schemeID="0192">NO987654321</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="0192">987654325</cbc:ID>
+		</cac:PartyIdentification>
 		<cac:PartyName>
 			<cbc:Name>Fjord Logistics AS</cbc:Name>
 		</cac:PartyName>
@@ -83,6 +88,10 @@
 		<cbc:FirstName>Anders</cbc:FirstName>
 		<cbc:FamilyName>Holm</cbc:FamilyName>
 		<cbc:JobTitle>Driver</cbc:JobTitle>
+		<cac:IdentityDocumentReference>
+			<cbc:ID>118874123</cbc:ID>
+			<cbc:DocumentType>Driving licence</cbc:DocumentType>
+		</cac:IdentityDocumentReference>
 	</cac:CrewPerson>
 	<!-- end::crew-person[] -->
 	<!-- tag::passenger-person[] -->
@@ -102,7 +111,7 @@
 			<cbc:ID schemeID="GINC">1234567890123456789012001</cbc:ID>
 			<cbc:GrossWeightMeasure unitCode="KGM">2400</cbc:GrossWeightMeasure>
 			<cbc:GrossVolumeMeasure unitCode="MTQ">18</cbc:GrossVolumeMeasure>
-			<cbc:TotalTransportHandlingUnitQuantity>2</cbc:TotalTransportHandlingUnitQuantity>
+			<cbc:TotalTransportHandlingUnitQuantity unitCode="EA">2</cbc:TotalTransportHandlingUnitQuantity>
 			<!-- tag::document-reference[] -->
 			<!--
 			The Waybill covering this consignment is referenced here, nested under
@@ -123,7 +132,6 @@
 	<!-- tag::document-distribution[] -->
 	<cac:DocumentDistribution>
 		<cac:Party>
-			<cbc:EndpointID schemeID="0184">DK55133018</cbc:EndpointID>
 			<cac:PartyName>
 				<cbc:Name>Port of Aarhus Terminal Control</cbc:Name>
 			</cac:PartyName>
@@ -138,6 +146,11 @@
 				<cbc:Name>Nordic Road Carriers A/S</cbc:Name>
 			</cac:PartyName>
 		</cac:SignatoryParty>
+		<cac:DigitalSignatureAttachment>
+			<cac:ExternalReference>
+				<cbc:URI>https://docs.nordicroad.example/signature/SIG-000451.pdf</cbc:URI>
+			</cac:ExternalReference>
+		</cac:DigitalSignatureAttachment>
 	</cac:Signature>
 	<!-- end::signature[] -->
 </Manifest>
