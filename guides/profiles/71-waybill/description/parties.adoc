@@ -4,6 +4,28 @@
 The following parties/roles may be specified in the message.
 The same actor may play more than one role depending on the handling routine.
 
+[[sender-party]]
+== Sender (SenderParty)
+
+SenderParty identifies the party sending this document on the Peppol network. This is the network message sender and is not necessarily the same as the Consignor: it carries the Peppol `cbc:EndpointID`, while the Consignor is identified separately via `cac:PartyIdentification`/`cac:PartyLegalEntity`.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=sender-party]
+----
+
+[[receiver-party]]
+== Receiver (ReceiverParty)
+
+ReceiverParty identifies the party receiving this document on the Peppol network, carrying the Peppol `cbc:EndpointID` of the recipient's access point.
+
+Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-1.xml[tags=receiver-party]
+----
+
 [[consignor-party]]
 == Consignor (ConsignorParty)
 
