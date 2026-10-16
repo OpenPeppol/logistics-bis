@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-T131-base-1.0">
+	<assert>
+		<description>Verify that each consignment references the Waybill covering it</description>
+		<scope>PEPPOL-T131-R009</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>PEPPOL-T131-R009</success>
+		</assert>
+		<ubl:Manifest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Manifest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cac:DocumentReference>
+						<cbc:ID>WB-1</cbc:ID>
+						<cbc:DocumentTypeCode>740</cbc:DocumentTypeCode>
+					</cac:DocumentReference>
+				</cac:Consignment>
+			</cac:Shipment>
+		</ubl:Manifest>
+	</test>
+
+	<test id="2">
+		<assert>
+			<success>PEPPOL-T131-R009</success>
+		</assert>
+		<ubl:Manifest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Manifest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cac:DocumentReference>
+						<cbc:ID>WB-1</cbc:ID>
+						<cbc:DocumentTypeCode>700</cbc:DocumentTypeCode>
+					</cac:DocumentReference>
+				</cac:Consignment>
+			</cac:Shipment>
+		</ubl:Manifest>
+	</test>
+
+	<test id="3">
+		<assert>
+			<success>PEPPOL-T131-R009</success>
+		</assert>
+		<ubl:Manifest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Manifest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cac:DocumentReference>
+						<cbc:ID>WB-1</cbc:ID>
+						<cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
+					</cac:DocumentReference>
+					<cac:DocumentReference>
+						<cbc:ID>WB-1</cbc:ID>
+						<cbc:DocumentTypeCode>710</cbc:DocumentTypeCode>
+					</cac:DocumentReference>
+				</cac:Consignment>
+			</cac:Shipment>
+		</ubl:Manifest>
+	</test>
+
+	<test id="4">
+		<assert>
+			<error>PEPPOL-T131-R009</error>
+		</assert>
+		<ubl:Manifest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Manifest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cac:DocumentReference>
+						<cbc:ID>WB-1</cbc:ID>
+						<cbc:DocumentTypeCode>270</cbc:DocumentTypeCode>
+					</cac:DocumentReference>
+				</cac:Consignment>
+			</cac:Shipment>
+		</ubl:Manifest>
+	</test>
+
+	<test id="5">
+		<assert>
+			<error>PEPPOL-T131-R009</error>
+		</assert>
+		<ubl:Manifest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Manifest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+				</cac:Consignment>
+			</cac:Shipment>
+		</ubl:Manifest>
+	</test>
+
+</testSet>

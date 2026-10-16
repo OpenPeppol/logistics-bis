@@ -35,7 +35,7 @@
       </cac:PostalAddress>
       <cac:PartyLegalEntity>
          <cbc:RegistrationName>Novo Nordisk Pharmatech A/S</cbc:RegistrationName>
-         <cbc:CompanyID schemeID="0198">13246149</cbc:CompanyID>
+         <cbc:CompanyID schemeID="0198">DK13246149</cbc:CompanyID>
          <cac:RegistrationAddress>
             <cbc:CityName>Køge</cbc:CityName>
             <cac:Country>
@@ -50,7 +50,7 @@
       </cac:Contact>  
    </cac:SenderParty>
    <cac:ReceiverParty>
-      <cbc:EndpointID schemeID="0212">0108023-3</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0216">003701080233</cbc:EndpointID>
       <cac:PartyIdentification>
          <cbc:ID schemeID="0088">7300010000001</cbc:ID>    
       </cac:PartyIdentification>

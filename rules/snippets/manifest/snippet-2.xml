@@ -36,19 +36,4 @@
 		</cac:DocumentReference>
 	</cac:DocumentResponse>
 	<!-- end::document-response-accepted[] -->
-	<!-- tag::document-response-rejected[] -->
-	<!--
-	<cac:DocumentResponse>
-		<cac:Response>
-			<cbc:ResponseCode>RE</cbc:ResponseCode>
-			<cbc:Description>Manifest rejected: consignee party could not be identified</cbc:Description>
-		</cac:Response>
-		<cac:DocumentReference>
-			<cbc:ID>MAN-2026-000451</cbc:ID>
-			<cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
-			<cbc:DocumentType>Manifest</cbc:DocumentType>
-		</cac:DocumentReference>
-	</cac:DocumentResponse>
-	-->
-	<!-- end::document-response-rejected[] -->
 </ApplicationResponse>
