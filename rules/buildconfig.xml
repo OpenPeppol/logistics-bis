@@ -253,12 +253,4 @@
 		<inherit>peppolbis-T131-base-1.0</inherit>
 	</configuration>
 
-	<configuration>
-		<identifier>peppolbis-129-manifest</identifier>
-		<title>Manifest Application Response</title>
-		<profileId>urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1</profileId>
-		<customizationId>urn:fdc:peppol.eu:logistics:trns:application_response:1</customizationId>
-		<inherit>peppolbis-T129-base-1.0</inherit>
-	</configuration>
-
 </buildConfigurations>
