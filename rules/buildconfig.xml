@@ -14,6 +14,7 @@
 	<testfolder>unit-transportation-status</testfolder>
 	<testfolder>unit-receipt-advice</testfolder>
 	<testfolder>unit-application-response</testfolder>
+	<testfolder>unit-manifest</testfolder>
 
 	<!-- example and snippet folders -->
 	<testfolder>examples</testfolder>
@@ -27,6 +28,7 @@
 	<testfolder>snippets/transportation-status</testfolder>
 	<testfolder>snippets/receipt-advice</testfolder>
 	<testfolder>snippets/application-response</testfolder>
+	<testfolder>snippets/manifest</testfolder>
 
 	<!-- base config -->
 	<configuration>
@@ -182,7 +184,7 @@
 	<configuration>
 		<identifier>peppolbis-125</identifier>
 		<title>Waybill</title>
-		<profileId>urn:fdc:peppol.eu:logistics:bis:waybill_only:1</profileId>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:waybill:1</profileId>
 		<customizationId>urn:fdc:peppol.eu:logistics:trns:waybill:1</customizationId>
 		<inherit>peppolbis-T125-base-1.0</inherit>
 	</configuration>
@@ -249,6 +251,14 @@
 		<profileId>urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1</profileId>
 		<customizationId>urn:fdc:peppol.eu:logistics:trns:manifest:1</customizationId>
 		<inherit>peppolbis-T131-base-1.0</inherit>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-129-manifest</identifier>
+		<title>Manifest Application Response</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:application_response:1</customizationId>
+		<inherit>peppolbis-T129-base-1.0</inherit>
 	</configuration>
 
 </buildConfigurations>

@@ -132,7 +132,7 @@
 					<?Description The name of the Sender party.?>
 					<?Cardinality 1..1?>
 				</cbc:RegistrationName>
-			<cbc:CompanyID schemeID="0198">13246149
+			<cbc:CompanyID schemeID="0198">DK13246149
 					<?Name Sender parties legal registration name ?>
 					<?Description The official name of the party as registered with the relevant fiscal authority. ?>
 					<?Cardinality 0..1?>
@@ -187,7 +187,7 @@
 		<?Name Receiver party ?>
 		<?Description The Receiver of this Waybill. ?>
 		<?Cardinality 1..1?>
-		<cbc:EndpointID schemeID="0212">0108023-3
+		<cbc:EndpointID schemeID="0216">003701080233
 			<?Description An identifier for the end point of the routing service for the Receiver party (e.g., EAN Location Number, GLN). ?>
 			<?Name Endpoint ID ?>			
 			<?Cardinality 1..1?>
