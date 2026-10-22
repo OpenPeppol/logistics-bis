@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-T125-base-1.0">
+	<assert>
+		<description>Verify that an instruction about transshipment uses the fixed text.</description>
+		<scope>PEPPOL-T125-R070</scope>
+	</assert>
+
+	<test id="1">
+		<!-- Fixed text -->
+		<assert>
+			<success>PEPPOL-T125-R070</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>Air Waybill</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cbc:CarrierServiceInstructions>Transshipment not allowed</cbc:CarrierServiceInstructions>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="2">
+		<!-- Instruction not about transshipment -->
+		<assert>
+			<success>PEPPOL-T125-R070</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>Air Waybill</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cbc:CarrierServiceInstructions>Call the consignee one hour before arrival</cbc:CarrierServiceInstructions>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="3">
+		<!-- Other wording -->
+		<assert>
+			<error>PEPPOL-T125-R070</error>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>Air Waybill</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cbc:CarrierServiceInstructions>No transshipment</cbc:CarrierServiceInstructions>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="4">
+		<!-- Spelling with one s -->
+		<assert>
+			<error>PEPPOL-T125-R070</error>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>Air Waybill</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cbc:CarrierServiceInstructions>Transhipment not allowed</cbc:CarrierServiceInstructions>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="5">
+		<!-- Fixed text in another case -->
+		<assert>
+			<error>PEPPOL-T125-R070</error>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>Air Waybill</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cbc:CarrierServiceInstructions>TRANSSHIPMENT NOT ALLOWED</cbc:CarrierServiceInstructions>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+</testSet>

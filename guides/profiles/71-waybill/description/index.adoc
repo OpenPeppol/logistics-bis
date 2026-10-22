@@ -37,4 +37,6 @@ include::documentReference.adoc[]
 
 include::signature.adoc[]
 
+include::cmr.adoc[]
+
 :leveloffset: -1

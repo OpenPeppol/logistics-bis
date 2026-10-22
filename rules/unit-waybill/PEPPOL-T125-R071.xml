@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-T125-base-1.0">
+	<assert>
+		<description>Verify that cash on delivery has a positive amount.</description>
+		<scope>PEPPOL-T125-R071</scope>
+	</assert>
+
+	<test id="1">
+		<!-- Cash on delivery amount -->
+		<assert>
+			<success>PEPPOL-T125-R071</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cac:CollectPaymentTerms><cbc:Amount currencyID="EUR">2500</cbc:Amount></cac:CollectPaymentTerms>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="2">
+		<!-- No collect payment terms -->
+		<assert>
+			<success>PEPPOL-T125-R071</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="3">
+		<!-- Collect payment terms without amount -->
+		<assert>
+			<error>PEPPOL-T125-R071</error>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cac:CollectPaymentTerms><cbc:Note>Cash on delivery</cbc:Note></cac:CollectPaymentTerms>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="4">
+		<!-- Zero amount -->
+		<assert>
+			<error>PEPPOL-T125-R071</error>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cac:CollectPaymentTerms><cbc:Amount currencyID="EUR">0</cbc:Amount></cac:CollectPaymentTerms>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+</testSet>
