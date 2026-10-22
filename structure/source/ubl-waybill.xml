@@ -1476,6 +1476,11 @@
 					<?Description The Journey ID, eg. flight number used for this shipment stage?>
 					<?Cardinality 0..1?>
 					</cbc:JourneyID> 
+					<cbc:RegistrationNationality>Finland
+					<?Name Registration nationality ?>
+					<?Description The country in which the means of transport is registered. Required for the registration of the means of transport under eFTI. ?>
+					<?Cardinality 0..1?>
+					</cbc:RegistrationNationality>
 					<cac:RoadTransport>
 					<?Name Road transport ?>
 					<?Description The vehicle used in this stage, used for the vehicle registration on the consignment note. Use only when the transport mode code is road transport. ?>
@@ -1871,6 +1876,11 @@
 				<?Description The means of transport used in this shipment stage.?>
 				<?Cardinality 0..1?>
 				<?Rule PEPPOL-T125-R051?>
+				<cbc:RegistrationNationality>Denmark
+					<?Name Registration nationality ?>
+					<?Description The country in which the means of transport is registered. Required for the registration of the means of transport under eFTI. ?>
+					<?Cardinality 0..1?>
+				</cbc:RegistrationNationality>
 				<cac:AirTransport>
 					<?Name Air transport ?>
 					<?Description An aircraft used in this shipment stage.?>

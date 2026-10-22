@@ -136,6 +136,7 @@
 					</cac:PartyName>
 				</cac:CarrierParty>
 				<cac:TransportMeans>
+					<cbc:RegistrationNationality>Denmark</cbc:RegistrationNationality>
 					<cac:RoadTransport>
 						<cbc:LicensePlateID>AB12345</cbc:LicensePlateID>
 					</cac:RoadTransport>
@@ -182,6 +183,7 @@
 			<cbc:TransportModeCode>3</cbc:TransportModeCode>
 			<cbc:TransportMeansTypeCode>31</cbc:TransportMeansTypeCode>
 			<cac:TransportMeans>
+				<cbc:RegistrationNationality>Denmark</cbc:RegistrationNationality>
 				<cac:RoadTransport>
 					<cbc:LicensePlateID>AB12345</cbc:LicensePlateID>
 				</cac:RoadTransport>
