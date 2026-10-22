@@ -1,0 +1,78 @@
+[[cmr-consignment-note]]
+= Waybill as a CMR consignment note (eCMR)
+
+A Waybill with the Waybill type (`cbc:Name`) "CMR" is a consignment note for international road transport under the Convention on the Contract for the International Carriage of Goods by Road (CMR) and its Additional Protocol on the electronic consignment note (eCMR Protocol).
+
+The table below shows where the particulars of CMR Article 6 are given in the Waybill.
+
+The particulars of Article 6(1) are checked by the business rules PEPPOL-T125-R060 to R069 (and R040 for the gross weight). To keep the Waybill backwards compatible, the rules R060 to R069 are *warnings*, and they only apply when the place of taking over, the place of despatch, the place of delivery, the country of departure or the country of destination is outside the EU.
+
+[cols="1,3,4,1",options="header"]
+|====
+|CMR |Particular |Waybill element |Rule
+4+|*Article 6(1)*
+|a |Date and place where the consignment note is made out |`cbc:IssueDate`, `cac:IssueLocation` |R060
+|b |Name and address of the sender |`cac:ConsignorParty` with name and `cac:PostalAddress` |R061
+|c |Name and address of the carrier |`cac:CarrierParty` with `cac:PostalAddress` |R062
+|d |Place and date of taking over the goods |`cac:Shipment/cac:ShipmentStage/cac:TakeoverTransportEvent` |R063
+|d |Place designated for delivery |`cac:Delivery/cac:DeliveryLocation` |
+|e |Name and address of the consignee |`cac:ConsigneeParty` with `cac:PostalAddress` |R064
+|f |Description of the goods and method of packing |`cac:GoodsItem/cbc:Description`, `cac:Package/cbc:PackagingTypeCode`, `cac:HazardousItem` |R065
+|g |Number of packages, marks and numbers |`cbc:TotalPackagesQuantity`, `cac:Package/cbc:Quantity`, `cbc:ShippingMarks` |R066, R073
+|h |Gross weight |`cbc:GrossWeightMeasure` |R040
+|i |Charges relating to the carriage |`cac:FreightAllowanceCharge` |R067
+|j |Instructions for customs and other formalities |`cbc:CustomsClearanceServiceInstructions` |R068
+|k |Statement that the carriage is subject to the CMR Convention |`cbc:Note` with the CMR clause |R069
+4+|*Article 6(2)*
+|a |Transshipment not allowed |`cbc:CarrierServiceInstructions` with the fixed text "Transshipment not allowed" |R070
+|b |Charges the sender undertakes to pay |`cac:FreightAllowanceCharge` with `cbc:PrepaidIndicator` = true |
+|c |Amount of cash on delivery |`cac:CollectPaymentTerms/cbc:Amount` |R071
+|d |Declared value of the goods, special interest in delivery |`cbc:DeclaredForCarriageValueAmount`, `cbc:Note` |
+|e |Sender's instructions on insurance |`cac:InsurancePolicy` |
+|f |Agreed time limit for the carriage |`cac:Delivery/cac:RequestedDeliveryPeriod` |
+|g |Documents handed to the carrier |`cac:DocumentReference` |
+4+|*Other articles*
+|5 |Signatures of sender and carrier |`cac:Signature` with `cbc:ReasonCode` (code list SignatoryRoleCode) |R072
+|8 |Carrier's reservations at taking over |`cac:Consignment/cbc:Remarks` |
+|13, 30 |Consignee's receipt and reservations |`cac:Consignment/cac:ActualDeliveryTransportEvent` with `cbc:Description` and `cac:Signature` |
+|34 |Successive carriers |`cac:MainCarriageShipmentStage` with `cbc:SuccessiveSequenceID` and `cac:CarrierParty` |R074
+|====
+
+== CMR clause
+
+The statement of CMR Article 6(1)(k) is given as a note on the Waybill with this fixed text:
+
+----
+This carriage is subject, notwithstanding any clause to the contrary, to the Convention on the Contract for the International Carriage of Goods by Road (CMR).
+----
+
+== Transshipment
+
+Under the CMR Convention the carrier may tranship the goods unless the sender forbids it. Only the prohibition is therefore stated, as an instruction to the carrier with the fixed text "Transshipment not allowed", in English regardless of the language of the document. Rule PEPPOL-T125-R070 ensures that any instruction about transshipment uses exactly this text. The consolidation indicators of UBL describe whether goods are grouped and must not be used for transshipment.
+
+When mapped to eFTI, the text gives TransshipmentPermittedIndicator (eFTI857) = false. When the text is absent the indicator is left out.
+
+== Cash on delivery
+
+The amount the carrier must collect from the consignee on behalf of the sender is given in `cac:CollectPaymentTerms/cbc:Amount`, as an amount with a currency. It is not given as a freight charge, because it is the sender's money and not a charge for the carriage. The carrier's own fee for handling cash on delivery is a freight charge, with reason code 3.
+
+When mapped to eFTI, the amount gives the cash on delivery amount (eFTI854).
+
+NOTE: Collect payment terms are defined in UBL for freight collected from the consignee. Their use for cash on delivery is an interim convention until a dedicated element is available in UBL.
+
+== Lifecycle and signatures
+
+An eCMR is signed by the parties as the carriage goes on. Each version of the Waybill or Transport Status confirms one step:
+
+* The sender issues the Waybill and signs it with the role CZ.
+* The carrier takes over the goods, records any reservations as remarks and signs the taking over event with the role CA.
+* A successive carrier signs as carrier for its main carriage stage.
+* The consignee signs the actual delivery event with the role CN and gives any reservations in its description.
+
+Peppol secures the transport between access points. The integrity and authenticity of the consignment note itself (eCMR Protocol Articles 3 and 4) must be ensured by the signatures, for example with an advanced electronic seal.
+
+Example:
+[source, xml, indent=0]
+----
+include::../../../../rules/examples/Waybill use cases/Waybill_Example_CMR.xml[]
+----

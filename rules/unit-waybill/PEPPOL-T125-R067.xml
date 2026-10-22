@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-T125-base-1.0">
+	<assert>
+		<description>Verify that a CMR outside the EU states the charges relating to the carriage.</description>
+		<scope>PEPPOL-T125-R067</scope>
+	</assert>
+
+	<test id="1">
+		<!-- CMR from the EU to Norway, particular given -->
+		<assert>
+			<success>PEPPOL-T125-R067</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cac:FreightAllowanceCharge><cbc:ChargeIndicator>true</cbc:ChargeIndicator><cbc:Amount currencyID="EUR">650</cbc:Amount></cac:FreightAllowanceCharge>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>NO</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="2">
+		<!-- CMR from the EU to Norway, particular missing -->
+		<assert>
+			<warning>PEPPOL-T125-R067</warning>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>NO</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="3">
+		<!-- CMR within the EU, particular missing: rule does not apply -->
+		<assert>
+			<success>PEPPOL-T125-R067</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DE</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="4">
+		<!-- Not a CMR, particular missing: rule does not apply -->
+		<assert>
+			<success>PEPPOL-T125-R067</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>Air Waybill</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>NO</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+</testSet>

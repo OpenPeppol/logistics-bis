@@ -3,6 +3,8 @@
 
 Information about the signature of the Waybill identifying the party responsible for this version of the transaction. 
 
+The role in which the party signs is given in `cbc:ReasonCode`, using the code list SignatoryRoleCode, for example CZ for the consignor, CA for the carrier and CN for the consignee. Signatures that confirm an event, such as the carrier's taking over or the consignee's receipt, are given in the transport event they confirm. See <<cmr-consignment-note>>.
+
 Example:
 [source, xml, indent=0]
 ----

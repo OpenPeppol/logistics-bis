@@ -22,6 +22,8 @@ This is the fourth release update of the Peppol Logistics standard. This time on
 
 == Updated Transactions
 * Peppol Waybill 1.1 (T125)
+** Support for using the Waybill as an electronic CMR consignment note (eCMR). New optional elements: issue location, notes (CMR clause), carrier's reservations (remarks), carrier service instructions (transshipment not allowed), customs instructions, declared value, special instructions, total number of packages, packages on transport handling units, actual delivery transport event, performing carrier, cash on delivery (collect payment terms), freight charges, successive carrier sequence, insurance, taking over transport event, agreed time limit (requested delivery period) and signatory role (reason code) on signatures. Signatures can be given on transport events.
+** All new elements are optional; existing Waybills remain valid.
 
 * Advanced Despatch Advice (T120)
 ** the Licence plate delimiter in cbc:LicensePlateID is changed from semicolon (;) to hashtag (#) in line with the Peppol standard delimiter character.
@@ -30,17 +32,23 @@ This is the fourth release update of the Peppol Logistics standard. This time on
 * Code Lists are updated to PoAC version.
 
 == New Codelists
-* No new codelists are added in this release.
+* SignatoryRoleCode, the role in which a party signs (subset of UNCL 3035: CZ, CA, CN, FW).
+* FreightAllowanceChargeReasonCode: code 3, Cash on delivery fee, is added.
 
 == Updated Rules
-* No LoC rules are changed in this version.
+* PEPPOL-T125-R011 to R017 also apply to the requested delivery period.
 * Common rules are updated to PoAC version.
 
 == New Rules
-* No LoC rules are added in this release.
+* PEPPOL-T125-R060 to R069 (warnings): the particulars of CMR Article 6(1) for a CMR consignment note where a place or country of the carriage is outside the EU.
+* PEPPOL-T125-R070: an instruction about transshipment must have the fixed text "Transshipment not allowed".
+* PEPPOL-T125-R071: cash on delivery must have an amount greater than zero.
+* PEPPOL-T125-R072 (warning): signatures in a CMR consignment note should state the signatory role.
+* PEPPOL-T125-R073 (warning): the total number of packages should match the packages on the transport handling units.
+* PEPPOL-T125-R074 (warning): the successive carrier sequence should be unique.
 
 == Changes Use-case Example files.
-* No changes to Use-case Example files in this release.
+* Waybill_Example_CMR.xml is added: a Waybill used as an eCMR for road transport from Denmark to Norway.
 
 == Request For Change (RFC) that are included/solved in Release 1.3
 * LLC-36 Licence plate delimiter update

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-T125-base-1.0">
+	<assert>
+		<description>Verify that a signature in a CMR states the role of the signatory.</description>
+		<scope>PEPPOL-T125-R072</scope>
+	</assert>
+
+	<test id="1">
+		<!-- CMR signature with role -->
+		<assert>
+			<success>PEPPOL-T125-R072</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			<cac:Signature><cbc:ID>1</cbc:ID><cbc:ReasonCode>CZ</cbc:ReasonCode><cac:SignatoryParty><cac:PartyName><cbc:Name>Sender</cbc:Name></cac:PartyName></cac:SignatoryParty></cac:Signature>
+		</ubl:Waybill>
+	</test>
+
+	<test id="2">
+		<!-- CMR signature without role -->
+		<assert>
+			<warning>PEPPOL-T125-R072</warning>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			<cac:Signature><cbc:ID>1</cbc:ID><cac:SignatoryParty><cac:PartyName><cbc:Name>Sender</cbc:Name></cac:PartyName></cac:SignatoryParty></cac:Signature>
+		</ubl:Waybill>
+	</test>
+
+	<test id="3">
+		<!-- Signature on the taking over event without role -->
+		<assert>
+			<warning>PEPPOL-T125-R072</warning>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					<cac:TakeoverTransportEvent><cbc:OccurrenceDate>2026-10-20</cbc:OccurrenceDate><cac:Signature><cbc:ID>1</cbc:ID><cac:SignatoryParty><cac:PartyName><cbc:Name>Sender</cbc:Name></cac:PartyName></cac:SignatoryParty></cac:Signature></cac:TakeoverTransportEvent>
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="4">
+		<!-- Air waybill signature without role -->
+		<assert>
+			<success>PEPPOL-T125-R072</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>Air Waybill</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			<cac:Signature><cbc:ID>1</cbc:ID><cac:SignatoryParty><cac:PartyName><cbc:Name>Sender</cbc:Name></cac:PartyName></cac:SignatoryParty></cac:Signature>
+		</ubl:Waybill>
+	</test>
+
+</testSet>

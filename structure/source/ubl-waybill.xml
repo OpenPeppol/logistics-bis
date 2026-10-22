@@ -33,14 +33,56 @@
 	</cbc:IssueTime>
 	<cbc:Name>Air Waybill
 		<?Name Waybill type ?>
-		<?Description The name (kind of Waybill) of Waybill type. Use "CMR" for CMR, "Bill of Laden" for Bill of laden, "Air Waybill" for Air Waybill or CIM for Train Waybill. ?>
+		<?Description The name (kind of Waybill) of Waybill type. Use "CMR" for CMR, "Bill of Laden" for Bill of laden, "Air Waybill" for Air Waybill or CIM for Train Waybill. For a CMR consignment note the particulars of CMR Article 6(1) are checked by business rules; they are warnings and only apply when the place of taking over, the place of delivery, the country of departure or the country of destination is outside the EU. ?>
 		<?Cardinality 1..1?>
+		<?Rule PEPPOL-T125-R040?>
+		<?Rule PEPPOL-T125-R060?>
 	</cbc:Name>
+	<cbc:Note>Fragile laboratory equipment, keep upright
+		<?Name Note ?>
+		<?Description Free-form text pertinent to this Waybill. In a CMR consignment note (Waybill type "CMR") one note MUST hold the CMR clause, the statement that the carriage is subject to the CMR Convention (CMR Article 6(1)(k)), with the fixed text: "This carriage is subject, notwithstanding any clause to the contrary, to the Convention on the Contract for the International Carriage of Goods by Road (CMR)." Other notes can be used for other useful particulars (CMR Article 6(3)), for example a special interest in delivery declared by the sender (CMR Article 6(2)(d)). ?>
+		<?Cardinality 0..n?>
+		<?Rule PEPPOL-T125-R069?>
+	</cbc:Note>
 	<cbc:ShippingOrderID>KHN23-44044
 		<?Name Shipping Order ID ?>
 		<?Description An identifier (in the form of a reference number) of the Shipping Order or Forwarding Instruction associated with this shipment. ?>
 		<?Cardinality 0..1?>
 	</cbc:ShippingOrderID>
+	<cac:IssueLocation>
+		<?Name Issue location ?>
+		<?Description The place where this Waybill is made out. Mandatory in a CMR consignment note (CMR Article 6(1)(a)). ?>
+		<?Cardinality 0..1?>
+		<?Rule PEPPOL-T125-R060?>
+		<cbc:Name>Novo Nordisk Pharmatech, Køge
+			<?Name Issue location name ?>
+			<?Description The name of the place where this Waybill is made out. ?>
+			<?Cardinality 0..1?>
+			<?Rule PEPPOL-T125-R060?>
+		</cbc:Name>
+		<cac:Address>
+			<?Name Issue location address ?>
+			<?Description The address of the place where this Waybill is made out. ?>
+			<?Cardinality 0..1?>
+			<cbc:CityName>Køge
+				<?Name City ?>
+				<?Description The common name of the city where this Waybill is made out. ?>
+				<?Cardinality 0..1?>
+				<?Rule PEPPOL-T125-R060?>
+			</cbc:CityName>
+			<cac:Country>
+				<?Name Country ?>
+				<?Description The country where this Waybill is made out. ?>
+				<?Cardinality 1..1?>
+				<cbc:IdentificationCode>DK
+					<?Name Country code ?>
+					<?Cardinality 1..1?>
+					<?CodeList ISO3166?>
+					<?Description A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:Address>
+	</cac:IssueLocation>
 	<cac:SenderParty>
 		<?Name Sender Party ?>
 		<?Description The party issuing the Waybill. ?>
@@ -353,8 +395,9 @@
 	</cac:ReceiverParty>
 	<cac:ConsignorParty>
 		<?Name Consignor Party ?>
-		<?Description The party sending the goods in the Waybill, often the issuer of the Waybill. ?>
-		<?Cardinality 0..1?>		
+		<?Description The party sending the goods in the Waybill, often the issuer of the Waybill. The sender of a CMR consignment note (CMR Article 6(1)(b)). ?>
+		<?Cardinality 0..1?>
+		<?Rule PEPPOL-T125-R061?>		
 		<cac:PartyIdentification>
 			<?Name Consignor identification ?>
 			<?Description An identifier for the consignor party. ?>
@@ -853,11 +896,28 @@
 				<?Cardinality 0..1?>
 				<?Rule PEPPOL-T125-R008?>
 			</cbc:LoadingLengthMeasure>
+			<cbc:Remarks>Two cartons with dented corners at taking over
+				<?Name Carrier's reservations ?>
+				<?Description The reservations entered by the carrier when taking over the goods, about the apparent condition of the goods and their packaging or about the accuracy of the particulars on the number of packages, their marks and numbers (CMR Article 8). Normally added by the carrier in a new version of the Waybill. ?>
+				<?Cardinality 0..n?>
+			</cbc:Remarks>
 			<cbc:HazardousRiskIndicator>false
 				<?Name Hazardous risk indicator ?>
 				<?Description An indication that the transported goods in this consignment are subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).?>
 				<?Cardinality 0..1?>
 			</cbc:HazardousRiskIndicator>
+			<cbc:CarrierServiceInstructions>Transshipment not allowed
+				<?Name Carrier service instructions ?>
+				<?Description Service instructions to the carrier about how the carriage is performed. The sender's statement that transshipment is not allowed (CMR Article 6(2)(a)) MUST be given with the fixed text "Transshipment not allowed", in English regardless of the language of the document. Under the CMR Convention the carrier may tranship unless the sender forbids it, so only the prohibition is stated. When mapped to eFTI, the text gives TransshipmentPermittedIndicator (eFTI857) = false; when the text is absent the indicator is left out. ?>
+				<?Cardinality 0..n?>
+				<?Rule PEPPOL-T125-R070?>
+			</cbc:CarrierServiceInstructions>
+			<cbc:CustomsClearanceServiceInstructions>Export declaration lodged by the consignor, MRN 26DK000000001234A1
+				<?Name Customs instructions ?>
+				<?Description Instructions for customs and other formalities (CMR Article 6(1)(j)). Mandatory in a CMR consignment note; state "None" when no formalities apply. ?>
+				<?Cardinality 0..n?>
+				<?Rule PEPPOL-T125-R068?>
+			</cbc:CustomsClearanceServiceInstructions>
 			<cbc:TotalTransportHandlingUnitQuantity unitCode="EA">1
 				<?Name Total number of transport handling units ?>
 				<?Description The total numbers of transport handling units is this consignment?>
@@ -865,6 +925,28 @@
 				<?Rule PEPPOL-T125-R003?>
 				<?Rule PEPPOL-T125-R004?>
 			</cbc:TotalTransportHandlingUnitQuantity>
+			<cbc:DeclaredForCarriageValueAmount currencyID="EUR">48000
+				<?Name Declared value of the goods ?>
+				<?Description The value of the goods declared by the sender for the purpose of the carriage. Used for the declared value of the goods (CMR Article 6(2)(d) and Article 24). A special interest in delivery (CMR Article 26) is given as a note on the Waybill. ?>
+				<?Cardinality 0..1?>
+				<?currencyID-Name Currency identifier?>
+				<?currencyID-Description Currency identifier.?>
+				<?currencyID-CodeList ISO4217?>
+			</cbc:DeclaredForCarriageValueAmount>
+			<cbc:SpecialInstructions>Deliver to goods reception between 08:00 and 14:00
+				<?Name Special instructions ?>
+				<?Description Special instructions relating to this consignment, other useful particulars (CMR Article 6(3)). ?>
+				<?Cardinality 0..n?>
+			</cbc:SpecialInstructions>
+			<cbc:TotalPackagesQuantity unitCode="EA">12
+				<?Name Total number of packages ?>
+				<?Description The total number of packages in this consignment (CMR Article 6(1)(g)). Mandatory in a CMR consignment note. When packages are specified on the transport handling units, the number should match the sum of their quantities. ?>
+				<?Cardinality 0..1?>
+				<?Rule PEPPOL-T125-R066?>
+				<?Rule PEPPOL-T125-R073?>
+				<?unitCode-CodeList UNECERec20?>
+				<?unitCode-usage Optional?>
+			</cbc:TotalPackagesQuantity>
 			<cac:ConsolidatedShipment>
 				<?Name Consolidated Shipment?>
 				<?Description A shipm,ent consolidated on the consignment. Used to specify the goods items on the consignment when the reference between goods items and the transport handling units are unknown. ?>
@@ -997,6 +1079,103 @@
 				</cac:GoodsItem>
 						
 			</cac:ConsolidatedShipment>
+			<cac:ActualDeliveryTransportEvent>
+				<?Name Actual delivery event ?>
+				<?Description The delivery of the goods to the consignee. Used for the consignee's receipt (CMR Article 13) with the consignee's signature and, where needed, the consignee's reservations (CMR Article 30). Normally added in a new version of the Waybill or sent in a Transport Status. ?>
+				<?Cardinality 0..1?>
+				<cbc:OccurrenceDate>2026-09-17
+					<?Name Delivery date ?>
+					<?Description The date the goods were delivered. Format = "YYYY-MM-DD". ?>
+					<?Cardinality 1..1?>
+				</cbc:OccurrenceDate>
+				<cbc:OccurrenceTime>10:15:00+03:00
+					<?Name Delivery time ?>
+					<?Description The time the goods were delivered. Format = "hh:mm:ss". ?>
+					<?Cardinality 0..1?>
+				</cbc:OccurrenceTime>
+				<cbc:Description>Received in good order
+					<?Name Consignee's reservations ?>
+					<?Description The consignee's reservations at delivery, for example loss or damage (CMR Article 30). ?>
+					<?Cardinality 0..n?>
+				</cbc:Description>
+				<cac:Location>
+					<?Name Delivery location ?>
+					<?Description The place where the event takes place. ?>
+					<?Cardinality 1..1?>
+					<cbc:Name>Finnair Cargo terminal
+						<?Name Location name ?>
+						<?Cardinality 0..1?>
+					</cbc:Name>
+					<cac:Address>
+						<?Name Location address ?>
+						<?Cardinality 0..1?>
+						<cbc:CityName>Vantaa
+							<?Name City ?>
+							<?Cardinality 0..1?>
+						</cbc:CityName>
+						<cac:Country>
+							<?Name Country ?>
+							<?Cardinality 1..1?>
+							<cbc:IdentificationCode>FI
+								<?Name Country code ?>
+								<?Cardinality 1..1?>
+								<?CodeList ISO3166?>
+							</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:Address>
+				</cac:Location>
+				<cac:Signature>
+					<?Name Consignee signature ?>
+					<?Description The signature that confirms this event, for example the consignee's signature. Links the signature to the event it confirms (eCMR Protocol Article 3). ?>
+					<?Cardinality 0..1?>
+					<cbc:ID>SIG-2026-000451-CN
+						<?Name Signature identifier ?>
+						<?Description The identifier of the signature.?>
+						<?Cardinality 1..1?>
+					</cbc:ID>
+					<cbc:ReasonCode>CN
+						<?Name Signatory role ?>
+						<?Description The role in which the signatory signs, for example CZ for the consignor (sender), CA for the carrier and CN for the consignee. ?>
+						<?Cardinality 0..1?>
+						<?CodeList SignatoryRoleCode?>
+						<?Rule PEPPOL-T125-R072?>
+					</cbc:ReasonCode>
+					<cbc:ValidationDate>2026-09-17
+						<?Description The date upon which this signature was applied. Format = "YYYY-MM-DD". ?>
+						<?Cardinality 0..1?>
+					</cbc:ValidationDate>
+					<cbc:ValidationTime>10:16:00+03:00
+						<?Description The time at which this signature was applied. Format = "hh:mm:ss". ?>
+						<?Cardinality 0..1?>
+					</cbc:ValidationTime>
+					<cac:SignatoryParty>
+						<?Name Signatory party ?>
+						<?Description The party that signs. ?>
+						<?Cardinality 1..1?>
+						<cac:PartyName>
+							<?Name Party name ?>
+							<?Cardinality 1..1?>
+							<cbc:Name>Finnair Oyj
+								<?Name Signatory party name ?>
+								<?Description The name of the signatory party.?>
+							</cbc:Name>
+						</cac:PartyName>
+					</cac:SignatoryParty>
+					<cac:DigitalSignatureAttachment>
+						<?Name Digital signature ?>
+						<?Description The electronic signature or advanced electronic seal of the signatory.?>
+						<?Cardinality 1..1?>
+						<cac:ExternalReference>
+							<?Name External reference ?>
+							<?Cardinality 0..1?>
+							<cbc:URI>https://sign.example/2026-000451/cn
+								<?Name Address to internet resource?>
+								<?Description The Uniform Resource Identifier (URI) that identifies the signature.?>
+							</cbc:URI>
+						</cac:ExternalReference>
+					</cac:DigitalSignatureAttachment>
+				</cac:Signature>
+			</cac:ActualDeliveryTransportEvent>
 			<cac:ConsigneeParty>
 				<?Name Delivery party ?>
 				<?Description The party responsible for receiving the goods in the Waybill. ?>
@@ -1129,6 +1308,29 @@
 					</cbc:ElectronicMail>
 				</cac:Contact>
 			</cac:ConsigneeParty>
+			<cac:PerformingCarrierParty>
+				<?Name Performing carrier party ?>
+				<?Description The carrier that actually performs the carriage when it is not the contracting carrier. Successive carriers (CMR Article 34) are given per main carriage shipment stage. ?>
+				<?Cardinality 0..1?>
+				<cac:PartyIdentification>
+					<?Name Performing carrier identification ?>
+					<?Cardinality 0..1?>
+					<cbc:ID schemeID="0088">5790000435968
+						<?Name ID ?>
+						<?Cardinality 1..1?>
+						<?schemeID-CodeList ICD?>
+						<?schemeID-usage Optional?>
+					</cbc:ID>
+				</cac:PartyIdentification>
+				<cac:PartyName>
+					<?Name Party name ?>
+					<?Cardinality 0..1?>
+					<cbc:Name>Nordic Road Feeder ApS
+						<?Name Performing carrier name ?>
+						<?Description The name of the performing carrier. ?>
+					</cbc:Name>
+				</cac:PartyName>
+			</cac:PerformingCarrierParty>
 			<cac:OriginalDepartureCountry>
 				<?Name Original departure country ?>
 				<?Description The country from which the goods in this consignment were originally exported, without any commercial transaction taking place in intermediate countries. ?>
@@ -1168,6 +1370,56 @@
 					<?Rule PEPPOL-T125-R010?>
 				</cbc:Note>
 			</cac:PaymentTerms>
+			<cac:CollectPaymentTerms>
+				<?Name Cash on delivery ?>
+				<?Description The amount the carrier must collect from the consignee on behalf of the sender before handing over the goods (cash on delivery, CMR Article 6(2)(c) and Article 21). Interim use of collect payment terms until a dedicated element is available in UBL. When mapped to eFTI, the amount gives the cash on delivery amount (eFTI854). The carrier's fee for handling cash on delivery is given as a freight charge. ?>
+				<?Cardinality 0..1?>
+				<?Rule PEPPOL-T125-R071?>
+				<cbc:Amount currencyID="EUR">2500
+					<?Name Cash on delivery amount ?>
+					<?Description The amount to be collected from the consignee. ?>
+					<?Cardinality 1..1?>
+					<?Rule PEPPOL-T125-R071?>
+					<?currencyID-Name Currency identifier?>
+					<?currencyID-Description Currency identifier.?>
+					<?currencyID-CodeList ISO4217?>
+				</cbc:Amount>
+			</cac:CollectPaymentTerms>
+			<cac:FreightAllowanceCharge>
+				<?Name Freight charge ?>
+				<?Description A charge relating to the carriage (CMR Article 6(1)(i)) or a charge the sender undertakes to pay (CMR Article 6(2)(b)), for example the carriage charge, supplementary charges, customs duties or the carrier's fee for handling cash on delivery. ?>
+				<?Cardinality 0..n?>
+				<?Rule PEPPOL-T125-R067?>
+				<cbc:ChargeIndicator>true
+					<?Name Charge indicator ?>
+					<?Description An indicator that this describes a charge (true) or an allowance (false). ?>
+					<?Cardinality 1..1?>
+				</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode>1
+					<?Name Charge reason code ?>
+					<?Description A code for the kind of charge. ?>
+					<?Cardinality 0..1?>
+					<?CodeList FreightAllowanceChargeReasonCode?>
+				</cbc:AllowanceChargeReasonCode>
+				<cbc:AllowanceChargeReason>Carriage charge Køge to Vantaa
+					<?Name Charge reason ?>
+					<?Description A textual description of the charge. ?>
+					<?Cardinality 0..1?>
+				</cbc:AllowanceChargeReason>
+				<cbc:PrepaidIndicator>true
+					<?Name Paid by sender ?>
+					<?Description An indicator that the sender pays the charge (true) or that it is collected from the consignee (false) (CMR Article 6(2)(b)). ?>
+					<?Cardinality 0..1?>
+				</cbc:PrepaidIndicator>
+				<cbc:Amount currencyID="EUR">650
+					<?Name Charge amount ?>
+					<?Description The amount of the charge. ?>
+					<?Cardinality 1..1?>
+					<?currencyID-Name Currency identifier?>
+					<?currencyID-Description Currency identifier.?>
+					<?currencyID-CodeList ISO4217?>
+				</cbc:Amount>
+			</cac:FreightAllowanceCharge>
 			
 			<cac:MainCarriageShipmentStage>
 				<?Name Main Carriage Shipment Stage ?>
@@ -1185,6 +1437,12 @@
 				<?Cardinality 0..n?>
 				<?CodeList TransportMeansTypeCode?>					
 				</cbc:TransportMeansTypeCode>
+				<cbc:SuccessiveSequenceID>1
+				<?Name Successive carrier sequence ?>
+				<?Description The sequence of this stage when the carriage is performed by successive carriers (CMR Article 34). The carrier of the stage is given in the carrier party of the stage. ?>
+				<?Cardinality 0..1?>
+				<?Rule PEPPOL-T125-R074?>
+				</cbc:SuccessiveSequenceID>
 				
 				<cac:CarrierParty>
 				<?Name Carrier Party?>
@@ -1218,6 +1476,16 @@
 					<?Description The Journey ID, eg. flight number used for this shipment stage?>
 					<?Cardinality 0..1?>
 					</cbc:JourneyID> 
+					<cac:RoadTransport>
+					<?Name Road transport ?>
+					<?Description The vehicle used in this stage, used for the vehicle registration on the consignment note. Use only when the transport mode code is road transport. ?>
+					<?Cardinality 0..1?>
+						<cbc:LicensePlateID>DF10958
+						<?Name License plate identifier ?>
+						<?Description The licence plate(s) identifying the vehicle separated by hashtag (#) if there are more than one. ?>
+						<?Cardinality 1..1?>
+						</cbc:LicensePlateID>
+					</cac:RoadTransport>
 				</cac:TransportMeans>
 				<cac:LoadingPortLocation>
 				<?Name Loading Port Location?>
@@ -1505,6 +1773,25 @@
 						</cac:HazardousItem>
 					</cac:Item>
 				</cac:GoodsItem>
+				<cac:Package>
+					<?Name Package ?>
+					<?Description The packages on this transport handling unit: their number and method of packing (CMR Article 6(1)(f) and (g)). ?>
+					<?Cardinality 0..n?>
+					<cbc:Quantity unitCode="EA">12
+						<?Name Number of packages ?>
+						<?Description The number of packages of this kind. ?>
+						<?Cardinality 1..1?>
+						<?Rule PEPPOL-T125-R073?>
+						<?unitCode-CodeList UNECERec20?>
+						<?unitCode-usage Optional?>
+					</cbc:Quantity>
+					<cbc:PackagingTypeCode>CT
+						<?Name Packaging type code ?>
+						<?Description A code for the method of packing. ?>
+						<?Cardinality 0..1?>
+						<?CodeList UNECERec21?>
+					</cbc:PackagingTypeCode>
+				</cac:Package>
 			</cac:TransportHandlingUnit>
 			<cac:DocumentReference>
 				<?Name Additional document reference?>
@@ -1543,6 +1830,24 @@
 					</cac:ExternalReference>
 				</cac:Attachment>
 			</cac:DocumentReference>
+			<cac:InsurancePolicy>
+				<?Name Insurance ?>
+				<?Description The sender's instructions on insurance of the goods (CMR Article 6(2)(e)). ?>
+				<?Cardinality 0..1?>
+				<cbc:InsuranceTypeDescription>All risks cargo insurance, arranged by the carrier on behalf of the sender
+					<?Name Insurance instructions ?>
+					<?Description The sender's instructions on insurance. ?>
+					<?Cardinality 0..1?>
+				</cbc:InsuranceTypeDescription>
+				<cbc:InsuredValueAmount currencyID="EUR">48000
+					<?Name Insured value ?>
+					<?Description The value for which the goods are to be insured. ?>
+					<?Cardinality 0..1?>
+					<?currencyID-Name Currency identifier?>
+					<?currencyID-Description Currency identifier.?>
+					<?currencyID-CodeList ISO4217?>
+				</cbc:InsuredValueAmount>
+			</cac:InsurancePolicy>
 		</cac:Consignment>
 		<cac:ShipmentStage>
 			<?Name Shipment stage ?>
@@ -1617,6 +1922,100 @@
 					</cbc:VesselID>
 				</cac:MaritimeTransport>
 			</cac:TransportMeans>
+			<cac:TakeoverTransportEvent>
+				<?Name Taking over event ?>
+				<?Description The place and date of taking over the goods (CMR Article 6(1)(d)). Mandatory in a CMR consignment note. The carrier's signature at taking over (CMR Article 5) can be given in the event; the carrier's reservations are given as remarks on the consignment (CMR Article 8). ?>
+				<?Cardinality 0..1?>
+				<?Rule PEPPOL-T125-R063?>
+				<cbc:OccurrenceDate>2026-09-16
+					<?Name Taking over date ?>
+					<?Description The date the carrier takes over the goods. Format = "YYYY-MM-DD". ?>
+					<?Cardinality 1..1?>
+					<?Rule PEPPOL-T125-R063?>
+				</cbc:OccurrenceDate>
+				<cbc:OccurrenceTime>11:30:00+02:00
+					<?Name Taking over time ?>
+					<?Description The time the carrier takes over the goods. Format = "hh:mm:ss". ?>
+					<?Cardinality 0..1?>
+				</cbc:OccurrenceTime>
+				<cac:Location>
+					<?Name Taking over location ?>
+					<?Description The place where the event takes place. ?>
+					<?Cardinality 1..1?>
+					<cbc:Name>Novo Nordisk Pharmatech, goods despatch
+						<?Name Location name ?>
+						<?Cardinality 0..1?>
+					</cbc:Name>
+					<cac:Address>
+						<?Name Location address ?>
+						<?Cardinality 0..1?>
+						<cbc:CityName>Køge
+							<?Name City ?>
+							<?Cardinality 0..1?>
+						</cbc:CityName>
+						<cac:Country>
+							<?Name Country ?>
+							<?Cardinality 1..1?>
+							<cbc:IdentificationCode>DK
+								<?Name Country code ?>
+								<?Cardinality 1..1?>
+								<?CodeList ISO3166?>
+							</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:Address>
+				</cac:Location>
+				<cac:Signature>
+					<?Name Carrier signature ?>
+					<?Description The signature that confirms this event, for example the carrier's signature. Links the signature to the event it confirms (eCMR Protocol Article 3). ?>
+					<?Cardinality 0..1?>
+					<cbc:ID>SIG-2026-000451-CA
+						<?Name Signature identifier ?>
+						<?Description The identifier of the signature.?>
+						<?Cardinality 1..1?>
+					</cbc:ID>
+					<cbc:ReasonCode>CA
+						<?Name Signatory role ?>
+						<?Description The role in which the signatory signs, for example CZ for the consignor (sender), CA for the carrier and CN for the consignee. ?>
+						<?Cardinality 0..1?>
+						<?CodeList SignatoryRoleCode?>
+						<?Rule PEPPOL-T125-R072?>
+					</cbc:ReasonCode>
+					<cbc:ValidationDate>2026-09-16
+						<?Description The date upon which this signature was applied. Format = "YYYY-MM-DD". ?>
+						<?Cardinality 0..1?>
+					</cbc:ValidationDate>
+					<cbc:ValidationTime>11:35:00+02:00
+						<?Description The time at which this signature was applied. Format = "hh:mm:ss". ?>
+						<?Cardinality 0..1?>
+					</cbc:ValidationTime>
+					<cac:SignatoryParty>
+						<?Name Signatory party ?>
+						<?Description The party that signs. ?>
+						<?Cardinality 1..1?>
+						<cac:PartyName>
+							<?Name Party name ?>
+							<?Cardinality 1..1?>
+							<cbc:Name>Finnair Oyj
+								<?Name Signatory party name ?>
+								<?Description The name of the signatory party.?>
+							</cbc:Name>
+						</cac:PartyName>
+					</cac:SignatoryParty>
+					<cac:DigitalSignatureAttachment>
+						<?Name Digital signature ?>
+						<?Description The electronic signature or advanced electronic seal of the signatory.?>
+						<?Cardinality 1..1?>
+						<cac:ExternalReference>
+							<?Name External reference ?>
+							<?Cardinality 0..1?>
+							<cbc:URI>https://sign.example/2026-000451/ca
+								<?Name Address to internet resource?>
+								<?Description The Uniform Resource Identifier (URI) that identifies the signature.?>
+							</cbc:URI>
+						</cac:ExternalReference>
+					</cac:DigitalSignatureAttachment>
+				</cac:Signature>
+			</cac:TakeoverTransportEvent>
 		</cac:ShipmentStage>
 		<cac:Delivery>
 			<cbc:TrackingID>456789</cbc:TrackingID>
@@ -1709,6 +2108,26 @@
 						</cbc:LongitudeDegreesMeasure>
 				</cac:LocationCoordinate>
 			</cac:DeliveryLocation>
+			<cac:RequestedDeliveryPeriod>
+				<?Name Agreed time limit for the carriage ?>
+				<?Description The agreed time limit within which the carriage must be carried out (CMR Article 6(2)(f) and Article 19). ?>
+				<?Cardinality 0..1?>
+				<cbc:EndDate>2026-09-18
+					<?Name Period end date ?>
+					<?Description The latest date of delivery. Format = "YYYY-MM-DD". ?>
+					<?Cardinality 0..1?>
+					<?Rule PEPPOL-T125-R011?>
+					<?Rule PEPPOL-T125-R012?>
+				</cbc:EndDate>
+				<cbc:EndTime>16:00:00+03:00
+					<?Name Period end time ?>
+					<?Description The latest time of delivery. Format = "hh:mm:ss". ?>
+					<?Cardinality 0..1?>
+					<?Rule PEPPOL-T125-R013?>
+					<?Rule PEPPOL-T125-R014?>
+					<?Rule PEPPOL-T125-R017?>
+				</cbc:EndTime>
+			</cac:RequestedDeliveryPeriod>
 			<cac:EstimatedDeliveryPeriod>
 				<?Name Estimated delivery period?>
 				<?Description The estimated delivery period.?>
@@ -1904,6 +2323,13 @@
 			<?Description The Id of the Signature.?>
 			<?Cardinality 1..1?>						
 		</cbc:ID>
+		<cbc:ReasonCode>CZ
+			<?Name Signatory role ?>
+			<?Description The role in which the signatory signs the Waybill, for example CZ for the consignor (sender), CA for the carrier and CN for the consignee (CMR Article 5, eCMR Protocol Article 3). ?>
+			<?Cardinality 0..1?>
+			<?CodeList SignatoryRoleCode?>
+			<?Rule PEPPOL-T125-R072?>
+		</cbc:ReasonCode>
 		<cbc:ValidationDate>2026-09-16
 			<?Description The date upon which this signature was verified. Format = "YYYY-MM-DD". ?>
 			<?Cardinality 0..1?>
