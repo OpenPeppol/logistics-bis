@@ -36,7 +36,7 @@
 		<assert id="PEPPOL-T125-R074" test="count(cac:MainCarriageShipmentStage/cbc:SuccessiveSequenceID) = count(distinct-values(cac:MainCarriageShipmentStage/cbc:SuccessiveSequenceID/normalize-space(.)))" flag="warning">[PEPPOL-T125-R074] The successive carrier sequence SHOULD be unique for each main carriage shipment stage.</assert>
 	</rule>
 	
-	<rule context="cac:Shipment/Delivery">
+	<rule context="cac:Shipment/cac:Delivery">
 		<assert id="PEPPOL-T125-R007" test="not(cac:DeliveryTerms) or (cac:DeliveryTerms/cbc:ID) or (cac:DeliveryTerms/cbc:SpecialTerms)" flag="fatal">[PEPPOL-T125-R007] Either ID or special terms need to be specified in Delivery terms</assert>
 	</rule>
 
