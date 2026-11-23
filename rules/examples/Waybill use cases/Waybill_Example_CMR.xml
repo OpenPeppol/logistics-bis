@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Example of a Peppol Waybill used as an electronic CMR consignment note (eCMR).
+	Road transport from Køge, Denmark, to Oslo, Norway. As the place of delivery is outside the EU,
+	the CMR rules PEPPOL-T125-R060 to R069 apply. This version is the one signed by the sender (consignor)
+	and by the carrier at taking over. The consignee's receipt is added in a later version, or sent as a
+	Transport Status, in an actual delivery transport event.
+-->
+<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:waybill:1</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:waybill:1</cbc:ProfileID>
+	<cbc:ID>CMR-2026-001234</cbc:ID>
+	<cbc:CarrierAssignedID>NRF-77881</cbc:CarrierAssignedID>
+	<cbc:VersionID>2</cbc:VersionID>
+	<cbc:StatusCode>Executing</cbc:StatusCode>
+	<cbc:IssueDate>2026-10-20</cbc:IssueDate>
+	<cbc:IssueTime>08:30:00+02:00</cbc:IssueTime>
+	<cbc:Name>CMR</cbc:Name>
+	<cbc:Note>This carriage is subject, notwithstanding any clause to the contrary, to the Convention on the Contract for the International Carriage of Goods by Road (CMR).</cbc:Note>
+	<cbc:Note>Special interest in delivery declared by the sender: goods needed for production start on 2026-10-23.</cbc:Note>
+	<cbc:ShippingOrderID>KHN26-55120</cbc:ShippingOrderID>
+	<cac:IssueLocation>
+		<cbc:Name>Novo Nordisk Pharmatech, goods despatch</cbc:Name>
+		<cac:Address>
+			<cbc:CityName>Køge</cbc:CityName>
+			<cac:Country>
+				<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:Address>
+	</cac:IssueLocation>
+	<cac:SenderParty>
+		<cbc:EndpointID schemeID="0198">DK13246149</cbc:EndpointID>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Novo Nordisk Pharmatech A/S</cbc:RegistrationName>
+		</cac:PartyLegalEntity>
+	</cac:SenderParty>
+	<cac:ReceiverParty>
+		<cbc:EndpointID schemeID="0198">DK29384756</cbc:EndpointID>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Nordic Road Freight A/S</cbc:RegistrationName>
+		</cac:PartyLegalEntity>
+	</cac:ReceiverParty>
+	<cac:ConsignorParty>
+		<cac:PartyName>
+			<cbc:Name>Novo Nordisk Pharmatech A/S</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>Københavnsvej 216</cbc:StreetName>
+			<cbc:CityName>Køge</cbc:CityName>
+			<cbc:PostalZone>4600</cbc:PostalZone>
+			<cac:Country>
+				<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Novo Nordisk Pharmatech A/S</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0198">DK13246149</cbc:CompanyID>
+		</cac:PartyLegalEntity>
+	</cac:ConsignorParty>
+	<cac:CarrierParty>
+		<cbc:EndpointID schemeID="0198">DK29384756</cbc:EndpointID>
+		<cac:PartyName>
+			<cbc:Name>Nordic Road Freight A/S</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>Transportvej 12</cbc:StreetName>
+			<cbc:CityName>Taastrup</cbc:CityName>
+			<cbc:PostalZone>2630</cbc:PostalZone>
+			<cac:Country>
+				<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Nordic Road Freight A/S</cbc:RegistrationName>
+		</cac:PartyLegalEntity>
+	</cac:CarrierParty>
+	<cac:Shipment>
+		<cbc:ID>KHN26-55120</cbc:ID>
+		<cac:Consignment>
+			<cbc:ID>CMR-2026-001234</cbc:ID>
+			<cbc:GrossWeightMeasure unitCode="KGM">1840</cbc:GrossWeightMeasure>
+			<cbc:GrossVolumeMeasure unitCode="MTQ">6.2</cbc:GrossVolumeMeasure>
+			<cbc:Remarks>One carton with damaged outer packaging at taking over.</cbc:Remarks>
+			<cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
+			<cbc:CarrierServiceInstructions>Transshipment not allowed</cbc:CarrierServiceInstructions>
+			<cbc:CustomsClearanceServiceInstructions>Export declaration lodged by the consignor, MRN 26DK000000001234A1. Import clearance in Norway by the consignee's agent at Svinesund.</cbc:CustomsClearanceServiceInstructions>
+			<cbc:TotalTransportHandlingUnitQuantity unitCode="EA">2</cbc:TotalTransportHandlingUnitQuantity>
+			<cbc:DeclaredForCarriageValueAmount currencyID="EUR">48000</cbc:DeclaredForCarriageValueAmount>
+			<cbc:TotalPackagesQuantity unitCode="EA">40</cbc:TotalPackagesQuantity>
+			<cac:ConsigneeParty>
+				<cac:PartyName>
+					<cbc:Name>Oslo Bioteknologi AS</cbc:Name>
+				</cac:PartyName>
+				<cac:PostalAddress>
+					<cbc:StreetName>Gaustadalléen 21</cbc:StreetName>
+					<cbc:CityName>Oslo</cbc:CityName>
+					<cbc:PostalZone>0349</cbc:PostalZone>
+					<cac:Country>
+						<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:PostalAddress>
+			</cac:ConsigneeParty>
+			<cac:OriginalDepartureCountry>
+				<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+			</cac:OriginalDepartureCountry>
+			<cac:FinalDestinationCountry>
+				<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+			</cac:FinalDestinationCountry>
+			<cac:CollectPaymentTerms>
+				<cbc:Amount currencyID="EUR">2500</cbc:Amount>
+			</cac:CollectPaymentTerms>
+			<cac:FreightAllowanceCharge>
+				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode>1</cbc:AllowanceChargeReasonCode>
+				<cbc:AllowanceChargeReason>Carriage charge Køge to Oslo</cbc:AllowanceChargeReason>
+				<cbc:PrepaidIndicator>true</cbc:PrepaidIndicator>
+				<cbc:Amount currencyID="EUR">1150</cbc:Amount>
+			</cac:FreightAllowanceCharge>
+			<cac:FreightAllowanceCharge>
+				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode>3</cbc:AllowanceChargeReasonCode>
+				<cbc:AllowanceChargeReason>Cash on delivery fee</cbc:AllowanceChargeReason>
+				<cbc:PrepaidIndicator>true</cbc:PrepaidIndicator>
+				<cbc:Amount currencyID="EUR">35</cbc:Amount>
+			</cac:FreightAllowanceCharge>
+			<cac:MainCarriageShipmentStage>
+				<cbc:TransportModeCode>3</cbc:TransportModeCode>
+				<cbc:TransportMeansTypeCode>31</cbc:TransportMeansTypeCode>
+				<cbc:SuccessiveSequenceID>1</cbc:SuccessiveSequenceID>
+				<cac:CarrierParty>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0198">DK29384756</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PartyName>
+						<cbc:Name>Nordic Road Freight A/S</cbc:Name>
+					</cac:PartyName>
+				</cac:CarrierParty>
+				<cac:TransportMeans>
+					<cbc:RegistrationNationality>Denmark</cbc:RegistrationNationality>
+					<cac:RoadTransport>
+						<cbc:LicensePlateID>AB12345</cbc:LicensePlateID>
+					</cac:RoadTransport>
+				</cac:TransportMeans>
+			</cac:MainCarriageShipmentStage>
+			<cac:TransportHandlingUnit>
+				<cbc:ID schemeID="SSCC">357300000000000017</cbc:ID>
+				<cbc:TransportHandlingUnitTypeCode>PX</cbc:TransportHandlingUnitTypeCode>
+				<cbc:ShippingMarks>KHN26-55120 1/2</cbc:ShippingMarks>
+				<cac:MeasurementDimension>
+					<cbc:AttributeID>AAB</cbc:AttributeID>
+					<cbc:Measure unitCode="KGM">920</cbc:Measure>
+				</cac:MeasurementDimension>
+				<cac:GoodsItem>
+					<cbc:Description>Laboratory glassware</cbc:Description>
+				</cac:GoodsItem>
+				<cac:Package>
+					<cbc:Quantity unitCode="EA">20</cbc:Quantity>
+					<cbc:PackagingTypeCode>CT</cbc:PackagingTypeCode>
+				</cac:Package>
+			</cac:TransportHandlingUnit>
+			<cac:TransportHandlingUnit>
+				<cbc:ID schemeID="SSCC">357300000000000024</cbc:ID>
+				<cbc:TransportHandlingUnitTypeCode>PX</cbc:TransportHandlingUnitTypeCode>
+				<cbc:ShippingMarks>KHN26-55120 2/2</cbc:ShippingMarks>
+				<cac:MeasurementDimension>
+					<cbc:AttributeID>AAB</cbc:AttributeID>
+					<cbc:Measure unitCode="KGM">920</cbc:Measure>
+				</cac:MeasurementDimension>
+				<cac:GoodsItem>
+					<cbc:Description>Laboratory glassware</cbc:Description>
+				</cac:GoodsItem>
+				<cac:Package>
+					<cbc:Quantity unitCode="EA">20</cbc:Quantity>
+					<cbc:PackagingTypeCode>CT</cbc:PackagingTypeCode>
+				</cac:Package>
+			</cac:TransportHandlingUnit>
+			<cac:InsurancePolicy>
+				<cbc:InsuranceTypeDescription>All risks cargo insurance, arranged by the carrier on behalf of the sender</cbc:InsuranceTypeDescription>
+				<cbc:InsuredValueAmount currencyID="EUR">48000</cbc:InsuredValueAmount>
+			</cac:InsurancePolicy>
+		</cac:Consignment>
+		<cac:ShipmentStage>
+			<cbc:TransportModeCode>3</cbc:TransportModeCode>
+			<cbc:TransportMeansTypeCode>31</cbc:TransportMeansTypeCode>
+			<cac:TransportMeans>
+				<cbc:RegistrationNationality>Denmark</cbc:RegistrationNationality>
+				<cac:RoadTransport>
+					<cbc:LicensePlateID>AB12345</cbc:LicensePlateID>
+				</cac:RoadTransport>
+			</cac:TransportMeans>
+			<cac:TakeoverTransportEvent>
+				<cbc:OccurrenceDate>2026-10-20</cbc:OccurrenceDate>
+				<cbc:OccurrenceTime>11:30:00+02:00</cbc:OccurrenceTime>
+				<cac:Location>
+					<cbc:Name>Novo Nordisk Pharmatech, goods despatch</cbc:Name>
+					<cac:Address>
+						<cbc:CityName>Køge</cbc:CityName>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:Address>
+				</cac:Location>
+				<cac:Signature>
+					<cbc:ID>SIG-CMR-2026-001234-CA</cbc:ID>
+					<cbc:ReasonCode>CA</cbc:ReasonCode>
+					<cbc:ValidationDate>2026-10-20</cbc:ValidationDate>
+					<cbc:ValidationTime>11:35:00+02:00</cbc:ValidationTime>
+					<cac:SignatoryParty>
+						<cac:PartyName>
+							<cbc:Name>Nordic Road Freight A/S</cbc:Name>
+						</cac:PartyName>
+					</cac:SignatoryParty>
+					<cac:DigitalSignatureAttachment>
+						<cac:ExternalReference>
+							<cbc:URI>https://sign.example/cmr-2026-001234/ca</cbc:URI>
+						</cac:ExternalReference>
+					</cac:DigitalSignatureAttachment>
+				</cac:Signature>
+			</cac:TakeoverTransportEvent>
+		</cac:ShipmentStage>
+		<cac:Delivery>
+			<cac:DeliveryLocation>
+				<cbc:Name>Oslo Bioteknologi, goods reception</cbc:Name>
+				<cac:Address>
+					<cbc:StreetName>Gaustadalléen 21</cbc:StreetName>
+					<cbc:CityName>Oslo</cbc:CityName>
+					<cbc:PostalZone>0349</cbc:PostalZone>
+					<cac:Country>
+						<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:Address>
+			</cac:DeliveryLocation>
+			<cac:RequestedDeliveryPeriod>
+				<cbc:EndDate>2026-10-22</cbc:EndDate>
+				<cbc:EndTime>16:00:00+02:00</cbc:EndTime>
+			</cac:RequestedDeliveryPeriod>
+			<cac:EstimatedDeliveryPeriod>
+				<cbc:StartDate>2026-10-21</cbc:StartDate>
+				<cbc:StartTime>14:00:00+02:00</cbc:StartTime>
+				<cbc:EndDate>2026-10-21</cbc:EndDate>
+				<cbc:EndTime>18:00:00+02:00</cbc:EndTime>
+			</cac:EstimatedDeliveryPeriod>
+			<cac:Despatch>
+				<cac:DespatchAddress>
+					<cbc:StreetName>Københavnsvej 216</cbc:StreetName>
+					<cbc:CityName>Køge</cbc:CityName>
+					<cbc:PostalZone>4600</cbc:PostalZone>
+					<cac:Country>
+						<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:DespatchAddress>
+				<cac:EstimatedDespatchPeriod>
+					<cbc:StartDate>2026-10-20</cbc:StartDate>
+				</cac:EstimatedDespatchPeriod>
+			</cac:Despatch>
+		</cac:Delivery>
+	</cac:Shipment>
+	<cac:DocumentReference>
+		<cbc:ID>INV-2026-88812</cbc:ID>
+		<cbc:DocumentType>Commercial invoice handed to the carrier</cbc:DocumentType>
+	</cac:DocumentReference>
+	<cac:Signature>
+		<cbc:ID>SIG-CMR-2026-001234-CZ</cbc:ID>
+		<cbc:ReasonCode>CZ</cbc:ReasonCode>
+		<cbc:ValidationDate>2026-10-20</cbc:ValidationDate>
+		<cbc:ValidationTime>08:35:00+02:00</cbc:ValidationTime>
+		<cac:SignatoryParty>
+			<cac:PartyName>
+				<cbc:Name>Novo Nordisk Pharmatech A/S</cbc:Name>
+			</cac:PartyName>
+		</cac:SignatoryParty>
+		<cac:DigitalSignatureAttachment>
+			<cac:ExternalReference>
+				<cbc:URI>https://sign.example/cmr-2026-001234/cz</cbc:URI>
+			</cac:ExternalReference>
+		</cac:DigitalSignatureAttachment>
+	</cac:Signature>
+</ubl:Waybill>

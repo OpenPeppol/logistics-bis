@@ -13,5 +13,10 @@
 		<Id>2</Id>
 		<Name>Customs declaration service cost</Name>
 	</Code>
+	<Code>
+		<Id>3</Id>
+		<Name>Cash on delivery fee</Name>
+		<Description>The carrier's fee for collecting the cash on delivery amount from the consignee. The cash on delivery amount itself is not a charge and is given in collect payment terms.</Description>
+	</Code>
 	
 </CodeList>

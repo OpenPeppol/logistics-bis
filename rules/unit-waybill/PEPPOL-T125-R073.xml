@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-T125-base-1.0">
+	<assert>
+		<description>Verify that the total number of packages matches the packages on the transport handling units.</description>
+		<scope>PEPPOL-T125-R073</scope>
+	</assert>
+
+	<test id="1">
+		<!-- Total matches -->
+		<assert>
+			<success>PEPPOL-T125-R073</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cbc:TotalPackagesQuantity unitCode="EA">12</cbc:TotalPackagesQuantity><cac:TransportHandlingUnit><cbc:ID>1</cbc:ID><cac:Package><cbc:Quantity unitCode="EA">8</cbc:Quantity></cac:Package><cac:Package><cbc:Quantity unitCode="EA">4</cbc:Quantity></cac:Package></cac:TransportHandlingUnit>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="2">
+		<!-- No packages given -->
+		<assert>
+			<success>PEPPOL-T125-R073</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cbc:TotalPackagesQuantity unitCode="EA">12</cbc:TotalPackagesQuantity><cac:TransportHandlingUnit><cbc:ID>1</cbc:ID></cac:TransportHandlingUnit>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="3">
+		<!-- No total given -->
+		<assert>
+			<success>PEPPOL-T125-R073</success>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cac:TransportHandlingUnit><cbc:ID>1</cbc:ID><cac:Package><cbc:Quantity unitCode="EA">8</cbc:Quantity></cac:Package><cac:Package><cbc:Quantity unitCode="EA">4</cbc:Quantity></cac:Package></cac:TransportHandlingUnit>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+	<test id="4">
+		<!-- Total does not match -->
+		<assert>
+			<warning>PEPPOL-T125-R073</warning>
+		</assert>
+		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cbc:Name>CMR</cbc:Name>
+			
+			<cac:Shipment>
+				<cbc:ID>1</cbc:ID>
+				<cac:Consignment>
+					<cbc:ID>1</cbc:ID>
+					<cbc:TotalPackagesQuantity unitCode="EA">10</cbc:TotalPackagesQuantity><cac:TransportHandlingUnit><cbc:ID>1</cbc:ID><cac:Package><cbc:Quantity unitCode="EA">8</cbc:Quantity></cac:Package><cac:Package><cbc:Quantity unitCode="EA">4</cbc:Quantity></cac:Package></cac:TransportHandlingUnit>
+				</cac:Consignment>
+				<cac:ShipmentStage>
+					<cbc:TransportModeCode>3</cbc:TransportModeCode>
+					
+				</cac:ShipmentStage>
+				<cac:Delivery>
+					<cac:DeliveryLocation><cac:Address><cbc:CityName>City</cbc:CityName><cac:Country><cbc:IdentificationCode>DK</cbc:IdentificationCode></cac:Country></cac:Address></cac:DeliveryLocation>
+				</cac:Delivery>
+			</cac:Shipment>
+			
+		</ubl:Waybill>
+	</test>
+
+</testSet>

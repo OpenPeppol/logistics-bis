@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Signatory role</Title>
+    <Identifier>SignatoryRoleCode</Identifier>
+    <Version>1.0</Version>
+    <Agency>OpenPEPPOL</Agency>
+
+    <!--
+        The role in which a party signs a Waybill or a transport event, used in cbc:ReasonCode of a signature.
+        The codes are a subset of UN/EDIFACT 3035 Party function code qualifier. In a CMR consignment note the
+        sender and the carrier sign the consignment note (CMR Article 5) and the consignee signs for receipt
+        (CMR Article 13). A successive carrier (CMR Article 34) signs as carrier for its stage.
+    -->
+
+    <Code>
+        <Id>CZ</Id>
+        <Name>Consignor</Name>
+        <Description>The sender of the goods.</Description>
+    </Code>
+    <Code>
+        <Id>CA</Id>
+        <Name>Carrier</Name>
+        <Description>The carrier, including a successive carrier signing for its stage.</Description>
+    </Code>
+    <Code>
+        <Id>CN</Id>
+        <Name>Consignee</Name>
+        <Description>The party receiving the goods.</Description>
+    </Code>
+    <Code>
+        <Id>FW</Id>
+        <Name>Freight forwarder</Name>
+        <Description>A freight forwarder signing on behalf of the sender or the carrier.</Description>
+    </Code>
+
+</CodeList>

@@ -11,7 +11,17 @@
    <cbc:IssueDate>2026-09-16</cbc:IssueDate>
    <cbc:IssueTime>09:00:00+02:00</cbc:IssueTime>
    <cbc:Name>Air Waybill</cbc:Name>
+   <cbc:Note>Fragile laboratory equipment, keep upright</cbc:Note>
    <cbc:ShippingOrderID>KHN23-44044</cbc:ShippingOrderID>
+   <cac:IssueLocation>
+      <cbc:Name>Novo Nordisk Pharmatech, Køge</cbc:Name>
+      <cac:Address>
+         <cbc:CityName>Køge</cbc:CityName>
+         <cac:Country>
+            <cbc:IdentificationCode>DK</cbc:IdentificationCode>      
+         </cac:Country>    
+      </cac:Address>  
+   </cac:IssueLocation>
    <cac:SenderParty>
       <cbc:EndpointID schemeID="0198">DK13246149</cbc:EndpointID>
       <cac:PartyIdentification>
@@ -221,8 +231,14 @@
          <cbc:GrossWeightMeasure unitCode="KGM">320</cbc:GrossWeightMeasure>
          <cbc:GrossVolumeMeasure unitCode="MTQ">1.2</cbc:GrossVolumeMeasure>
          <cbc:LoadingLengthMeasure unitCode="MTR">1.2</cbc:LoadingLengthMeasure>
+         <cbc:Remarks>Two cartons with dented corners at taking over</cbc:Remarks>
          <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
+         <cbc:CarrierServiceInstructions>Transshipment not allowed</cbc:CarrierServiceInstructions>
+         <cbc:CustomsClearanceServiceInstructions>Export declaration lodged by the consignor, MRN 26DK000000001234A1</cbc:CustomsClearanceServiceInstructions>
          <cbc:TotalTransportHandlingUnitQuantity unitCode="EA">1</cbc:TotalTransportHandlingUnitQuantity>
+         <cbc:DeclaredForCarriageValueAmount currencyID="EUR">48000</cbc:DeclaredForCarriageValueAmount>
+         <cbc:SpecialInstructions>Deliver to goods reception between 08:00 and 14:00</cbc:SpecialInstructions>
+         <cbc:TotalPackagesQuantity unitCode="EA">12</cbc:TotalPackagesQuantity>
          <cac:ConsolidatedShipment>
             <cac:GoodsItem>
                <cbc:Description>Corrosive liquid, n.o.s. (octanoyl chloride), 10 drums of 25 L on one pallet</cbc:Description>
@@ -253,6 +269,36 @@
                </cac:Item>        
             </cac:GoodsItem>      
          </cac:ConsolidatedShipment>
+         <cac:ActualDeliveryTransportEvent>
+            <cbc:OccurrenceDate>2026-09-17</cbc:OccurrenceDate>
+            <cbc:OccurrenceTime>10:15:00+03:00</cbc:OccurrenceTime>
+            <cbc:Description>Received in good order</cbc:Description>
+            <cac:Location>
+               <cbc:Name>Finnair Cargo terminal</cbc:Name>
+               <cac:Address>
+                  <cbc:CityName>Vantaa</cbc:CityName>
+                  <cac:Country>
+                     <cbc:IdentificationCode>FI</cbc:IdentificationCode>            
+                  </cac:Country>          
+               </cac:Address>        
+            </cac:Location>
+            <cac:Signature>
+               <cbc:ID>SIG-2026-000451-CN</cbc:ID>
+               <cbc:ReasonCode>CN</cbc:ReasonCode>
+               <cbc:ValidationDate>2026-09-17</cbc:ValidationDate>
+               <cbc:ValidationTime>10:16:00+03:00</cbc:ValidationTime>
+               <cac:SignatoryParty>
+                  <cac:PartyName>
+                     <cbc:Name>Finnair Oyj</cbc:Name>            
+                  </cac:PartyName>          
+               </cac:SignatoryParty>
+               <cac:DigitalSignatureAttachment>
+                  <cac:ExternalReference>
+                     <cbc:URI>https://sign.example/2026-000451/cn</cbc:URI>            
+                  </cac:ExternalReference>          
+               </cac:DigitalSignatureAttachment>        
+            </cac:Signature>      
+         </cac:ActualDeliveryTransportEvent>
          <cac:ConsigneeParty>
             <cac:PartyIdentification>
                <cbc:ID schemeID="0088">7300010000001</cbc:ID>        
@@ -289,6 +335,14 @@
                <cbc:ElectronicMail>goods.reception@hus.example</cbc:ElectronicMail>        
             </cac:Contact>      
          </cac:ConsigneeParty>
+         <cac:PerformingCarrierParty>
+            <cac:PartyIdentification>
+               <cbc:ID schemeID="0088">5790000435968</cbc:ID>        
+            </cac:PartyIdentification>
+            <cac:PartyName>
+               <cbc:Name>Nordic Road Feeder ApS</cbc:Name>        
+            </cac:PartyName>      
+         </cac:PerformingCarrierParty>
          <cac:OriginalDepartureCountry>
             <cbc:IdentificationCode>DK</cbc:IdentificationCode>      
          </cac:OriginalDepartureCountry>
@@ -299,9 +353,20 @@
             <cbc:ID>DAP</cbc:ID>
             <cbc:Note>To be paid on invoice</cbc:Note>      
          </cac:PaymentTerms>
+         <cac:CollectPaymentTerms>
+            <cbc:Amount currencyID="EUR">2500</cbc:Amount>      
+         </cac:CollectPaymentTerms>
+         <cac:FreightAllowanceCharge>
+            <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+            <cbc:AllowanceChargeReasonCode>1</cbc:AllowanceChargeReasonCode>
+            <cbc:AllowanceChargeReason>Carriage charge Køge to Vantaa</cbc:AllowanceChargeReason>
+            <cbc:PrepaidIndicator>true</cbc:PrepaidIndicator>
+            <cbc:Amount currencyID="EUR">650</cbc:Amount>      
+         </cac:FreightAllowanceCharge>
          <cac:MainCarriageShipmentStage>
             <cbc:TransportModeCode>4</cbc:TransportModeCode>
             <cbc:TransportMeansTypeCode>J</cbc:TransportMeansTypeCode>
+            <cbc:SuccessiveSequenceID>1</cbc:SuccessiveSequenceID>
             <cac:CarrierParty>
                <cac:PartyIdentification>
                   <cbc:ID schemeID="IATA">188</cbc:ID>          
@@ -311,7 +376,11 @@
                </cac:PartyName>        
             </cac:CarrierParty>
             <cac:TransportMeans>
-               <cbc:JourneyID>AY954</cbc:JourneyID>        
+               <cbc:JourneyID>AY954</cbc:JourneyID>
+               <cbc:RegistrationNationality>Finland</cbc:RegistrationNationality>
+               <cac:RoadTransport>
+                  <cbc:LicensePlateID>DF10958</cbc:LicensePlateID>          
+               </cac:RoadTransport>        
             </cac:TransportMeans>
             <cac:LoadingPortLocation>
                <cbc:ID>CPH</cbc:ID>        
@@ -377,7 +446,11 @@
                      </cac:EmergencyTemperature>            
                   </cac:HazardousItem>          
                </cac:Item>        
-            </cac:GoodsItem>      
+            </cac:GoodsItem>
+            <cac:Package>
+               <cbc:Quantity unitCode="EA">12</cbc:Quantity>
+               <cbc:PackagingTypeCode>CT</cbc:PackagingTypeCode>        
+            </cac:Package>      
          </cac:TransportHandlingUnit>
          <cac:DocumentReference>
             <cbc:ID>DGD-2026-000451</cbc:ID>
@@ -389,12 +462,17 @@
                   <cbc:URI>https://docs.pharmatech.example/dgd/2026-000451.pdf</cbc:URI>          
                </cac:ExternalReference>        
             </cac:Attachment>      
-         </cac:DocumentReference>    
+         </cac:DocumentReference>
+         <cac:InsurancePolicy>
+            <cbc:InsuranceTypeDescription>All risks cargo insurance, arranged by the carrier on behalf of the sender</cbc:InsuranceTypeDescription>
+            <cbc:InsuredValueAmount currencyID="EUR">48000</cbc:InsuredValueAmount>      
+         </cac:InsurancePolicy>    
       </cac:Consignment>
       <cac:ShipmentStage>
          <cbc:TransportModeCode>3</cbc:TransportModeCode>
          <cbc:TransportMeansTypeCode>31</cbc:TransportMeansTypeCode>
          <cac:TransportMeans>
+            <cbc:RegistrationNationality>Denmark</cbc:RegistrationNationality>
             <cac:AirTransport>
                <cbc:AircraftID>JA8088</cbc:AircraftID>        
             </cac:AirTransport>
@@ -408,7 +486,36 @@
             <cac:MaritimeTransport>
                <cbc:VesselID>wrt34663</cbc:VesselID>        
             </cac:MaritimeTransport>      
-         </cac:TransportMeans>    
+         </cac:TransportMeans>
+         <cac:TakeoverTransportEvent>
+            <cbc:OccurrenceDate>2026-09-16</cbc:OccurrenceDate>
+            <cbc:OccurrenceTime>11:30:00+02:00</cbc:OccurrenceTime>
+            <cac:Location>
+               <cbc:Name>Novo Nordisk Pharmatech, goods despatch</cbc:Name>
+               <cac:Address>
+                  <cbc:CityName>Køge</cbc:CityName>
+                  <cac:Country>
+                     <cbc:IdentificationCode>DK</cbc:IdentificationCode>            
+                  </cac:Country>          
+               </cac:Address>        
+            </cac:Location>
+            <cac:Signature>
+               <cbc:ID>SIG-2026-000451-CA</cbc:ID>
+               <cbc:ReasonCode>CA</cbc:ReasonCode>
+               <cbc:ValidationDate>2026-09-16</cbc:ValidationDate>
+               <cbc:ValidationTime>11:35:00+02:00</cbc:ValidationTime>
+               <cac:SignatoryParty>
+                  <cac:PartyName>
+                     <cbc:Name>Finnair Oyj</cbc:Name>            
+                  </cac:PartyName>          
+               </cac:SignatoryParty>
+               <cac:DigitalSignatureAttachment>
+                  <cac:ExternalReference>
+                     <cbc:URI>https://sign.example/2026-000451/ca</cbc:URI>            
+                  </cac:ExternalReference>          
+               </cac:DigitalSignatureAttachment>        
+            </cac:Signature>      
+         </cac:TakeoverTransportEvent>    
       </cac:ShipmentStage>
       <cac:Delivery>
          <cbc:TrackingID>456789</cbc:TrackingID>
@@ -434,6 +541,10 @@
                <cbc:LongitudeDegreesMeasure unitCode="DD">24.915560</cbc:LongitudeDegreesMeasure>        
             </cac:LocationCoordinate>      
          </cac:DeliveryLocation>
+         <cac:RequestedDeliveryPeriod>
+            <cbc:EndDate>2026-09-18</cbc:EndDate>
+            <cbc:EndTime>16:00:00+03:00</cbc:EndTime>      
+         </cac:RequestedDeliveryPeriod>
          <cac:EstimatedDeliveryPeriod>
             <cbc:StartDate>2026-09-17</cbc:StartDate>
             <cbc:StartTime>08:00:00+03:00</cbc:StartTime>
@@ -490,6 +601,7 @@
    </cac:DocumentReference>
    <cac:Signature>
       <cbc:ID>SIG-2026-000451</cbc:ID>
+      <cbc:ReasonCode>CZ</cbc:ReasonCode>
       <cbc:ValidationDate>2026-09-16</cbc:ValidationDate>
       <cbc:ValidationTime>09:49:00+02:00</cbc:ValidationTime>
       <cac:SignatoryParty>
