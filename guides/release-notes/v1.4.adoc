@@ -14,35 +14,46 @@ This is the fourth release update of the Peppol Logistics standard. This time on
 * Manifest With Application Response 0.1
 
 == Updated BIS documents
-* Peppol Waybill 1.1
+* Peppol Waybill 1.2
+* Peppol Waybill and the new Manifest With Application Response are bound to UBL 2.5. The other BIS documents keep their existing UBL binding.
 
 
 == New Transactions
 * Manifest transaction (T131) is added to the Peppol Logistics BIS. The Manifest transaction is used to provide information about the contents of a shipment, including details about the items being shipped, their quantities, and any relevant documentation. This transaction is particularly useful for customs and regulatory compliance, as it allows for the electronic submission of shipment information to authorities.
 
 == Updated Transactions
-* Peppol Waybill 1.1 (T125)
+* Peppol Waybill 1.2 (T125)
+** Updated to support the Copenhagen airport case (LLC-21), including air transport, and bound to UBL 2.5.
+** cbc:ProfileID is changed from urn:fdc:peppol.eu:logistics:bis:waybill_only:1 to urn:fdc:peppol.eu:logistics:bis:waybill:1.
+** cbc:TransportMeansTypeCode on the main carriage shipment stage is changed from 0..n to 0..1.
+** For air transport (transport mode code 4), cbc:TransportMeansTypeCode must be an air service type code from the new codelist AirServiceTypeCode.
 
 * Advanced Despatch Advice (T120)
 ** the Licence plate delimiter in cbc:LicensePlateID is changed from semicolon (;) to hashtag (#) in line with the Peppol standard delimiter character.
 
 == Updated Codelists
 * Code Lists are updated to PoAC version.
+* TransportMeansTypeCode is extended.
 
 == New Codelists
-* No new codelists are added in this release.
+* Codelist AirServiceTypeCode (IATA SSIM air service types) is added, used for cbc:TransportMeansTypeCode when the transport mode code is 4 (air transport).
+* Codelist UNCL1001_T131 (subset of UNCL1001) is added for cbc:ManifestTypeCode in the Manifest.
 
 == Updated Rules
-* No LoC rules are changed in this version.
+* PEPPOL-T125-R002 - the required cbc:ProfileID is changed to urn:fdc:peppol.eu:logistics:bis:waybill:1.
+* PEPPOL-T125-R007 - the rule context is corrected to cac:Shipment/cac:Delivery so that the rule is applied.
+* PEPPOL-T124-R007 - the rule is corrected to check cac:DeliveryTerms directly under cac:Consignment so that the rule is applied.
 * Common rules are updated to PoAC version.
 
 == New Rules
-* No LoC rules are added in this release.
+* PEPPOL-T125-R052 - for air transport (transport mode code 4) the transport means type code must be an air service type code.
+* PEPPOL-T125-R053 - an air service type code must only be used as transport means type code when the transport mode code is 4.
+* Manifest (T131): PEPPOL-T131-R001 (CustomizationID), PEPPOL-T131-R002 (ProfileID), PEPPOL-T131-R003 (IssueTime with time zone), PEPPOL-T131-R006 (Consignor party name or identification), PEPPOL-T131-R007 (Consignee party name or identification) and PEPPOL-T131-R009 (each consignment must reference the Waybill covering it).
 
 == Changes Use-case Example files.
-* No changes to Use-case Example files in this release.
+* Waybill_Example_usecase1.xml - cbc:ProfileID changed to urn:fdc:peppol.eu:logistics:bis:waybill:1, and cac:SenderParty and cac:ReceiverParty added.
+* TransportExecutionPlan_Example_UseCase1.xml (Transport Execution Plan With Request) - reformatted for readability, no change in content.
 
-== Request For Change (RFC) that are included/solved in Release 1.3
+== Request For Change (RFC) that are included/solved in Release 1.4
 * LLC-36 Licence plate delimiter update
 * LLC-21  Update of Peppol Waybill – Support for the Copenhagen airport case.
-* 
