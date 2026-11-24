@@ -18,7 +18,7 @@ This is the fourth release update of the Peppol Logistics standard. This time on
 
 
 == New Transactions
-* * Manifest transaction (T131) is added to the Peppol Logistics BIS. The Manifest transaction is used to provide information about the contents of a shipment, including details about the items being shipped, their quantities, and any relevant documentation. This transaction is particularly useful for customs and regulatory compliance, as it allows for the electronic submission of shipment information to authorities.
+* Manifest transaction (T131) is added to the Peppol Logistics BIS. The Manifest transaction is used to provide information about the contents of a shipment, including details about the items being shipped, their quantities, and any relevant documentation. This transaction is particularly useful for customs and regulatory compliance, as it allows for the electronic submission of shipment information to authorities.
 
 == Updated Transactions
 * Peppol Waybill 1.1 (T125)

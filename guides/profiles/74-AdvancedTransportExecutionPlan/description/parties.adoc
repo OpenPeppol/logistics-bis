@@ -43,7 +43,7 @@ The sender is the sender of the document. This is often the same as Transport Us
 Example:
 [source, xml, indent=0]
 ----
-include::{snippet-dir}/snippet-1.xml[tags=sender-party]
+include::{snippet-dir2}/snippet-1.xml[tags=sender-party]
 ----
 [[Receiver-party]]
 == Receiver (ReceiverParty)
@@ -51,7 +51,7 @@ The Receiver is the sender of the document. This is often the Transport Service 
 Example:
 [source, xml, indent=0]
 ----
-include::{snippet-dir}/snippet-1.xml[tags=receiver-party]
+include::{snippet-dir2}/snippet-1.xml[tags=receiver-party]
 ----
 
 [[transport-user-party]]
