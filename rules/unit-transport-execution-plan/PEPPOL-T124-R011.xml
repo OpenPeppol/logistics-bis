@@ -40,7 +40,7 @@
 	
 	<test id="3">
 		<assert>
-			<Success>PEPPOL-T124-R011</Success>
+			<success>PEPPOL-T124-R011</success>
 		</assert>
 		<ubl:TransportExecutionPlan xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2"
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"

@@ -50,7 +50,7 @@
 	
 	<test id="3">
 		<assert>
-			<Success>PEPPOL-T125-R021</Success>
+			<success>PEPPOL-T125-R021</success>
 		</assert>
 		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
