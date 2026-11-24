@@ -645,6 +645,9 @@
    <Element name="DispositionCode">
       <DataType>udt:CodeType</DataType>
    </Element>
+   <Element name="DistributionType">
+      <DataType>udt:TextType</DataType>
+   </Element>
    <Element name="District">
       <DataType>udt:TextType</DataType>
    </Element>
@@ -1020,7 +1023,13 @@
    <Element name="InsurancePremiumAmount">
       <DataType>udt:AmountType</DataType>
    </Element>
+   <Element name="InsuranceTypeDescription">
+      <DataType>udt:TextType</DataType>
+   </Element>
    <Element name="InsuranceValueAmount">
+      <DataType>udt:AmountType</DataType>
+   </Element>
+   <Element name="InsuredValueAmount">
       <DataType>udt:AmountType</DataType>
    </Element>
    <Element name="InventoryValueAmount">
@@ -1215,6 +1224,12 @@
    <Element name="MandateTypeCode">
       <DataType>udt:CodeType</DataType>
    </Element>
+   <Element name="ManifestType">
+      <DataType>udt:TextType</DataType>
+   </Element>
+   <Element name="ManifestTypeCode">
+      <DataType>udt:CodeType</DataType>
+   </Element>
    <Element name="ManufactureDate">
       <DataType>udt:DateType</DataType>
    </Element>
@@ -1373,6 +1388,9 @@
    </Element>
    <Element name="NameSuffix">
       <DataType>udt:TextType</DataType>
+   </Element>
+   <Element name="NationalityCode">
+      <DataType>udt:CodeType</DataType>
    </Element>
    <Element name="NationalityID">
       <DataType>udt:IdentifierType</DataType>
@@ -1823,6 +1841,9 @@
    </Element>
    <Element name="Rate">
       <DataType>udt:RateType</DataType>
+   </Element>
+   <Element name="ReasonCode">
+      <DataType>udt:CodeType</DataType>
    </Element>
    <Element name="ReceiptAdviceTypeCode">
       <DataType>udt:CodeType</DataType>

@@ -380,6 +380,10 @@
 	</Resource>
 	<Resource>
 		<Type>Namespace-1</Type>
+		<Path>structure/namespace/ubl-manifest.xml</Path>
+	</Resource>
+	<Resource>
+		<Type>Namespace-1</Type>
 		<Path>structure/namespace/ubl-transportation-status-request.xml</Path>
 	</Resource>
 	<Resource>
