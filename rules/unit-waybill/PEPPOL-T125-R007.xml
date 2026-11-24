@@ -36,7 +36,7 @@
 
 	<test id="3">
 		<assert>
-			<Success>PEPPOL-T125-R007</Success>
+			<success>PEPPOL-T125-R007</success>
 		</assert>
 		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 			<cac:Shipment>
@@ -55,7 +55,7 @@
 	
 	<test id="4">
 		<assert>
-			<Error>PEPPOL-T125-R007</Error>
+			<error>PEPPOL-T125-R007</error>
 		</assert>
 		<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 			<cac:Shipment>

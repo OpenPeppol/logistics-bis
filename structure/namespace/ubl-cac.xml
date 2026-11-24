@@ -731,6 +731,29 @@
       <Ref card="0..n">cbc:ElectronicDeviceDescription</Ref>
       <Ref card="0..1">cbc:AuctionURI</Ref>
    </Element>
+   <Element name="AuthorityParty">
+      <Ref card="0..1">cbc:MarkCareIndicator</Ref>
+      <Ref card="0..1">cbc:MarkAttentionIndicator</Ref>
+      <Ref card="0..1">cbc:WebsiteURI</Ref>
+      <Ref card="0..1">cbc:LogoReferenceID</Ref>
+      <Ref card="0..1">cbc:EndpointID</Ref>
+      <Ref card="0..1">cbc:IndustryClassificationCode</Ref>
+      <Ref card="0..n">cac:PartyIdentification</Ref>
+      <Ref card="0..n">cac:PartyName</Ref>
+      <Ref card="0..1">cac:Language</Ref>
+      <Ref card="0..1">cac:PostalAddress</Ref>
+      <Ref card="0..1">cac:PhysicalLocation</Ref>
+      <Ref card="0..n">cac:PartyTaxScheme</Ref>
+      <Ref card="0..n">cac:PartyLegalEntity</Ref>
+      <Ref card="0..1">cac:Contact</Ref>
+      <Ref card="0..n">cac:Person</Ref>
+      <Ref card="0..1">cac:AgentParty</Ref>
+      <Ref card="0..n">cac:ServiceProviderParty</Ref>
+      <Ref card="0..n">cac:PowerOfAttorney</Ref>
+      <Ref card="0..1">cac:FinancialAccount</Ref>
+      <Ref card="0..n">cac:AdditionalWebSite</Ref>
+      <Ref card="0..n">cac:SocialMediaProfile</Ref>
+   </Element>
    <Element name="AvailabilityTransportEvent">
       <Ref card="0..1">cbc:IdentificationID</Ref>
       <Ref card="0..1">cbc:OccurrenceDate</Ref>
@@ -2273,6 +2296,29 @@
       <Ref card="0..1">cbc:NameSuffix</Ref>
       <Ref card="0..1">cbc:JobTitle</Ref>
       <Ref card="0..1">cbc:NationalityID</Ref>
+      <Ref card="0..1">cbc:NationalityCode</Ref>
+      <Ref card="0..1">cbc:GenderCode</Ref>
+      <Ref card="0..1">cbc:BirthDate</Ref>
+      <Ref card="0..1">cbc:BirthplaceName</Ref>
+      <Ref card="0..1">cbc:OrganizationDepartment</Ref>
+      <Ref card="0..1">cbc:RoleCode</Ref>
+      <Ref card="0..1">cac:CitizenshipCountry</Ref>
+      <Ref card="0..1">cac:Contact</Ref>
+      <Ref card="0..1">cac:FinancialAccount</Ref>
+      <Ref card="0..n">cac:IdentityDocumentReference</Ref>
+      <Ref card="0..1">cac:ResidenceAddress</Ref>
+   </Element>
+   <Element name="CrewPerson">
+      <Ref card="0..1">cbc:ID</Ref>
+      <Ref card="0..1">cbc:FirstName</Ref>
+      <Ref card="0..1">cbc:FamilyName</Ref>
+      <Ref card="0..1">cbc:Title</Ref>
+      <Ref card="0..1">cbc:MiddleName</Ref>
+      <Ref card="0..1">cbc:OtherName</Ref>
+      <Ref card="0..1">cbc:NameSuffix</Ref>
+      <Ref card="0..1">cbc:JobTitle</Ref>
+      <Ref card="0..1">cbc:NationalityID</Ref>
+      <Ref card="0..1">cbc:NationalityCode</Ref>
       <Ref card="0..1">cbc:GenderCode</Ref>
       <Ref card="0..1">cbc:BirthDate</Ref>
       <Ref card="0..1">cbc:BirthplaceName</Ref>
@@ -2948,6 +2994,7 @@
       <Ref card="0..1">cbc:NameSuffix</Ref>
       <Ref card="0..1">cbc:JobTitle</Ref>
       <Ref card="0..1">cbc:NationalityID</Ref>
+      <Ref card="0..1">cbc:NationalityCode</Ref>
       <Ref card="0..1">cbc:GenderCode</Ref>
       <Ref card="0..1">cbc:BirthDate</Ref>
       <Ref card="0..1">cbc:BirthplaceName</Ref>
@@ -4139,6 +4186,10 @@
       <Ref card="0..n">cac:AdditionalWebSite</Ref>
       <Ref card="0..n">cac:SocialMediaProfile</Ref>
    </Element>
+   <Element name="InsurancePolicy">
+      <Ref card="0..1">cbc:InsuranceTypeDescription</Ref>
+      <Ref card="0..1">cbc:InsuredValueAmount</Ref>
+   </Element>
    <Element name="InterestedParty">
       <Ref card="0..1">cbc:MarkCareIndicator</Ref>
       <Ref card="0..1">cbc:MarkAttentionIndicator</Ref>
@@ -4289,6 +4340,20 @@
       <Ref card="0..1">cbc:DurationMeasure</Ref>
       <Ref card="0..n">cbc:DescriptionCode</Ref>
       <Ref card="0..n">cbc:Description</Ref>
+   </Element>
+   <Element name="IssueLocation">
+      <Ref card="0..1">cbc:ID</Ref>
+      <Ref card="0..n">cbc:Description</Ref>
+      <Ref card="0..n">cbc:Conditions</Ref>
+      <Ref card="0..1">cbc:CountrySubentity</Ref>
+      <Ref card="0..1">cbc:CountrySubentityCode</Ref>
+      <Ref card="0..1">cbc:LocationTypeCode</Ref>
+      <Ref card="0..1">cbc:InformationURI</Ref>
+      <Ref card="0..1">cbc:Name</Ref>
+      <Ref card="0..n">cac:ValidityPeriod</Ref>
+      <Ref card="0..1">cac:Address</Ref>
+      <Ref card="0..n">cac:SubsidiaryLocation</Ref>
+      <Ref card="0..n">cac:LocationCoordinate</Ref>
    </Element>
    <Element name="IssuerEndorsement">
       <Ref card="1..1">cbc:DocumentID</Ref>
@@ -4969,6 +5034,7 @@
       <Ref card="0..1">cbc:NameSuffix</Ref>
       <Ref card="0..1">cbc:JobTitle</Ref>
       <Ref card="0..1">cbc:NationalityID</Ref>
+      <Ref card="0..1">cbc:NationalityCode</Ref>
       <Ref card="0..1">cbc:GenderCode</Ref>
       <Ref card="0..1">cbc:BirthDate</Ref>
       <Ref card="0..1">cbc:BirthplaceName</Ref>
@@ -5868,6 +5934,7 @@
       <Ref card="0..1">cbc:NameSuffix</Ref>
       <Ref card="0..1">cbc:JobTitle</Ref>
       <Ref card="0..1">cbc:NationalityID</Ref>
+      <Ref card="0..1">cbc:NationalityCode</Ref>
       <Ref card="0..1">cbc:GenderCode</Ref>
       <Ref card="0..1">cbc:BirthDate</Ref>
       <Ref card="0..1">cbc:BirthplaceName</Ref>
@@ -6118,6 +6185,7 @@
       <Ref card="0..1">cbc:NameSuffix</Ref>
       <Ref card="0..1">cbc:JobTitle</Ref>
       <Ref card="0..1">cbc:NationalityID</Ref>
+      <Ref card="0..1">cbc:NationalityCode</Ref>
       <Ref card="0..1">cbc:GenderCode</Ref>
       <Ref card="0..1">cbc:BirthDate</Ref>
       <Ref card="0..1">cbc:BirthplaceName</Ref>
@@ -7424,6 +7492,7 @@
       <Ref card="0..1">cbc:NameSuffix</Ref>
       <Ref card="0..1">cbc:JobTitle</Ref>
       <Ref card="0..1">cbc:NationalityID</Ref>
+      <Ref card="0..1">cbc:NationalityCode</Ref>
       <Ref card="0..1">cbc:GenderCode</Ref>
       <Ref card="0..1">cbc:BirthDate</Ref>
       <Ref card="0..1">cbc:BirthplaceName</Ref>
@@ -8005,6 +8074,7 @@
       <Ref card="0..1">cbc:NameSuffix</Ref>
       <Ref card="0..1">cbc:JobTitle</Ref>
       <Ref card="0..1">cbc:NationalityID</Ref>
+      <Ref card="0..1">cbc:NationalityCode</Ref>
       <Ref card="0..1">cbc:GenderCode</Ref>
       <Ref card="0..1">cbc:BirthDate</Ref>
       <Ref card="0..1">cbc:BirthplaceName</Ref>
@@ -8177,6 +8247,29 @@
       <Ref card="1..n">cac:DigitalDocumentMetadata</Ref>
       <Ref card="0..n">cac:DigitalDeliveryChannel</Ref>
       <Ref card="0..n">cac:CertificationDocumentReference</Ref>
+   </Element>
+   <Element name="SendingLogisticsOperatorParty">
+      <Ref card="0..1">cbc:MarkCareIndicator</Ref>
+      <Ref card="0..1">cbc:MarkAttentionIndicator</Ref>
+      <Ref card="0..1">cbc:WebsiteURI</Ref>
+      <Ref card="0..1">cbc:LogoReferenceID</Ref>
+      <Ref card="0..1">cbc:EndpointID</Ref>
+      <Ref card="0..1">cbc:IndustryClassificationCode</Ref>
+      <Ref card="0..n">cac:PartyIdentification</Ref>
+      <Ref card="0..n">cac:PartyName</Ref>
+      <Ref card="0..1">cac:Language</Ref>
+      <Ref card="0..1">cac:PostalAddress</Ref>
+      <Ref card="0..1">cac:PhysicalLocation</Ref>
+      <Ref card="0..n">cac:PartyTaxScheme</Ref>
+      <Ref card="0..n">cac:PartyLegalEntity</Ref>
+      <Ref card="0..1">cac:Contact</Ref>
+      <Ref card="0..n">cac:Person</Ref>
+      <Ref card="0..1">cac:AgentParty</Ref>
+      <Ref card="0..n">cac:ServiceProviderParty</Ref>
+      <Ref card="0..n">cac:PowerOfAttorney</Ref>
+      <Ref card="0..1">cac:FinancialAccount</Ref>
+      <Ref card="0..n">cac:AdditionalWebSite</Ref>
+      <Ref card="0..n">cac:SocialMediaProfile</Ref>
    </Element>
    <Element name="ServiceAllowanceCharge">
       <Ref card="0..1">cbc:ID</Ref>
@@ -8444,6 +8537,7 @@
       <Ref card="0..1">cbc:NameSuffix</Ref>
       <Ref card="0..1">cbc:JobTitle</Ref>
       <Ref card="0..1">cbc:NationalityID</Ref>
+      <Ref card="0..1">cbc:NationalityCode</Ref>
       <Ref card="0..1">cbc:GenderCode</Ref>
       <Ref card="0..1">cbc:BirthDate</Ref>
       <Ref card="0..1">cbc:BirthplaceName</Ref>
@@ -9296,6 +9390,7 @@
       <Ref card="0..1">cbc:NameSuffix</Ref>
       <Ref card="0..1">cbc:JobTitle</Ref>
       <Ref card="0..1">cbc:NationalityID</Ref>
+      <Ref card="0..1">cbc:NationalityCode</Ref>
       <Ref card="0..1">cbc:GenderCode</Ref>
       <Ref card="0..1">cbc:BirthDate</Ref>
       <Ref card="0..1">cbc:BirthplaceName</Ref>
