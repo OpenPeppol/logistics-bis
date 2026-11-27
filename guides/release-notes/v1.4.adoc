@@ -2,8 +2,8 @@
 [horizontal]
 Release date::	Nov 2026
 				* Date of member review:	2026-09-25
-				* Date of publication:		2026-11-25
-				* Mandatory to use from:	2027-03-25
+				* Date of publication:		2026-11-30
+				* Mandatory to use from:	2027-03-30
 
 [NOTE]
 ====
